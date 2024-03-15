@@ -16,7 +16,7 @@ CREATE TABLE PHONG_KHAM (
     Sodienthoai char(10)
 );
 
-CREATE TABLE USER(
+CREATE TABLE INFORMATION_USER(
     MaUser char(10) primary key,
     MaPhongKham char(10),
     FOREIGN KEY (MaPhongKham) REFERENCES PHONG_KHAM (MaPhongKham),
@@ -27,7 +27,7 @@ CREATE TABLE USER(
 
 CREATE TABLE BAC_SI (
     MaBS char(10) primary key,
-    FOREIGN KEY (MaBS) REFERENCES USER(MaUser),
+    FOREIGN KEY (MaBS) REFERENCES INFORMATION_USER(MaUser),
     MaChuyenKhoa char(10),
     FOREIGN KEY (MaChuyenKhoa) REFERENCES CHUYEN_KHOA (MaChuyenKhoa),
 );
@@ -230,3 +230,9 @@ FROM
     JOIN inserted ON THUOC.MaThuoc = inserted.MaThuoc;
 
 end;
+
+insert into
+    TAI_KHOAN
+values
+    ('0396371201', '1', 'BS');
+select @@SERVERNAME
