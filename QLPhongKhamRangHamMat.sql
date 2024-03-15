@@ -1,59 +1,66 @@
+CREATE TABLE CHUYEN_KHOA (
+    MaChuyenKhoa char(10) primary key,
+    TenChuyenKhoa char(50),
+);
+
+CREATE TABLE TAI_KHOAN(
+    Username char(10) primary key,
+    Password char(10),
+    role char(10)
+);
+
 CREATE TABLE PHONG_KHAM (
-    MaPhongKham varchar(10) primary key,
-    TenPhongKham varchar(50),
-    Diachi varchar(50),
-    Sodienthoai varchar(10)
-) CREATE TABLE CHUYEN_KHOA (
-    MaChuyenKhoa varchar(10) primary key,
-    TenChuyenKhoa varchar(50),
-) CREATE TABLE BAC_SI (
-    MaBS varchar(10) primary key,
-    MaPhongKham varchar(10),
-    MaChuyenKhoa varchar(10),
+    MaPhongKham char(10) primary key,
+    TenPhongKham char(50),
+    Diachi char(50),
+    Sodienthoai char(10)
+);
+
+CREATE TABLE USER(
+    MaUser char(10) primary key,
+    MaPhongKham char(10),
     FOREIGN KEY (MaPhongKham) REFERENCES PHONG_KHAM (MaPhongKham),
+    Sdt char(10),
+    HoTen char(50),
+    DiaChi char(60)
+);
+
+CREATE TABLE BAC_SI (
+    MaBS char(10) primary key,
+    FOREIGN KEY (MaBS) REFERENCES USER(MaUser),
+    MaChuyenKhoa char(10),
     FOREIGN KEY (MaChuyenKhoa) REFERENCES CHUYEN_KHOA (MaChuyenKhoa),
-    SoDienThoaiBS varchar(10),
-    HoTen varchar(50),
-    DiaChiBS varchar(60)
-) CREATE TABLE Benh_Nhan (
-    MaBN varchar(10) primary key,
-    MaPhongKham varchar(10),
+);
+
+CREATE TABLE Benh_Nhan (
+    MaBN char(10) primary key,
+    MaPhongKham char(10),
     FOREIGN KEY (MaPhongKham) REFERENCES PHONG_KHAM (MaPhongKham),
-    HoTen varchar(50),
+    HoTen char(50),
     NgaySinh smalldatetime,
     GioiTinh bit,
-    SoDienThoaiBN varchar(10) default 'kh�ng c�',
-    DiaChiBN varchar(60)
-) CREATE TABLE QUAN_lY (
-    MaQL varchar(10),
-    MaPhongKham varchar(10),
-    FOREIGN KEY (MaPhongKham) REFERENCES PHONG_KHAM (MaPhongKham),
-    HoTen varchar(50),
-    SoDienThoaiQuanLi varchar(10),
-    DiaChiQuanLi varchar(60),
-) CREATE TABLE LE_TAN (
-    MaLT varchar(10) primary key,
-    MaPhongKham varchar(10),
-    FOREIGN KEY (MaPhongKham) REFERENCES PHONG_KHAM (MaPhongKham),
-    HoTen varchar(50),
-    SoDienThoaiLT varchar(10),
-    DiaChiLT varchar(60)
-) CREATE TABLE LICH_HEN (
-    MaLichHen varchar(10) primary key,
-    MaBN varchar(10),
-    MaBS varchar(10),
-    MaPhongKham varchar(10),
-    MaChuyenKhoa varchar(10),
+    SoDienThoaiBN char(10) default 'kh�ng c�',
+    DiaChiBN char(60)
+);
+
+CREATE TABLE LICH_HEN (
+    MaLichHen char(10) primary key,
+    MaBN char(10),
+    MaBS char(10),
+    MaPhongKham char(10),
+    MaChuyenKhoa char(10),
     FOREIGN KEY (MaPhongKham) REFERENCES PHONG_KHAM (MaPhongKham),
     FOREIGN KEY (MaChuyenKhoa) REFERENCES CHUYEN_KHOA (MaChuyenKhoa),
     FOREIGN KEY (MaBN) REFERENCES BENH_NHAN (MaBN),
     FOREIGN KEY (MaBS) REFERENCES BAC_SI (MaBS)
-) CREATE TABLE DON_THUOC (
-    MaLichHen varchar(10),
-    MaBN varchar(10),
-    MaBS varchar(10),
-    MaPhongKham varchar(10),
-    MaChuyenKhoa varchar(10),
+);
+
+CREATE TABLE DON_THUOC (
+    MaLichHen char(10),
+    MaBN char(10),
+    MaBS char(10),
+    MaPhongKham char(10),
+    MaChuyenKhoa char(10),
     FOREIGN KEY (MaLichHen) REFERENCES LICH_HEN (MaLichHen),
     FOREIGN KEY (MaPhongKham) REFERENCES PHONG_KHAM (MaPhongKham),
     FOREIGN KEY (MaChuyenKhoa) REFERENCES CHUYEN_KHOA (MaChuyenKhoa),
@@ -61,11 +68,15 @@ CREATE TABLE PHONG_KHAM (
     FOREIGN KEY (MaBS) REFERENCES BAC_SI (MaBS),
     MaThuoc char(10),
     SoLuong int
-) CREATE TABLE THUOC(
-    MaThuoc varchar(10),
-    TenThuoc varchar(50),
+);
+
+CREATE TABLE THUOC(
+    MaThuoc char(10),
+    TenThuoc char(50),
     TonKho int
-) CREATE procedure insert_thuoc @ tenThuoc varchar(50),
+);
+
+CREATE procedure insert_thuoc @ tenThuoc char(50),
 @ soLuong int as begin declare @ count int;
 
 if (
