@@ -1,0 +1,21 @@
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\QuanLyPhongKham\bin\Debug\QuanLyPhongKham.exe.config
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\QuanLyPhongKham\bin\Debug\QuanLyPhongKham.exe
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\QuanLyPhongKham\bin\Debug\QuanLyPhongKham.pdb
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.AssemblyReference.cache
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.Form1.resources
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.Properties.Resources.resources
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.GenerateResource.cache
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.CoreCompileInputs.cache
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.exe
+D:\STUDYZONE\Congnghephanmem\Đồ án môn học\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.pdb
+G:\Xung-Chan\C#\project-cnpm-csharp\QuanLyPhongKham\bin\Debug\QuanLyPhongKham.exe.config
+G:\Xung-Chan\C#\project-cnpm-csharp\QuanLyPhongKham\bin\Debug\QuanLyPhongKham.exe
+G:\Xung-Chan\C#\project-cnpm-csharp\QuanLyPhongKham\bin\Debug\QuanLyPhongKham.pdb
+G:\Xung-Chan\C#\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.AssemblyReference.cache
+G:\Xung-Chan\C#\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.DangKy.resources
+G:\Xung-Chan\C#\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.Form1.resources
+G:\Xung-Chan\C#\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.Properties.Resources.resources
+G:\Xung-Chan\C#\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.GenerateResource.cache
+G:\Xung-Chan\C#\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.CoreCompileInputs.cache
+G:\Xung-Chan\C#\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.exe
+G:\Xung-Chan\C#\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.pdb
