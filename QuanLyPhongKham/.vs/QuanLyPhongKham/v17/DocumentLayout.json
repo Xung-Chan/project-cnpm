@@ -1,33 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "G:\\Xung-Chan\\C#\\project-cnpm-csharp\\QuanLyPhongKham\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|g:\\xung-chan\\c#\\project-cnpm-csharp\\quanlyphongkham\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|c:\\users\\administrator\\downloads\\project-cnpm\\quanlyphongkham\\dangnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:dangnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|g:\\xung-chan\\c#\\project-cnpm-csharp\\quanlyphongkham\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|c:\\users\\administrator\\downloads\\project-cnpm\\quanlyphongkham\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|g:\\xung-chan\\c#\\project-cnpm-csharp\\quanlyphongkham\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|g:\\xung-chan\\c#\\project-cnpm-csharp\\quanlyphongkham\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|c:\\users\\administrator\\downloads\\project-cnpm\\quanlyphongkham\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|g:\\xung-chan\\c#\\project-cnpm-csharp\\quanlyphongkham\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|c:\\users\\administrator\\downloads\\project-cnpm\\quanlyphongkham\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|g:\\xung-chan\\c#\\project-cnpm-csharp\\quanlyphongkham\\dangky.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|c:\\users\\administrator\\downloads\\project-cnpm\\quanlyphongkham\\dangky.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:dangky.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|g:\\xung-chan\\c#\\project-cnpm-csharp\\quanlyphongkham\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|c:\\users\\administrator\\downloads\\project-cnpm\\quanlyphongkham\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -38,8 +34,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DangKy.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DangKy.Designer.cs",
+              "RelativeDocumentMoniker": "DangKy.Designer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DangKy.Designer.cs",
+              "RelativeToolTip": "DangKy.Designer.cs",
+              "ViewState": "AQIAAKwBAAAAAAAAAAAAALsBAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T12:35:34.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DangKy.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DangKy.cs",
+              "RelativeDocumentMoniker": "DangKy.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DangKy.cs",
+              "RelativeToolTip": "DangKy.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T12:35:32.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DangNhap.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DangNhap.Designer.cs",
+              "RelativeDocumentMoniker": "DangNhap.Designer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DangNhap.Designer.cs",
+              "RelativeToolTip": "DangNhap.Designer.cs",
+              "ViewState": "AQIAANUAAAAAAAAAAAAAAOoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T11:30:40.334Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -54,92 +89,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "G:\\Xung-Chan\\C#\\project-cnpm-csharp\\QuanLyPhongKham\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "Form1.Designer.cs",
-              "ToolTip": "G:\\Xung-Chan\\C#\\project-cnpm-csharp\\QuanLyPhongKham\\Form1.Designer.cs",
-              "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AQIAAJkAAAAAAAAAAAAYwKMAAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T12:38:13.976Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "G:\\Xung-Chan\\C#\\project-cnpm-csharp\\QuanLyPhongKham\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "G:\\Xung-Chan\\C#\\project-cnpm-csharp\\QuanLyPhongKham\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAEwAAAAAAAAAAADwv1QAAAAuAAAA",
+              "Title": "DangNhap.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DangNhap.cs",
+              "RelativeDocumentMoniker": "DangNhap.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DangNhap.cs",
+              "RelativeToolTip": "DangNhap.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAC0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T12:14:30.297Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "G:\\Xung-Chan\\C#\\project-cnpm-csharp\\QuanLyPhongKham\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "G:\\Xung-Chan\\C#\\project-cnpm-csharp\\QuanLyPhongKham\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T12:12:40.36Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "G:\\Xung-Chan\\C#\\project-cnpm-csharp\\QuanLyPhongKham\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "G:\\Xung-Chan\\C#\\project-cnpm-csharp\\QuanLyPhongKham\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T12:10:03.029Z",
+              "WhenOpened": "2024-03-22T11:30:31.031Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DangKy.cs [Design]",
-              "DocumentMoniker": "G:\\Xung-Chan\\C#\\project-cnpm-csharp\\QuanLyPhongKham\\DangKy.cs",
-              "RelativeDocumentMoniker": "DangKy.cs",
-              "ToolTip": "G:\\Xung-Chan\\C#\\project-cnpm-csharp\\QuanLyPhongKham\\DangKy.cs [Design]",
-              "RelativeToolTip": "DangKy.cs [Design]",
+              "Title": "DangNhap.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DangNhap.cs",
+              "RelativeDocumentMoniker": "DangNhap.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DangNhap.cs [Design]",
+              "RelativeToolTip": "DangNhap.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T12:07:39.587Z",
+              "WhenOpened": "2024-03-22T11:13:05.31Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DangKy.Designer.cs",
-              "DocumentMoniker": "G:\\Xung-Chan\\C#\\project-cnpm-csharp\\QuanLyPhongKham\\DangKy.Designer.cs",
-              "RelativeDocumentMoniker": "DangKy.Designer.cs",
-              "ToolTip": "G:\\Xung-Chan\\C#\\project-cnpm-csharp\\QuanLyPhongKham\\DangKy.Designer.cs",
-              "RelativeToolTip": "DangKy.Designer.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAewEUAAACiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T11:36:45.945Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DangKy.cs",
-              "DocumentMoniker": "G:\\Xung-Chan\\C#\\project-cnpm-csharp\\QuanLyPhongKham\\DangKy.cs",
+              "DocumentIndex": 2,
+              "Title": "DangKy.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DangKy.cs",
               "RelativeDocumentMoniker": "DangKy.cs",
-              "ToolTip": "G:\\Xung-Chan\\C#\\project-cnpm-csharp\\QuanLyPhongKham\\DangKy.cs",
-              "RelativeToolTip": "DangKy.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAIAwwBAAAAAfAAAA",
+              "ToolTip": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DangKy.cs [Design]",
+              "RelativeToolTip": "DangKy.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T11:29:27.676Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T11:12:59.613Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
