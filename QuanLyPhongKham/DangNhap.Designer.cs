@@ -86,7 +86,6 @@ namespace QuanLyPhongKham
             this.lblHeader.Size = new System.Drawing.Size(193, 39);
             this.lblHeader.TabIndex = 9;
             this.lblHeader.Text = "Đăng nhập";
-            this.lblHeader.Click += new System.EventHandler(this.label2_Click);
             // 
             // pnlContainer
             // 
@@ -196,7 +195,6 @@ namespace QuanLyPhongKham
             this.tbxUsername.Name = "tbxUsername";
             this.tbxUsername.Size = new System.Drawing.Size(325, 37);
             this.tbxUsername.TabIndex = 10;
-            this.tbxUsername.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // DangNhap
             // 
