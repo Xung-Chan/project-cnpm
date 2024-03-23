@@ -43,3 +43,16 @@ C:\Users\Administrator\Downloads\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\Q
 C:\Users\Administrator\Downloads\project-cnpm-csharp\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.pdb
 C:\Users\Administrator\Downloads\project-cnpm-csharp\QuanLyPhongKham\bin\Debug\DatabaseQuanLyPhongKham.mdf
 C:\Users\Administrator\Downloads\project-cnpm-csharp\QuanLyPhongKham\bin\Debug\DatabaseQuanLyPhongKham_log.ldf
+D:\duytruong\C#\Project\Đồ án\QuanLyPhongKham\bin\Debug\DatabaseQuanLyPhongKham.mdf
+D:\duytruong\C#\Project\Đồ án\QuanLyPhongKham\bin\Debug\DatabaseQuanLyPhongKham_log.ldf
+D:\duytruong\C#\Project\Đồ án\QuanLyPhongKham\bin\Debug\QuanLyPhongKham.exe.config
+D:\duytruong\C#\Project\Đồ án\QuanLyPhongKham\bin\Debug\QuanLyPhongKham.exe
+D:\duytruong\C#\Project\Đồ án\QuanLyPhongKham\bin\Debug\QuanLyPhongKham.pdb
+D:\duytruong\C#\Project\Đồ án\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.AssemblyReference.cache
+D:\duytruong\C#\Project\Đồ án\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.DangKy.resources
+D:\duytruong\C#\Project\Đồ án\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.DangNhap.resources
+D:\duytruong\C#\Project\Đồ án\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.Properties.Resources.resources
+D:\duytruong\C#\Project\Đồ án\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.GenerateResource.cache
+D:\duytruong\C#\Project\Đồ án\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.CoreCompileInputs.cache
+D:\duytruong\C#\Project\Đồ án\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.exe
+D:\duytruong\C#\Project\Đồ án\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.pdb
