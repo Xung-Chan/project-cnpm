@@ -7,16 +7,8 @@
       "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:databasequanlyphongkhamdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|c:\\users\\administrator\\downloads\\project-cnpm\\quanlyphongkham\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|c:\\users\\administrator\\downloads\\project-cnpm\\quanlyphongkham\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|c:\\users\\administrator\\downloads\\project-cnpm\\quanlyphongkham\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -29,14 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\dangky.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:dangky.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,62 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DatabaseQuanLyPhongKhamDataSet.xsd",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DatabaseQuanLyPhongKhamDataSet.xsd",
-              "RelativeDocumentMoniker": "DatabaseQuanLyPhongKhamDataSet.xsd",
-              "ToolTip": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DatabaseQuanLyPhongKhamDataSet.xsd",
-              "RelativeToolTip": "DatabaseQuanLyPhongKhamDataSet.xsd",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
-              "WhenOpened": "2024-03-24T08:28:44.055Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "test.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\test.cs",
-              "RelativeDocumentMoniker": "test.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\test.cs*",
-              "RelativeToolTip": "test.cs*",
-              "ViewState": "AQIAAAcAAAAAAAAAAADgvwoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T07:59:46.539Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "test.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\test.cs",
-              "RelativeDocumentMoniker": "test.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\test.cs [Design]*",
-              "RelativeToolTip": "test.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T07:44:03.763Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DangNhap.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DangNhap.cs",
-              "RelativeDocumentMoniker": "DangNhap.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DangNhap.cs",
-              "RelativeToolTip": "DangNhap.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAA5wCsAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T11:30:31.031Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -116,33 +46,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DangKy.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DangKy.Designer.cs",
-              "RelativeDocumentMoniker": "DangKy.Designer.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DangKy.Designer.cs",
-              "RelativeToolTip": "DangKy.Designer.cs",
-              "ViewState": "AQIAAKwBAAAAAAAAAAAAALsBAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T12:35:34.348Z",
+              "DocumentIndex": 0,
+              "Title": "DatabaseQuanLyPhongKhamDataSet.xsd",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DatabaseQuanLyPhongKhamDataSet.xsd",
+              "RelativeDocumentMoniker": "DatabaseQuanLyPhongKhamDataSet.xsd",
+              "ToolTip": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DatabaseQuanLyPhongKhamDataSet.xsd*",
+              "RelativeToolTip": "DatabaseQuanLyPhongKhamDataSet.xsd*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2024-03-24T12:38:38.29Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "DangKy.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DangKy.cs",
               "RelativeDocumentMoniker": "DangKy.cs",
               "ToolTip": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DangKy.cs",
               "RelativeToolTip": "DangKy.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-22T12:35:32.32Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "DangNhap.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DangNhap.Designer.cs",
               "RelativeDocumentMoniker": "DangNhap.Designer.cs",
@@ -155,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "DangNhap.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DangNhap.cs",
               "RelativeDocumentMoniker": "DangNhap.cs",
@@ -167,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "DangKy.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Administrator\\Downloads\\project-cnpm\\QuanLyPhongKham\\DangKy.cs",
               "RelativeDocumentMoniker": "DangKy.cs",
