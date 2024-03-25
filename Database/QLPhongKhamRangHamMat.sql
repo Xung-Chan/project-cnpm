@@ -1,11 +1,15 @@
-Drop data base QuanLyPhongKham;
+--Drop database QuanLyPhongKham;
+go
+    create database QuanLyPhongKham;
 
-create database QuanLyPhongKham;
+go
+    use QuanLyPhongKham;
 
-CREATE TABLE CHUYEN_KHOA (
-    MaChuyenKhoa char(10) primary key,
-    TenChuyenKhoa char(50),
-);
+go
+    CREATE TABLE CHUYEN_KHOA (
+        MaChuyenKhoa char(10) primary key,
+        TenChuyenKhoa char(50),
+    );
 
 CREATE TABLE TAI_KHOAN(
     Username char(10) primary key,
@@ -69,6 +73,7 @@ CREATE TABLE THUOC(
     MaThuoc char(10) primary key,
     TenThuoc char(50),
     TonKho int,
+    DonGia float,
     NgayNhap date
 );
 
@@ -81,8 +86,9 @@ CREATE TABLE DON_THUOC (
     PRIMARY KEY (MaLichHen, MaThuoc)
 );
 
-CREATE procedure insert_thuoc @ tenThuoc char(50),
-@ soLuong int as begin declare @ count int;
+go
+    CREATE procedure insert_thuoc @tenThuoc char(50),
+    @soLuong int as begin declare @count int;
 
 if (
     select
@@ -91,13 +97,13 @@ if (
         THUOC
 ) = 0 begin
 set
-    @ count = 1;
+    @count = 1;
 
 end;
 
 else begin
 set
-    @ count = cast(
+    @count = cast(
         trim(
             (
                 select
@@ -112,23 +118,24 @@ set
 
 end;
 
-declare @ maThuoc char(10);
+declare @maThuoc char(10);
 
 set
-    @ maThuoc = cast(@ count as char(10));
+    @maThuoc = cast(@ count as char(10));
 
 insert into
     THUOC
 values
-    (@ maThuoc, @ tenThuoc, @ soLuong);
+    (@maThuoc, @ tenThuoc, @ soLuong);
 
 end;
 
-CREATE procedure insert_lichHen @maBS char(10),
-@maBN char(10),
-@thoiGian datetime,
-@trangThai char(50),
-@ketQuaXetNghiem char(256) as begin declare @ count int;
+go
+    CREATE procedure insert_lichHen @maBS char(10),
+    @maBN char(10),
+    @thoiGian datetime,
+    @trangThai char(50),
+    @ketQuaXetNghiem char(256) as begin declare @ count int;
 
 if (
     select

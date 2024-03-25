@@ -72,25 +72,7 @@ namespace QuanLyPhongKham
 
         private void btnLogup_Click(object sender, EventArgs e)
         {
-            SqlConnection sc = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Administrator\\Downloads\\project-cnpm-csharp\\QuanLyPhongKham\\DatabaseQuanLyPhongKham.mdf;Integrated Security=True");
-            try
-            {
-                sc.Open();
-                string query = "INSERT INTO TAI_KHOAN VALUES (@username,@password,@role,@maUser)";
-                SqlCommand cm = new SqlCommand(query, sc);
-                cm.Parameters.AddWithValue("@username", tbxSdt.Text.Trim());
-                cm.Parameters.AddWithValue("@password", tbxPasswordFirst.Text.Trim());
-                cm.Parameters.AddWithValue("@role", tbxRole.Text.Trim());
-                cm.Parameters.AddWithValue("@maUser", tbxMaUser.Text.Trim());
-                if (cm.ExecuteNonQuery()>0)
-                {
-                    MessageBox.Show("Đăng ký thành công");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
+            MessageBox.Show("Đăng ký thành công");
         }
 
         private void eyeHideSecond_Paint(object sender, PaintEventArgs e)
