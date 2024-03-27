@@ -75,7 +75,6 @@ namespace QuanLyPhongKham
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(548, 366);
             this.pnlContainer.TabIndex = 0;
-            this.pnlContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // eyeShowSecond
             // 
@@ -90,7 +89,6 @@ namespace QuanLyPhongKham
             this.eyeShowSecond.TabIndex = 0;
             this.eyeShowSecond.Visible = false;
             this.eyeShowSecond.Click += new System.EventHandler(this.eyeShowSecond_Click);
-            this.eyeShowSecond.Paint += new System.Windows.Forms.PaintEventHandler(this.eyeShowSecond_Paint);
             // 
             // eyeHideSecond
             // 
@@ -103,7 +101,6 @@ namespace QuanLyPhongKham
             this.eyeHideSecond.Size = new System.Drawing.Size(30, 32);
             this.eyeHideSecond.TabIndex = 2;
             this.eyeHideSecond.Click += new System.EventHandler(this.eyeHideSecond_Click);
-            this.eyeHideSecond.Paint += new System.Windows.Forms.PaintEventHandler(this.eyeHideSecond_Paint);
             // 
             // tbxPasswordSecond
             // 
@@ -117,7 +114,6 @@ namespace QuanLyPhongKham
             this.tbxPasswordSecond.PasswordChar = '*';
             this.tbxPasswordSecond.Size = new System.Drawing.Size(304, 37);
             this.tbxPasswordSecond.TabIndex = 4;
-            this.tbxPasswordSecond.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // tbxMaUser
             // 
@@ -144,7 +140,6 @@ namespace QuanLyPhongKham
             this.eyeShowFirst.TabIndex = 5;
             this.eyeShowFirst.Visible = false;
             this.eyeShowFirst.Click += new System.EventHandler(this.eyeShowFirst_Click);
-            this.eyeShowFirst.Paint += new System.Windows.Forms.PaintEventHandler(this.eyeShowFirst_Paint);
             // 
             // eyeHideFirst
             // 
@@ -157,7 +152,6 @@ namespace QuanLyPhongKham
             this.eyeHideFirst.Size = new System.Drawing.Size(30, 32);
             this.eyeHideFirst.TabIndex = 2;
             this.eyeHideFirst.Click += new System.EventHandler(this.eyeHideFirst_Click);
-            this.eyeHideFirst.Paint += new System.Windows.Forms.PaintEventHandler(this.eyeHide_Paint);
             // 
             // tbxRole
             // 
@@ -170,7 +164,6 @@ namespace QuanLyPhongKham
             this.tbxRole.Name = "tbxRole";
             this.tbxRole.Size = new System.Drawing.Size(304, 37);
             this.tbxRole.TabIndex = 2;
-            this.tbxRole.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // lblHeader
             // 
@@ -196,7 +189,6 @@ namespace QuanLyPhongKham
             this.tbxPasswordFirst.PasswordChar = '*';
             this.tbxPasswordFirst.Size = new System.Drawing.Size(304, 37);
             this.tbxPasswordFirst.TabIndex = 3;
-            this.tbxPasswordFirst.TextChanged += new System.EventHandler(this.tbxPasswordFirst_TextChanged);
             // 
             // lblPhoneNumber
             // 
@@ -209,7 +201,6 @@ namespace QuanLyPhongKham
             this.lblPhoneNumber.Size = new System.Drawing.Size(154, 29);
             this.lblPhoneNumber.TabIndex = 1;
             this.lblPhoneNumber.Text = "Số điện thoại";
-            this.lblPhoneNumber.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblID
             // 
@@ -222,7 +213,6 @@ namespace QuanLyPhongKham
             this.lblID.Size = new System.Drawing.Size(154, 29);
             this.lblID.TabIndex = 3;
             this.lblID.Text = "Mã nhân viên";
-            this.lblID.Click += new System.EventHandler(this.label6_Click);
             // 
             // tbxSdt
             // 
@@ -235,7 +225,6 @@ namespace QuanLyPhongKham
             this.tbxSdt.Name = "tbxSdt";
             this.tbxSdt.Size = new System.Drawing.Size(304, 37);
             this.tbxSdt.TabIndex = 0;
-            this.tbxSdt.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lblPosition
             // 
@@ -248,7 +237,6 @@ namespace QuanLyPhongKham
             this.lblPosition.Size = new System.Drawing.Size(98, 29);
             this.lblPosition.TabIndex = 3;
             this.lblPosition.Text = "Chức vụ";
-            this.lblPosition.Click += new System.EventHandler(this.label5_Click);
             // 
             // lblPassword
             // 
@@ -261,7 +249,6 @@ namespace QuanLyPhongKham
             this.lblPassword.Size = new System.Drawing.Size(109, 29);
             this.lblPassword.TabIndex = 2;
             this.lblPassword.Text = "Mật khẩu";
-            this.lblPassword.Click += new System.EventHandler(this.label3_Click);
             // 
             // lblPasswordSeccond
             // 
@@ -274,7 +261,6 @@ namespace QuanLyPhongKham
             this.lblPasswordSeccond.Size = new System.Drawing.Size(204, 29);
             this.lblPasswordSeccond.TabIndex = 3;
             this.lblPasswordSeccond.Text = "Nhập lại mật khẩu";
-            this.lblPasswordSeccond.Click += new System.EventHandler(this.label4_Click);
             // 
             // btnLogup
             // 

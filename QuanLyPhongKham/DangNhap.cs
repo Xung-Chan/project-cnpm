@@ -63,6 +63,7 @@ namespace QuanLyPhongKham
                 MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác");
 
             }
+            tbxPassword.Text = "";
         }
         private Boolean checkLogin(string username, string password) {
             string query = "select count(*) from dbo.TAI_KHOAN where Username = '" + username + "' and Password = '" + password+"'";

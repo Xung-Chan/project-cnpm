@@ -69,3 +69,17 @@ C:\Users\Administrator\Downloads\project-cnpm\QuanLyPhongKham\obj\Debug\QuanLyPh
 C:\Users\Administrator\Downloads\project-cnpm\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Downloads\project-cnpm\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.exe
 C:\Users\Administrator\Downloads\project-cnpm\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.pdb
+C:\Users\admin\Downloads\project-cnpm\QuanLyPhongKham\bin\Debug\DBQuanLyPhongKham.mdf
+C:\Users\admin\Downloads\project-cnpm\QuanLyPhongKham\bin\Debug\DBQuanLyPhongKham_log.ldf
+C:\Users\admin\Downloads\project-cnpm\QuanLyPhongKham\bin\Debug\QuanLyPhongKham.exe.config
+C:\Users\admin\Downloads\project-cnpm\QuanLyPhongKham\bin\Debug\QuanLyPhongKham.exe
+C:\Users\admin\Downloads\project-cnpm\QuanLyPhongKham\bin\Debug\QuanLyPhongKham.pdb
+C:\Users\admin\Downloads\project-cnpm\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.AssemblyReference.cache
+C:\Users\admin\Downloads\project-cnpm\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.SuggestedBindingRedirects.cache
+C:\Users\admin\Downloads\project-cnpm\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.DangKy.resources
+C:\Users\admin\Downloads\project-cnpm\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.DangNhap.resources
+C:\Users\admin\Downloads\project-cnpm\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.Properties.Resources.resources
+C:\Users\admin\Downloads\project-cnpm\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.GenerateResource.cache
+C:\Users\admin\Downloads\project-cnpm\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.CoreCompileInputs.cache
+C:\Users\admin\Downloads\project-cnpm\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.exe
+C:\Users\admin\Downloads\project-cnpm\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.pdb
