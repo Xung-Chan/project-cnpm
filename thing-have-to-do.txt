@@ -1,0 +1,2 @@
+-thêm trường email -> informationUser -> sữa usecase, database, đặc tả 
+-bỏ form đăng ký -> thay bằng đổi mật khẩu

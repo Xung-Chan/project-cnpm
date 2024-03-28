@@ -22,8 +22,7 @@ namespace QuanLyPhongKham
         {
 
         }
-
-
+        #region event
 
         private void eyeShowFirst_Click(object sender, EventArgs e)
         {
@@ -54,9 +53,16 @@ namespace QuanLyPhongKham
 
         private void btnLogup_Click(object sender, EventArgs e)
         {   
-            if()
+            //if()
             MessageBox.Show("Đăng ký thành công");
         }
+        #endregion
+
+        #region method
+
+
+        #endregion
+
 
     }
 }

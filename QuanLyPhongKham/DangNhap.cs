@@ -1,4 +1,4 @@
-﻿using QuanLyPhongKham.DAL;
+﻿using QuanLyPhongKham.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,23 +19,17 @@ namespace QuanLyPhongKham
             InitializeComponent();
         }
 
+
+
+        #region Event
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
-
-
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             DangKy dk = new DangKy();
             dk.Show();
-        }
-
-
-        private void textBox1_TextChanged_1(object sender, EventArgs e)
-        {
-
         }
 
         private void cbkShowPassword_CheckedChanged(object sender, EventArgs e)
@@ -65,11 +59,14 @@ namespace QuanLyPhongKham
             }
             tbxPassword.Text = "";
         }
+        #endregion
+
+
+        #region method
         private Boolean checkLogin(string username, string password) {
-            string query = "select count(*) from dbo.TAI_KHOAN where Username = '" + username + "' and Password = '" + password+"'";
-            if ((int)DataProvier.getInstance().ExecuteScalar(query) == 1)
-                return true;
-            return false;
+            return AccountDAO.Instance.checkLogin(username, password);
         }
+
+        #endregion
     }
 }
