@@ -1,4 +1,4 @@
-create database QuanLyPhongKham
+﻿create database QuanLyPhongKham
 go
     use QuanLyPhongKham
 go
@@ -128,4 +128,20 @@ create proc sp_insertBranch @name nchar(50), @address nchar(256), @phoneNumber c
 as
 insert into Branch(branchName,branchAddress,phoneNumber) values (@name,@address,@phoneNumber)
 go
-exec sp_insertBranch N''
+create proc sp_insertEmployee @positionID int, @branchID int, @name nchar(50), @birthday date, @sex int ,
+	@phoneNumber char(10), @address nchar(256), @password char(20), @email char(100)
+	as 
+		insert into Employee(positionID,branchID,employeeName, birthday, sex, phoneNumber, employeeAddress, accountPassword, email)
+			values(@positionID, @branchID,@name, @birthday, @sex,@phoneNumber, @address, @password, @email)
+go
+create proc sp_insertSpecialty @name nchar(50)
+	as insert into Specialty(specialtyName) values (@name)
+go
+create proc sp_insertDentist @branchID int, @name nchar(50), @birthday date, @sex int ,
+	@phoneNumber char(10), @address nchar(256), @password char(20), @email char(100), @specialtyID int
+		as
+		declare @positionID int = (select ID from Position where positionName = N'Bác sĩ');
+		exec sp_insertEmployee @positionID,@branchID, @name, @birthday, @sex, @phoneNumber, @address, @password, @email;
+		declare @ID int = (select top(1) ID from Employee order by ID desc);
+		insert into Detist(ID, specialtyID) values (@ID, @specialtyID);
+go
