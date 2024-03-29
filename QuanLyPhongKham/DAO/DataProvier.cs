@@ -11,7 +11,7 @@ namespace QuanLyPhongKham.DAO
 {
     public class DataProvier
     {
-        private string db = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\DBQuanLyPhongKham.mdf;Integrated Security=True";
+        private string db = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Database.mdf;Integrated Security=True";
         private static DataProvier instance;
 
         public static DataProvier Instance

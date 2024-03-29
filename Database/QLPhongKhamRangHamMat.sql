@@ -4,37 +4,38 @@ go
 go
     create table Position(
         ID int identity,
-        positionName nchar(50),
+        positionName nchar(50) not null,
         primary key (ID)
     )
 go
     create table Specialty (
         ID int identity,
-        specialtyName nchar(50),
+        specialtyName nchar(50) not null,
         primary key (ID)
     )
 go
     create table Branch(
         ID int identity,
-        branchName nchar(50),
-        branchAddress nchar(256),
-        phoneNumber char(10),
+        branchName nchar(50) not null,
+        branchAddress nchar(256) not null,
+        phoneNumber char(10) not null,
         primary key (ID)
     )
 go
     create table Employee(
         ID int identity,
-        positionID int,
-        branchID int,
-        employeeName nchar(50),
-        birthday date,
+        positionID int not null,
+        branchID int not null,
+        employeeName nchar(50) not null,
+        birthday date not null,
         sex int check(
             sex = 0
             or sex = 1
-        ),
-        phoneNumber char(10),
-        employeeAddress nchar(256),
-        accountPassword char(20),
+        ) not null,
+        phoneNumber char(10) not null,
+        employeeAddress nchar(256) not null,
+        accountPassword char(20) default '1',
+        email char(100) not null,
         primary key (ID),
         foreign key (positionID) references Position(ID),
         foreign key (branchID) references Branch(ID)
@@ -42,7 +43,7 @@ go
 go
     create table Detist(
         ID int,
-        specialtyID int,
+        specialtyID int not null,
         foreign key (specialtyID) references Specialty(ID),
         foreign key (ID) references Employee(ID),
         primary key (ID)
@@ -50,26 +51,26 @@ go
 go
     create table Patient(
         ID int identity,
-        branchID int,
-        patientName nchar(50),
-        birthday date,
+        branchID int not null,
+        patientName nchar(50) not null,
+        birthday date not null,
         sex int check(
             sex = 0
             or sex = 1
-        ),
-        phoneNumber char(10),
-        patientAddress nchar(256),
+        ) not null,
+        phoneNumber char(10) not null,
+        patientAddress nchar(256) not null,
         primary key (ID),
         foreign key (branchID) references Branch(ID)
     )
 go
     create table Schedule(
         ID int identity,
-        patentID int,
-        detistID int,
-        meetTime datetime,
-        status nchar(50),
-        exportDate date,
+        patentID int not null,
+        detistID int not null,
+        meetTime datetime not null,
+        status nchar(50) not null,
+        exportDate date not null,
         primary key (ID),
         foreign key (patentID) references Patient(ID),
         foreign key (detistID) references Detist(ID)
@@ -77,28 +78,28 @@ go
 go
     create table ServiceLevel1(
         ID int identity,
-        level1Name nchar(50),
+        level1Name nchar(50) not null,
         primary key (ID)
     )
 go
     create table ServiceLevel2(
         ID int identity,
-        level1ID int,
-        level1Name nchar(50),
+        level2Name nchar(50) not null,
+        level1ID int not null,
         primary key (ID),
         foreign key (level1ID) references ServiceLevel1(ID)
     )
 go
     create table Service(
         ID int identity,
-        serviceName nchar(50),
-        price float,
+        serviceName nchar(50) not null,
+        price float not null,
         primary key(ID)
     )
 go
     create table ServiceLevel3(
         ID int,
-        level2ID int,
+        level2ID int not null,
         foreign key (level2ID) references ServiceLevel2(ID),
         foreign key (ID) references Service(ID),
         primary key(ID),
@@ -106,7 +107,7 @@ go
 go
     create table Medicine(
         ID int,
-        available int,
+        available int not null,
         foreign key (ID) references Service(ID),
         primary key(ID),
     )
@@ -114,9 +115,17 @@ go
     create table BillInfor(
         serviceID int,
         scheduleID int,
-        quantity int,
+        quantity int not null,
         foreign key (serviceID) references Service(ID),
         foreign key (scheduleID) references Schedule(ID),
         primary key(serviceID, scheduleID)
     )
 go
+create proc sp_insertPosition @name nchar(50) 
+as insert into Position(positionName) values(@name)
+go
+create proc sp_insertBranch @name nchar(50), @address nchar(256), @phoneNumber char(10)
+as
+insert into Branch(branchName,branchAddress,phoneNumber) values (@name,@address,@phoneNumber)
+go
+exec sp_insertBranch N''
