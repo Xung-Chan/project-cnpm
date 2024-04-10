@@ -145,3 +145,36 @@ create proc sp_insertDentist @branchID int, @name nchar(50), @birthday date, @se
 		declare @ID int = (select top(1) ID from Employee order by ID desc);
 		insert into Detist(ID, specialtyID) values (@ID, @specialtyID);
 go
+create proc sp_insertPatient @branchID int, @name nchar(50), @birth date, @sex int, @phoneNumber char(10), @address nchar(256)
+	as
+	insert into Patient(branchID,patientName,birthday,sex, phoneNumber, patientAddress) values(@branchID,@name,@birth,@sex, @phoneNumber, @address)
+go
+create proc sp_insertSchedule @patientID int, @detistID int, @time datetime, @status nchar(50), @exportDate date
+	as 
+	insert into Schedule(patentID,detistID, meetTime, status, exportDate) 
+		values (@patientID, @detistID, @time, @status, @exportDate)
+go
+create proc sp_insertServiceLevel1 @name nchar(50)
+	as
+	insert into ServiceLevel1(level1Name) values(@name)
+go
+create proc sp_insertServiceLevel2 @name nchar(50), @level1ID int
+	as
+	insert into ServiceLevel2(level2Name,level1ID) values(@name, @level1ID)
+go
+create proc sp_insertServiceLevel3 @name nchar(50), @price float, @level2ID int
+	as 
+		insert into Service(serviceName, price) values(@name, @price);
+		declare @ID int = (select top(1) ID from Service order by ID desc);
+		insert into ServiceLevel3(ID,level2ID) values(@ID,@level2ID)
+go
+create proc sp_insertMedicine @name nchar(50), @price float, @available int
+	as 
+		insert into Service(serviceName, price) values(@name, @price);
+		declare @ID int = (select top(1) ID from Service order by ID desc);
+		insert into Medicine(ID,available) values(@ID,@available)
+go
+create proc sp_insertBillInfor @serviceID int, @scheduleID int, @quantity int
+	as
+		insert into BillInfor(serviceID, scheduleID, quantity) values (@serviceID, @scheduleID, @quantity)
+go
