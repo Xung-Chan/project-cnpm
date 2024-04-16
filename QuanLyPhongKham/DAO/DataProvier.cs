@@ -11,8 +11,9 @@ namespace QuanLyPhongKham.DAO
 {
     public class DataProvier
     {
-        //private string db = System.Configuration.ConfigurationManager.ConnectionStrings["DBQuanLyPhongKhamConnectionString"].ConnectionString;
-        private string db = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\DBQuanLyPhongKham.mdf;Integrated Security=True";
+
+        //private string db = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\DBQuanLyPhongKham.mdf;Integrated Security=True";
+        private string db = System.Configuration.ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
         private static DataProvier instance;
 
         public static DataProvier Instance
@@ -52,11 +53,12 @@ namespace QuanLyPhongKham.DAO
             }
             return data;
         }
-        public int ExecuteScalar(string query, string[] paramater = null)
+        public object ExecuteScalar(string query, string[] paramater = null)
         {
-            int data = 0;
+            object data = 0;
             using (SqlConnection connection = new SqlConnection(db))
             {
+                
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
                 if (paramater != null)
@@ -71,7 +73,7 @@ namespace QuanLyPhongKham.DAO
                         }
                     }
                 }
-                data = (int)command.ExecuteScalar();
+                data = command.ExecuteScalar();
                 connection.Close();
             }
             return data;

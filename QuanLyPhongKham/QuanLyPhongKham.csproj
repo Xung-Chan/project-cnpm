@@ -49,7 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -64,12 +64,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\EmployeeBLL.cs" />
     <Compile Include="DAO\DataProvier.cs" />
     <Compile Include="DAO\EmployeeDAO.cs" />
-    <Compile Include="DBQuanLyPhongKhamDataSet.Designer.cs">
+    <Compile Include="DatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DBQuanLyPhongKhamDataSet.xsd</DependentUpon>
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Bacsi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Bacsi.Designer.cs">
+      <DependentUpon>Bacsi.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\DangKy.cs">
       <SubType>Form</SubType>
@@ -83,13 +90,61 @@
     <Compile Include="GUI\DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\donthuoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\donthuoc.Designer.cs">
+      <DependentUpon>donthuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DVdk.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\DVdk.Designer.cs">
+      <DependentUpon>DVdk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\kls.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\kls.Designer.cs">
+      <DependentUpon>kls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Lichkham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Lichkham.Designer.cs">
+      <DependentUpon>Lichkham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Thembenhnhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Thembenhnhan.Designer.cs">
+      <DependentUpon>Thembenhnhan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\Bacsi.resx">
+      <DependentUpon>Bacsi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\DangKy.resx">
       <DependentUpon>DangKy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\donthuoc.resx">
+      <DependentUpon>donthuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DVdk.resx">
+      <DependentUpon>DVdk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\kls.resx">
+      <DependentUpon>kls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Lichkham.resx">
+      <DependentUpon>Lichkham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Thembenhnhan.resx">
+      <DependentUpon>Thembenhnhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -101,16 +156,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="DBQuanLyPhongKhamDataSet.xsc">
-      <DependentUpon>DBQuanLyPhongKhamDataSet.xsd</DependentUpon>
+    <None Include="DatabaseDataSet.xsc">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </None>
-    <None Include="DBQuanLyPhongKhamDataSet.xsd">
+    <None Include="DatabaseDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DBQuanLyPhongKhamDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>DatabaseDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DBQuanLyPhongKhamDataSet.xss">
-      <DependentUpon>DBQuanLyPhongKhamDataSet.xsd</DependentUpon>
+    <None Include="DatabaseDataSet.xss">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -147,12 +202,15 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DBQuanLyPhongKham.mdf">
+    <None Include="Resources\N9-NiceNight %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="DBQuanLyPhongKham_log.ldf">
+    <Content Include="Database_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>DBQuanLyPhongKham.mdf</DependentUpon>
+      <DependentUpon>Database.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup />

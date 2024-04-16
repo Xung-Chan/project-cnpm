@@ -31,17 +31,22 @@ namespace QuanLyPhongKham.GUI
         {
             System.Windows.Forms.Label lblDontHaveAccount;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DangNhap));
-            this.btnDangNhap = new System.Windows.Forms.Button();
-            this.lblHeader = new System.Windows.Forms.Label();
-            this.pnlContainer = new System.Windows.Forms.Panel();
-            this.lblPassword = new System.Windows.Forms.Label();
-            this.lblUsername = new System.Windows.Forms.Label();
-            this.lblCreateAccount = new System.Windows.Forms.LinkLabel();
-            this.cbkShowPassword = new System.Windows.Forms.CheckBox();
-            this.lblForgetPassword = new System.Windows.Forms.LinkLabel();
-            this.tbxPassword = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dbQuanLyPhongKhamDataSet1 = new QuanLyPhongKham.DatabaseDataSet();
+            this.dbQuanLyPhongKhamDataSet2 = new QuanLyPhongKham.DatabaseDataSet();
             this.tbxPhoneNumber = new System.Windows.Forms.TextBox();
+            this.tbxPassword = new System.Windows.Forms.TextBox();
+            this.btnDangNhap = new System.Windows.Forms.Button();
+            this.lblForgetPassword = new System.Windows.Forms.LinkLabel();
+            this.cbkShowPassword = new System.Windows.Forms.CheckBox();
+            this.lblCreateAccount = new System.Windows.Forms.LinkLabel();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pnlContainer = new System.Windows.Forms.Panel();
             lblDontHaveAccount = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dbQuanLyPhongKhamDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbQuanLyPhongKhamDataSet2)).BeginInit();
             this.pnlContainer.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,101 +55,108 @@ namespace QuanLyPhongKham.GUI
             lblDontHaveAccount.AutoSize = true;
             lblDontHaveAccount.BackColor = System.Drawing.Color.Transparent;
             lblDontHaveAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            lblDontHaveAccount.Location = new System.Drawing.Point(115, 422);
+            lblDontHaveAccount.ForeColor = System.Drawing.Color.White;
+            lblDontHaveAccount.Location = new System.Drawing.Point(818, 293);
             lblDontHaveAccount.Name = "lblDontHaveAccount";
             lblDontHaveAccount.Size = new System.Drawing.Size(184, 20);
             lblDontHaveAccount.TabIndex = 15;
             lblDontHaveAccount.Text = "Bạn chưa có tài khoản?";
+            lblDontHaveAccount.Click += new System.EventHandler(this.lblDontHaveAccount_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.AutoSize = true;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1.Location = new System.Drawing.Point(566, 37);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(308, 85);
+            this.panel1.TabIndex = 11;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // dbQuanLyPhongKhamDataSet1
+            // 
+            this.dbQuanLyPhongKhamDataSet1.DataSetName = "DatabaseDataSet";
+            this.dbQuanLyPhongKhamDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dbQuanLyPhongKhamDataSet2
+            // 
+            this.dbQuanLyPhongKhamDataSet2.DataSetName = "DatabaseDataSet";
+            this.dbQuanLyPhongKhamDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tbxPhoneNumber
+            // 
+            this.tbxPhoneNumber.BackColor = System.Drawing.Color.LightCyan;
+            this.tbxPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbxPhoneNumber.Font = new System.Drawing.Font("Calibri Light", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.tbxPhoneNumber.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tbxPhoneNumber.Location = new System.Drawing.Point(820, 88);
+            this.tbxPhoneNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxPhoneNumber.Multiline = true;
+            this.tbxPhoneNumber.Name = "tbxPhoneNumber";
+            this.tbxPhoneNumber.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.tbxPhoneNumber.Size = new System.Drawing.Size(397, 55);
+            this.tbxPhoneNumber.TabIndex = 10;
+            this.tbxPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tbxPhoneNumber.TextChanged += new System.EventHandler(this.tbxPhoneNumber_TextChanged);
+            // 
+            // tbxPassword
+            // 
+            this.tbxPassword.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.tbxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxPassword.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.tbxPassword.Location = new System.Drawing.Point(820, 182);
+            this.tbxPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxPassword.Multiline = true;
+            this.tbxPassword.Name = "tbxPassword";
+            this.tbxPassword.PasswordChar = '*';
+            this.tbxPassword.ShortcutsEnabled = false;
+            this.tbxPassword.Size = new System.Drawing.Size(397, 53);
+            this.tbxPassword.TabIndex = 11;
+            this.tbxPassword.TextChanged += new System.EventHandler(this.tbxPassword_TextChanged);
+            this.tbxPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxPassword_Enter);
             // 
             // btnDangNhap
             // 
-            this.btnDangNhap.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnDangNhap.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnDangNhap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnDangNhap.Cursor = System.Windows.Forms.Cursors.SizeNESW;
+            this.btnDangNhap.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDangNhap.Font = new System.Drawing.Font("Microsoft YaHei UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangNhap.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangNhap.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDangNhap.Location = new System.Drawing.Point(119, 347);
+            this.btnDangNhap.Location = new System.Drawing.Point(892, 328);
             this.btnDangNhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(429, 57);
+            this.btnDangNhap.Size = new System.Drawing.Size(265, 59);
             this.btnDangNhap.TabIndex = 12;
             this.btnDangNhap.Text = "Đăng nhập";
             this.btnDangNhap.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnDangNhap.UseVisualStyleBackColor = false;
             this.btnDangNhap.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // lblHeader
+            // lblForgetPassword
             // 
-            this.lblHeader.AutoSize = true;
-            this.lblHeader.BackColor = System.Drawing.Color.Transparent;
-            this.lblHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblHeader.Location = new System.Drawing.Point(201, 46);
-            this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(241, 51);
-            this.lblHeader.TabIndex = 9;
-            this.lblHeader.Text = "Đăng nhập";
-            // 
-            // pnlContainer
-            // 
-            this.pnlContainer.BackColor = System.Drawing.Color.Transparent;
-            this.pnlContainer.Controls.Add(this.lblPassword);
-            this.pnlContainer.Controls.Add(this.lblUsername);
-            this.pnlContainer.Controls.Add(this.lblCreateAccount);
-            this.pnlContainer.Controls.Add(lblDontHaveAccount);
-            this.pnlContainer.Controls.Add(this.cbkShowPassword);
-            this.pnlContainer.Controls.Add(this.lblForgetPassword);
-            this.pnlContainer.Controls.Add(this.btnDangNhap);
-            this.pnlContainer.Controls.Add(this.tbxPassword);
-            this.pnlContainer.Controls.Add(this.tbxPhoneNumber);
-            this.pnlContainer.Controls.Add(this.lblHeader);
-            this.pnlContainer.Location = new System.Drawing.Point(740, 169);
-            this.pnlContainer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(577, 494);
-            this.pnlContainer.TabIndex = 10;
-            // 
-            // lblPassword
-            // 
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblPassword.Location = new System.Drawing.Point(13, 247);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(93, 25);
-            this.lblPassword.TabIndex = 18;
-            this.lblPassword.Text = "Mật khẩu";
-            // 
-            // lblUsername
-            // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblUsername.Location = new System.Drawing.Point(3, 150);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(126, 25);
-            this.lblUsername.TabIndex = 17;
-            this.lblUsername.Text = "Số điện thoại";
-            // 
-            // lblCreateAccount
-            // 
-            this.lblCreateAccount.AutoSize = true;
-            this.lblCreateAccount.BackColor = System.Drawing.Color.Transparent;
-            this.lblCreateAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblCreateAccount.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.lblCreateAccount.LinkColor = System.Drawing.Color.Black;
-            this.lblCreateAccount.Location = new System.Drawing.Point(325, 423);
-            this.lblCreateAccount.Name = "lblCreateAccount";
-            this.lblCreateAccount.Size = new System.Drawing.Size(103, 18);
-            this.lblCreateAccount.TabIndex = 16;
-            this.lblCreateAccount.TabStop = true;
-            this.lblCreateAccount.Text = "Tạo Tài khoản";
-            this.lblCreateAccount.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.lblForgetPassword.AutoSize = true;
+            this.lblForgetPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lblForgetPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblForgetPassword.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.lblForgetPassword.LinkColor = System.Drawing.Color.Transparent;
+            this.lblForgetPassword.Location = new System.Drawing.Point(1092, 402);
+            this.lblForgetPassword.Name = "lblForgetPassword";
+            this.lblForgetPassword.Size = new System.Drawing.Size(111, 18);
+            this.lblForgetPassword.TabIndex = 13;
+            this.lblForgetPassword.TabStop = true;
+            this.lblForgetPassword.Text = "Quên Mật Khẩu";
+            this.lblForgetPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblForgetPassword_LinkClicked);
             // 
             // cbkShowPassword
             // 
             this.cbkShowPassword.AutoSize = true;
             this.cbkShowPassword.BackColor = System.Drawing.Color.Transparent;
             this.cbkShowPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.cbkShowPassword.Location = new System.Drawing.Point(405, 309);
+            this.cbkShowPassword.ForeColor = System.Drawing.Color.Transparent;
+            this.cbkShowPassword.Location = new System.Drawing.Point(1073, 252);
             this.cbkShowPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbkShowPassword.Name = "cbkShowPassword";
             this.cbkShowPassword.Size = new System.Drawing.Size(144, 22);
@@ -153,74 +165,118 @@ namespace QuanLyPhongKham.GUI
             this.cbkShowPassword.UseVisualStyleBackColor = false;
             this.cbkShowPassword.CheckedChanged += new System.EventHandler(this.cbkShowPassword_CheckedChanged);
             // 
-            // lblForgetPassword
+            // lblCreateAccount
             // 
-            this.lblForgetPassword.AutoSize = true;
-            this.lblForgetPassword.BackColor = System.Drawing.Color.Transparent;
-            this.lblForgetPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblForgetPassword.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.lblForgetPassword.LinkColor = System.Drawing.Color.Black;
-            this.lblForgetPassword.Location = new System.Drawing.Point(444, 425);
-            this.lblForgetPassword.Name = "lblForgetPassword";
-            this.lblForgetPassword.Size = new System.Drawing.Size(111, 18);
-            this.lblForgetPassword.TabIndex = 13;
-            this.lblForgetPassword.TabStop = true;
-            this.lblForgetPassword.Text = "Quên Mật Khẩu";
+            this.lblCreateAccount.ActiveLinkColor = System.Drawing.Color.White;
+            this.lblCreateAccount.AutoSize = true;
+            this.lblCreateAccount.BackColor = System.Drawing.Color.Transparent;
+            this.lblCreateAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblCreateAccount.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblCreateAccount.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.lblCreateAccount.LinkColor = System.Drawing.Color.Transparent;
+            this.lblCreateAccount.Location = new System.Drawing.Point(1024, 294);
+            this.lblCreateAccount.Name = "lblCreateAccount";
+            this.lblCreateAccount.Size = new System.Drawing.Size(103, 18);
+            this.lblCreateAccount.TabIndex = 16;
+            this.lblCreateAccount.TabStop = true;
+            this.lblCreateAccount.Text = "Tạo Tài khoản";
+            this.lblCreateAccount.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // tbxPassword
+            // lblPassword
             // 
-            this.tbxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxPassword.Location = new System.Drawing.Point(154, 236);
-            this.tbxPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbxPassword.Multiline = true;
-            this.tbxPassword.Name = "tbxPassword";
-            this.tbxPassword.PasswordChar = '*';
-            this.tbxPassword.Size = new System.Drawing.Size(398, 45);
-            this.tbxPassword.TabIndex = 11;
-            this.tbxPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxPassword_Enter);
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblPassword.ForeColor = System.Drawing.Color.White;
+            this.lblPassword.Location = new System.Drawing.Point(814, 145);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(123, 35);
+            this.lblPassword.TabIndex = 18;
+            this.lblPassword.Text = "Mật khẩu";
+            this.lblPassword.Click += new System.EventHandler(this.lblPassword_Click);
             // 
-            // tbxPhoneNumber
+            // panel2
             // 
-            this.tbxPhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbxPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxPhoneNumber.Location = new System.Drawing.Point(154, 142);
-            this.tbxPhoneNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbxPhoneNumber.Multiline = true;
-            this.tbxPhoneNumber.Name = "tbxPhoneNumber";
-            this.tbxPhoneNumber.Size = new System.Drawing.Size(398, 45);
-            this.tbxPhoneNumber.TabIndex = 10;
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(753, 499);
+            this.panel2.TabIndex = 19;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(816, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(163, 35);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Số điện thoại";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // pnlContainer
+            // 
+            this.pnlContainer.BackColor = System.Drawing.Color.SteelBlue;
+            this.pnlContainer.Controls.Add(this.label1);
+            this.pnlContainer.Controls.Add(this.panel2);
+            this.pnlContainer.Controls.Add(this.lblPassword);
+            this.pnlContainer.Controls.Add(this.lblCreateAccount);
+            this.pnlContainer.Controls.Add(lblDontHaveAccount);
+            this.pnlContainer.Controls.Add(this.cbkShowPassword);
+            this.pnlContainer.Controls.Add(this.lblForgetPassword);
+            this.pnlContainer.Controls.Add(this.btnDangNhap);
+            this.pnlContainer.Controls.Add(this.tbxPassword);
+            this.pnlContainer.Controls.Add(this.tbxPhoneNumber);
+            this.pnlContainer.Font = new System.Drawing.Font("Calibri Light", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.pnlContainer.ForeColor = System.Drawing.Color.Black;
+            this.pnlContainer.Location = new System.Drawing.Point(35, 158);
+            this.pnlContainer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlContainer.Name = "pnlContainer";
+            this.pnlContainer.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.pnlContainer.Size = new System.Drawing.Size(1267, 493);
+            this.pnlContainer.TabIndex = 10;
+            this.pnlContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContainer_Paint);
             // 
             // DangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1376, 750);
+            this.ClientSize = new System.Drawing.Size(1351, 750);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlContainer);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DangNhap";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dbQuanLyPhongKhamDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbQuanLyPhongKhamDataSet2)).EndInit();
             this.pnlContainer.ResumeLayout(false);
             this.pnlContainer.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label lblHeader;
-        private System.Windows.Forms.Panel pnlContainer;
-        private System.Windows.Forms.LinkLabel lblCreateAccount;
-        private System.Windows.Forms.CheckBox cbkShowPassword;
-        private System.Windows.Forms.LinkLabel lblForgetPassword;
-        private System.Windows.Forms.TextBox tbxPassword;
+        protected System.Windows.Forms.Panel panel1;
+        private DatabaseDataSet dbQuanLyPhongKhamDataSet1;
+        private DatabaseDataSet dbQuanLyPhongKhamDataSet2;
         private System.Windows.Forms.TextBox tbxPhoneNumber;
-        private System.Windows.Forms.Label lblUsername;
-        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.TextBox tbxPassword;
         private System.Windows.Forms.Button btnDangNhap;
+        private System.Windows.Forms.LinkLabel lblForgetPassword;
+        private System.Windows.Forms.CheckBox cbkShowPassword;
+        private System.Windows.Forms.LinkLabel lblCreateAccount;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel pnlContainer;
     }
 }
 

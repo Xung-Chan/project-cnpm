@@ -89,5 +89,15 @@ namespace QuanLyPhongKham.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap N9_NiceNight__1_ {
+            get {
+                object obj = ResourceManager.GetObject("N9-NiceNight (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

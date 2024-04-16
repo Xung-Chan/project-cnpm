@@ -23,8 +23,8 @@ namespace QuanLyPhongKham.DAO
 
         public Boolean checkLogin(string phoneNumber, string password)
         {
-            string query = "SELECT COUNT(*) FROM Employee WHERE phoneNumber = @phoneNumber and accountPassword = @password";
-            int row = DataProvier.Instance.ExecuteScalar(query, new string[] { phoneNumber, password });
+            string query = "SELECT COUNT(*) FROM Employee WHERE phoneNumber = @phoneNumber and password = @password";
+            int row =(int) DataProvier.Instance.ExecuteScalar(query, new string[] { phoneNumber, password });
             if (row == 1)
             {
                 return true;
