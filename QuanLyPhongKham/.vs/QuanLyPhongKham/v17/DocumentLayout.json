@@ -11,11 +11,8 @@
       "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:gui\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|d:\\study\\\u0111\u1EA1i h\u1ECDc\\c\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\project\\project-cnpm-myself\\quanlyphongkham\\bll\\employeebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:bll\\employeebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__STUDY_\u0110\u1EA0I_H\u1ECCC_C\u00D4NG_NGH\u1EC6_PH\u1EA6N_M\u1EC0M_PROJECT_PROJECT_CNPM_MYSELF_QUANLYPHONGKHAM_DATABASE.MDF/True/SqlTable/dbo.Position.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|d:\\study\\\u0111\u1EA1i h\u1ECDc\\c\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\project\\project-cnpm-myself\\quanlyphongkham\\gui\\bacsi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:gui\\bacsi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,9 +44,9 @@
               "RelativeDocumentMoniker": "GUI\\DangNhap.cs",
               "ToolTip": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\DangNhap.cs",
               "RelativeToolTip": "GUI\\DangNhap.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAJAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAD4vywAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T20:02:19.24Z",
+              "WhenOpened": "2024-04-17T07:03:38.733Z",
               "EditorCaption": ""
             },
             {
@@ -61,31 +58,20 @@
               "ToolTip": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\DangNhap.cs [Design]",
               "RelativeToolTip": "GUI\\DangNhap.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T20:02:16.595Z",
+              "WhenOpened": "2024-04-17T07:03:37.245Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "dbo.Position [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__STUDY_\u0110\u1EA0I_H\u1ECCC_C\u00D4NG_NGH\u1EC6_PH\u1EA6N_M\u1EC0M_PROJECT_PROJECT_CNPM_MYSELF_QUANLYPHONGKHAM_DATABASE.MDF/True/SqlTable/dbo.Position.sql",
-              "ToolTip": "dbo.Position [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-04-16T20:01:06.488Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "EmployeeBLL.cs",
-              "DocumentMoniker": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\BLL\\EmployeeBLL.cs",
-              "RelativeDocumentMoniker": "BLL\\EmployeeBLL.cs",
-              "ToolTip": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\BLL\\EmployeeBLL.cs",
-              "RelativeToolTip": "BLL\\EmployeeBLL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Title": "BacSi.cs [Design]",
+              "DocumentMoniker": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\BacSi.cs",
+              "RelativeDocumentMoniker": "GUI\\BacSi.cs",
+              "ToolTip": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\BacSi.cs [Design]",
+              "RelativeToolTip": "GUI\\BacSi.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T19:59:25.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T07:02:33.437Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

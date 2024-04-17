@@ -8,23 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyPhongKham.GUI
-{
-    public partial class donthuoc : UserControl
-    {
-        public donthuoc()
-        {
+namespace QuanLyPhongKham.GUI {
+    public partial class DonThuoc : UserControl {
+        public DonThuoc() {
             InitializeComponent();
         }
 
-        private void label13_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

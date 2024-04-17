@@ -72,11 +72,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Bacsi.cs">
+    <Compile Include="GUI\BacSi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Bacsi.Designer.cs">
-      <DependentUpon>Bacsi.cs</DependentUpon>
+    <Compile Include="GUI\BacSi.Designer.cs">
+      <DependentUpon>BacSi.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\DangKy.cs">
       <SubType>Form</SubType>
@@ -90,40 +90,40 @@
     <Compile Include="GUI\DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\donthuoc.cs">
+    <Compile Include="GUI\DonThuoc.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\donthuoc.Designer.cs">
-      <DependentUpon>donthuoc.cs</DependentUpon>
+    <Compile Include="GUI\DonThuoc.Designer.cs">
+      <DependentUpon>DonThuoc.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\DVdk.cs">
+    <Compile Include="GUI\DichVuDaKe.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\DVdk.Designer.cs">
-      <DependentUpon>DVdk.cs</DependentUpon>
+    <Compile Include="GUI\DichVuDaKe.Designer.cs">
+      <DependentUpon>DichVuDaKe.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\kls.cs">
+    <Compile Include="GUI\KhamLamSang.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\kls.Designer.cs">
-      <DependentUpon>kls.cs</DependentUpon>
+    <Compile Include="GUI\KhamLamSang.Designer.cs">
+      <DependentUpon>KhamLamSang.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Lichkham.cs">
+    <Compile Include="GUI\LichKham.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Lichkham.Designer.cs">
-      <DependentUpon>Lichkham.cs</DependentUpon>
+    <Compile Include="GUI\LichKham.Designer.cs">
+      <DependentUpon>LichKham.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Thembenhnhan.cs">
+    <Compile Include="GUI\ThemBenhNhan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Thembenhnhan.Designer.cs">
-      <DependentUpon>Thembenhnhan.cs</DependentUpon>
+    <Compile Include="GUI\ThemBenhNhan.Designer.cs">
+      <DependentUpon>ThemBenhNhan.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUI\Bacsi.resx">
-      <DependentUpon>Bacsi.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\BacSi.resx">
+      <DependentUpon>BacSi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DangKy.resx">
       <DependentUpon>DangKy.cs</DependentUpon>
@@ -131,20 +131,20 @@
     <EmbeddedResource Include="GUI\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\donthuoc.resx">
-      <DependentUpon>donthuoc.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\DonThuoc.resx">
+      <DependentUpon>DonThuoc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\DVdk.resx">
-      <DependentUpon>DVdk.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\DichVuDaKe.resx">
+      <DependentUpon>DichVuDaKe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\kls.resx">
-      <DependentUpon>kls.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\KhamLamSang.resx">
+      <DependentUpon>KhamLamSang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Lichkham.resx">
-      <DependentUpon>Lichkham.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\LichKham.resx">
+      <DependentUpon>LichKham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Thembenhnhan.resx">
-      <DependentUpon>Thembenhnhan.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\ThemBenhNhan.resx">
+      <DependentUpon>ThemBenhNhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

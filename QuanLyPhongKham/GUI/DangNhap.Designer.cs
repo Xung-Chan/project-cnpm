@@ -61,7 +61,6 @@ namespace QuanLyPhongKham.GUI
             lblDontHaveAccount.Size = new System.Drawing.Size(184, 20);
             lblDontHaveAccount.TabIndex = 15;
             lblDontHaveAccount.Text = "Bạn chưa có tài khoản?";
-            lblDontHaveAccount.Click += new System.EventHandler(this.lblDontHaveAccount_Click);
             // 
             // panel1
             // 
@@ -73,7 +72,6 @@ namespace QuanLyPhongKham.GUI
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(308, 85);
             this.panel1.TabIndex = 11;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // dbQuanLyPhongKhamDataSet1
             // 
@@ -99,7 +97,6 @@ namespace QuanLyPhongKham.GUI
             this.tbxPhoneNumber.Size = new System.Drawing.Size(397, 55);
             this.tbxPhoneNumber.TabIndex = 10;
             this.tbxPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.tbxPhoneNumber.TextChanged += new System.EventHandler(this.tbxPhoneNumber_TextChanged);
             // 
             // tbxPassword
             // 
@@ -114,7 +111,6 @@ namespace QuanLyPhongKham.GUI
             this.tbxPassword.ShortcutsEnabled = false;
             this.tbxPassword.Size = new System.Drawing.Size(397, 53);
             this.tbxPassword.TabIndex = 11;
-            this.tbxPassword.TextChanged += new System.EventHandler(this.tbxPassword_TextChanged);
             this.tbxPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxPassword_Enter);
             // 
             // btnDangNhap
@@ -192,7 +188,6 @@ namespace QuanLyPhongKham.GUI
             this.lblPassword.Size = new System.Drawing.Size(123, 35);
             this.lblPassword.TabIndex = 18;
             this.lblPassword.Text = "Mật khẩu";
-            this.lblPassword.Click += new System.EventHandler(this.lblPassword_Click);
             // 
             // panel2
             // 
@@ -202,7 +197,6 @@ namespace QuanLyPhongKham.GUI
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(753, 499);
             this.panel2.TabIndex = 19;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label1
             // 
@@ -214,7 +208,6 @@ namespace QuanLyPhongKham.GUI
             this.label1.Size = new System.Drawing.Size(163, 35);
             this.label1.TabIndex = 22;
             this.label1.Text = "Số điện thoại";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // pnlContainer
             // 
@@ -237,7 +230,6 @@ namespace QuanLyPhongKham.GUI
             this.pnlContainer.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.pnlContainer.Size = new System.Drawing.Size(1267, 493);
             this.pnlContainer.TabIndex = 10;
-            this.pnlContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContainer_Paint);
             // 
             // DangNhap
             // 

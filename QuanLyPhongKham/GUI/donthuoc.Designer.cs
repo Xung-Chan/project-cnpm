@@ -1,6 +1,6 @@
 ﻿namespace QuanLyPhongKham.GUI
 {
-    public partial class donthuoc
+    public partial class DonThuoc
     {
         /// <summary> 
         /// Required designer variable.
@@ -62,7 +62,6 @@
             this.label13.TabIndex = 2;
             this.label13.Text = "Đơn thuốc";
             this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // listBox1
             // 
@@ -148,7 +147,6 @@
             this.button3.TabIndex = 13;
             this.button3.Text = "Xóa";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label3
             // 

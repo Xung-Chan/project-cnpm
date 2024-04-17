@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyPhongKham.GUI
 {
-    public partial class Thembenhnhan : Form
+    public partial class ThemBenhNhan : Form
     {
-        public Thembenhnhan()
+        public ThemBenhNhan()
         {
             InitializeComponent();
         }

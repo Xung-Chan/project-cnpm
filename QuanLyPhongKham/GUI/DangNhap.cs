@@ -11,49 +11,41 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyPhongKham.GUI
-{
-    public partial class DangNhap : Form
-    {
-        public DangNhap()
-        {
+namespace QuanLyPhongKham.GUI {
+    public partial class DangNhap : Form {
+        public DangNhap() {
             InitializeComponent();
         }
-     
+
 
 
         #region Event
-        private void Form1_Load(object sender, EventArgs e)
-        {
+        private void Form1_Load( object sender, EventArgs e ) {
 
         }
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
+        private void linkLabel1_LinkClicked( object sender, LinkLabelLinkClickedEventArgs e ) {
             DangKy dk = new DangKy();
             dk.Show();
         }
 
-        private void cbkShowPassword_CheckedChanged(object sender, EventArgs e)
-        {
+        private void cbkShowPassword_CheckedChanged( object sender, EventArgs e ) {
             tbxPassword.UseSystemPasswordChar = cbkShowPassword.Checked;
         }
-        private void tbxPassword_Enter(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)Keys.Enter)
-            {
+        private void tbxPassword_Enter( object sender, KeyPressEventArgs e ) {
+            if (e.KeyChar == (char) Keys.Enter) {
                 btnLogin_Click(sender, e);
             }
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
+        private void btnLogin_Click( object sender, EventArgs e ) {
             string phoneNumber = tbxPhoneNumber.Text.Trim();
             string password = tbxPassword.Text.Trim();
-            switch(EmployeeBLL.checkLoginBLL(phoneNumber, password))
-            {
+            switch (EmployeeBLL.checkLoginBLL(phoneNumber, password)) {
                 case "BÁC SĨ":
-                    Bacsi bacsi = new Bacsi();
-                    bacsi.Show();
+                    BacSi bacsi = new BacSi();
+                    this.Hide();
+                    bacsi.ShowDialog();
+                    this.Show();
                     break;
                 default:
                     MessageBox.Show("Tính năng đang trong quá trình phát triển");
@@ -61,91 +53,19 @@ namespace QuanLyPhongKham.GUI
             }
             tbxPassword.Text = "";
         }
-        
+        private void lblForgetPassword_LinkClicked( object sender, LinkLabelLinkClickedEventArgs e ) {
+            BacSi bs = new BacSi();
+            bs.Show();
+        }
+
         #endregion
 
 
         #region method
-        //private Boolean checkLogin(string phoneNumber, string password) {
-        //    return EmployeeDAO.Instance.checkLogin(phoneNumber, password);
-        //}
-
         #endregion
 
-        private void lblDontHaveAccount_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void lblHeader_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pnlContainer_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbxPhoneNumber_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbxPassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblPassword_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void jText_Box1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblForgetPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Bacsi bs = new Bacsi();
-            bs.Show();
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }

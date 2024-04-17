@@ -1,6 +1,6 @@
 ﻿namespace QuanLyPhongKham.GUI
 {
-    partial class Bacsi
+    partial class BacSi
     {
         /// <summary>
         /// Required designer variable.
@@ -73,9 +73,9 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dVdk1 = new QuanLyPhongKham.GUI.DVdk();
-            this.donthuoc1 = new QuanLyPhongKham.GUI.donthuoc();
-            this.kls1 = new QuanLyPhongKham.GUI.kls();
+            this.dVdk1 = new QuanLyPhongKham.GUI.DichVuDaKe();
+            this.donthuoc1 = new QuanLyPhongKham.GUI.DonThuoc();
+            this.kls1 = new QuanLyPhongKham.GUI.KhamLamSang();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -96,7 +96,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1924, 47);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel8
             // 
@@ -117,7 +116,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Phiếu Khám bệnh phòng khám Răng - Hàm - Mặt";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2
             // 
@@ -156,7 +154,6 @@
             this.label6.TabIndex = 2;
             this.label6.Text = "Họ và Tên";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label6.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -168,7 +165,6 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "Mã BN";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label5.Click += new System.EventHandler(this.label4_Click);
             // 
             // label11
             // 
@@ -180,7 +176,6 @@
             this.label11.TabIndex = 2;
             this.label11.Text = "Địa chỉ";
             this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label11.Click += new System.EventHandler(this.label4_Click);
             // 
             // label12
             // 
@@ -192,7 +187,6 @@
             this.label12.TabIndex = 2;
             this.label12.Text = "Loại khám";
             this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label12.Click += new System.EventHandler(this.label4_Click);
             // 
             // label10
             // 
@@ -204,7 +198,6 @@
             this.label10.TabIndex = 2;
             this.label10.Text = "Dân tộc";
             this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label10.Click += new System.EventHandler(this.label4_Click);
             // 
             // label9
             // 
@@ -216,7 +209,6 @@
             this.label9.TabIndex = 2;
             this.label9.Text = "Ngày sinh";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label9.Click += new System.EventHandler(this.label4_Click);
             // 
             // label7
             // 
@@ -228,7 +220,6 @@
             this.label7.TabIndex = 2;
             this.label7.Text = "Giới tính";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label7.Click += new System.EventHandler(this.label4_Click);
             // 
             // label4
             // 
@@ -240,7 +231,6 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "Loại khám";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // panel4
             // 
@@ -338,7 +328,6 @@
             this.label16.TabIndex = 2;
             this.label16.Text = "Ghi chú";
             this.label16.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label16.Click += new System.EventHandler(this.label4_Click);
             // 
             // label15
             // 
@@ -350,7 +339,6 @@
             this.label15.TabIndex = 2;
             this.label15.Text = "Phòng khám";
             this.label15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label15.Click += new System.EventHandler(this.label4_Click);
             // 
             // label14
             // 
@@ -362,7 +350,6 @@
             this.label14.TabIndex = 2;
             this.label14.Text = "Tình trạng";
             this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label14.Click += new System.EventHandler(this.label4_Click);
             // 
             // label20
             // 
@@ -374,7 +361,6 @@
             this.label20.TabIndex = 2;
             this.label20.Text = "Bác sĩ khám";
             this.label20.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label20.Click += new System.EventHandler(this.label4_Click);
             // 
             // label19
             // 
@@ -386,7 +372,6 @@
             this.label19.TabIndex = 2;
             this.label19.Text = "Lễ tân tiếp đón";
             this.label19.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label19.Click += new System.EventHandler(this.label4_Click);
             // 
             // label18
             // 
@@ -398,7 +383,6 @@
             this.label18.TabIndex = 2;
             this.label18.Text = "Ngày lập";
             this.label18.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label18.Click += new System.EventHandler(this.label4_Click);
             // 
             // label17
             // 
@@ -410,7 +394,6 @@
             this.label17.TabIndex = 2;
             this.label17.Text = "Tiền khám";
             this.label17.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label17.Click += new System.EventHandler(this.label4_Click);
             // 
             // label13
             // 
@@ -422,7 +405,6 @@
             this.label13.TabIndex = 2;
             this.label13.Text = "Số hồ sơ";
             this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label13.Click += new System.EventHandler(this.label4_Click);
             // 
             // groupBox1
             // 
@@ -437,7 +419,6 @@
             this.groupBox1.Size = new System.Drawing.Size(313, 430);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // button5
             // 
@@ -448,7 +429,6 @@
             this.button5.TabIndex = 3;
             this.button5.Text = "Lộ trình khám chữa bệnh";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button4_Click);
             // 
             // button4
             // 
@@ -459,7 +439,6 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Lịch sử KCB";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -470,7 +449,6 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "Đơn Thuốc";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -481,7 +459,6 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "DV Đã kê";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -492,7 +469,6 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "Chỉ Định";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button10
             // 
@@ -504,7 +480,6 @@
             this.button10.TabIndex = 3;
             this.button10.Text = "Kết thúc khám";
             this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button9
             // 
@@ -559,7 +534,6 @@
             this.button14.TabIndex = 3;
             this.button14.Text = "Sửa";
             this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button12
             // 
@@ -583,7 +557,6 @@
             this.button7.TabIndex = 3;
             this.button7.Text = "in phiếu";
             this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -712,9 +685,9 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.GroupBox groupBox3;
-        private donthuoc donthuoc1;
-        private DVdk dVdk1;
-        private kls kls1;
+        private DonThuoc donthuoc1;
+        private DichVuDaKe dVdk1;
+        private KhamLamSang kls1;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;

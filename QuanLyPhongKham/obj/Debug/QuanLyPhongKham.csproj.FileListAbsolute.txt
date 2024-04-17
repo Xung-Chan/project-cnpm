@@ -114,8 +114,6 @@ D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\Quan
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.DangKy.resources
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.DangNhap.resources
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.donthuoc.resources
-D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.DVdk.resources
-D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.kls.resources
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.Lichkham.resources
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.Thembenhnhan.resources
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.Properties.Resources.resources
@@ -128,3 +126,5 @@ D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\Quan
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\bin\Debug\QuanLyPhongKham.pdb
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\bin\Debug\Database.mdf
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\bin\Debug\Database_log.ldf
+D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.DichVuDaKe.resources
+D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.KhamLamSang.resources

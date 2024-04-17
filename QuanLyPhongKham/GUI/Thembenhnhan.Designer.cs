@@ -1,6 +1,6 @@
 ﻿namespace QuanLyPhongKham.GUI
 {
-    partial class Thembenhnhan
+    partial class ThemBenhNhan
     {
         /// <summary>
         /// Required designer variable.
