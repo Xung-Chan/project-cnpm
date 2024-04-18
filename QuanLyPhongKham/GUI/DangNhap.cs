@@ -23,10 +23,6 @@ namespace QuanLyPhongKham.GUI {
         private void Form1_Load( object sender, EventArgs e ) {
 
         }
-        private void linkLabel1_LinkClicked( object sender, LinkLabelLinkClickedEventArgs e ) {
-            DangKy dk = new DangKy();
-            dk.Show();
-        }
 
         private void cbkShowPassword_CheckedChanged( object sender, EventArgs e ) {
             tbxPassword.UseSystemPasswordChar = cbkShowPassword.Checked;
@@ -47,15 +43,25 @@ namespace QuanLyPhongKham.GUI {
                     bacsi.ShowDialog();
                     this.Show();
                     break;
-                default:
+                case "LỄ TÂN":
+                    LeTan letan = new LeTan();
+                    this.Hide();
+                    letan.ShowDialog();
+                    this.Show();
+                    break;
+                case "QUẢN LÝ":
                     MessageBox.Show("Tính năng đang trong quá trình phát triển");
+                    break;
+                default:
+                    MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác","Đăng nhập không thành công", MessageBoxButtons.OK);
                     break;
             }
             tbxPassword.Text = "";
+            tbxPhoneNumber.Text = "";
         }
         private void lblForgetPassword_LinkClicked( object sender, LinkLabelLinkClickedEventArgs e ) {
-            BacSi bs = new BacSi();
-            bs.Show();
+            //BacSi bs = new BacSi();
+            //bs.Show();
         }
 
         #endregion

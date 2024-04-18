@@ -46,7 +46,10 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lvwPatient = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label8 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
@@ -73,9 +76,9 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.kls1 = new QuanLyPhongKham.GUI.KhamLamSang();
             this.dVdk1 = new QuanLyPhongKham.GUI.DichVuDaKe();
             this.donthuoc1 = new QuanLyPhongKham.GUI.DonThuoc();
-            this.kls1 = new QuanLyPhongKham.GUI.KhamLamSang();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -275,21 +278,43 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightGray;
-            this.panel3.Controls.Add(this.listBox1);
+            this.panel3.Controls.Add(this.lvwPatient);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Location = new System.Drawing.Point(0, 52);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(560, 429);
             this.panel3.TabIndex = 2;
             // 
-            // listBox1
+            // lvwPatient
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(12, 48);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(532, 356);
-            this.listBox1.TabIndex = 6;
+            this.lvwPatient.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.lvwPatient.FullRowSelect = true;
+            this.lvwPatient.GridLines = true;
+            this.lvwPatient.HideSelection = false;
+            this.lvwPatient.Location = new System.Drawing.Point(7, 51);
+            this.lvwPatient.Name = "lvwPatient";
+            this.lvwPatient.Size = new System.Drawing.Size(545, 348);
+            this.lvwPatient.TabIndex = 7;
+            this.lvwPatient.UseCompatibleStateImageBehavior = false;
+            this.lvwPatient.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Mã bệnh nhân";
+            this.columnHeader1.Width = 107;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Tên bệnh nhân";
+            this.columnHeader2.Width = 151;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Số điện thoại";
+            this.columnHeader3.Width = 278;
             // 
             // label8
             // 
@@ -587,6 +612,13 @@
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             // 
+            // kls1
+            // 
+            this.kls1.Location = new System.Drawing.Point(329, 485);
+            this.kls1.Name = "kls1";
+            this.kls1.Size = new System.Drawing.Size(1674, 437);
+            this.kls1.TabIndex = 10;
+            // 
             // dVdk1
             // 
             this.dVdk1.BackColor = System.Drawing.Color.LightGray;
@@ -602,14 +634,7 @@
             this.donthuoc1.Size = new System.Drawing.Size(1605, 430);
             this.donthuoc1.TabIndex = 8;
             // 
-            // kls1
-            // 
-            this.kls1.Location = new System.Drawing.Point(329, 485);
-            this.kls1.Name = "kls1";
-            this.kls1.Size = new System.Drawing.Size(1674, 437);
-            this.kls1.TabIndex = 10;
-            // 
-            // Bacsi
+            // BacSi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -624,7 +649,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "Bacsi";
+            this.Name = "BacSi";
             this.Text = "Bacsi";
             this.Load += new System.EventHandler(this.Bacsi_Load);
             this.panel1.ResumeLayout(false);
@@ -668,7 +693,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button4;
@@ -696,5 +720,9 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ListView lvwPatient;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
     }
 }

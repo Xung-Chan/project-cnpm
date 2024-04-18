@@ -26,5 +26,9 @@ namespace QuanLyPhongKham.GUI
         {
 
         }
+
+        private void ThemBenhNhan_Load( object sender, EventArgs e ) {
+
+        }
     }
 }

@@ -64,14 +64,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\BacSiBLL.cs" />
     <Compile Include="BLL\EmployeeBLL.cs" />
     <Compile Include="DAO\DataProvier.cs" />
     <Compile Include="DAO\EmployeeDAO.cs" />
+    <Compile Include="DAO\PatientDAO.cs" />
     <Compile Include="DatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DTO\PatientDTO.cs" />
     <Compile Include="GUI\BacSi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,11 +111,23 @@
     <Compile Include="GUI\KhamLamSang.Designer.cs">
       <DependentUpon>KhamLamSang.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\LeTan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\LeTan.Designer.cs">
+      <DependentUpon>LeTan.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\LichKham.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\LichKham.Designer.cs">
       <DependentUpon>LichKham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\LSKCB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\LSKCB.Designer.cs">
+      <DependentUpon>LSKCB.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\ThemBenhNhan.cs">
       <SubType>Form</SubType>
@@ -140,8 +155,14 @@
     <EmbeddedResource Include="GUI\KhamLamSang.resx">
       <DependentUpon>KhamLamSang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\LeTan.resx">
+      <DependentUpon>LeTan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\LichKham.resx">
       <DependentUpon>LichKham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\LSKCB.resx">
+      <DependentUpon>LSKCB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ThemBenhNhan.resx">
       <DependentUpon>ThemBenhNhan.cs</DependentUpon>

@@ -128,3 +128,5 @@ D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\Quan
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\bin\Debug\Database_log.ldf
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.DichVuDaKe.resources
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.KhamLamSang.resources
+D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.LeTan.resources
+D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.LSKCB.resources

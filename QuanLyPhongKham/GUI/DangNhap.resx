@@ -117,14 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="lblDontHaveAccount.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAV8AAAB6CAYAAAAYo1CwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAHLNJREFUeF7tnXm8VVP/x/shZMhUkpIhQ0giM1FkLiQSIkT9RJkyRKIMPakXTzw9
+        vQAADr0BR/uQrQAAHLNJREFUeF7tnXm8VVP/x/shZMhUkpIhQ0giM1FkLiQSIkT9RJkyRKIMPakXTzw9
         KZTK021QKqVSSqI0SFSiEilD4z3zfM597ud67Z59dp+99j7jPfvc7x/v1+veddZ3rX322fuz1/6u7/qu
         amVlZUIGJMrK9oqXle1dzj6xRFn1aCKxbzn7RRKJ/cOJRA1BcDK4jnE947qOlZVVL7/eca3vjeue3Q+C
         fWih8DfeePyIv6KxE38OR879PhC6erE/0GGu1//gVLf32bGl7oGjd7kHC0JVZnyp59Xpbt+T873++5f5
@@ -259,7 +256,7 @@
   <data name="panel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA2MAAAI4CAYAAADnDzGJAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAA/7JJREFUeF7s/Qeb3EaWpg3P33p333d2Z3a6d6Z7prtn27da3lMS5UnKUJSXSEq0
+        vAAADrwBlbxySQAA/7JJREFUeF7s/Qeb3EaWpg3P33p333d2Z3a6d6Z7prtn27da3lMS5UnKUJSXSEq0
         ovfeFVmOtmiqWCzvvffeZnlP6vmeE4EAAkhkVhZFTc98q7qumwACAY/MPDdPIPB3GVmFuH4nnxTgeqbm
         BsuEjKwiHzeFu0KxJrsYt+6V+LidU6q4k1vmIzPPIb8MWRxmsUyRV467+X6yCypc7hVW+sgpqvKRG6S4
         2iWvRKhxyS+tQUFJLQpJUWmdorDMo8ii2KKo3KJCaHCoRzEptSirbIiiVKhqVJQ5lFc1xaSiOkBNs0sl

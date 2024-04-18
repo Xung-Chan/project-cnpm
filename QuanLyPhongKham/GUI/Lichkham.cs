@@ -16,5 +16,9 @@ namespace QuanLyPhongKham.GUI
         {
             InitializeComponent();
         }
+
+        private void LichKham_Load( object sender, EventArgs e ) {
+
+        }
     }
 }

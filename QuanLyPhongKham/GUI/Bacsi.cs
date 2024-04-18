@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QuanLyPhongKham.BLL;
+using QuanLyPhongKham.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +21,13 @@ namespace QuanLyPhongKham.GUI
         }
 
         private void Bacsi_Load( object sender, EventArgs e ) {
-
+            List<PatientDTO> patientList = BacSiBLL.getAllPatients();
+            foreach(PatientDTO item in patientList) {
+                ListViewItem lvwItem = new ListViewItem(item.ID.ToString());
+                lvwItem.SubItems.Add(item.Name);
+                lvwItem.SubItems.Add(item.PhoneNumber);
+                lvwPatient.Items.Add(lvwItem);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
