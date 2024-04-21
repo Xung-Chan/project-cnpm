@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -19,7 +20,7 @@ namespace QuanLyPhongKham.DAO
         public static DataProvier Instance
         {
             get
-            {
+            {   
                 if (instance == null)
                     instance = new DataProvier();
                 return instance;
@@ -29,7 +30,7 @@ namespace QuanLyPhongKham.DAO
         }
 
         private DataProvier() { }
-        public int ExecuteNonQuery(string query, string[] paramater = null)
+        public int ExecuteNonQuery(string query, object[] paramater = null)
         {
             int data = 0;
             using (SqlConnection connection = new SqlConnection(db))
@@ -53,7 +54,7 @@ namespace QuanLyPhongKham.DAO
             }
             return data;
         }
-        public object ExecuteScalar(string query, string[] paramater = null)
+        public object ExecuteScalar(string query, object[] paramater = null)
         {
             object data = 0;
             using (SqlConnection connection = new SqlConnection(db))
@@ -78,7 +79,7 @@ namespace QuanLyPhongKham.DAO
             }
             return data;
         }
-        public DataTable ExecuteQuery(string query, string[] paramater = null)
+        public DataTable ExecuteQuery(string query, object[] paramater = null)
         {
             DataTable table = new DataTable();
             using (SqlConnection connection = new SqlConnection(db))

@@ -66,20 +66,35 @@
   <ItemGroup>
     <Compile Include="BLL\BacSiBLL.cs" />
     <Compile Include="BLL\EmployeeBLL.cs" />
+    <Compile Include="DAO\AttendanceDAO.cs" />
     <Compile Include="DAO\DataProvier.cs" />
     <Compile Include="DAO\EmployeeDAO.cs" />
     <Compile Include="DAO\PatientDAO.cs" />
+    <Compile Include="DAO\PositionDAO.cs" />
     <Compile Include="DatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DTO\EmployeeDTO.cs" />
     <Compile Include="DTO\PatientDTO.cs" />
     <Compile Include="GUI\BacSi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\BacSi.Designer.cs">
       <DependentUpon>BacSi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Baocaocv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Baocaocv.Designer.cs">
+      <DependentUpon>Baocaocv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\BCTH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\BCTH.Designer.cs">
+      <DependentUpon>BCTH.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\DangKy.cs">
       <SubType>Form</SubType>
@@ -129,6 +144,24 @@
     <Compile Include="GUI\LSKCB.Designer.cs">
       <DependentUpon>LSKCB.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Quanli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Quanli.Designer.cs">
+      <DependentUpon>Quanli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLiHosobenhnhan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLiHosobenhnhan.Designer.cs">
+      <DependentUpon>QuanLiHosobenhnhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Thanhtoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Thanhtoan.Designer.cs">
+      <DependentUpon>Thanhtoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\ThemBenhNhan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +172,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\BacSi.resx">
       <DependentUpon>BacSi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Baocaocv.resx">
+      <DependentUpon>Baocaocv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\BCTH.resx">
+      <DependentUpon>BCTH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DangKy.resx">
       <DependentUpon>DangKy.cs</DependentUpon>
@@ -163,6 +202,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\LSKCB.resx">
       <DependentUpon>LSKCB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Quanli.resx">
+      <DependentUpon>Quanli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLiHosobenhnhan.resx">
+      <DependentUpon>QuanLiHosobenhnhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Thanhtoan.resx">
+      <DependentUpon>Thanhtoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ThemBenhNhan.resx">
       <DependentUpon>ThemBenhNhan.cs</DependentUpon>

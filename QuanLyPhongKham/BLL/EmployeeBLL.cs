@@ -1,4 +1,5 @@
 ﻿using QuanLyPhongKham.DAO;
+using QuanLyPhongKham.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,12 +13,19 @@ namespace QuanLyPhongKham.BLL
     {
         public static string checkLoginBLL(string username, string password)
         {
-            if (EmployeeDAO.Instance.checkLogin(username, password)){
-
-                string role =(string) DataProvier.Instance.ExecuteScalar("select p.name from Employee e,Position p where e.positionID = p.ID and @username = phoneNumber and @password = password", new string[] { username, password });
-                return role;
+            EmployeeDTO employee = EmployeeDAO.Instance.checkLogin(username, password) ;
+            if (employee == null) {
+                return null;
             }
-            return null;
+            if (!recordLogin(employee.ID)) {
+                MessageBox.Show("Điểm danh không thành công", "Lỗi điểm danh", MessageBoxButtons.OK);
+                return null;
+            }
+            return PositionDAO.Instance.getNameByID(employee.PositionID);
+           
+        }
+        private static bool recordLogin(int ID) {
+            return AttendanceDAO.Instance.insertAttendance(ID);
         }
     }
 }

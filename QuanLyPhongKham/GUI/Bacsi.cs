@@ -25,7 +25,6 @@ namespace QuanLyPhongKham.GUI
             foreach(PatientDTO item in patientList) {
                 ListViewItem lvwItem = new ListViewItem(item.ID.ToString());
                 lvwItem.SubItems.Add(item.Name);
-                lvwItem.SubItems.Add(item.PhoneNumber);
                 lvwPatient.Items.Add(lvwItem);
             }
         }
@@ -39,6 +38,11 @@ namespace QuanLyPhongKham.GUI
         private void button1_Click(object sender, EventArgs e)
         {
             kls1.BringToFront();
+        }
+
+
+        private void lvwPatient_SelectedIndexChanged( object sender, EventArgs e ) {
+
         }
     }
 }

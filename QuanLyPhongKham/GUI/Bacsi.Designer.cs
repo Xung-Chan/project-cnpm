@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            "ma1",
+            "ten1",
+            "sdt"}, -1);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,7 +53,6 @@
             this.lvwPatient = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label8 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
@@ -289,17 +292,19 @@
             // 
             this.lvwPatient.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3});
+            this.columnHeader2});
             this.lvwPatient.FullRowSelect = true;
             this.lvwPatient.GridLines = true;
             this.lvwPatient.HideSelection = false;
+            this.lvwPatient.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1});
             this.lvwPatient.Location = new System.Drawing.Point(7, 51);
             this.lvwPatient.Name = "lvwPatient";
             this.lvwPatient.Size = new System.Drawing.Size(545, 348);
             this.lvwPatient.TabIndex = 7;
             this.lvwPatient.UseCompatibleStateImageBehavior = false;
             this.lvwPatient.View = System.Windows.Forms.View.Details;
+            this.lvwPatient.SelectedIndexChanged += new System.EventHandler(this.lvwPatient_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -310,11 +315,6 @@
             // 
             this.columnHeader2.Text = "Tên bệnh nhân";
             this.columnHeader2.Width = 151;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Số điện thoại";
-            this.columnHeader3.Width = 278;
             // 
             // label8
             // 
@@ -723,6 +723,5 @@
         private System.Windows.Forms.ListView lvwPatient;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
     }
 }
