@@ -1,6 +1,6 @@
 ﻿namespace QuanLyPhongKham.GUI
 {
-    partial class Thanhtoan
+    partial class ThanhToan
     {
         /// <summary>
         /// Required designer variable.

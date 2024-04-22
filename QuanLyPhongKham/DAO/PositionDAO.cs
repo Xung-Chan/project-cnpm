@@ -19,7 +19,7 @@ namespace QuanLyPhongKham.DAO {
         }
         public string getNameByID(int id) {
             string query = "select name from Position where ID = " + id;
-            string name = (string)DataProvier.Instance.ExecuteScalar(query);
+            string name = (string)DataProvider.Instance.ExecuteScalar(query);
             return name;
         }
     }

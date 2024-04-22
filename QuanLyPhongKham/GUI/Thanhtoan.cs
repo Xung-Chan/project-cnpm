@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyPhongKham.GUI
 {
-    public partial class Thanhtoan : Form
+    public partial class ThanhToan : Form
     {
-        public Thanhtoan()
+        public ThanhToan()
         {
             InitializeComponent();
         }

@@ -27,7 +27,7 @@ namespace QuanLyPhongKham.DAO
         public EmployeeDTO checkLogin(string phoneNumber, string password)
         {
             string query = "select * from Employee WHERE phoneNumber = @phoneNumber and password = @password";
-            DataTable table = DataProvier.Instance.ExecuteQuery(query, new object[] { phoneNumber, password });
+            DataTable table = DataProvider.Instance.ExecuteQuery(query, new object[] { phoneNumber, password });
             if (table.Rows.Count == 1) {
                 foreach (DataRow row in table.Rows) {
                     return new EmployeeDTO(row);

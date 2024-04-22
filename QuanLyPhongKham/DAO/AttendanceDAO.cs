@@ -18,7 +18,7 @@ namespace QuanLyPhongKham.DAO {
             private set => instance = value;
         }
         public bool insertAttendance(int employeeID) {
-            int data = DataProvier.Instance.ExecuteNonQuery("exec sp_insertAttendanceData @employeeID , @time", new object[] { employeeID, DateTime.Now });
+            int data = DataProvider.Instance.ExecuteNonQuery("exec sp_insertAttendanceData @employeeID , @time", new object[] { employeeID, DateTime.Now });
             if (data < 1) {
                 return false;
             }

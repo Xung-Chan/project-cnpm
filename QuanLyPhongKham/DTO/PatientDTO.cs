@@ -15,6 +15,7 @@ namespace QuanLyPhongKham.DTO {
             this.sex = (bool)row["sex"] ? "Nam" : "Nữ";
             this.phoneNumber = row["phoneNumber"].ToString();
             this.address = row["address"].ToString();
+            this.CCCD = row["cccd"].ToString();
         }
         private int iD;
         private int branchID;
@@ -23,6 +24,7 @@ namespace QuanLyPhongKham.DTO {
         private string sex;
         private string phoneNumber;
         private string address;
+        private string cCCD;
 
         public int BranchID { get => branchID; set => branchID = value; }
         public string Name { get => name; set => name = value; }
@@ -31,5 +33,6 @@ namespace QuanLyPhongKham.DTO {
         public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
         public string Address { get => address; set => address = value; }
         public int ID { get => iD; set => iD = value; }
+        public string CCCD { get => cCCD; set => cCCD = value; }
     }
 }

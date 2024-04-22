@@ -129,4 +129,9 @@ D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\Quan
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.DichVuDaKe.resources
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.KhamLamSang.resources
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.LeTan.resources
-D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.LSKCB.resources
+D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.QuanLiHosobenhnhan.resources
+D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.Thanhtoan.resources
+D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.BaoCaoCongViec.resources
+D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.BaoCaoTongHop.resources
+D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.LichSuKhamChuaBenh.resources
+D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.QuanLy.resources
