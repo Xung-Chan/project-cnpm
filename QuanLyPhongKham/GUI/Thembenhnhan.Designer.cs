@@ -32,22 +32,22 @@
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbxCCCD = new System.Windows.Forms.TextBox();
+            this.tbxAddress = new System.Windows.Forms.TextBox();
+            this.tbxPhoneNumber = new System.Windows.Forms.TextBox();
+            this.tbxSex = new System.Windows.Forms.TextBox();
+            this.tbxName = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSavePatient = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.dtpBirthday = new System.Windows.Forms.DateTimePicker();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -90,12 +90,12 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightCyan;
-            this.panel3.Controls.Add(this.textBox7);
-            this.panel3.Controls.Add(this.textBox5);
-            this.panel3.Controls.Add(this.textBox4);
-            this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.dtpBirthday);
+            this.panel3.Controls.Add(this.tbxCCCD);
+            this.panel3.Controls.Add(this.tbxAddress);
+            this.panel3.Controls.Add(this.tbxPhoneNumber);
+            this.panel3.Controls.Add(this.tbxSex);
+            this.panel3.Controls.Add(this.tbxName);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label3);
@@ -108,65 +108,55 @@
             this.panel3.Size = new System.Drawing.Size(933, 450);
             this.panel3.TabIndex = 3;
             // 
-            // textBox7
+            // tbxCCCD
             // 
-            this.textBox7.Location = new System.Drawing.Point(245, 315);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(411, 50);
-            this.textBox7.TabIndex = 4;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.tbxCCCD.Location = new System.Drawing.Point(245, 315);
+            this.tbxCCCD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxCCCD.Multiline = true;
+            this.tbxCCCD.Name = "tbxCCCD";
+            this.tbxCCCD.Size = new System.Drawing.Size(411, 50);
+            this.tbxCCCD.TabIndex = 4;
+            this.tbxCCCD.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox5
+            // tbxAddress
             // 
-            this.textBox5.Location = new System.Drawing.Point(245, 261);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(411, 50);
-            this.textBox5.TabIndex = 4;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.tbxAddress.Location = new System.Drawing.Point(245, 261);
+            this.tbxAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxAddress.Multiline = true;
+            this.tbxAddress.Name = "tbxAddress";
+            this.tbxAddress.Size = new System.Drawing.Size(411, 50);
+            this.tbxAddress.TabIndex = 4;
+            this.tbxAddress.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox4
+            // tbxPhoneNumber
             // 
-            this.textBox4.Location = new System.Drawing.Point(245, 204);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(411, 50);
-            this.textBox4.TabIndex = 4;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.tbxPhoneNumber.Location = new System.Drawing.Point(245, 204);
+            this.tbxPhoneNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxPhoneNumber.Multiline = true;
+            this.tbxPhoneNumber.Name = "tbxPhoneNumber";
+            this.tbxPhoneNumber.Size = new System.Drawing.Size(411, 50);
+            this.tbxPhoneNumber.TabIndex = 4;
+            this.tbxPhoneNumber.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox3
+            // tbxSex
             // 
-            this.textBox3.Location = new System.Drawing.Point(245, 149);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(411, 50);
-            this.textBox3.TabIndex = 4;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.tbxSex.Location = new System.Drawing.Point(245, 149);
+            this.tbxSex.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxSex.Multiline = true;
+            this.tbxSex.Name = "tbxSex";
+            this.tbxSex.Size = new System.Drawing.Size(411, 50);
+            this.tbxSex.TabIndex = 4;
+            this.tbxSex.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // tbxName
             // 
-            this.textBox2.Location = new System.Drawing.Point(245, 94);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(411, 50);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(245, 39);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(411, 50);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.tbxName.Location = new System.Drawing.Point(245, 39);
+            this.tbxName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxName.Multiline = true;
+            this.tbxName.Name = "tbxName";
+            this.tbxName.Size = new System.Drawing.Size(411, 50);
+            this.tbxName.TabIndex = 4;
+            this.tbxName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label7
             // 
@@ -239,17 +229,18 @@
             this.label4.Text = "Tên bệnh nhân";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // button1
+            // btnSavePatient
             // 
-            this.button1.BackColor = System.Drawing.Color.Aqua;
-            this.button1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.Location = new System.Drawing.Point(581, 588);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(192, 37);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Lưu";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSavePatient.BackColor = System.Drawing.Color.Aqua;
+            this.btnSavePatient.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnSavePatient.Location = new System.Drawing.Point(581, 588);
+            this.btnSavePatient.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSavePatient.Name = "btnSavePatient";
+            this.btnSavePatient.Size = new System.Drawing.Size(192, 37);
+            this.btnSavePatient.TabIndex = 4;
+            this.btnSavePatient.Text = "Lưu";
+            this.btnSavePatient.UseVisualStyleBackColor = false;
+            this.btnSavePatient.Click += new System.EventHandler(this.btnSavePatient_Click);
             // 
             // button2
             // 
@@ -263,16 +254,6 @@
             this.button2.Text = "Thoát";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // panel8
-            // 
-            this.panel8.BackgroundImage = global::QuanLyPhongKham.Properties.Resources.N9_NiceNight__1_;
-            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel8.Location = new System.Drawing.Point(983, 2);
-            this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(48, 47);
-            this.panel8.TabIndex = 5;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.LightGray;
@@ -283,6 +264,26 @@
             this.panel4.Size = new System.Drawing.Size(1035, 52);
             this.panel4.TabIndex = 5;
             // 
+            // dtpBirthday
+            // 
+            this.dtpBirthday.CustomFormat = " ";
+            this.dtpBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpBirthday.Location = new System.Drawing.Point(245, 107);
+            this.dtpBirthday.Name = "dtpBirthday";
+            this.dtpBirthday.Size = new System.Drawing.Size(411, 22);
+            this.dtpBirthday.TabIndex = 5;
+            this.dtpBirthday.ValueChanged += new System.EventHandler(this.dtpBirthday_ValueChanged);
+            // 
+            // panel8
+            // 
+            this.panel8.BackgroundImage = global::QuanLyPhongKham.Properties.Resources.N9_NiceNight__1_;
+            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel8.Location = new System.Drawing.Point(983, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(48, 47);
+            this.panel8.TabIndex = 5;
+            // 
             // ThemBenhNhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -291,7 +292,7 @@
             this.ClientSize = new System.Drawing.Size(1032, 638);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSavePatient);
             this.Controls.Add(this.panel2);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ThemBenhNhan";
@@ -320,15 +321,15 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox tbxName;
+        private System.Windows.Forms.TextBox tbxCCCD;
+        private System.Windows.Forms.TextBox tbxAddress;
+        private System.Windows.Forms.TextBox tbxPhoneNumber;
+        private System.Windows.Forms.TextBox tbxSex;
+        private System.Windows.Forms.Button btnSavePatient;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.DateTimePicker dtpBirthday;
     }
 }

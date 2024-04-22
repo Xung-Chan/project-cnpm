@@ -36,5 +36,11 @@ namespace QuanLyPhongKham.DAO {
             }
             return null;
         }
+        public int insertPatient(int branchID, string name, DateTime birthday, int sex, string phoneNumber, string address, string cccd ) {
+            string query = "exec sp_insertPatient @branchID , @name , @birthday , @sex , @phoneNumber , @address , @cccd";
+            
+            return  DataProvider.Instance.ExecuteNonQuery(query, new object[] { branchID, name, birthday, sex, phoneNumber, address, cccd });
+
+        }
     }
 }

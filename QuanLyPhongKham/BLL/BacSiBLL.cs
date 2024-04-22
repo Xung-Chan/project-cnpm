@@ -8,7 +8,19 @@ using System.Threading.Tasks;
 
 namespace QuanLyPhongKham.BLL {
     public class BacSiBLL {
-        public static List<PatientDTO> getAllPatients() {
+        private static BacSiBLL instance;
+        private BacSiBLL() { }
+
+        public static BacSiBLL Instance {
+            get {
+                if (instance == null)
+                    instance = new BacSiBLL();
+                return instance;
+            }
+            private set => instance = value;
+        }
+
+        public List<PatientDTO> getAllPatients() {
             return PatientDAO.Instance.getAllPatient();
         }
     }

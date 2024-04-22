@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="BLL\BacSiBLL.cs" />
     <Compile Include="BLL\EmployeeBLL.cs" />
+    <Compile Include="BLL\LeTanBLL.cs" />
     <Compile Include="DAO\AttendanceDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\EmployeeDAO.cs" />
@@ -120,6 +121,12 @@
     <Compile Include="GUI\DichVuDaKe.Designer.cs">
       <DependentUpon>DichVuDaKe.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\DuLieuDiemDanh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\DuLieuDiemDanh.Designer.cs">
+      <DependentUpon>DuLieuDiemDanh.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\KhamLamSang.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -150,11 +157,11 @@
     <Compile Include="GUI\QuanLy.Designer.cs">
       <DependentUpon>QuanLy.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\QuanLiHosobenhnhan.cs">
+    <Compile Include="GUI\QuanLiHoSoBenhhan.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\QuanLiHosobenhnhan.Designer.cs">
-      <DependentUpon>QuanLiHosobenhnhan.cs</DependentUpon>
+    <Compile Include="GUI\QuanLiHoSoBenhhan.Designer.cs">
+      <DependentUpon>QuanLiHoSoBenhhan.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\ThanhToan.cs">
       <SubType>Form</SubType>
@@ -191,6 +198,9 @@
     <EmbeddedResource Include="GUI\DichVuDaKe.resx">
       <DependentUpon>DichVuDaKe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DuLieuDiemDanh.resx">
+      <DependentUpon>DuLieuDiemDanh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\KhamLamSang.resx">
       <DependentUpon>KhamLamSang.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,8 +216,8 @@
     <EmbeddedResource Include="GUI\QuanLy.resx">
       <DependentUpon>QuanLy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\QuanLiHosobenhnhan.resx">
-      <DependentUpon>QuanLiHosobenhnhan.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\QuanLiHoSoBenhhan.resx">
+      <DependentUpon>QuanLiHoSoBenhhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ThanhToan.resx">
       <DependentUpon>ThanhToan.cs</DependentUpon>

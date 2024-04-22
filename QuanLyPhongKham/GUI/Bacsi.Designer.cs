@@ -84,7 +84,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.kls1 = new QuanLyPhongKham.GUI.KhamLamSang();
@@ -686,16 +686,17 @@
             this.button10.Text = "Kết thúc khám";
             this.button10.UseVisualStyleBackColor = false;
             // 
-            // button9
+            // btnLogout
             // 
-            this.button9.BackColor = System.Drawing.Color.Red;
-            this.button9.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button9.Location = new System.Drawing.Point(0, -1);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(177, 57);
-            this.button9.TabIndex = 3;
-            this.button9.Text = "Đăng xuất";
-            this.button9.UseVisualStyleBackColor = false;
+            this.btnLogout.BackColor = System.Drawing.Color.Red;
+            this.btnLogout.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnLogout.Location = new System.Drawing.Point(0, -1);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(177, 57);
+            this.btnLogout.TabIndex = 3;
+            this.btnLogout.Text = "Đăng xuất";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // button7
             // 
@@ -713,7 +714,7 @@
             // 
             this.groupBox3.BackColor = System.Drawing.Color.LightGray;
             this.groupBox3.Controls.Add(this.button7);
-            this.groupBox3.Controls.Add(this.button9);
+            this.groupBox3.Controls.Add(this.btnLogout);
             this.groupBox3.Controls.Add(this.button10);
             this.groupBox3.Location = new System.Drawing.Point(0, 920);
             this.groupBox3.Name = "groupBox3";
@@ -816,7 +817,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.GroupBox groupBox3;
         private DonThuoc donthuoc1;

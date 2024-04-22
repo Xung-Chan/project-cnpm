@@ -36,7 +36,7 @@ namespace QuanLyPhongKham.GUI {
         private void btnLogin_Click( object sender, EventArgs e ) {
             string phoneNumber = tbxPhoneNumber.Text.Trim();
             string password = tbxPassword.Text.Trim();
-            switch (EmployeeBLL.checkLoginBLL(phoneNumber, password)) {
+            switch (EmployeeBLL.Instance.checkLoginBLL(phoneNumber, password)) {
                 case "BÁC SĨ":
                     BacSi bacsi = new BacSi();
                     this.Hide();

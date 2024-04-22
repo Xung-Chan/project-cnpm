@@ -37,7 +37,7 @@
             this.button28 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.quanLiHosobenhnhan1 = new QuanLyPhongKham.GUI.QuanLiHosobenhnhan();
+            this.quanLiHosobenhnhan1 = new QuanLyPhongKham.GUI.QuanLiHoSoBenhhan();
             this.panel9.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -188,6 +188,6 @@
         private System.Windows.Forms.Button button28;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button button17;
-        private QuanLiHosobenhnhan quanLiHosobenhnhan1;
+        private QuanLiHoSoBenhhan quanLiHosobenhnhan1;
     }
 }

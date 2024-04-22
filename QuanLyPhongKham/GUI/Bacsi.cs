@@ -18,7 +18,7 @@ namespace QuanLyPhongKham.GUI {
         }
 
         private void Bacsi_Load( object sender, EventArgs e ) {
-            List<PatientDTO> patientList = BacSiBLL.getAllPatients();
+            List<PatientDTO> patientList = BacSiBLL.Instance.getAllPatients();
             foreach (PatientDTO item in patientList) {
                 ListViewItem lvwItem = new ListViewItem(item.ID.ToString());
                 lvwItem.SubItems.Add(item.Name);
@@ -57,6 +57,10 @@ namespace QuanLyPhongKham.GUI {
 
         private void button10_Click( object sender, EventArgs e ) {
 
+        }
+
+        private void btnLogout_Click( object sender, EventArgs e ) {
+            this.Close();
         }
     }
 }

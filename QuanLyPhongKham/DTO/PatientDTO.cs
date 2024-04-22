@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyPhongKham.DTO {
     public class PatientDTO {
+        
         public PatientDTO(DataRow row) {
             this.ID = (int) row["ID"];
             this.branchID = (int) row["branchID"];
@@ -17,6 +18,18 @@ namespace QuanLyPhongKham.DTO {
             this.address = row["address"].ToString();
             this.CCCD = row["cccd"].ToString();
         }
+
+        public PatientDTO( int iD, int branchID, string name, DateTime birthday, string sex, string phoneNumber, string address, string cCCD ) {
+            this.iD = iD;
+            this.branchID = branchID;
+            this.name = name;
+            this.birthday = birthday;
+            this.sex = sex;
+            this.phoneNumber = phoneNumber;
+            this.address = address;
+            this.cCCD = cCCD;
+        }
+
         private int iD;
         private int branchID;
         private string name;
