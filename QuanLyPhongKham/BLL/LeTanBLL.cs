@@ -20,8 +20,8 @@ namespace QuanLyPhongKham.BLL {
             }
             private set => instance = value;
         }
-        public void insertPatient( int branchID, string name, DateTime birthday, int sex, string phoneNumber, string address, string cccd ) {
-            if (PatientDAO.Instance.insertPatient(branchID,name, birthday, sex, phoneNumber, address, cccd) < 1) {
+        public void savePatient(PatientDTO patient) {
+            if (PatientDAO.Instance.savePatient(patient) < 1) {
                 MessageBox.Show("Thêm bệnh nhân không thành công", "Có lỗi xảy ra", MessageBoxButtons.OK);
                 return;
             }

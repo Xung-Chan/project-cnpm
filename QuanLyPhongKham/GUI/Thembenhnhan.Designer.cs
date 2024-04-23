@@ -32,6 +32,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.dtpBirthday = new System.Windows.Forms.DateTimePicker();
             this.tbxCCCD = new System.Windows.Forms.TextBox();
             this.tbxAddress = new System.Windows.Forms.TextBox();
             this.tbxPhoneNumber = new System.Windows.Forms.TextBox();
@@ -46,7 +48,6 @@
             this.btnSavePatient = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.dtpBirthday = new System.Windows.Forms.DateTimePicker();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -90,6 +91,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightCyan;
+            this.panel3.Controls.Add(this.btnReset);
             this.panel3.Controls.Add(this.dtpBirthday);
             this.panel3.Controls.Add(this.tbxCCCD);
             this.panel3.Controls.Add(this.tbxAddress);
@@ -108,6 +110,29 @@
             this.panel3.Size = new System.Drawing.Size(933, 450);
             this.panel3.TabIndex = 3;
             // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.Color.SpringGreen;
+            this.btnReset.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnReset.Location = new System.Drawing.Point(549, 369);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(107, 37);
+            this.btnReset.TabIndex = 6;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // dtpBirthday
+            // 
+            this.dtpBirthday.CustomFormat = " ";
+            this.dtpBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpBirthday.Location = new System.Drawing.Point(245, 107);
+            this.dtpBirthday.Name = "dtpBirthday";
+            this.dtpBirthday.Size = new System.Drawing.Size(411, 22);
+            this.dtpBirthday.TabIndex = 2;
+            this.dtpBirthday.ValueChanged += new System.EventHandler(this.dtpBirthday_ValueChanged);
+            // 
             // tbxCCCD
             // 
             this.tbxCCCD.Location = new System.Drawing.Point(245, 315);
@@ -115,7 +140,7 @@
             this.tbxCCCD.Multiline = true;
             this.tbxCCCD.Name = "tbxCCCD";
             this.tbxCCCD.Size = new System.Drawing.Size(411, 50);
-            this.tbxCCCD.TabIndex = 4;
+            this.tbxCCCD.TabIndex = 6;
             this.tbxCCCD.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // tbxAddress
@@ -125,7 +150,7 @@
             this.tbxAddress.Multiline = true;
             this.tbxAddress.Name = "tbxAddress";
             this.tbxAddress.Size = new System.Drawing.Size(411, 50);
-            this.tbxAddress.TabIndex = 4;
+            this.tbxAddress.TabIndex = 5;
             this.tbxAddress.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // tbxPhoneNumber
@@ -140,12 +165,12 @@
             // 
             // tbxSex
             // 
-            this.tbxSex.Location = new System.Drawing.Point(245, 149);
+            this.tbxSex.Location = new System.Drawing.Point(245, 146);
             this.tbxSex.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxSex.Multiline = true;
             this.tbxSex.Name = "tbxSex";
             this.tbxSex.Size = new System.Drawing.Size(411, 50);
-            this.tbxSex.TabIndex = 4;
+            this.tbxSex.TabIndex = 3;
             this.tbxSex.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // tbxName
@@ -155,7 +180,7 @@
             this.tbxName.Multiline = true;
             this.tbxName.Name = "tbxName";
             this.tbxName.Size = new System.Drawing.Size(411, 50);
-            this.tbxName.TabIndex = 4;
+            this.tbxName.TabIndex = 1;
             this.tbxName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label7
@@ -264,16 +289,6 @@
             this.panel4.Size = new System.Drawing.Size(1035, 52);
             this.panel4.TabIndex = 5;
             // 
-            // dtpBirthday
-            // 
-            this.dtpBirthday.CustomFormat = " ";
-            this.dtpBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpBirthday.Location = new System.Drawing.Point(245, 107);
-            this.dtpBirthday.Name = "dtpBirthday";
-            this.dtpBirthday.Size = new System.Drawing.Size(411, 22);
-            this.dtpBirthday.TabIndex = 5;
-            this.dtpBirthday.ValueChanged += new System.EventHandler(this.dtpBirthday_ValueChanged);
-            // 
             // panel8
             // 
             this.panel8.BackgroundImage = global::QuanLyPhongKham.Properties.Resources.N9_NiceNight__1_;
@@ -331,5 +346,6 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DateTimePicker dtpBirthday;
+        private System.Windows.Forms.Button btnReset;
     }
 }

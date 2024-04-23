@@ -50,7 +50,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnUpdatePatient = new System.Windows.Forms.Button();
             this.btnAddQueue = new System.Windows.Forms.Button();
             this.btnAddPatient = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -85,7 +85,7 @@
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btnUpdatePatient);
             this.panel1.Controls.Add(this.btnAddQueue);
             this.panel1.Controls.Add(this.btnAddPatient);
             this.panel1.Controls.Add(this.label1);
@@ -309,17 +309,18 @@
             this.button4.Text = "Xem";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnUpdatePatient
             // 
-            this.button2.BackColor = System.Drawing.Color.Cyan;
-            this.button2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.Location = new System.Drawing.Point(993, 6);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(123, 49);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Sửa";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnUpdatePatient.BackColor = System.Drawing.Color.Cyan;
+            this.btnUpdatePatient.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnUpdatePatient.Location = new System.Drawing.Point(993, 6);
+            this.btnUpdatePatient.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnUpdatePatient.Name = "btnUpdatePatient";
+            this.btnUpdatePatient.Size = new System.Drawing.Size(123, 49);
+            this.btnUpdatePatient.TabIndex = 9;
+            this.btnUpdatePatient.Text = "Sửa";
+            this.btnUpdatePatient.UseVisualStyleBackColor = false;
+            this.btnUpdatePatient.Click += new System.EventHandler(this.btnUpdatePatient_Click);
             // 
             // btnAddQueue
             // 
@@ -445,7 +446,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnUpdatePatient;
         private System.Windows.Forms.Button btnAddQueue;
         private System.Windows.Forms.Button btnAddPatient;
         private System.Windows.Forms.Label label1;

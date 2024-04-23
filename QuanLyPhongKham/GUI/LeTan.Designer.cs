@@ -28,16 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.button12 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.quanLiHosobenhnhan1 = new QuanLyPhongKham.GUI.QuanLiHoSoBenhhan();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel9.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -80,7 +82,7 @@
             // 
             this.button12.BackColor = System.Drawing.Color.Silver;
             this.button12.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button12.Location = new System.Drawing.Point(3, 148);
+            this.button12.Location = new System.Drawing.Point(3, 147);
             this.button12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(419, 63);
@@ -113,23 +115,24 @@
             this.button29.Text = "Quản lý hồ sơ bệnh nhân";
             this.button29.UseVisualStyleBackColor = false;
             // 
-            // button28
+            // btnLogout
             // 
-            this.button28.BackColor = System.Drawing.Color.Crimson;
-            this.button28.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button28.Location = new System.Drawing.Point(21, 182);
-            this.button28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button28.Name = "button28";
-            this.button28.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button28.Size = new System.Drawing.Size(145, 49);
-            this.button28.TabIndex = 10;
-            this.button28.Text = "Đăng xuất";
-            this.button28.UseVisualStyleBackColor = false;
+            this.btnLogout.BackColor = System.Drawing.Color.Crimson;
+            this.btnLogout.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnLogout.Location = new System.Drawing.Point(21, 182);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnLogout.Size = new System.Drawing.Size(145, 49);
+            this.btnLogout.TabIndex = 10;
+            this.btnLogout.Text = "Đăng xuất";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.Honeydew;
-            this.panel10.Controls.Add(this.button28);
+            this.panel10.Controls.Add(this.btnLogout);
             this.panel10.Location = new System.Drawing.Point(12, 518);
             this.panel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel10.Name = "panel10";
@@ -153,9 +156,8 @@
             this.quanLiHosobenhnhan1.Name = "quanLiHosobenhnhan1";
             this.quanLiHosobenhnhan1.Size = new System.Drawing.Size(1313, 702);
             this.quanLiHosobenhnhan1.TabIndex = 8;
-            this.quanLiHosobenhnhan1.Load += new System.EventHandler(this.quanLiHosobenhnhan1_Load);
             // 
-            // Letan
+            // LeTan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -167,7 +169,7 @@
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Letan";
+            this.Name = "LeTan";
             this.Text = "Letan";
             this.Load += new System.EventHandler(this.Letan_Load);
             this.panel9.ResumeLayout(false);
@@ -185,9 +187,10 @@
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Button button29;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button button17;
         private QuanLiHoSoBenhhan quanLiHosobenhnhan1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

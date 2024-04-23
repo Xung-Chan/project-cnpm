@@ -6,6 +6,7 @@ using System.Linq;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace QuanLyPhongKham.DAO {
     public class PatientDAO {
@@ -36,10 +37,21 @@ namespace QuanLyPhongKham.DAO {
             }
             return null;
         }
-        public int insertPatient(int branchID, string name, DateTime birthday, int sex, string phoneNumber, string address, string cccd ) {
+        public PatientDTO getPatientByID(string id ) {
+            DataTable table = DataProvider.Instance.ExecuteQuery(String.Format("select * from Patient where id = {0}", id));
+            foreach(DataRow row in table.Rows) {
+                return new PatientDTO(row);
+            }
+            return null;
+
+        }
+        public int savePatient(PatientDTO patient) {
+            if(getPatientByID(patient.ID.ToString()) != null) {
+                //update
+            }
             string query = "exec sp_insertPatient @branchID , @name , @birthday , @sex , @phoneNumber , @address , @cccd";
-            
-            return  DataProvider.Instance.ExecuteNonQuery(query, new object[] { branchID, name, birthday, sex, phoneNumber, address, cccd });
+            return  DataProvider.Instance.ExecuteNonQuery(query, new object[] { patient.BranchID.ToString(), patient.Name.ToString(), patient.Birthday, 
+                patient.Sex.ToString(), patient.PhoneNumber.ToString(), patient.Address.ToString(), patient.CCCD.ToString() });
 
         }
     }

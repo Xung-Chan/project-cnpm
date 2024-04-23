@@ -47,10 +47,12 @@ namespace QuanLyPhongKham.GUI {
                     LeTan letan = new LeTan();
                     this.Hide();
                     letan.ShowDialog();
-                    this.Show();
                     break;
                 case "QUẢN LÝ":
-                    MessageBox.Show("Tính năng đang trong quá trình phát triển");
+                    QuanLy quanLy   = new QuanLy();
+                    this.Hide();
+                    quanLy.ShowDialog();
+                    this.Show();
                     break;
                 default:
                     MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác","Đăng nhập không thành công", MessageBoxButtons.OK);

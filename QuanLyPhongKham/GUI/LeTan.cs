@@ -60,12 +60,13 @@ namespace QuanLyPhongKham.GUI
 
         }
 
-        private void quanLiHosobenhnhan1_Load( object sender, EventArgs e ) {
-
-        }
 
         private void Letan_Load( object sender, EventArgs e ) {
 
+        }
+
+        private void btnLogout_Click( object sender, EventArgs e ) {
+            this.Close();
         }
     }
 }

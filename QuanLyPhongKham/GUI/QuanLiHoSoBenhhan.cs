@@ -22,7 +22,9 @@ namespace QuanLyPhongKham.GUI
         private void btnSearch_Click( object sender, EventArgs e ) {
             PatientDTO patient = PatientDAO.Instance.getPatientByPhoneNumber(tbxSearch.Text.Trim());
             if (patient == null ) {
-                MessageBox.Show("Bệnh nhân không có thông tin trong hồ sơ phòng khám", "Không tìm thấy kết quả", MessageBoxButtons.OK);
+                if(MessageBox.Show("Bệnh nhân không có thông tin trong hồ sơ phòng khám.\nBạn có muốn thêm tạo hồ sơ ?", "Không tìm thấy kết quả", MessageBoxButtons.YesNo) == DialogResult.Yes) {
+                    btnAddPatient_Click(sender, e);
+                }
                 tbxSearch.Text = "";
                 return;
             }
@@ -39,6 +41,7 @@ namespace QuanLyPhongKham.GUI
             btnCCCD.Text = patient.CCCD.ToString();
             btnSex.Text = patient.Sex.ToString();
             tbxSearch.Text = "";
+            btnSearch.Tag = patient;
 
         }
 
@@ -50,6 +53,13 @@ namespace QuanLyPhongKham.GUI
 
         private void btnAddPatient_Click( object sender, EventArgs e ) {
             ThemBenhNhan tbn = new ThemBenhNhan();
+            this.Parent.Hide();
+            tbn.ShowDialog();
+            this.Parent.Show();
+        }
+
+        private void btnUpdatePatient_Click( object sender, EventArgs e ) {
+            ThemBenhNhan tbn = new ThemBenhNhan(btnSearch.Tag as PatientDTO);
             this.Parent.Hide();
             tbn.ShowDialog();
             this.Parent.Show();

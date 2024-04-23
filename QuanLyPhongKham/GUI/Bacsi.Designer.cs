@@ -63,7 +63,6 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -75,7 +74,6 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button5 = new System.Windows.Forms.Button();
@@ -430,7 +428,6 @@
             this.panel6.Controls.Add(this.label20);
             this.panel6.Controls.Add(this.label19);
             this.panel6.Controls.Add(this.label18);
-            this.panel6.Controls.Add(this.label17);
             this.panel6.Controls.Add(this.label13);
             this.panel6.Location = new System.Drawing.Point(566, 307);
             this.panel6.Name = "panel6";
@@ -442,7 +439,6 @@
             this.panel12.Controls.Add(this.textBox8);
             this.panel12.Controls.Add(this.textBox7);
             this.panel12.Controls.Add(this.textBox6);
-            this.panel12.Controls.Add(this.textBox5);
             this.panel12.Location = new System.Drawing.Point(941, 21);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(313, 147);
@@ -471,14 +467,6 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(307, 22);
             this.textBox6.TabIndex = 5;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Location = new System.Drawing.Point(3, 3);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(307, 22);
-            this.textBox5.TabIndex = 4;
             // 
             // panel11
             // 
@@ -589,17 +577,6 @@
             this.label18.Text = "Ngày lập";
             this.label18.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label17.Location = new System.Drawing.Point(732, 15);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(111, 28);
-            this.label17.TabIndex = 2;
-            this.label17.Text = "Tiền khám";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -638,7 +615,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button4.Location = new System.Drawing.Point(53, 252);
+            this.button4.Location = new System.Drawing.Point(53, 256);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(192, 70);
             this.button4.TabIndex = 3;
@@ -658,7 +635,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.Location = new System.Drawing.Point(53, 98);
+            this.button2.Location = new System.Drawing.Point(53, 100);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(192, 70);
             this.button2.TabIndex = 3;
@@ -668,7 +645,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.Location = new System.Drawing.Point(53, 22);
+            this.button1.Location = new System.Drawing.Point(53, 21);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(192, 70);
             this.button1.TabIndex = 3;
@@ -830,7 +807,6 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.ListView lvwPatient;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
@@ -847,7 +823,6 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
