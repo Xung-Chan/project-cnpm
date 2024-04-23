@@ -118,7 +118,7 @@
             this.btnReset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(107, 37);
-            this.btnReset.TabIndex = 6;
+            this.btnReset.TabIndex = 7;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
@@ -262,7 +262,7 @@
             this.btnSavePatient.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSavePatient.Name = "btnSavePatient";
             this.btnSavePatient.Size = new System.Drawing.Size(192, 37);
-            this.btnSavePatient.TabIndex = 4;
+            this.btnSavePatient.TabIndex = 8;
             this.btnSavePatient.Text = "Lưu";
             this.btnSavePatient.UseVisualStyleBackColor = false;
             this.btnSavePatient.Click += new System.EventHandler(this.btnSavePatient_Click);
@@ -275,7 +275,7 @@
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(192, 37);
-            this.button2.TabIndex = 4;
+            this.button2.TabIndex = 9;
             this.button2.Text = "Thoát";
             this.button2.UseVisualStyleBackColor = false;
             // 

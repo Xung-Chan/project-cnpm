@@ -27,5 +27,8 @@ namespace QuanLyPhongKham.BLL {
             }
             MessageBox.Show("Thêm bệnh nhân thành công", "Successfully", MessageBoxButtons.OK);
         }
+        public List<RoomDTO> loadQueue() {
+            return RoomDAO.Instance.getAllRoom();
+        }
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbbQueue = new System.Windows.Forms.ComboBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -66,7 +66,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.cbbQueue);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.btnBirthYear);
             this.panel1.Controls.Add(this.btnCCCD);
@@ -96,14 +96,14 @@
             this.panel1.Size = new System.Drawing.Size(1308, 697);
             this.panel1.TabIndex = 1;
             // 
-            // comboBox1
+            // cbbQueue
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(860, 542);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(383, 24);
-            this.comboBox1.TabIndex = 14;
+            this.cbbQueue.FormattingEnabled = true;
+            this.cbbQueue.Location = new System.Drawing.Point(860, 542);
+            this.cbbQueue.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbQueue.Name = "cbbQueue";
+            this.cbbQueue.Size = new System.Drawing.Size(383, 24);
+            this.cbbQueue.TabIndex = 14;
             // 
             // panel6
             // 
@@ -333,6 +333,7 @@
             this.btnAddQueue.TabIndex = 9;
             this.btnAddQueue.Text = "Thêm vào hàng chờ";
             this.btnAddQueue.UseVisualStyleBackColor = false;
+            this.btnAddQueue.Click += new System.EventHandler(this.btnAddQueue_Click);
             // 
             // btnAddPatient
             // 
@@ -425,7 +426,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbbQueue;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel7;

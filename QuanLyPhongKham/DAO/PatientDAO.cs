@@ -24,35 +24,40 @@ namespace QuanLyPhongKham.DAO {
         public List<PatientDTO> getAllPatient() {
             List<PatientDTO> patientList = new List<PatientDTO>();
             DataTable dt = DataProvider.Instance.ExecuteQuery("select * from Patient");
-            foreach(DataRow row in dt.Rows) {
+            foreach (DataRow row in dt.Rows) {
                 PatientDTO patient = new PatientDTO(row);
                 patientList.Add(patient);
             }
             return patientList;
         }
-        public PatientDTO getPatientByPhoneNumber(string phoneNumber ) {
+        public PatientDTO getPatientByPhoneNumber( string phoneNumber ) {
             DataTable table = DataProvider.Instance.ExecuteQuery(String.Format("select * from Patient where phoneNumber = {0}", phoneNumber));
-            foreach(DataRow row in table.Rows) {
+            foreach (DataRow row in table.Rows) {
                 return new PatientDTO(row);
             }
             return null;
         }
-        public PatientDTO getPatientByID(string id ) {
+        public PatientDTO getPatientByID( string id ) {
             DataTable table = DataProvider.Instance.ExecuteQuery(String.Format("select * from Patient where id = {0}", id));
-            foreach(DataRow row in table.Rows) {
+            foreach (DataRow row in table.Rows) {
                 return new PatientDTO(row);
             }
             return null;
 
         }
-        public int savePatient(PatientDTO patient) {
-            if(getPatientByID(patient.ID.ToString()) != null) {
-                //update
-            }
-            string query = "exec sp_insertPatient @branchID , @name , @birthday , @sex , @phoneNumber , @address , @cccd";
-            return  DataProvider.Instance.ExecuteNonQuery(query, new object[] { patient.BranchID.ToString(), patient.Name.ToString(), patient.Birthday, 
-                patient.Sex.ToString(), patient.PhoneNumber.ToString(), patient.Address.ToString(), patient.CCCD.ToString() });
+        public int savePatient( PatientDTO patient ) {
+            int sex = patient.Sex.Equals("Nam") ? 1 : 0;
+            string query;
+            if (patient.ID == -1) {     //thêm bệnh nhân mới;
+                query = "exec sp_insertPatient @branchID , @name , @birthday , @sex , @phoneNumber , @address , @cccd";
+                return DataProvider.Instance.ExecuteNonQuery(query, new object[] { patient.BranchID, patient.Name.ToString(), patient.Birthday,
+                    sex, patient.PhoneNumber.ToString(), patient.Address.ToString(), patient.CCCD.ToString() });
 
+            }
+            //update bệnh nhân
+            query = "exec sp_updatePatient @id , @branchID , @name , @birthday , @sex , @phoneNumber , @address , @cccd";
+            return DataProvider.Instance.ExecuteNonQuery(query, new object[] {patient.ID.ToString(), patient.BranchID.ToString(), patient.Name.ToString(), patient.Birthday,
+                    sex, patient.PhoneNumber.ToString(), patient.Address.ToString(), patient.CCCD.ToString() });
         }
     }
 }
