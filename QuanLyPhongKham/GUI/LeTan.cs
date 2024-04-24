@@ -69,5 +69,8 @@ namespace QuanLyPhongKham.GUI
             this.Close();
         }
 
+        private void quanLiHosobenhnhan_Load( object sender, EventArgs e ) {
+            quanLiHosobenhnhan.loadQueue();
+        }
     }
 }

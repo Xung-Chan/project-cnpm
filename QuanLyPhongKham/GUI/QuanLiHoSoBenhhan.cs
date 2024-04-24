@@ -13,10 +13,9 @@ using System.Windows.Forms;
 
 namespace QuanLyPhongKham.GUI {
     public partial class QuanLiHoSoBenhhan : UserControl {
-        Dictionary<string,Queue<PatientDTO>> roomPatientQueue = new Dictionary<string, Queue<PatientDTO>>();
+        private Dictionary<string,Queue<PatientDTO>> roomPatientQueue = new Dictionary<string, Queue<PatientDTO>>();
         public QuanLiHoSoBenhhan() {
             InitializeComponent();
-            loadQueue();
 
         }
         public void loadQueue() {

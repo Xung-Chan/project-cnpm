@@ -47,6 +47,7 @@ namespace QuanLyPhongKham.GUI {
                     LeTan letan = new LeTan();
                     this.Hide();
                     letan.ShowDialog();
+                    this.Show();
                     break;
                 case "QUẢN LÝ":
                     QuanLy quanLy   = new QuanLy();

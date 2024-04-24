@@ -76,18 +76,19 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnKhamLamSang = new System.Windows.Forms.Button();
+            this.btnLichSuKhamChuaBenh = new System.Windows.Forms.Button();
+            this.btnDonThuoc = new System.Windows.Forms.Button();
+            this.btnDichVuDaKe = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.kls1 = new QuanLyPhongKham.GUI.KhamLamSang();
-            this.dVdk1 = new QuanLyPhongKham.GUI.DichVuDaKe();
-            this.donthuoc1 = new QuanLyPhongKham.GUI.DonThuoc();
+            this.khamLamSang = new QuanLyPhongKham.GUI.KhamLamSang();
+            this.dichVuDaKe = new QuanLyPhongKham.GUI.DichVuDaKe();
+            this.donthuoc = new QuanLyPhongKham.GUI.DonThuoc();
+            this.lichSuKhamChuaBenh = new QuanLyPhongKham.GUI.LichSuKhamChuaBenh();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -591,10 +592,10 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.LightGray;
-            this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.btnKhamLamSang);
+            this.groupBox1.Controls.Add(this.btnLichSuKhamChuaBenh);
+            this.groupBox1.Controls.Add(this.btnDonThuoc);
+            this.groupBox1.Controls.Add(this.btnDichVuDaKe);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Location = new System.Drawing.Point(0, 484);
             this.groupBox1.Name = "groupBox1";
@@ -602,45 +603,49 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             // 
-            // button5
+            // btnKhamLamSang
             // 
-            this.button5.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button5.Location = new System.Drawing.Point(53, 341);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(192, 70);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Lộ trình khám chữa bệnh";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnKhamLamSang.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnKhamLamSang.Location = new System.Drawing.Point(53, 341);
+            this.btnKhamLamSang.Name = "btnKhamLamSang";
+            this.btnKhamLamSang.Size = new System.Drawing.Size(192, 70);
+            this.btnKhamLamSang.TabIndex = 3;
+            this.btnKhamLamSang.Text = "Khám lâm sàng";
+            this.btnKhamLamSang.UseVisualStyleBackColor = true;
+            this.btnKhamLamSang.Click += new System.EventHandler(this.btnKhamLamSang_Click);
             // 
-            // button4
+            // btnLichSuKhamChuaBenh
             // 
-            this.button4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button4.Location = new System.Drawing.Point(53, 256);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(192, 70);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Lịch sử KCB";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnLichSuKhamChuaBenh.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnLichSuKhamChuaBenh.Location = new System.Drawing.Point(53, 256);
+            this.btnLichSuKhamChuaBenh.Name = "btnLichSuKhamChuaBenh";
+            this.btnLichSuKhamChuaBenh.Size = new System.Drawing.Size(192, 70);
+            this.btnLichSuKhamChuaBenh.TabIndex = 3;
+            this.btnLichSuKhamChuaBenh.Text = "Lịch sử KCB";
+            this.btnLichSuKhamChuaBenh.UseVisualStyleBackColor = true;
+            this.btnLichSuKhamChuaBenh.Click += new System.EventHandler(this.btnLichSuKhamChuaBenh_Click);
             // 
-            // button3
+            // btnDonThuoc
             // 
-            this.button3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button3.Location = new System.Drawing.Point(53, 174);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(192, 70);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Đơn Thuốc";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnDonThuoc.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnDonThuoc.Location = new System.Drawing.Point(53, 177);
+            this.btnDonThuoc.Name = "btnDonThuoc";
+            this.btnDonThuoc.Size = new System.Drawing.Size(192, 70);
+            this.btnDonThuoc.TabIndex = 3;
+            this.btnDonThuoc.Text = "Đơn Thuốc";
+            this.btnDonThuoc.UseVisualStyleBackColor = true;
+            this.btnDonThuoc.Click += new System.EventHandler(this.btnDonThuoc_Click);
             // 
-            // button2
+            // btnDichVuDaKe
             // 
-            this.button2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.Location = new System.Drawing.Point(53, 100);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(192, 70);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "DV Đã kê";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnDichVuDaKe.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnDichVuDaKe.Location = new System.Drawing.Point(53, 100);
+            this.btnDichVuDaKe.Name = "btnDichVuDaKe";
+            this.btnDichVuDaKe.Size = new System.Drawing.Size(192, 70);
+            this.btnDichVuDaKe.TabIndex = 3;
+            this.btnDichVuDaKe.Text = "DV Đã kê";
+            this.btnDichVuDaKe.UseVisualStyleBackColor = true;
+            this.btnDichVuDaKe.Click += new System.EventHandler(this.btnDichVuDaKe_Click);
             // 
             // button1
             // 
@@ -699,27 +704,35 @@
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             // 
-            // kls1
+            // khamLamSang
             // 
-            this.kls1.Location = new System.Drawing.Point(329, 485);
-            this.kls1.Name = "kls1";
-            this.kls1.Size = new System.Drawing.Size(1674, 437);
-            this.kls1.TabIndex = 10;
+            this.khamLamSang.Location = new System.Drawing.Point(329, 492);
+            this.khamLamSang.Name = "khamLamSang";
+            this.khamLamSang.Size = new System.Drawing.Size(1674, 437);
+            this.khamLamSang.TabIndex = 10;
             // 
-            // dVdk1
+            // dichVuDaKe
             // 
-            this.dVdk1.BackColor = System.Drawing.Color.LightGray;
-            this.dVdk1.Location = new System.Drawing.Point(329, 492);
-            this.dVdk1.Name = "dVdk1";
-            this.dVdk1.Size = new System.Drawing.Size(1605, 422);
-            this.dVdk1.TabIndex = 9;
+            this.dichVuDaKe.BackColor = System.Drawing.Color.LightGray;
+            this.dichVuDaKe.Location = new System.Drawing.Point(329, 492);
+            this.dichVuDaKe.Name = "dichVuDaKe";
+            this.dichVuDaKe.Size = new System.Drawing.Size(1605, 422);
+            this.dichVuDaKe.TabIndex = 9;
             // 
-            // donthuoc1
+            // donthuoc
             // 
-            this.donthuoc1.Location = new System.Drawing.Point(329, 492);
-            this.donthuoc1.Name = "donthuoc1";
-            this.donthuoc1.Size = new System.Drawing.Size(1605, 430);
-            this.donthuoc1.TabIndex = 8;
+            this.donthuoc.Location = new System.Drawing.Point(329, 492);
+            this.donthuoc.Name = "donthuoc";
+            this.donthuoc.Size = new System.Drawing.Size(1605, 430);
+            this.donthuoc.TabIndex = 8;
+            // 
+            // lichSuKhamChuaBenh
+            // 
+            this.lichSuKhamChuaBenh.Location = new System.Drawing.Point(329, 492);
+            this.lichSuKhamChuaBenh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lichSuKhamChuaBenh.Name = "lichSuKhamChuaBenh";
+            this.lichSuKhamChuaBenh.Size = new System.Drawing.Size(1595, 430);
+            this.lichSuKhamChuaBenh.TabIndex = 11;
             // 
             // BacSi
             // 
@@ -727,9 +740,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(1924, 984);
-            this.Controls.Add(this.kls1);
-            this.Controls.Add(this.dVdk1);
-            this.Controls.Add(this.donthuoc1);
+            this.Controls.Add(this.lichSuKhamChuaBenh);
+            this.Controls.Add(this.khamLamSang);
+            this.Controls.Add(this.dichVuDaKe);
+            this.Controls.Add(this.donthuoc);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel6);
@@ -789,17 +803,17 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnLichSuKhamChuaBenh;
+        private System.Windows.Forms.Button btnDonThuoc;
+        private System.Windows.Forms.Button btnDichVuDaKe;
+        private System.Windows.Forms.Button btnKhamLamSang;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.GroupBox groupBox3;
-        private DonThuoc donthuoc1;
-        private DichVuDaKe dVdk1;
-        private KhamLamSang kls1;
+        private DonThuoc donthuoc;
+        private DichVuDaKe dichVuDaKe;
+        private KhamLamSang khamLamSang;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
@@ -828,5 +842,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
+        private LichSuKhamChuaBenh lichSuKhamChuaBenh;
     }
 }

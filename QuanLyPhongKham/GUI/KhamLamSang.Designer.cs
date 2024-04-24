@@ -138,7 +138,7 @@
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(157, 48);
             this.label18.TabIndex = 4;
-            this.label18.Text = "kết luận \r\nvà hướng điều trị";
+            this.label18.Text = "Kết luận \r\nvà hướng điều trị";
             this.label18.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label17
@@ -216,12 +216,12 @@
             this.label13.Text = "KHÁM LÂM SÀN";
             this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // kls
+            // KhamLamSang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox2);
-            this.Name = "kls";
+            this.Name = "KhamLamSang";
             this.Size = new System.Drawing.Size(1674, 448);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

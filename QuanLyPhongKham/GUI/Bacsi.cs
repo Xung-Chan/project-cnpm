@@ -14,7 +14,7 @@ namespace QuanLyPhongKham.GUI {
     public partial class BacSi : Form {
         public BacSi() {
             InitializeComponent();
-            kls1.BringToFront();
+            khamLamSang.BringToFront();
         }
 
         private void Bacsi_Load( object sender, EventArgs e ) {
@@ -27,14 +27,6 @@ namespace QuanLyPhongKham.GUI {
             }
         }
 
-        private void button3_Click( object sender, EventArgs e ) {
-            donthuoc1.BringToFront();
-
-        }
-
-        private void button1_Click( object sender, EventArgs e ) {
-            kls1.BringToFront();
-        }
 
 
         private void lvwPatient_SelectedIndexChanged( object sender, EventArgs e ) {
@@ -51,16 +43,25 @@ namespace QuanLyPhongKham.GUI {
             }
         }
 
-        private void button9_Click( object sender, EventArgs e ) {
-
-        }
-
-        private void button10_Click( object sender, EventArgs e ) {
-
-        }
 
         private void btnLogout_Click( object sender, EventArgs e ) {
             this.Close();
+        }
+
+        private void btnDonThuoc_Click( object sender, EventArgs e ) {
+            donthuoc.BringToFront();
+        }
+
+        private void btnDichVuDaKe_Click( object sender, EventArgs e ) {
+            dichVuDaKe.BringToFront();
+        }
+
+        private void btnKhamLamSang_Click( object sender, EventArgs e ) {
+            khamLamSang.BringToFront();
+        }
+
+        private void btnLichSuKhamChuaBenh_Click( object sender, EventArgs e ) {
+            lichSuKhamChuaBenh.BringToFront();
         }
     }
 }

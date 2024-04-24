@@ -1,7 +1,5 @@
-﻿namespace QuanLyPhongKham.GUI
-{
-    partial class QuanLiHoSoBenhhan
-    {
+﻿namespace QuanLyPhongKham.GUI {
+    public partial class QuanLiHoSoBenhhan {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
@@ -11,10 +9,8 @@
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
+        protected override void Dispose( bool disposing ) {
+            if (disposing && (components != null)) {
                 components.Dispose();
             }
             base.Dispose(disposing);
@@ -26,8 +22,7 @@
         /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
+        private void InitializeComponent() {
             this.panel1 = new System.Windows.Forms.Panel();
             this.cbbQueue = new System.Windows.Forms.ComboBox();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -119,7 +114,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (163)));
             this.label9.Location = new System.Drawing.Point(15, 14);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(191, 24);
@@ -212,7 +207,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (163)));
             this.label7.Location = new System.Drawing.Point(15, 392);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(98, 24);
@@ -223,7 +218,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (163)));
             this.label2.Location = new System.Drawing.Point(15, 450);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 24);
@@ -234,7 +229,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label17.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (163)));
             this.label17.Location = new System.Drawing.Point(671, 393);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(56, 24);
@@ -245,7 +240,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label15.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (163)));
             this.label15.Location = new System.Drawing.Point(669, 325);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(67, 24);
@@ -256,7 +251,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label14.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (163)));
             this.label14.Location = new System.Drawing.Point(671, 270);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(92, 24);
@@ -267,7 +262,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label12.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (163)));
             this.label12.Location = new System.Drawing.Point(429, 325);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(46, 24);
@@ -278,7 +273,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (163)));
             this.label5.Location = new System.Drawing.Point(15, 325);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(89, 24);
@@ -289,7 +284,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (163)));
             this.label4.Location = new System.Drawing.Point(15, 270);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(135, 24);
@@ -300,7 +295,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.SteelBlue;
-            this.button4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (163)));
             this.button4.Location = new System.Drawing.Point(1136, 7);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
@@ -312,7 +307,7 @@
             // btnUpdatePatient
             // 
             this.btnUpdatePatient.BackColor = System.Drawing.Color.Cyan;
-            this.btnUpdatePatient.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnUpdatePatient.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (163)));
             this.btnUpdatePatient.Location = new System.Drawing.Point(993, 6);
             this.btnUpdatePatient.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdatePatient.Name = "btnUpdatePatient";
@@ -325,7 +320,7 @@
             // btnAddQueue
             // 
             this.btnAddQueue.BackColor = System.Drawing.Color.SpringGreen;
-            this.btnAddQueue.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnAddQueue.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (163)));
             this.btnAddQueue.Location = new System.Drawing.Point(927, 622);
             this.btnAddQueue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddQueue.Name = "btnAddQueue";
@@ -338,7 +333,7 @@
             // btnAddPatient
             // 
             this.btnAddPatient.BackColor = System.Drawing.Color.SpringGreen;
-            this.btnAddPatient.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnAddPatient.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (163)));
             this.btnAddPatient.Location = new System.Drawing.Point(844, 7);
             this.btnAddPatient.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddPatient.Name = "btnAddPatient";
@@ -351,7 +346,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (163)));
             this.label1.Location = new System.Drawing.Point(3, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(180, 24);
@@ -395,7 +390,7 @@
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.Color.Cyan;
-            this.btnSearch.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnSearch.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (163)));
             this.btnSearch.Location = new System.Drawing.Point(939, 16);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";

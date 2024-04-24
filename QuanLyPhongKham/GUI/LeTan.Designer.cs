@@ -38,7 +38,7 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.quanLiHosobenhnhan1 = new QuanLyPhongKham.GUI.QuanLiHoSoBenhhan();
+            this.quanLiHosobenhnhan = new QuanLyPhongKham.GUI.QuanLiHoSoBenhhan();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel9.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -149,13 +149,14 @@
             this.panel8.Size = new System.Drawing.Size(48, 47);
             this.panel8.TabIndex = 6;
             // 
-            // quanLiHosobenhnhan1
+            // quanLiHosobenhnhan
             // 
-            this.quanLiHosobenhnhan1.Location = new System.Drawing.Point(448, 66);
-            this.quanLiHosobenhnhan1.Margin = new System.Windows.Forms.Padding(5);
-            this.quanLiHosobenhnhan1.Name = "quanLiHosobenhnhan1";
-            this.quanLiHosobenhnhan1.Size = new System.Drawing.Size(1313, 702);
-            this.quanLiHosobenhnhan1.TabIndex = 8;
+            this.quanLiHosobenhnhan.Location = new System.Drawing.Point(448, 66);
+            this.quanLiHosobenhnhan.Margin = new System.Windows.Forms.Padding(5);
+            this.quanLiHosobenhnhan.Name = "quanLiHosobenhnhan";
+            this.quanLiHosobenhnhan.Size = new System.Drawing.Size(1313, 702);
+            this.quanLiHosobenhnhan.TabIndex = 8;
+            this.quanLiHosobenhnhan.Load += new System.EventHandler(this.quanLiHosobenhnhan_Load);
             // 
             // LeTan
             // 
@@ -163,7 +164,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(1763, 763);
-            this.Controls.Add(this.quanLiHosobenhnhan1);
+            this.Controls.Add(this.quanLiHosobenhnhan);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel10);
@@ -190,7 +191,7 @@
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button button17;
-        private QuanLiHoSoBenhhan quanLiHosobenhnhan1;
+        private QuanLiHoSoBenhhan quanLiHosobenhnhan;
         private System.Windows.Forms.Timer timer1;
     }
 }
