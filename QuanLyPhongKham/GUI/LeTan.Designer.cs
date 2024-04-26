@@ -34,11 +34,11 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.button12 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
+            this.btnQuanLyHoSoBenhNhan = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.quanLiHosobenhnhan = new QuanLyPhongKham.GUI.QuanLiHoSoBenhhan();
+            this.quanLyHoSoBenhNhan = new QuanLyPhongKham.GUI.QuanLiHoSoBenhhan();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel9.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -71,7 +71,7 @@
             this.panel11.BackColor = System.Drawing.Color.Silver;
             this.panel11.Controls.Add(this.button12);
             this.panel11.Controls.Add(this.button17);
-            this.panel11.Controls.Add(this.button29);
+            this.panel11.Controls.Add(this.btnQuanLyHoSoBenhNhan);
             this.panel11.Location = new System.Drawing.Point(12, 66);
             this.panel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel11.Name = "panel11";
@@ -101,19 +101,19 @@
             this.button17.TabIndex = 15;
             this.button17.Text = "Quản lí lịch làm việc bác sĩ";
             this.button17.UseVisualStyleBackColor = false;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
-            // button29
+            // btnQuanLyHoSoBenhNhan
             // 
-            this.button29.BackColor = System.Drawing.Color.Silver;
-            this.button29.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button29.Location = new System.Drawing.Point(3, 7);
-            this.button29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(419, 65);
-            this.button29.TabIndex = 15;
-            this.button29.Text = "Quản lý hồ sơ bệnh nhân";
-            this.button29.UseVisualStyleBackColor = false;
+            this.btnQuanLyHoSoBenhNhan.BackColor = System.Drawing.Color.Silver;
+            this.btnQuanLyHoSoBenhNhan.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnQuanLyHoSoBenhNhan.Location = new System.Drawing.Point(3, 7);
+            this.btnQuanLyHoSoBenhNhan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnQuanLyHoSoBenhNhan.Name = "btnQuanLyHoSoBenhNhan";
+            this.btnQuanLyHoSoBenhNhan.Size = new System.Drawing.Size(419, 65);
+            this.btnQuanLyHoSoBenhNhan.TabIndex = 15;
+            this.btnQuanLyHoSoBenhNhan.Text = "Quản lý hồ sơ bệnh nhân";
+            this.btnQuanLyHoSoBenhNhan.UseVisualStyleBackColor = false;
+            this.btnQuanLyHoSoBenhNhan.Click += new System.EventHandler(this.btnQuanLyHoSoBenhNhan_Click);
             // 
             // btnLogout
             // 
@@ -149,14 +149,14 @@
             this.panel8.Size = new System.Drawing.Size(48, 47);
             this.panel8.TabIndex = 6;
             // 
-            // quanLiHosobenhnhan
+            // quanLyHoSoBenhNhan
             // 
-            this.quanLiHosobenhnhan.Location = new System.Drawing.Point(448, 66);
-            this.quanLiHosobenhnhan.Margin = new System.Windows.Forms.Padding(5);
-            this.quanLiHosobenhnhan.Name = "quanLiHosobenhnhan";
-            this.quanLiHosobenhnhan.Size = new System.Drawing.Size(1313, 702);
-            this.quanLiHosobenhnhan.TabIndex = 8;
-            this.quanLiHosobenhnhan.Load += new System.EventHandler(this.quanLiHosobenhnhan_Load);
+            this.quanLyHoSoBenhNhan.Location = new System.Drawing.Point(448, 66);
+            this.quanLyHoSoBenhNhan.Margin = new System.Windows.Forms.Padding(5);
+            this.quanLyHoSoBenhNhan.Name = "quanLyHoSoBenhNhan";
+            this.quanLyHoSoBenhNhan.Size = new System.Drawing.Size(1313, 702);
+            this.quanLyHoSoBenhNhan.TabIndex = 8;
+            this.quanLyHoSoBenhNhan.Load += new System.EventHandler(this.quanLiHosobenhnhan_Load);
             // 
             // LeTan
             // 
@@ -164,7 +164,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(1763, 763);
-            this.Controls.Add(this.quanLiHosobenhnhan);
+            this.Controls.Add(this.quanLyHoSoBenhNhan);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel10);
@@ -186,12 +186,12 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Button button29;
+        private System.Windows.Forms.Button btnQuanLyHoSoBenhNhan;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button button17;
-        private QuanLiHoSoBenhhan quanLiHosobenhnhan;
+        private QuanLiHoSoBenhhan quanLyHoSoBenhNhan;
         private System.Windows.Forms.Timer timer1;
     }
 }

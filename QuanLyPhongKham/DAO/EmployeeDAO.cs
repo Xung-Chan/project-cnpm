@@ -36,5 +36,12 @@ namespace QuanLyPhongKham.DAO
             }
             return null;
         }
+        public int insertEmployee(EmployeeDTO employee) {
+            int sex = employee.Sex.Equals("Nam") ? 1 : 0;
+            string query = "exec sp_insertEmployee @positionID , @branchID , @name , @birthday , @sex , @phoneNumber , @address , @email";
+            int check = DataProvider.Instance.ExecuteNonQuery(query, new object[] { employee.PositionID, employee.BranchID, employee.Name, employee.Birthday, sex, employee.PhoneNumber, employee.Address, employee.Email });
+            return check;
+
+        }
     }
 }

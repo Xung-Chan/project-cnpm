@@ -36,5 +36,11 @@ namespace QuanLyPhongKham.BLL {
         private bool recordLogin( int ID ) {
             return AttendanceDAO.Instance.insertAttendance(ID);
         }
+        public string insertEmployee( EmployeeDTO employee ) {
+            if (EmployeeDAO.Instance.insertEmployee(employee) > 0) {
+                return "Thêm nhân viên thành công";
+            }
+            return "Thêm nhân viên không thành công";
+        }
     }
 }

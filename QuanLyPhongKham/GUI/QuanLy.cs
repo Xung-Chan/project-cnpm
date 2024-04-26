@@ -73,5 +73,9 @@ namespace QuanLyPhongKham.GUI {
         private void btnLogout_Click( object sender, EventArgs e ) {
             this.Close();
         }
+
+        private void btnQuanLyNhanVien_Click( object sender, EventArgs e ) {
+            quanLyNhanVien.BringToFront();
+        }
     }
 }

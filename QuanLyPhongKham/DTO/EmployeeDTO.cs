@@ -16,6 +16,18 @@ namespace QuanLyPhongKham.DTO {
         private string phoneNumber;
         private string address;
         private string email;
+        public EmployeeDTO(int positionID, int branchID, string name,
+            DateTime birthday, string sex, string phoneNumber, string adddress, string email ) {
+            this.ID = -1;
+            this.positionID = positionID;
+            this.branchID = branchID;
+            this.name = name;
+            this.birthday = birthday;
+            this.sex = sex;
+            this.phoneNumber = phoneNumber;
+            this.address = adddress;
+            this.email = email;
+        }
         public EmployeeDTO(DataRow row ) {
             this.ID = (int) row["ID"];
             this.PositionID = (int) row["positionID"];

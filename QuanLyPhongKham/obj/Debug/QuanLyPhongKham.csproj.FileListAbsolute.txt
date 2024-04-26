@@ -111,7 +111,6 @@ D:\duytruong\C#\Project\project-cnpm-main-myself\QuanLyPhongKham\obj\Debug\QuanL
 D:\duytruong\C#\Project\project-cnpm-main-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.pdb
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.AssemblyReference.cache
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.Bacsi.resources
-D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.DangKy.resources
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.DangNhap.resources
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.donthuoc.resources
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.Lichkham.resources
@@ -136,3 +135,5 @@ D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\Quan
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.QuanLy.resources
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.QuanLiHoSoBenhhan.resources
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.DuLieuDiemDanh.resources
+D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.QuanLyNhanVien.resources
+D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.DangKyNhanVien.resources

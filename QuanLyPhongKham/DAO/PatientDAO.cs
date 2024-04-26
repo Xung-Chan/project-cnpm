@@ -45,7 +45,7 @@ namespace QuanLyPhongKham.DAO {
             return null;
 
         }
-        public int savePatient( PatientDTO patient ) {
+        public int savePatient(PatientDTO patient ) {
             int sex = patient.Sex.Equals("Nam") ? 1 : 0;
             string query;
             if (patient.ID == -1) {     //thêm bệnh nhân mới;
