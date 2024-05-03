@@ -30,7 +30,12 @@ namespace QuanLyPhongKham.GUI
             tbxPhoneNumber.Text = patient.PhoneNumber.ToString();
             tbxAddress.Text = patient.Address.ToString();
             tbxCCCD.Text = patient.CCCD.ToString();
-            tbxSex.Text = patient.Sex;
+            if (patient.Sex) {
+                rdbMale.Checked = true;
+            }
+            else {
+                rdbFemale.Checked = true;
+            }
             btnSavePatient.Tag = patient.ID;
         }
 
@@ -57,7 +62,9 @@ namespace QuanLyPhongKham.GUI
             tbxPhoneNumber.Text = "";
             tbxAddress.Text = "";
             tbxCCCD.Text = "";
-            tbxSex.Text = "";
+            rdbFemale.Checked=false;
+            rdbMale.Checked=false;
+
         }
 
         private void btnSavePatient_Click( object sender, EventArgs e ) {
@@ -67,8 +74,7 @@ namespace QuanLyPhongKham.GUI
             string phoneNumber = tbxPhoneNumber.Text;
             string address = tbxAddress.Text;
             string cccd = tbxCCCD.Text;
-            int sex = tbxSex.Equals("Nam") ? 1 : 0;
-            PatientDTO patient = new PatientDTO(1, tbxName.Text, dtpBirthday.Value,tbxSex.Text, tbxPhoneNumber.Text, tbxAddress.Text, tbxCCCD.Text);
+            PatientDTO patient = new PatientDTO(1, tbxName.Text, dtpBirthday.Value, rdbMale.Checked, tbxPhoneNumber.Text, tbxAddress.Text, tbxCCCD.Text);
             if (btnSavePatient.Tag != null) {
                 patient.ID = (int)btnSavePatient.Tag;
             }

@@ -30,6 +30,14 @@ namespace QuanLyPhongKham.DAO {
             }
             return patientList;
         }
+        public List<PatientDTO> findPatientByPhoneNumber( string phoneNumber ) {
+            DataTable table = DataProvider.Instance.ExecuteQuery(String.Format("select * from Patient where phoneNumber like '%{0}%'", phoneNumber.Trim()));
+            List<PatientDTO> list = new List<PatientDTO>();
+            foreach (DataRow row in table.Rows) {
+                list.Add(new PatientDTO(row));
+            }
+            return list;
+        }
         public PatientDTO getPatientByPhoneNumber( string phoneNumber ) {
             DataTable table = DataProvider.Instance.ExecuteQuery(String.Format("select * from Patient where phoneNumber = {0}", phoneNumber));
             foreach (DataRow row in table.Rows) {
@@ -46,18 +54,17 @@ namespace QuanLyPhongKham.DAO {
 
         }
         public int savePatient(PatientDTO patient ) {
-            int sex = patient.Sex.Equals("Nam") ? 1 : 0;
             string query;
             if (patient.ID == -1) {     //thêm bệnh nhân mới;
                 query = "exec sp_insertPatient @branchID , @name , @birthday , @sex , @phoneNumber , @address , @cccd";
                 return DataProvider.Instance.ExecuteNonQuery(query, new object[] { patient.BranchID, patient.Name.ToString(), patient.Birthday,
-                    sex, patient.PhoneNumber.ToString(), patient.Address.ToString(), patient.CCCD.ToString() });
+                    patient.Sex, patient.PhoneNumber.ToString(), patient.Address.ToString(), patient.CCCD.ToString() });
 
             }
             //update bệnh nhân
             query = "exec sp_updatePatient @id , @branchID , @name , @birthday , @sex , @phoneNumber , @address , @cccd";
             return DataProvider.Instance.ExecuteNonQuery(query, new object[] {patient.ID.ToString(), patient.BranchID.ToString(), patient.Name.ToString(), patient.Birthday,
-                    sex, patient.PhoneNumber.ToString(), patient.Address.ToString(), patient.CCCD.ToString() });
+                    patient.Sex, patient.PhoneNumber.ToString(), patient.Address.ToString(), patient.CCCD.ToString() });
         }
     }
 }

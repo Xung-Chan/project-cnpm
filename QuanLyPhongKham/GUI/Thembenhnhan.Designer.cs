@@ -37,7 +37,6 @@
             this.tbxCCCD = new System.Windows.Forms.TextBox();
             this.tbxAddress = new System.Windows.Forms.TextBox();
             this.tbxPhoneNumber = new System.Windows.Forms.TextBox();
-            this.tbxSex = new System.Windows.Forms.TextBox();
             this.tbxName = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -49,10 +48,14 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.rdbMale = new System.Windows.Forms.RadioButton();
+            this.rdbFemale = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -91,12 +94,12 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightCyan;
+            this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.btnReset);
             this.panel3.Controls.Add(this.dtpBirthday);
             this.panel3.Controls.Add(this.tbxCCCD);
             this.panel3.Controls.Add(this.tbxAddress);
             this.panel3.Controls.Add(this.tbxPhoneNumber);
-            this.panel3.Controls.Add(this.tbxSex);
             this.panel3.Controls.Add(this.tbxName);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label5);
@@ -162,16 +165,6 @@
             this.tbxPhoneNumber.Size = new System.Drawing.Size(411, 50);
             this.tbxPhoneNumber.TabIndex = 4;
             this.tbxPhoneNumber.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // tbxSex
-            // 
-            this.tbxSex.Location = new System.Drawing.Point(245, 146);
-            this.tbxSex.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbxSex.Multiline = true;
-            this.tbxSex.Name = "tbxSex";
-            this.tbxSex.Size = new System.Drawing.Size(411, 50);
-            this.tbxSex.TabIndex = 3;
-            this.tbxSex.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // tbxName
             // 
@@ -300,6 +293,37 @@
             this.panel8.Size = new System.Drawing.Size(48, 47);
             this.panel8.TabIndex = 5;
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.rdbFemale);
+            this.panel5.Controls.Add(this.rdbMale);
+            this.panel5.Location = new System.Drawing.Point(245, 146);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(411, 50);
+            this.panel5.TabIndex = 8;
+            // 
+            // rdbMale
+            // 
+            this.rdbMale.AutoSize = true;
+            this.rdbMale.Location = new System.Drawing.Point(3, 14);
+            this.rdbMale.Name = "rdbMale";
+            this.rdbMale.Size = new System.Drawing.Size(57, 20);
+            this.rdbMale.TabIndex = 15;
+            this.rdbMale.TabStop = true;
+            this.rdbMale.Text = "Nam";
+            this.rdbMale.UseVisualStyleBackColor = true;
+            // 
+            // rdbFemale
+            // 
+            this.rdbFemale.AutoSize = true;
+            this.rdbFemale.Location = new System.Drawing.Point(88, 14);
+            this.rdbFemale.Name = "rdbFemale";
+            this.rdbFemale.Size = new System.Drawing.Size(45, 20);
+            this.rdbFemale.TabIndex = 16;
+            this.rdbFemale.TabStop = true;
+            this.rdbFemale.Text = "Nữ";
+            this.rdbFemale.UseVisualStyleBackColor = true;
+            // 
             // ThemBenhNhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -321,6 +345,8 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -341,12 +367,14 @@
         private System.Windows.Forms.TextBox tbxCCCD;
         private System.Windows.Forms.TextBox tbxAddress;
         private System.Windows.Forms.TextBox tbxPhoneNumber;
-        private System.Windows.Forms.TextBox tbxSex;
         private System.Windows.Forms.Button btnSavePatient;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DateTimePicker dtpBirthday;
         private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.RadioButton rdbFemale;
+        private System.Windows.Forms.RadioButton rdbMale;
     }
 }

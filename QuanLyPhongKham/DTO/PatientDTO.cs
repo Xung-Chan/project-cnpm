@@ -13,13 +13,13 @@ namespace QuanLyPhongKham.DTO {
             this.branchID = (int) row["branchID"];
             this.name = row["name"].ToString();
             this.birthday = DateTime.Parse(row["birthday"].ToString());
-            this.sex = (bool) row["sex"] ? "Nam" : "Nữ";
+            this.sex = (bool) row["sex"];
             this.phoneNumber = row["phoneNumber"].ToString();
             this.address = row["address"].ToString();
             this.CCCD = row["cccd"].ToString();
         }
 
-        public PatientDTO( int branchID, string name, DateTime birthday, string sex, string phoneNumber, string address, string cCCD, int iD = -1 ) {
+        public PatientDTO( int branchID, string name, DateTime birthday, bool sex, string phoneNumber, string address, string cCCD, int iD = -1 ) {
             this.iD = iD;
             this.branchID = branchID;
             this.name = name;
@@ -34,7 +34,7 @@ namespace QuanLyPhongKham.DTO {
         public int BranchID { get => branchID; set => branchID = value; }
         public string Name { get => name; set => name = value; }
         public DateTime Birthday { get => birthday; set => birthday = value; }
-        public string Sex { get => sex; set => sex = value; }
+        public bool Sex { get => sex; set => sex = value; }
         public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
         public string Address { get => address; set => address = value; }
         public int ID { get => iD; set => iD = value; }
@@ -43,7 +43,7 @@ namespace QuanLyPhongKham.DTO {
         private int branchID;
         private string name;
         private DateTime birthday;
-        private string sex;
+        private bool sex;
         private string phoneNumber;
         private string address;
         private string cCCD;

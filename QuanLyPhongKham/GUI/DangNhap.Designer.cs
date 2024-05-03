@@ -78,10 +78,8 @@ namespace QuanLyPhongKham.GUI
             this.tbxPhoneNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxPhoneNumber.Multiline = true;
             this.tbxPhoneNumber.Name = "tbxPhoneNumber";
-            this.tbxPhoneNumber.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.tbxPhoneNumber.Size = new System.Drawing.Size(397, 55);
             this.tbxPhoneNumber.TabIndex = 10;
-            this.tbxPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // tbxPassword
             // 
