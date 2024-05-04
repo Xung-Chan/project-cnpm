@@ -11,19 +11,31 @@ using System.Windows.Forms;
 namespace QuanLyPhongKham.DAO {
     public class DataProvider {
         //private string db = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\DBQuanLyPhongKham.mdf;Integrated Security=True";
-        private string db = System.Configuration.ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
+        private string db;
         private static DataProvider instance;
 
-        private DataProvider() { }
+        private DataProvider() {
+            try {
+                db = System.Configuration.ConfigurationManager.ConnectionStrings["myDatabase"].ConnectionString;
+
+            }
+            catch (Exception ex) {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
         public static DataProvider Instance {
             get {
-                if (instance == null)
+                if (instance == null) {
                     instance = new DataProvider();
+
+                }
                 return instance;
 
             }
             private set => instance = value;
         }
+        
 
         public int ExecuteNonQuery( string query, object[] paramater = null ) {
             int data = 0;
@@ -66,21 +78,29 @@ namespace QuanLyPhongKham.DAO {
         }
         public DataTable ExecuteQuery( string query, object[] paramater = null ) {
             DataTable table = new DataTable();
-            using (SqlConnection connection = new SqlConnection(db)) {
-                connection.Open();
-                SqlCommand command = new SqlCommand(query, connection);
-                if (paramater != null) {
-                    string[] listPara = query.Split(' ');
-                    int i = 0;
-                    foreach (string para in listPara) {
-                        if (para[0] == '@') {
-                            command.Parameters.AddWithValue(para, paramater[i++]);
+            try {
+                using (SqlConnection connection = new SqlConnection(db)) {
+                    connection.Open();
+
+                    SqlCommand command = new SqlCommand(query, connection);
+                    if (paramater != null) {
+                        string[] listPara = query.Split(' ');
+                        int i = 0;
+                        foreach (string para in listPara) {
+                            if (para[0] == '@') {
+                                command.Parameters.AddWithValue(para, paramater[i++]);
+                            }
                         }
                     }
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    adapter.Fill(table);
+                    connection.Close();
                 }
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                adapter.Fill(table);
-                connection.Close();
+
+
+            }
+            catch (Exception ex) {
+                MessageBox.Show(ex.Message);
             }
             return table;
         }

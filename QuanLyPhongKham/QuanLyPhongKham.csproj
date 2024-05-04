@@ -78,6 +78,7 @@
     <Compile Include="DAO\PositionDAO.cs" />
     <Compile Include="DAO\RoomDAO.cs" />
     <Compile Include="DAO\ScheduleDAO.cs" />
+    <Compile Include="DAO\TreatmentNeedsDAO.cs" />
     <Compile Include="DatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -86,8 +87,10 @@
     <Compile Include="DTO\BranchDTO.cs" />
     <Compile Include="DTO\EmployeeDTO.cs" />
     <Compile Include="DTO\PatientDTO.cs" />
+    <Compile Include="DTO\PatientTreamentNeedsDTO.cs" />
     <Compile Include="DTO\PositionDTO.cs" />
     <Compile Include="DTO\RoomDTO.cs" />
+    <Compile Include="DTO\TreatmentNeedsDTO.cs" />
     <Compile Include="DTO\ScheduleDTO.cs" />
     <Compile Include="GUI\BacSi.cs">
       <SubType>Form</SubType>

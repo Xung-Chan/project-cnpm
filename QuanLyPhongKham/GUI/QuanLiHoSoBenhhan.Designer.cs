@@ -28,6 +28,9 @@ namespace QuanLyPhongKham.GUI {
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabThongTinHanhChinh = new System.Windows.Forms.TabPage();
+            this.clbListTreatmentNeeds = new System.Windows.Forms.CheckedListBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cbxIsOldPatient = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.rdbMale = new System.Windows.Forms.RadioButton();
@@ -59,7 +62,6 @@ namespace QuanLyPhongKham.GUI {
             this.tbxSearch = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.cbxIsOldPatient = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabThongTinHanhChinh.SuspendLayout();
@@ -91,6 +93,8 @@ namespace QuanLyPhongKham.GUI {
             // 
             // tabThongTinHanhChinh
             // 
+            this.tabThongTinHanhChinh.Controls.Add(this.clbListTreatmentNeeds);
+            this.tabThongTinHanhChinh.Controls.Add(this.label3);
             this.tabThongTinHanhChinh.Controls.Add(this.cbxIsOldPatient);
             this.tabThongTinHanhChinh.Controls.Add(this.label1);
             this.tabThongTinHanhChinh.Controls.Add(this.panel4);
@@ -121,11 +125,45 @@ namespace QuanLyPhongKham.GUI {
             this.tabThongTinHanhChinh.Text = "Thông tin hành chính";
             this.tabThongTinHanhChinh.UseVisualStyleBackColor = true;
             // 
+            // clbListTreatmentNeeds
+            // 
+            this.clbListTreatmentNeeds.CheckOnClick = true;
+            this.clbListTreatmentNeeds.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clbListTreatmentNeeds.FormattingEnabled = true;
+            this.clbListTreatmentNeeds.Location = new System.Drawing.Point(19, 408);
+            this.clbListTreatmentNeeds.Name = "clbListTreatmentNeeds";
+            this.clbListTreatmentNeeds.Size = new System.Drawing.Size(645, 179);
+            this.clbListTreatmentNeeds.TabIndex = 41;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.Location = new System.Drawing.Point(15, 374);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(145, 24);
+            this.label3.TabIndex = 40;
+            this.label3.Text = "Nhu cầu điều trị";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // cbxIsOldPatient
+            // 
+            this.cbxIsOldPatient.AutoSize = true;
+            this.cbxIsOldPatient.Enabled = false;
+            this.cbxIsOldPatient.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxIsOldPatient.Location = new System.Drawing.Point(673, 297);
+            this.cbxIsOldPatient.Name = "cbxIsOldPatient";
+            this.cbxIsOldPatient.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.cbxIsOldPatient.Size = new System.Drawing.Size(141, 28);
+            this.cbxIsOldPatient.TabIndex = 38;
+            this.cbxIsOldPatient.Text = "Bệnh nhân cũ";
+            this.cbxIsOldPatient.UseVisualStyleBackColor = true;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(1028, 465);
+            this.label1.Location = new System.Drawing.Point(673, 377);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 24);
             this.label1.TabIndex = 36;
@@ -183,7 +221,7 @@ namespace QuanLyPhongKham.GUI {
             // cbbQueue
             // 
             this.cbbQueue.FormattingEnabled = true;
-            this.cbbQueue.Location = new System.Drawing.Point(1032, 493);
+            this.cbbQueue.Location = new System.Drawing.Point(769, 368);
             this.cbbQueue.Margin = new System.Windows.Forms.Padding(4);
             this.cbbQueue.Name = "cbbQueue";
             this.cbbQueue.Size = new System.Drawing.Size(250, 39);
@@ -453,19 +491,6 @@ namespace QuanLyPhongKham.GUI {
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // cbxIsOldPatient
-            // 
-            this.cbxIsOldPatient.AutoSize = true;
-            this.cbxIsOldPatient.Enabled = false;
-            this.cbxIsOldPatient.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxIsOldPatient.Location = new System.Drawing.Point(673, 306);
-            this.cbxIsOldPatient.Name = "cbxIsOldPatient";
-            this.cbxIsOldPatient.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cbxIsOldPatient.Size = new System.Drawing.Size(141, 28);
-            this.cbxIsOldPatient.TabIndex = 38;
-            this.cbxIsOldPatient.Text = "Bệnh nhân cũ";
-            this.cbxIsOldPatient.UseVisualStyleBackColor = true;
-            // 
             // QuanLiHoSoBenhhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -524,5 +549,7 @@ namespace QuanLyPhongKham.GUI {
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox cbxIsOldPatient;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckedListBox clbListTreatmentNeeds;
     }
 }

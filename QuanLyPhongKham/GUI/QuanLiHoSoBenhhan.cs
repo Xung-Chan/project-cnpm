@@ -13,21 +13,28 @@ using System.Windows.Forms;
 
 namespace QuanLyPhongKham.GUI {
     public partial class QuanLiHoSoBenhhan : UserControl {
-        private Dictionary<string, Queue<PatientDTO>> roomPatientQueue = new Dictionary<string, Queue<PatientDTO>>();
+        //private Dictionary<int, Queue<PatientDTO>> roomPatientQueue = new Dictionary<int, Queue<PatientDTO>>();
+
         public QuanLiHoSoBenhhan() {
             InitializeComponent();
             loadListPatient(PatientDAO.Instance.getAllPatient());
 
         }
-        public void loadQueue() {
-            List<RoomDTO> rooms = LeTanBLL.Instance.loadQueue();
+        public void loadRoom() {
+            List<RoomDTO> rooms = RoomDAO.Instance.getAllRoom();
             foreach (RoomDTO room in rooms) {
-                string nameRoom = room.Name;
-                roomPatientQueue.Add(nameRoom, new Queue<PatientDTO>());
+                int nameRoom = room.RoomNumber;
+                //roomPatientQueue.Add(nameRoom, new Queue<PatientDTO>());
+                BacSiBLL.Instance.QueuePatient.Add(nameRoom, new Queue<PatientTreamentNeedsDTO>());
                 cbbQueue.Items.Add(nameRoom);
             }
         }
-
+        public void loadTreamentNeeds() {
+            List<TreatmentNeedsDTO> list = TreatmentNeedsDAO.Instance.getAllTreatmentNeeds();
+            foreach (TreatmentNeedsDTO tmn in list) {
+                clbListTreatmentNeeds.Items.Add(tmn.Name);
+            }
+        }
         private void btnSearch_Click( object sender, EventArgs e ) {
             PatientDTO patient = PatientDAO.Instance.getPatientByPhoneNumber(tbxSearch.Text.Trim());
             if (patient == null) {
@@ -104,7 +111,12 @@ namespace QuanLyPhongKham.GUI {
         }
 
         private void btnAddQueue_Click( object sender, EventArgs e ) {
-            roomPatientQueue[cbbQueue.SelectedItem.ToString()].Enqueue(btnSearch.Tag as PatientDTO);
+            PatientTreamentNeedsDTO patient = new PatientTreamentNeedsDTO(lvwListPatient.SelectedItems[0].Tag as PatientDTO);
+            foreach(string treatmentName in clbListTreatmentNeeds.CheckedItems) {
+                TreatmentNeedsDTO treatment = TreatmentNeedsDAO.Instance.getTreatmentNeeds(treatmentName);
+                patient.Treatments.Add(treatment);
+            }
+            BacSiBLL.Instance.QueuePatient[(int)cbbQueue.SelectedItem].Enqueue(patient);
             MessageBox.Show("Thêm vào phòng chờ thành công");
         }
 

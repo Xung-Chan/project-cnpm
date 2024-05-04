@@ -21,11 +21,13 @@ namespace QuanLyPhongKham.GUI {
         }
 
         private void quanLiHosobenhnhan_Load( object sender, EventArgs e ) {
-            quanLyHoSoBenhNhan.loadQueue();
+            quanLyHoSoBenhNhan.loadRoom();
+            quanLyHoSoBenhNhan.loadTreamentNeeds();
         }
 
         private void btnQuanLyHoSoBenhNhan_Click( object sender, EventArgs e ) {
             quanLyHoSoBenhNhan.BringToFront();
+
         }
     }
 }

@@ -68,7 +68,7 @@ namespace QuanLyPhongKham.GUI
         }
 
         private void btnSavePatient_Click( object sender, EventArgs e ) {
-            int branchID = 1;       //mặc định chi nhánh hiện tại 
+            //int branchID = 1;       //mặc định chi nhánh hiện tại 
             string name = tbxName.Text;
             DateTime birthday = dtpBirthday.Value;
             string phoneNumber = tbxPhoneNumber.Text;

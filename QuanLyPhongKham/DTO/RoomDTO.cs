@@ -7,20 +7,10 @@ using System.Threading.Tasks;
 
 namespace QuanLyPhongKham.DTO {
     public class RoomDTO {
-        private int iD;
-        private string name;
-
-        public int ID { get => iD; set => iD = value; }
-        public string Name { get => name; set => name = value; }
-
-        public RoomDTO(int iD, string name) {
-            this.ID = iD;
-            this.Name = name;
+        private int roomNumber;
+        public RoomDTO(DataRow row ) {
+            this.roomNumber = (int)row["roomNumber"];
         }
-        public RoomDTO(DataRow row) {
-            this.ID = (int)row["ID"];
-            this.name = row["name"].ToString();
-        }
-
+        public int RoomNumber { get => roomNumber; set => roomNumber = value; }
     }
 }

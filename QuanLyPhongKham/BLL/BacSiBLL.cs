@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 namespace QuanLyPhongKham.BLL {
     public class BacSiBLL {
         private static BacSiBLL instance;
+        private Dictionary<int,Queue<PatientTreamentNeedsDTO>> queuePatient = new Dictionary<int,Queue<PatientTreamentNeedsDTO>>();
         private BacSiBLL() { }
 
         public static BacSiBLL Instance {
@@ -19,6 +20,8 @@ namespace QuanLyPhongKham.BLL {
             }
             private set => instance = value;
         }
+
+        public Dictionary<int, Queue<PatientTreamentNeedsDTO>> QueuePatient { get => queuePatient; set => queuePatient = value; }
 
         public List<PatientDTO> getAllPatients() {
             return PatientDAO.Instance.getAllPatient();

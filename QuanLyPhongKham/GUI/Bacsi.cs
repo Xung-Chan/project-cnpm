@@ -18,8 +18,8 @@ namespace QuanLyPhongKham.GUI {
         }
 
         private void Bacsi_Load( object sender, EventArgs e ) {
-            List<PatientDTO> patientList = BacSiBLL.Instance.getAllPatients();
-            foreach (PatientDTO item in patientList) {
+            Queue<PatientTreamentNeedsDTO> patientList = BacSiBLL.Instance.QueuePatient[101];
+            foreach (PatientTreamentNeedsDTO item in patientList) {
                 ListViewItem lvwItem = new ListViewItem(item.ID.ToString());
                 lvwItem.SubItems.Add(item.Name);
                 lvwItem.Tag = item;
