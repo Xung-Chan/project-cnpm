@@ -29,7 +29,7 @@ namespace QuanLyPhongKham.DAO {
             return list;
         }
         public TreatmentNeedsDTO getTreatmentNeeds(string name ) {
-            string query = String.Format("select * from TreatmentNeeds where name = '{0}'", name);
+            string query = String.Format("select * from TreatmentNeeds where name = N'{0}'", name);
             DataTable table = DataProvider.Instance.ExecuteQuery(query);
             foreach(DataRow row in table.Rows) {
                 return new TreatmentNeedsDTO(row);

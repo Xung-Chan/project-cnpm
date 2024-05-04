@@ -33,9 +33,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.tbxSex = new System.Windows.Forms.TextBox();
+            this.lvwTreamentNeeds = new System.Windows.Forms.ListView();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.tbxAddress = new System.Windows.Forms.TextBox();
+            this.tbxSex = new System.Windows.Forms.TextBox();
             this.tbxPhoneNumber = new System.Windows.Forms.TextBox();
             this.tbxBirthday = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -44,7 +44,6 @@
             this.tbxCCCD = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -89,6 +88,7 @@
             this.dichVuDaKe = new QuanLyPhongKham.GUI.DichVuDaKe();
             this.donthuoc = new QuanLyPhongKham.GUI.DonThuoc();
             this.lichSuKhamChuaBenh = new QuanLyPhongKham.GUI.LichSuKhamChuaBenh();
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -148,12 +148,11 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.LightGray;
-            this.panel5.Controls.Add(this.tbxSex);
+            this.panel5.Controls.Add(this.lvwTreamentNeeds);
             this.panel5.Controls.Add(this.panel10);
             this.panel5.Controls.Add(this.panel9);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.label5);
-            this.panel5.Controls.Add(this.label11);
             this.panel5.Controls.Add(this.label10);
             this.panel5.Controls.Add(this.label9);
             this.panel5.Controls.Add(this.label7);
@@ -163,41 +162,45 @@
             this.panel5.Size = new System.Drawing.Size(1352, 174);
             this.panel5.TabIndex = 3;
             // 
-            // tbxSex
+            // lvwTreamentNeeds
             // 
-            this.tbxSex.BackColor = System.Drawing.Color.DarkGray;
-            this.tbxSex.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbxSex.Location = new System.Drawing.Point(564, 32);
-            this.tbxSex.Name = "tbxSex";
-            this.tbxSex.ReadOnly = true;
-            this.tbxSex.Size = new System.Drawing.Size(132, 22);
-            this.tbxSex.TabIndex = 5;
+            this.lvwTreamentNeeds.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader3});
+            this.lvwTreamentNeeds.Enabled = false;
+            this.lvwTreamentNeeds.GridLines = true;
+            this.lvwTreamentNeeds.HideSelection = false;
+            this.lvwTreamentNeeds.Location = new System.Drawing.Point(938, 26);
+            this.lvwTreamentNeeds.Name = "lvwTreamentNeeds";
+            this.lvwTreamentNeeds.Size = new System.Drawing.Size(386, 129);
+            this.lvwTreamentNeeds.TabIndex = 5;
+            this.lvwTreamentNeeds.UseCompatibleStateImageBehavior = false;
+            this.lvwTreamentNeeds.View = System.Windows.Forms.View.Details;
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.tbxAddress);
+            this.panel10.Controls.Add(this.tbxSex);
             this.panel10.Controls.Add(this.tbxPhoneNumber);
             this.panel10.Controls.Add(this.tbxBirthday);
-            this.panel10.Location = new System.Drawing.Point(938, 26);
+            this.panel10.Location = new System.Drawing.Point(583, 26);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(313, 129);
             this.panel10.TabIndex = 4;
             // 
-            // tbxAddress
+            // tbxSex
             // 
-            this.tbxAddress.BackColor = System.Drawing.Color.DarkGray;
-            this.tbxAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbxAddress.Location = new System.Drawing.Point(3, 104);
-            this.tbxAddress.Name = "tbxAddress";
-            this.tbxAddress.ReadOnly = true;
-            this.tbxAddress.Size = new System.Drawing.Size(307, 22);
-            this.tbxAddress.TabIndex = 5;
+            this.tbxSex.BackColor = System.Drawing.Color.DarkGray;
+            this.tbxSex.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbxSex.Location = new System.Drawing.Point(3, 6);
+            this.tbxSex.Name = "tbxSex";
+            this.tbxSex.ReadOnly = true;
+            this.tbxSex.Size = new System.Drawing.Size(307, 22);
+            this.tbxSex.TabIndex = 5;
             // 
             // tbxPhoneNumber
             // 
             this.tbxPhoneNumber.BackColor = System.Drawing.Color.DarkGray;
             this.tbxPhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbxPhoneNumber.Location = new System.Drawing.Point(3, 54);
+            this.tbxPhoneNumber.Location = new System.Drawing.Point(3, 104);
             this.tbxPhoneNumber.Name = "tbxPhoneNumber";
             this.tbxPhoneNumber.ReadOnly = true;
             this.tbxPhoneNumber.Size = new System.Drawing.Size(307, 22);
@@ -207,7 +210,7 @@
             // 
             this.tbxBirthday.BackColor = System.Drawing.Color.DarkGray;
             this.tbxBirthday.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbxBirthday.Location = new System.Drawing.Point(3, 6);
+            this.tbxBirthday.Location = new System.Drawing.Point(3, 55);
             this.tbxBirthday.Name = "tbxBirthday";
             this.tbxBirthday.ReadOnly = true;
             this.tbxBirthday.Size = new System.Drawing.Size(307, 22);
@@ -219,7 +222,7 @@
             this.panel9.Controls.Add(this.tbxName);
             this.panel9.Controls.Add(this.tbxID);
             this.panel9.Controls.Add(this.tbxCCCD);
-            this.panel9.Location = new System.Drawing.Point(149, 26);
+            this.panel9.Location = new System.Drawing.Point(124, 26);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(290, 129);
             this.panel9.TabIndex = 3;
@@ -276,22 +279,11 @@
             this.label5.Text = "Mã BN";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label11.Location = new System.Drawing.Point(729, 121);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(77, 28);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "Địa chỉ";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label10.Location = new System.Drawing.Point(729, 74);
+            this.label10.Location = new System.Drawing.Point(440, 121);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(137, 28);
             this.label10.TabIndex = 2;
@@ -302,7 +294,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label9.Location = new System.Drawing.Point(729, 26);
+            this.label9.Location = new System.Drawing.Point(440, 74);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(104, 28);
             this.label9.TabIndex = 2;
@@ -313,7 +305,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.Location = new System.Drawing.Point(462, 26);
+            this.label7.Location = new System.Drawing.Point(440, 26);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(96, 28);
             this.label7.TabIndex = 2;
@@ -734,6 +726,11 @@
             this.lichSuKhamChuaBenh.Size = new System.Drawing.Size(1595, 430);
             this.lichSuKhamChuaBenh.TabIndex = 11;
             // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Nhu cầu điều trị";
+            this.columnHeader3.Width = 376;
+            // 
             // BacSi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -799,7 +796,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
@@ -826,7 +822,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.TextBox tbxSex;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.TextBox tbxAddress;
         private System.Windows.Forms.TextBox tbxPhoneNumber;
         private System.Windows.Forms.TextBox tbxBirthday;
         private System.Windows.Forms.Panel panel9;
@@ -843,5 +838,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private LichSuKhamChuaBenh lichSuKhamChuaBenh;
+        private System.Windows.Forms.ListView lvwTreamentNeeds;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
     }
 }

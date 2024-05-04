@@ -20,8 +20,8 @@ namespace QuanLyPhongKham.GUI {
         private void Bacsi_Load( object sender, EventArgs e ) {
             Queue<PatientTreamentNeedsDTO> patientList = BacSiBLL.Instance.QueuePatient[101];
             foreach (PatientTreamentNeedsDTO item in patientList) {
-                ListViewItem lvwItem = new ListViewItem(item.ID.ToString());
-                lvwItem.SubItems.Add(item.Name);
+                ListViewItem lvwItem = new ListViewItem(item.Patient.ID.ToString());
+                lvwItem.SubItems.Add(item.Patient.Name);
                 lvwItem.Tag = item;
                 lvwPatient.Items.Add(lvwItem);
             }
@@ -30,16 +30,18 @@ namespace QuanLyPhongKham.GUI {
 
 
         private void lvwPatient_SelectedIndexChanged( object sender, EventArgs e ) {
-            if (lvwPatient.SelectedItems.Count > 0) {
-                PatientDTO patient = (lvwPatient.SelectedItems[0].Tag as PatientDTO);
-                tbxID.Text = patient.ID.ToString();
-                tbxCCCD.Text = patient.CCCD.ToString();
-                tbxBirthday.Text = patient.Birthday.ToString();
-                tbxAddress.Text = patient.Address.ToString();
-                tbxName.Text = patient.Name.ToString();
-                tbxPhoneNumber.Text = patient.PhoneNumber.ToString();
-                tbxSex.Text = patient.Sex.ToString();
-
+            if (lvwPatient.SelectedItems.Count == 1 ) {
+                PatientTreamentNeedsDTO patient = (lvwPatient.SelectedItems[0].Tag as PatientTreamentNeedsDTO);
+                tbxID.Text = patient.Patient.ID.ToString();
+                tbxCCCD.Text = patient.Patient.CCCD.ToString();
+                tbxBirthday.Text = patient.Patient.Birthday.Date.ToString("dd/MM/yyyy");
+                tbxName.Text = patient.Patient.Name.ToString();
+                tbxPhoneNumber.Text = patient.Patient.PhoneNumber.ToString();
+                tbxSex.Text = patient.Patient.Sex.ToString();
+                foreach(TreatmentNeedsDTO treament in patient.Treatments) {
+                    ListViewItem item = new ListViewItem(treament.Name);
+                    lvwTreamentNeeds.Items.Add(item);
+                }
             }
         }
 
@@ -63,5 +65,6 @@ namespace QuanLyPhongKham.GUI {
         private void btnLichSuKhamChuaBenh_Click( object sender, EventArgs e ) {
             lichSuKhamChuaBenh.BringToFront();
         }
+
     }
 }
