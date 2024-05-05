@@ -24,8 +24,9 @@ namespace QuanLyPhongKham.GUI {
             List<RoomDTO> rooms = RoomDAO.Instance.getAllRoom();
             foreach (RoomDTO room in rooms) {
                 int nameRoom = room.RoomNumber;
-                //roomPatientQueue.Add(nameRoom, new Queue<PatientDTO>());
-                BacSiBLL.Instance.QueuePatient.Add(nameRoom, new Queue<PatientTreamentNeedsDTO>());
+                //if(BacSiBLL.Instance.QueuePatient.ContainsKey(nameRoom) == false) {
+                //    BacSiBLL.Instance.QueuePatient.Add(nameRoom, new Queue<PatientTreamentNeedsDTO>());
+                //}
                 cbbQueue.Items.Add(nameRoom);
             }
         }
@@ -111,6 +112,10 @@ namespace QuanLyPhongKham.GUI {
         }
 
         private void btnAddQueue_Click( object sender, EventArgs e ) {
+            if(LeTanBLL.Instance.checkQuanLiHoSoBenhNhan(clbListTreatmentNeeds.CheckedItems, cbbQueue.Text) == false) {
+                MessageBox.Show("Vui lòng chọn đầy đủ thông tin");
+                return;
+            }
             PatientTreamentNeedsDTO patient = new PatientTreamentNeedsDTO(lvwListPatient.SelectedItems[0].Tag as PatientDTO);
             foreach(string treatmentName in clbListTreatmentNeeds.CheckedItems) {
                 TreatmentNeedsDTO treatment = TreatmentNeedsDAO.Instance.getTreatmentNeeds(treatmentName);

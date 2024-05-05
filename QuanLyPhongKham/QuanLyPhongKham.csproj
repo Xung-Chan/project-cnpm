@@ -73,11 +73,13 @@
     <Compile Include="DAO\AttendanceDAO.cs" />
     <Compile Include="DAO\BranchDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\DentistDAO.cs" />
     <Compile Include="DAO\EmployeeDAO.cs" />
     <Compile Include="DAO\PatientDAO.cs" />
     <Compile Include="DAO\PositionDAO.cs" />
     <Compile Include="DAO\RoomDAO.cs" />
     <Compile Include="DAO\ScheduleDAO.cs" />
+    <Compile Include="DAO\TreamentRecordsDAO.cs" />
     <Compile Include="DAO\TreatmentNeedsDAO.cs" />
     <Compile Include="DatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -85,11 +87,14 @@
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="DTO\BranchDTO.cs" />
+    <Compile Include="DTO\DentistDTO.cs" />
     <Compile Include="DTO\EmployeeDTO.cs" />
+    <Compile Include="DTO\MedicineDTO.cs" />
     <Compile Include="DTO\PatientDTO.cs" />
     <Compile Include="DTO\PatientTreamentNeedsDTO.cs" />
     <Compile Include="DTO\PositionDTO.cs" />
     <Compile Include="DTO\RoomDTO.cs" />
+    <Compile Include="DTO\TreamentRecordsDTO.cs" />
     <Compile Include="DTO\TreatmentNeedsDTO.cs" />
     <Compile Include="DTO\ScheduleDTO.cs" />
     <Compile Include="GUI\BacSi.cs">

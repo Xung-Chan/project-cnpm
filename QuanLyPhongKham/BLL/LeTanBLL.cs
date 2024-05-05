@@ -27,8 +27,14 @@ namespace QuanLyPhongKham.BLL {
             }
             MessageBox.Show("Thêm bệnh nhân thành công", "Successfully", MessageBoxButtons.OK);
         }
-        //public List<TreatmentNeedsDTO> loadQueue() {
-        //    return RoomDAO.Instance.getAllRoom();
-        //}
+        public bool checkQuanLiHoSoBenhNhan(CheckedListBox.CheckedItemCollection treamentList, string roomNumber) {
+            if(treamentList.Count <= 0) {
+                return false;
+            }
+            if(roomNumber == "") {
+                return false;
+            }
+            return true;
+        }
     }
 }

@@ -16,5 +16,6 @@ namespace QuanLyPhongKham.GUI
         {
             InitializeComponent();
         }
+
     }
 }

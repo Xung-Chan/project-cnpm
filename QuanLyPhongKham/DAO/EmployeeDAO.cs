@@ -43,5 +43,13 @@ namespace QuanLyPhongKham.DAO
             return check;
 
         }
+        public EmployeeDTO getEmployeeByID(int id ) {
+            string query = String.Format("select * from Employee where ID = {0}", id);
+            DataTable table = DataProvider.Instance.ExecuteQuery(query);
+            foreach(DataRow row in table.Rows) {
+                return new EmployeeDTO(row);
+            }
+            return null;
+        }
     }
 }

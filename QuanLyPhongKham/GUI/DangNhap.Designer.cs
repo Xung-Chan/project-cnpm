@@ -31,8 +31,6 @@ namespace QuanLyPhongKham.GUI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DangNhap));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dbQuanLyPhongKhamDataSet1 = new QuanLyPhongKham.DatabaseDataSet();
-            this.dbQuanLyPhongKhamDataSet2 = new QuanLyPhongKham.DatabaseDataSet();
             this.tbxPhoneNumber = new System.Windows.Forms.TextBox();
             this.tbxPassword = new System.Windows.Forms.TextBox();
             this.btnDangNhap = new System.Windows.Forms.Button();
@@ -42,8 +40,6 @@ namespace QuanLyPhongKham.GUI
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlContainer = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.dbQuanLyPhongKhamDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbQuanLyPhongKhamDataSet2)).BeginInit();
             this.pnlContainer.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,15 +54,6 @@ namespace QuanLyPhongKham.GUI
             this.panel1.Size = new System.Drawing.Size(308, 85);
             this.panel1.TabIndex = 11;
             // 
-            // dbQuanLyPhongKhamDataSet1
-            // 
-            this.dbQuanLyPhongKhamDataSet1.DataSetName = "DatabaseDataSet";
-            this.dbQuanLyPhongKhamDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dbQuanLyPhongKhamDataSet2
-            // 
-            this.dbQuanLyPhongKhamDataSet2.DataSetName = "DatabaseDataSet";
-            this.dbQuanLyPhongKhamDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tbxPhoneNumber
             // 
@@ -210,8 +197,7 @@ namespace QuanLyPhongKham.GUI
             this.Name = "DangNhap";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dbQuanLyPhongKhamDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbQuanLyPhongKhamDataSet2)).EndInit();
+
             this.pnlContainer.ResumeLayout(false);
             this.pnlContainer.PerformLayout();
             this.ResumeLayout(false);
@@ -221,8 +207,6 @@ namespace QuanLyPhongKham.GUI
 
         #endregion
         protected System.Windows.Forms.Panel panel1;
-        private DatabaseDataSet dbQuanLyPhongKhamDataSet1;
-        private DatabaseDataSet dbQuanLyPhongKhamDataSet2;
         private System.Windows.Forms.TextBox tbxPhoneNumber;
         private System.Windows.Forms.TextBox tbxPassword;
         private System.Windows.Forms.Button btnDangNhap;

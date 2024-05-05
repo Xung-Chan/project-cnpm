@@ -13,7 +13,6 @@ namespace QuanLyPhongKham.GUI {
         public DonThuoc() {
             InitializeComponent();
         }
-
-
     }
+    private void loadListMedicine(List<>)
 }

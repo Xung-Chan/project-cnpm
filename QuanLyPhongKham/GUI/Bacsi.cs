@@ -32,16 +32,21 @@ namespace QuanLyPhongKham.GUI {
         private void lvwPatient_SelectedIndexChanged( object sender, EventArgs e ) {
             if (lvwPatient.SelectedItems.Count == 1 ) {
                 PatientTreamentNeedsDTO patient = (lvwPatient.SelectedItems[0].Tag as PatientTreamentNeedsDTO);
+                //load information to textbox
                 tbxID.Text = patient.Patient.ID.ToString();
                 tbxCCCD.Text = patient.Patient.CCCD.ToString();
                 tbxBirthday.Text = patient.Patient.Birthday.Date.ToString("dd/MM/yyyy");
                 tbxName.Text = patient.Patient.Name.ToString();
                 tbxPhoneNumber.Text = patient.Patient.PhoneNumber.ToString();
                 tbxSex.Text = patient.Patient.Sex.ToString();
-                foreach(TreatmentNeedsDTO treament in patient.Treatments) {
+                //loaf listview nhu cầu điều trị
+                lvwTreamentNeeds.Items.Clear();
+                foreach (TreatmentNeedsDTO treament in patient.Treatments) {
                     ListViewItem item = new ListViewItem(treament.Name);
                     lvwTreamentNeeds.Items.Add(item);
                 }
+                //load lịch sử khám chữa bệnh
+                lichSuKhamChuaBenh.loadTreamentRecord(int.Parse(tbxID.Text));
             }
         }
 
@@ -51,12 +56,9 @@ namespace QuanLyPhongKham.GUI {
         }
 
         private void btnDonThuoc_Click( object sender, EventArgs e ) {
-            donthuoc.BringToFront();
+            donThuoc.BringToFront();
         }
 
-        private void btnDichVuDaKe_Click( object sender, EventArgs e ) {
-            dichVuDaKe.BringToFront();
-        }
 
         private void btnKhamLamSang_Click( object sender, EventArgs e ) {
             khamLamSang.BringToFront();
@@ -66,5 +68,12 @@ namespace QuanLyPhongKham.GUI {
             lichSuKhamChuaBenh.BringToFront();
         }
 
+        private void lvwTreamentNeeds_SelectedIndexChanged( object sender, EventArgs e ) {
+
+        }
+
+        private void panel5_Paint( object sender, PaintEventArgs e ) {
+
+        }
     }
 }
