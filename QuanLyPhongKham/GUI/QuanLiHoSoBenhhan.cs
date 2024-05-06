@@ -84,11 +84,7 @@ namespace QuanLyPhongKham.GUI {
             if (e.KeyChar == (char) Keys.Enter) {
                 btnSearch_Click(sender, e);
                 tbxSearch.Text = "";
-                return;
             }
-            List<PatientDTO> list = PatientDAO.Instance.findPatientByPhoneNumber(tbxSearch.Text.Trim());
-            loadListPatient(list);
-            clearThongTinBenhNhan();
         }
 
         private void btnAddPatient_Click( object sender, EventArgs e ) {
@@ -116,12 +112,17 @@ namespace QuanLyPhongKham.GUI {
                 MessageBox.Show("Vui lòng chọn đầy đủ thông tin");
                 return;
             }
+            //Đẩy bệnh nhân vào hàng đợi của phòng bác sĩ
             PatientTreamentNeedsDTO patient = new PatientTreamentNeedsDTO(lvwListPatient.SelectedItems[0].Tag as PatientDTO);
             foreach(string treatmentName in clbListTreatmentNeeds.CheckedItems) {
                 TreatmentNeedsDTO treatment = TreatmentNeedsDAO.Instance.getTreatmentNeeds(treatmentName);
                 patient.Treatments.Add(treatment);
             }
             BacSiBLL.Instance.QueuePatient[(int)cbbQueue.SelectedItem].Enqueue(patient);
+            //Tạo TreamentRecord,Bill và BillInfor (mặc định tiền dịch vụ khám-hồ sơ
+
+
+
             MessageBox.Show("Thêm vào phòng chờ thành công");
         }
 

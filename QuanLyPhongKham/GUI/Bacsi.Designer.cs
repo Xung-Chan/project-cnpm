@@ -35,6 +35,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lvwTreamentNeeds = new System.Windows.Forms.ListView();
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel9 = new System.Windows.Forms.Panel();
             this.tbxPhoneNumber = new System.Windows.Forms.TextBox();
             this.tbxName = new System.Windows.Forms.TextBox();
@@ -65,7 +66,6 @@
             this.button7 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.khamLamSang = new QuanLyPhongKham.GUI.KhamLamSang();
             this.lichSuKhamChuaBenh = new QuanLyPhongKham.GUI.LichSuKhamChuaBenh();
             this.donThuoc = new QuanLyPhongKham.GUI.DonThuoc();
@@ -162,6 +162,11 @@
             this.lvwTreamentNeeds.TabIndex = 5;
             this.lvwTreamentNeeds.UseCompatibleStateImageBehavior = false;
             this.lvwTreamentNeeds.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "";
+            this.columnHeader3.Width = 811;
             // 
             // panel9
             // 
@@ -479,11 +484,6 @@
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(1605, 426);
             this.panel12.TabIndex = 8;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "";
-            this.columnHeader3.Width = 811;
             // 
             // khamLamSang
             // 
