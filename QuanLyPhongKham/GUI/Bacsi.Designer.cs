@@ -63,7 +63,7 @@
             this.btnDonThuoc = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnPrintPrescription = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.khamLamSang = new QuanLyPhongKham.GUI.KhamLamSang();
@@ -137,7 +137,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1352, 384);
             this.panel5.TabIndex = 3;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // groupBox2
             // 
@@ -451,22 +450,23 @@
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // button7
+            // btnPrintPrescription
             // 
-            this.button7.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.button7.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button7.ForeColor = System.Drawing.Color.AliceBlue;
-            this.button7.Location = new System.Drawing.Point(1415, 2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(250, 50);
-            this.button7.TabIndex = 3;
-            this.button7.Text = "Lưu và xuất toa thuốc";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnPrintPrescription.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btnPrintPrescription.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnPrintPrescription.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnPrintPrescription.Location = new System.Drawing.Point(1415, 2);
+            this.btnPrintPrescription.Name = "btnPrintPrescription";
+            this.btnPrintPrescription.Size = new System.Drawing.Size(250, 50);
+            this.btnPrintPrescription.TabIndex = 3;
+            this.btnPrintPrescription.Text = "Lưu và xuất toa thuốc";
+            this.btnPrintPrescription.UseVisualStyleBackColor = false;
+            this.btnPrintPrescription.Click += new System.EventHandler(this.btnPrintPrescription_Click);
             // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.LightGray;
-            this.groupBox3.Controls.Add(this.button7);
+            this.groupBox3.Controls.Add(this.btnPrintPrescription);
             this.groupBox3.Controls.Add(this.btnLogout);
             this.groupBox3.Controls.Add(this.button10);
             this.groupBox3.Location = new System.Drawing.Point(0, 920);
@@ -565,7 +565,7 @@
         private System.Windows.Forms.Button btnKhamLamSang;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button btnLogout;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnPrintPrescription;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ListView lvwPatient;
         private System.Windows.Forms.ColumnHeader columnHeader1;

@@ -28,5 +28,22 @@ namespace QuanLyPhongKham.DAO {
             }
             return allRooms;
         }
+        public RoomDTO getRoomByRoomNumber(int roomNumber) {
+            string query = String.Format("select * from Room where roomNumber = {0}", roomNumber);
+            DataTable table = DataProvider.Instance.ExecuteQuery(query);
+            foreach(DataRow row in table.Rows) {
+                return new RoomDTO(row);
+            }
+            return null;
+        }
+        public RoomDTO getRoomByDentistID(int dentistID) {
+            string query = String.Format("select * from Room where dentistID = {0}", dentistID);
+            DataTable table = DataProvider.Instance.ExecuteQuery(query);
+            foreach(DataRow row in table.Rows) {
+                return new RoomDTO(row);
+            }
+            return null;
+
+        }
     }
 }

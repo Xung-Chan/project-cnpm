@@ -120,9 +120,11 @@ namespace QuanLyPhongKham.GUI {
             }
             BacSiBLL.Instance.QueuePatient[(int)cbbQueue.SelectedItem].Enqueue(patient);
             //Tạo TreamentRecord,Bill và BillInfor (mặc định tiền dịch vụ khám-hồ sơ
-
-
-
+            TreamentRecordsDAO.Instance.insertTreamentRecord(int.Parse(btnPatientID.Text), RoomDAO.Instance.getRoomByRoomNumber((int) cbbQueue.SelectedItem).DentistID);
+            TreamentRecordsDTO treamentRecord = TreamentRecordsDAO.Instance.getLastestTreamentRecordOfPatient(int.Parse(btnPatientID.Text));
+            BillDAO.Instance.insertBill(treamentRecord.ID);
+            BillDTO bill = BillDAO.Instance.getBillByTreamentRecord(treamentRecord.ID);
+            BillInforDAO.Instance.insertBillInfor(bill.ID, 1,1);//Mặc định thêm dịch vụ khám hồ sơ (parameter 2,3 = 1,1)
             MessageBox.Show("Thêm vào phòng chờ thành công");
         }
 

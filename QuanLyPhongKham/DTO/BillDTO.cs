@@ -12,11 +12,12 @@ namespace QuanLyPhongKham.DTO {
         private DateTime dateCheckIn;
         private DateTime dateCheckOut;
         private bool status;
-        public BillDTO(DataRow row ) {
+        public BillDTO( DataRow row ) {
             this.ID = (int) row["ID"];
             this.treamentRecordID = (int) row["treamentRecordID"];
             this.dateCheckIn = (DateTime) row["dateCheckIn"];
-            this.dateCheckOut = (DateTime) row["dateCheckOut"];
+            if (row["dateCheckOut"].ToString() != "")
+                this.dateCheckOut = (DateTime) row["dateCheckOut"];
             this.status = (bool) row["status"];
         }
         public int TreamentRecordID { get => treamentRecordID; set => treamentRecordID = value; }

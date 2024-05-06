@@ -27,5 +27,19 @@ namespace QuanLyPhongKham.DAO {
             }
             return list;
         }
+        public bool insertTreamentRecord(int patientID, int dentistID) {
+            string query = String.Format("insert into TreamentRecords(patientID, dentistID, date) values ({0}, {1}, '{2}')", patientID, dentistID,DateTime.Now);
+            int check = DataProvider.Instance.ExecuteNonQuery(query);
+            return check > 0;
+        }
+        public TreamentRecordsDTO getLastestTreamentRecordOfPatient(int patientID) {
+            string query = String.Format("select top(1) * from TreamentRecords where patientID ={0} order by ID desc", patientID);
+            DataTable table = DataProvider.Instance.ExecuteQuery(query);
+            foreach(DataRow row in table.Rows) {
+                return new TreamentRecordsDTO(row);
+
+            }
+            return null;
+        }
     }
 }

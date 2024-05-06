@@ -12,11 +12,12 @@ using System.Windows.Forms;
 
 namespace QuanLyPhongKham.GUI {
     public partial class DonThuoc : UserControl {
+
         public DonThuoc() {
             InitializeComponent();
-            loadListMedicine(MedicineDAO.Instance.getAllMedicine());
+            loadStockMedicine(MedicineDAO.Instance.getAllMedicine());
         }
-        private void loadListMedicine( List<MedicineDTO> list ) {
+        private void loadStockMedicine( List<MedicineDTO> list ) {
             lvwStockMedicine.Items.Clear();
             foreach( MedicineDTO medicine in list ) {
                 ListViewItem item = new ListViewItem(medicine.ID.ToString());
@@ -26,24 +27,34 @@ namespace QuanLyPhongKham.GUI {
             }
         }
 
-        private void lvwStockMedicine_SelectedIndexChanged( object sender, EventArgs e ) {
-
-        }
 
         private void tbsSearch_TextChanged( object sender, EventArgs e ) {
-           loadListMedicine(MedicineDAO.Instance.findMedicineByName(tbsSearch.Text));
+           loadStockMedicine(MedicineDAO.Instance.findMedicineByName(tbsSearch.Text));
         }
-
+        public void loadPrecrciption(List<BillInforDTO> prescription ) {
+            lvwPrescription.Items.Clear();
+            foreach(BillInforDTO billInfor in prescription) {
+                ServiceDTO service = ServiceDAO.Instance.getServiceByID(billInfor.ServiceID);
+                ListViewItem item = new ListViewItem(service.ID.ToString());
+                item.SubItems.Add(service.Name);
+                item.SubItems.Add(billInfor.Quantity.ToString());
+                lvwPrescription.Items.Add(item);
+            }
+        }
         private void btnAddMedicine_Click( object sender, EventArgs e ) {
             if(lvwStockMedicine.SelectedItems.Count == 0) {
                 MessageBox.Show("Vui lòng chọn thuốc");
                 return;
             }
-            if (lvwPrescription.Columns[0].)
-                ListViewItem item = new ListViewItem(lvwStockMedicine.SelectedItems[0].Text);
-            item.SubItems.Add(lvwStockMedicine.SelectedItems[0].SubItems[1].Text);
-            item.SubItems.Add(nudQuantity.Value.ToString());
-            lvwPrescription.Items.Add(item);
+            int billID = BillDAO.Instance.getBillByTreamentRecord((this.Tag as TreamentRecordsDTO).ID).ID;
+            int serviceID = int.Parse(lvwStockMedicine.SelectedItems[0].SubItems[0].Text);
+            if(BillInforDAO.Instance.insertBillInfor(billID, serviceID, (int) nudQuantity.Value)) {
+                MessageBox.Show("Thêm thành công");
+                loadPrecrciption(BillInforDAO.Instance.getPrescriptionByBillID(BillDAO.Instance.getBillByTreamentRecord((this.Tag as TreamentRecordsDTO).ID).ID));
+            }
+            else {
+                MessageBox.Show("Lỗi");
+            }
         }
     }
 }

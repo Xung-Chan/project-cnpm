@@ -51,5 +51,14 @@ namespace QuanLyPhongKham.DAO
             }
             return null;
         }
+        public EmployeeDTO getEmployeeByPhoneNumber(string phoneNumber) {
+            string query = String.Format("select * from Employee where phoneNumber = {0}", phoneNumber);
+            DataTable table = DataProvider.Instance.ExecuteQuery(query);
+            foreach(DataRow row in table.Rows) {
+                return new EmployeeDTO(row);
+            }
+            return null;
+
+        }
     }
 }

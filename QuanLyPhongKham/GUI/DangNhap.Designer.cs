@@ -30,7 +30,6 @@ namespace QuanLyPhongKham.GUI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DangNhap));
-            this.panel1 = new System.Windows.Forms.Panel();
             this.tbxPhoneNumber = new System.Windows.Forms.TextBox();
             this.tbxPassword = new System.Windows.Forms.TextBox();
             this.btnDangNhap = new System.Windows.Forms.Button();
@@ -42,18 +41,6 @@ namespace QuanLyPhongKham.GUI
             this.pnlContainer = new System.Windows.Forms.Panel();
             this.pnlContainer.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.AutoSize = true;
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.Location = new System.Drawing.Point(566, 37);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(308, 85);
-            this.panel1.TabIndex = 11;
-            // 
             // 
             // tbxPhoneNumber
             // 
@@ -190,23 +177,19 @@ namespace QuanLyPhongKham.GUI
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1351, 750);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlContainer);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DangNhap";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);
-
             this.pnlContainer.ResumeLayout(false);
             this.pnlContainer.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        protected System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox tbxPhoneNumber;
         private System.Windows.Forms.TextBox tbxPassword;
         private System.Windows.Forms.Button btnDangNhap;

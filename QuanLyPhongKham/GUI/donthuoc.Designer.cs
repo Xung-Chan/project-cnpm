@@ -89,7 +89,6 @@ namespace QuanLyPhongKham.GUI
             this.lvwStockMedicine.TabIndex = 7;
             this.lvwStockMedicine.UseCompatibleStateImageBehavior = false;
             this.lvwStockMedicine.View = System.Windows.Forms.View.Details;
-            this.lvwStockMedicine.SelectedIndexChanged += new System.EventHandler(this.lvwStockMedicine_SelectedIndexChanged);
             // 
             // columnHeader1
             // 

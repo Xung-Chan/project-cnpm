@@ -39,18 +39,21 @@ namespace QuanLyPhongKham.GUI {
             switch (EmployeeBLL.Instance.checkLoginBLL(phoneNumber, password)) {
                 case "BÁC SĨ":
                     BacSi bacsi = new BacSi();
+                    bacsi.Tag = EmployeeDAO.Instance.getEmployeeByPhoneNumber(phoneNumber);
                     this.Hide();
                     bacsi.ShowDialog();
                     this.Show();
                     break;
                 case "LỄ TÂN":
                     LeTan letan = new LeTan();
+                    letan.Tag = EmployeeDAO.Instance.getEmployeeByPhoneNumber(phoneNumber);
                     this.Hide();
                     letan.ShowDialog();
                     this.Show();
                     break;
                 case "QUẢN LÝ":
                     QuanLy quanLy   = new QuanLy();
+                    quanLy.Tag = EmployeeDAO.Instance.getEmployeeByPhoneNumber(phoneNumber);
                     this.Hide();
                     quanLy.ShowDialog();
                     this.Show();
