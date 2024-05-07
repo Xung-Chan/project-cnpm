@@ -77,5 +77,9 @@ namespace QuanLyPhongKham.GUI {
         private void btnQuanLyNhanVien_Click( object sender, EventArgs e ) {
             quanLyNhanVien.BringToFront();
         }
+
+        private void quanLyNhanVien_Load( object sender, EventArgs e ) {
+
+        }
     }
 }

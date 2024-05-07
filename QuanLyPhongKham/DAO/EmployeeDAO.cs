@@ -60,5 +60,14 @@ namespace QuanLyPhongKham.DAO
             return null;
 
         }
+        public List<EmployeeDTO> getAllEmployee() {
+            List<EmployeeDTO> list = new List<EmployeeDTO>();
+            string query = "select * from Employee";
+            DataTable table = DataProvider.Instance.ExecuteQuery(query);
+            foreach(DataRow row in table.Rows) {
+                list.Add(new EmployeeDTO(row));
+            }
+            return list;
+        }
     }
 }

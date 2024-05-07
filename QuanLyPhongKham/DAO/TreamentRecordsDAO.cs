@@ -32,6 +32,11 @@ namespace QuanLyPhongKham.DAO {
             int check = DataProvider.Instance.ExecuteNonQuery(query);
             return check > 0;
         }
+        public bool updateTreamentRecord(TreamentRecordsDTO record) {
+            string query = "update TreamentRecords set status = @1 , otherDiseases = @2 , drugAllergy = @3 , diagnostic = @4 , treatmentDirection = @5 , date = @6 , note = @7 where ID = @8";
+            int check = DataProvider.Instance.ExecuteNonQuery(query, new object[] { record.Status, record.OtherDiseases, record.DrugAllergy, record.Diagnostic, record.TreamentDirection, DateTime.Now, record.Note, record.ID });
+            return check > 0;
+        }
         public TreamentRecordsDTO getLastestTreamentRecordOfPatient(int patientID) {
             string query = String.Format("select top(1) * from TreamentRecords where patientID ={0} order by ID desc", patientID);
             DataTable table = DataProvider.Instance.ExecuteQuery(query);
@@ -40,6 +45,10 @@ namespace QuanLyPhongKham.DAO {
 
             }
             return null;
+        }
+        public int countTreamentRecord(int patientID) {
+            string query = String.Format( "select count(*) from TreamentRecords where patientID ={0}", patientID);
+            return (int)DataProvider.Instance.ExecuteScalar(query);
         }
     }
 }

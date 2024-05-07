@@ -49,9 +49,10 @@
             this.button3 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.quanLyNhanVien = new QuanLyPhongKham.GUI.QuanLyNhanVien();
             this.baocaocv1 = new QuanLyPhongKham.GUI.BaoCaoCongViec();
             this.bcth1 = new QuanLyPhongKham.GUI.BaoCaoTongHop();
-            this.quanLyNhanVien = new QuanLyPhongKham.GUI.QuanLyNhanVien();
+            this.duLieuDiemDanh1 = new QuanLyPhongKham.GUI.DuLieuDiemDanh();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -242,7 +243,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(244, 69);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Danh sách ca khám";
+            this.button1.Text = "Dữ liệu điểm danh";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // btnQuanLyNhanVien
@@ -292,6 +293,14 @@
             this.timer2.Interval = 15;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // quanLyNhanVien
+            // 
+            this.quanLyNhanVien.Location = new System.Drawing.Point(280, 57);
+            this.quanLyNhanVien.Name = "quanLyNhanVien";
+            this.quanLyNhanVien.Size = new System.Drawing.Size(1539, 745);
+            this.quanLyNhanVien.TabIndex = 4;
+            this.quanLyNhanVien.Load += new System.EventHandler(this.quanLyNhanVien_Load);
+            // 
             // baocaocv1
             // 
             this.baocaocv1.Location = new System.Drawing.Point(280, 57);
@@ -310,12 +319,12 @@
             this.bcth1.TabIndex = 2;
             this.bcth1.Load += new System.EventHandler(this.bcth1_Load);
             // 
-            // quanLyNhanVien
+            // duLieuDiemDanh1
             // 
-            this.quanLyNhanVien.Location = new System.Drawing.Point(280, 57);
-            this.quanLyNhanVien.Name = "quanLyNhanVien";
-            this.quanLyNhanVien.Size = new System.Drawing.Size(1539, 745);
-            this.quanLyNhanVien.TabIndex = 4;
+            this.duLieuDiemDanh1.Location = new System.Drawing.Point(280, 57);
+            this.duLieuDiemDanh1.Name = "duLieuDiemDanh1";
+            this.duLieuDiemDanh1.Size = new System.Drawing.Size(1539, 745);
+            this.duLieuDiemDanh1.TabIndex = 5;
             // 
             // QuanLy
             // 
@@ -323,6 +332,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1819, 816);
+            this.Controls.Add(this.duLieuDiemDanh1);
             this.Controls.Add(this.quanLyNhanVien);
             this.Controls.Add(this.baocaocv1);
             this.Controls.Add(this.bcth1);
@@ -366,5 +376,6 @@
         private BaoCaoTongHop bcth1;
         private BaoCaoCongViec baocaocv1;
         private QuanLyNhanVien quanLyNhanVien;
+        private DuLieuDiemDanh duLieuDiemDanh1;
     }
 }

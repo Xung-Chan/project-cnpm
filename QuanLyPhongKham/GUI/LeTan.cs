@@ -14,7 +14,7 @@ namespace QuanLyPhongKham.GUI {
             InitializeComponent();
         }
         private void Letan_Load( object sender, EventArgs e ) {
-
+            quanLyHoSoBenhNhan.BringToFront();
         }
         private void btnLogout_Click( object sender, EventArgs e ) {
             this.Close();
@@ -28,6 +28,10 @@ namespace QuanLyPhongKham.GUI {
         private void btnQuanLyHoSoBenhNhan_Click( object sender, EventArgs e ) {
             quanLyHoSoBenhNhan.BringToFront();
 
+        }
+
+        private void btnPay_Click( object sender, EventArgs e ) {
+            thanhToan.BringToFront();
         }
     }
 }

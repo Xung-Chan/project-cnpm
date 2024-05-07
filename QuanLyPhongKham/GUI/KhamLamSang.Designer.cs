@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.tbxNote = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.tbxDrugAllergy = new System.Windows.Forms.TextBox();
+            this.tbxTreatmentDirection = new System.Windows.Forms.TextBox();
+            this.tbxDiagnostic = new System.Windows.Forms.TextBox();
+            this.tbxOtherDiseases = new System.Windows.Forms.TextBox();
+            this.tbxStatus = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -43,7 +44,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
-            this.btnSave = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.panel9.SuspendLayout();
             this.SuspendLayout();
@@ -52,13 +52,13 @@
             // 
             this.groupBox2.BackColor = System.Drawing.Color.LightGray;
             this.groupBox2.Controls.Add(this.btnSave);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.tbxNote);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.textBox10);
-            this.groupBox2.Controls.Add(this.textBox13);
-            this.groupBox2.Controls.Add(this.textBox12);
-            this.groupBox2.Controls.Add(this.textBox14);
-            this.groupBox2.Controls.Add(this.textBox9);
+            this.groupBox2.Controls.Add(this.tbxDrugAllergy);
+            this.groupBox2.Controls.Add(this.tbxTreatmentDirection);
+            this.groupBox2.Controls.Add(this.tbxDiagnostic);
+            this.groupBox2.Controls.Add(this.tbxOtherDiseases);
+            this.groupBox2.Controls.Add(this.tbxStatus);
             this.groupBox2.Controls.Add(this.label18);
             this.groupBox2.Controls.Add(this.label17);
             this.groupBox2.Controls.Add(this.label15);
@@ -71,13 +71,26 @@
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             // 
-            // textBox1
+            // btnSave
             // 
-            this.textBox1.Location = new System.Drawing.Point(1060, 133);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(511, 50);
-            this.textBox1.TabIndex = 8;
+            this.btnSave.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btnSave.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnSave.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnSave.Location = new System.Drawing.Point(1441, 367);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(130, 40);
+            this.btnSave.TabIndex = 17;
+            this.btnSave.Text = "Lưu";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // tbxNote
+            // 
+            this.tbxNote.Location = new System.Drawing.Point(1060, 133);
+            this.tbxNote.Multiline = true;
+            this.tbxNote.Name = "tbxNote";
+            this.tbxNote.Size = new System.Drawing.Size(511, 50);
+            this.tbxNote.TabIndex = 8;
             // 
             // label1
             // 
@@ -90,45 +103,45 @@
             this.label1.Text = "Ghi chú";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textBox10
+            // tbxDrugAllergy
             // 
-            this.textBox10.Location = new System.Drawing.Point(190, 133);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(540, 50);
-            this.textBox10.TabIndex = 5;
+            this.tbxDrugAllergy.Location = new System.Drawing.Point(190, 133);
+            this.tbxDrugAllergy.Multiline = true;
+            this.tbxDrugAllergy.Name = "tbxDrugAllergy";
+            this.tbxDrugAllergy.Size = new System.Drawing.Size(540, 50);
+            this.tbxDrugAllergy.TabIndex = 5;
             // 
-            // textBox13
+            // tbxTreatmentDirection
             // 
-            this.textBox13.Location = new System.Drawing.Point(190, 293);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(1381, 56);
-            this.textBox13.TabIndex = 5;
+            this.tbxTreatmentDirection.Location = new System.Drawing.Point(190, 293);
+            this.tbxTreatmentDirection.Multiline = true;
+            this.tbxTreatmentDirection.Name = "tbxTreatmentDirection";
+            this.tbxTreatmentDirection.Size = new System.Drawing.Size(1381, 56);
+            this.tbxTreatmentDirection.TabIndex = 5;
             // 
-            // textBox12
+            // tbxDiagnostic
             // 
-            this.textBox12.Location = new System.Drawing.Point(190, 213);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(1381, 56);
-            this.textBox12.TabIndex = 5;
+            this.tbxDiagnostic.Location = new System.Drawing.Point(190, 213);
+            this.tbxDiagnostic.Multiline = true;
+            this.tbxDiagnostic.Name = "tbxDiagnostic";
+            this.tbxDiagnostic.Size = new System.Drawing.Size(1381, 56);
+            this.tbxDiagnostic.TabIndex = 5;
             // 
-            // textBox14
+            // tbxOtherDiseases
             // 
-            this.textBox14.Location = new System.Drawing.Point(1060, 53);
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(511, 50);
-            this.textBox14.TabIndex = 5;
+            this.tbxOtherDiseases.Location = new System.Drawing.Point(1060, 53);
+            this.tbxOtherDiseases.Multiline = true;
+            this.tbxOtherDiseases.Name = "tbxOtherDiseases";
+            this.tbxOtherDiseases.Size = new System.Drawing.Size(511, 50);
+            this.tbxOtherDiseases.TabIndex = 5;
             // 
-            // textBox9
+            // tbxStatus
             // 
-            this.textBox9.Location = new System.Drawing.Point(190, 53);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(540, 50);
-            this.textBox9.TabIndex = 5;
+            this.tbxStatus.Location = new System.Drawing.Point(190, 53);
+            this.tbxStatus.Multiline = true;
+            this.tbxStatus.Name = "tbxStatus";
+            this.tbxStatus.Size = new System.Drawing.Size(540, 50);
+            this.tbxStatus.TabIndex = 5;
             // 
             // label18
             // 
@@ -204,18 +217,6 @@
             this.label13.Text = "KHÁM LÂM SÀN";
             this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.btnSave.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnSave.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btnSave.Location = new System.Drawing.Point(1441, 367);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(130, 40);
-            this.btnSave.TabIndex = 17;
-            this.btnSave.Text = "Lưu";
-            this.btnSave.UseVisualStyleBackColor = false;
-            // 
             // KhamLamSang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -234,11 +235,11 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox tbxDrugAllergy;
+        private System.Windows.Forms.TextBox tbxTreatmentDirection;
+        private System.Windows.Forms.TextBox tbxDiagnostic;
+        private System.Windows.Forms.TextBox tbxOtherDiseases;
+        private System.Windows.Forms.TextBox tbxStatus;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label15;
@@ -247,7 +248,7 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbxNote;
         private System.Windows.Forms.Button btnSave;
     }
 }

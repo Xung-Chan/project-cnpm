@@ -1,130 +1,155 @@
-﻿namespace QuanLyPhongKham.GUI
-{
-    partial class ThanhToan
-    {
-        /// <summary>
+﻿namespace QuanLyPhongKham.GUI {
+    partial class ThanhToan {
+        /// <summary> 
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
+        protected override void Dispose( bool disposing ) {
+            if (disposing && (components != null)) {
                 components.Dispose();
             }
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel2.SuspendLayout();
+        private void InitializeComponent() {
+            this.lvwBillInfor = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tbxBillID = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnTotalFee = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnPay = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listView1
+            // lvwBillInfor
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(-7, 89);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1098, 415);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.lvwBillInfor.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.lvwBillInfor.GridLines = true;
+            this.lvwBillInfor.HideSelection = false;
+            this.lvwBillInfor.Location = new System.Drawing.Point(360, 134);
+            this.lvwBillInfor.Name = "lvwBillInfor";
+            this.lvwBillInfor.Size = new System.Drawing.Size(475, 429);
+            this.lvwBillInfor.TabIndex = 0;
+            this.lvwBillInfor.UseCompatibleStateImageBehavior = false;
+            this.lvwBillInfor.View = System.Windows.Forms.View.Details;
             // 
-            // panel2
+            // columnHeader1
             // 
-            this.panel2.BackColor = System.Drawing.Color.LightGray;
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Location = new System.Drawing.Point(5, 8);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1087, 63);
-            this.panel2.TabIndex = 8;
+            this.columnHeader1.Text = "Tên dịch vụ";
+            this.columnHeader1.Width = 133;
             // 
-            // textBox1
+            // columnHeader2
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Azure;
-            this.textBox1.Location = new System.Drawing.Point(247, 13);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(453, 36);
-            this.textBox1.TabIndex = 7;
+            this.columnHeader2.Text = "Số lượng";
+            this.columnHeader2.Width = 141;
             // 
-            // button5
+            // columnHeader3
             // 
-            this.button5.BackColor = System.Drawing.Color.Cyan;
-            this.button5.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button5.Location = new System.Drawing.Point(704, 13);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(92, 36);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Tìm kiếm";
-            this.button5.UseVisualStyleBackColor = false;
+            this.columnHeader3.Text = "Tổng tiền";
+            this.columnHeader3.Width = 196;
             // 
-            // panel3
+            // tbxBillID
             // 
-            this.panel3.BackgroundImage = global::QuanLyPhongKham.Properties.Resources.N9_NiceNight__1_;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel3.Location = new System.Drawing.Point(1378, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(36, 38);
-            this.panel3.TabIndex = 6;
+            this.tbxBillID.Location = new System.Drawing.Point(360, 86);
+            this.tbxBillID.Name = "tbxBillID";
+            this.tbxBillID.Size = new System.Drawing.Size(304, 22);
+            this.tbxBillID.TabIndex = 1;
             // 
-            // button1
+            // label1
             // 
-            this.button1.BackColor = System.Drawing.Color.Cyan;
-            this.button1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.Location = new System.Drawing.Point(827, 522);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(239, 36);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Xuất Hóa đơn";
-            this.button1.UseVisualStyleBackColor = false;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(276, 86);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 16);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Mã hóa đơn";
             // 
-            // Thanhtoan
+            // btnTotalFee
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.btnTotalFee.Enabled = false;
+            this.btnTotalFee.Location = new System.Drawing.Point(516, 584);
+            this.btnTotalFee.Name = "btnTotalFee";
+            this.btnTotalFee.Size = new System.Drawing.Size(207, 46);
+            this.btnTotalFee.TabIndex = 3;
+            this.btnTotalFee.Text = "0";
+            this.btnTotalFee.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(329, 599);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(153, 16);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Tổng số tiền cần phải trả";
+            // 
+            // btnPay
+            // 
+            this.btnPay.Location = new System.Drawing.Point(742, 589);
+            this.btnPay.Name = "btnPay";
+            this.btnPay.Size = new System.Drawing.Size(113, 36);
+            this.btnPay.TabIndex = 5;
+            this.btnPay.Text = "Thanh toán";
+            this.btnPay.UseVisualStyleBackColor = true;
+            this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(700, 86);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 6;
+            this.btnSearch.Text = "Tìm";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // ThanhToan
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1103, 569);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.listView1);
-            this.Controls.Add(this.button1);
-            this.Name = "Thanhtoan";
-            this.Text = "Thanhtoan";
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.btnPay);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnTotalFee);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tbxBillID);
+            this.Controls.Add(this.lvwBillInfor);
+            this.Name = "ThanhToan";
+            this.Size = new System.Drawing.Size(1313, 702);
+            this.Load += new System.EventHandler(this.ThanhToan_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListView lvwBillInfor;
+        private System.Windows.Forms.TextBox tbxBillID;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.Button btnTotalFee;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnPay;
+        private System.Windows.Forms.Button btnSearch;
     }
 }

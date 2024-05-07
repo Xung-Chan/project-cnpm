@@ -51,6 +51,9 @@
     <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>packages\BouncyCastle.Cryptography.2.3.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
     <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
       <HintPath>packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
     </Reference>
@@ -101,6 +104,7 @@
     <Compile Include="DAO\BranchDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\DentistDAO.cs" />
+    <Compile Include="DAO\DutyScheduleDAO.cs" />
     <Compile Include="DAO\EmployeeDAO.cs" />
     <Compile Include="DAO\MedicineDAO.cs" />
     <Compile Include="DAO\PatientDAO.cs" />
@@ -115,10 +119,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DTO\AttendanceDataDTO.cs" />
     <Compile Include="DTO\BillDTO.cs" />
     <Compile Include="DTO\BillInforDTO.cs" />
     <Compile Include="DTO\BranchDTO.cs" />
     <Compile Include="DTO\DentistDTO.cs" />
+    <Compile Include="DTO\DutyScheduleDTO.cs" />
     <Compile Include="DTO\EmployeeDTO.cs" />
     <Compile Include="DTO\MedicineDTO.cs" />
     <Compile Include="DTO\PatientDTO.cs" />
@@ -165,12 +171,6 @@
     <Compile Include="GUI\DonThuoc.Designer.cs">
       <DependentUpon>DonThuoc.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\DichVuDaKe.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\DichVuDaKe.Designer.cs">
-      <DependentUpon>DichVuDaKe.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\DuLieuDiemDanh.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -201,6 +201,12 @@
     <Compile Include="GUI\LichSuKhamChuaBenh.Designer.cs">
       <DependentUpon>LichSuKhamChuaBenh.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\PhanCongLichTruc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\PhanCongLichTruc.Designer.cs">
+      <DependentUpon>PhanCongLichTruc.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\QuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,7 +226,7 @@
       <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\ThanhToan.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GUI\ThanhToan.Designer.cs">
       <DependentUpon>ThanhToan.cs</DependentUpon>
@@ -251,9 +257,6 @@
     <EmbeddedResource Include="GUI\DonThuoc.resx">
       <DependentUpon>DonThuoc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\DichVuDaKe.resx">
-      <DependentUpon>DichVuDaKe.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\DuLieuDiemDanh.resx">
       <DependentUpon>DuLieuDiemDanh.cs</DependentUpon>
     </EmbeddedResource>
@@ -268,6 +271,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\LichSuKhamChuaBenh.resx">
       <DependentUpon>LichSuKhamChuaBenh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\PhanCongLichTruc.resx">
+      <DependentUpon>PhanCongLichTruc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\QuanLy.resx">
       <DependentUpon>QuanLy.cs</DependentUpon>

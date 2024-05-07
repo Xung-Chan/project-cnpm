@@ -13,7 +13,6 @@ using System.Windows.Forms;
 
 namespace QuanLyPhongKham.GUI {
     public partial class QuanLiHoSoBenhhan : UserControl {
-        //private Dictionary<int, Queue<PatientDTO>> roomPatientQueue = new Dictionary<int, Queue<PatientDTO>>();
 
         public QuanLiHoSoBenhhan() {
             InitializeComponent();
@@ -24,9 +23,6 @@ namespace QuanLyPhongKham.GUI {
             List<RoomDTO> rooms = RoomDAO.Instance.getAllRoom();
             foreach (RoomDTO room in rooms) {
                 int nameRoom = room.RoomNumber;
-                //if(BacSiBLL.Instance.QueuePatient.ContainsKey(nameRoom) == false) {
-                //    BacSiBLL.Instance.QueuePatient.Add(nameRoom, new Queue<PatientTreamentNeedsDTO>());
-                //}
                 cbbQueue.Items.Add(nameRoom);
             }
         }
@@ -51,7 +47,7 @@ namespace QuanLyPhongKham.GUI {
             tbxSearch.Text = "";
             clearThongTinBenhNhan();
         }
-        private void loadPatient( PatientDTO patient ) {
+        private void loadPatient(PatientDTO patient ) {
             btnPatientID.Text = patient.ID.ToString();
             btnPatientID.Tag = patient;
             btnName.Text = patient.Name.ToString();
@@ -67,7 +63,7 @@ namespace QuanLyPhongKham.GUI {
             else {
                 rdbFemale.Checked = true;
             }
-            cbxIsOldPatient.Checked = ScheduleDAO.Instance.checkOldPatient(patient.ID);
+            cbxIsOldPatient.Checked = TreamentRecordsDAO.Instance.countTreamentRecord(patient.ID) > 0;
         }
 
         private void loadListPatient( List<PatientDTO> list ) {
@@ -120,7 +116,7 @@ namespace QuanLyPhongKham.GUI {
             }
             BacSiBLL.Instance.QueuePatient[(int)cbbQueue.SelectedItem].Enqueue(patient);
             //Tạo TreamentRecord,Bill và BillInfor (mặc định tiền dịch vụ khám-hồ sơ
-            TreamentRecordsDAO.Instance.insertTreamentRecord(int.Parse(btnPatientID.Text), RoomDAO.Instance.getRoomByRoomNumber((int) cbbQueue.SelectedItem).DentistID);
+            TreamentRecordsDAO.Instance.insertTreamentRecord(int.Parse(btnPatientID.Text), DutyScheduleDAO.Instance.getDutyScheduleByRoomNumber((int) cbbQueue.SelectedItem).DentistID);
             TreamentRecordsDTO treamentRecord = TreamentRecordsDAO.Instance.getLastestTreamentRecordOfPatient(int.Parse(btnPatientID.Text));
             BillDAO.Instance.insertBill(treamentRecord.ID);
             BillDTO bill = BillDAO.Instance.getBillByTreamentRecord(treamentRecord.ID);

@@ -32,14 +32,15 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.button12 = new System.Windows.Forms.Button();
+            this.btnPay = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.btnQuanLyHoSoBenhNhan = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.quanLyHoSoBenhNhan = new QuanLyPhongKham.GUI.QuanLiHoSoBenhhan();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.quanLyHoSoBenhNhan = new QuanLyPhongKham.GUI.QuanLiHoSoBenhhan();
+            this.thanhToan = new QuanLyPhongKham.GUI.ThanhToan();
             this.panel9.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -69,7 +70,7 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Silver;
-            this.panel11.Controls.Add(this.button12);
+            this.panel11.Controls.Add(this.btnPay);
             this.panel11.Controls.Add(this.button17);
             this.panel11.Controls.Add(this.btnQuanLyHoSoBenhNhan);
             this.panel11.Location = new System.Drawing.Point(12, 66);
@@ -78,17 +79,18 @@
             this.panel11.Size = new System.Drawing.Size(424, 446);
             this.panel11.TabIndex = 7;
             // 
-            // button12
+            // btnPay
             // 
-            this.button12.BackColor = System.Drawing.Color.Silver;
-            this.button12.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button12.Location = new System.Drawing.Point(3, 147);
-            this.button12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(419, 63);
-            this.button12.TabIndex = 15;
-            this.button12.Text = "Thanh toán";
-            this.button12.UseVisualStyleBackColor = false;
+            this.btnPay.BackColor = System.Drawing.Color.Silver;
+            this.btnPay.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnPay.Location = new System.Drawing.Point(3, 147);
+            this.btnPay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPay.Name = "btnPay";
+            this.btnPay.Size = new System.Drawing.Size(419, 63);
+            this.btnPay.TabIndex = 15;
+            this.btnPay.Text = "Thanh toán";
+            this.btnPay.UseVisualStyleBackColor = false;
+            this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
             // 
             // button17
             // 
@@ -158,12 +160,20 @@
             this.quanLyHoSoBenhNhan.TabIndex = 8;
             this.quanLyHoSoBenhNhan.Load += new System.EventHandler(this.quanLiHosobenhnhan_Load);
             // 
+            // thanhToan
+            // 
+            this.thanhToan.Location = new System.Drawing.Point(448, 66);
+            this.thanhToan.Name = "thanhToan";
+            this.thanhToan.Size = new System.Drawing.Size(1313, 702);
+            this.thanhToan.TabIndex = 9;
+            // 
             // LeTan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(1763, 763);
+            this.Controls.Add(this.thanhToan);
             this.Controls.Add(this.quanLyHoSoBenhNhan);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel11);
@@ -187,11 +197,12 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Button btnQuanLyHoSoBenhNhan;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button btnPay;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button button17;
         private QuanLiHoSoBenhhan quanLyHoSoBenhNhan;
         private System.Windows.Forms.Timer timer1;
+        private ThanhToan thanhToan;
     }
 }

@@ -1,5 +1,7 @@
-﻿using System;
+﻿using QuanLyPhongKham.DTO;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +25,16 @@ namespace QuanLyPhongKham.DAO {
                 return false;
             }
             return true;
+        }
+        public List<AttendanceDataDTO> getAllAttendanceData() {
+            List<AttendanceDataDTO> list = new List<AttendanceDataDTO>();
+            string query = "select * from AttendanceData";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            foreach (DataRow item in data.Rows) {
+                AttendanceDataDTO attendanceData = new AttendanceDataDTO(item);
+                list.Add(attendanceData);
+            }
+            return list;
         }
     }
 }

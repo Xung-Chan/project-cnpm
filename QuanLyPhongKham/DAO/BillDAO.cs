@@ -32,5 +32,10 @@ namespace QuanLyPhongKham.DAO {
             }
             return null;
         }
+        public bool payBillByBillID(int billID ) {
+            string  query = "update Bill set dateCheckOut = @dateCheckOut , status = 1 where ID = @billID";
+            int check = DataProvider.Instance.ExecuteNonQuery(query, new object[] { DateTime.Now, billID });
+            return check > 0;
+        }
     }
 }

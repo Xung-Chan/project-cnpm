@@ -24,7 +24,7 @@ namespace QuanLyPhongKham.GUI {
         }
 
         private void Bacsi_Load( object sender, EventArgs e ) {
-            int roomNumber = RoomDAO.Instance.getRoomByDentistID((this.Tag as EmployeeDTO).ID).RoomNumber;
+            int roomNumber = DutyScheduleDAO.Instance.getDutyScheduleByDentistID((this.Tag as EmployeeDTO).ID).RoomNumber;
             Queue<PatientTreamentNeedsDTO> patientList = BacSiBLL.Instance.QueuePatient[roomNumber];
             foreach (PatientTreamentNeedsDTO item in patientList) {
                 ListViewItem lvwItem = new ListViewItem(item.Patient.ID.ToString());

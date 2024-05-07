@@ -98,6 +98,9 @@ namespace QuanLyPhongKham.GUI {
                 table.AddCell(item.SubItems[2].Text);
             }   
             document.Add(table);
+            Paragraph bill = new Paragraph("Mã hóa đơn:"+ BillDAO.Instance.getBillByTreamentRecord(treamentRecord.ID).ID, fontPaticular);
+            bill.Alignment = Element.ALIGN_RIGHT;
+            document.Add(bill);
             Paragraph footer = new Paragraph("Bác Sĩ Kê:"+ DentistDAO.Instance.getDentistByID(treamentRecord.DentistID).Name, fontPaticular);
             footer.Alignment = Element.ALIGN_RIGHT;
             document.Add(footer);
