@@ -23,7 +23,7 @@ namespace QuanLyPhongKham.GUI
             List<TreamentRecordsDTO> list = TreamentRecordsDAO.Instance.getAllTreamentRecordsByPatientID( patientID );
             foreach( TreamentRecordsDTO record in list) {
                 ListViewItem item = new ListViewItem(record.Date.Date.ToString("dd/MM/yyyy"));
-                item.SubItems.Add(DentistDAO.Instance.getEmployeeByID(record.DentistID).Name);
+                item.SubItems.Add(DentistDAO.Instance.getDentistByID(record.DentistID).Name);
                 item.SubItems.Add(record.Diagnostic);
                 lvwTreamentRecords.Items.Add(item);
             }

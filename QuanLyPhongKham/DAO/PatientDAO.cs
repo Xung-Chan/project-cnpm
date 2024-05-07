@@ -45,7 +45,7 @@ namespace QuanLyPhongKham.DAO {
             }
             return null;
         }
-        public PatientDTO getPatientByID( string id ) {
+        public PatientDTO getPatientByID( int id ) {
             DataTable table = DataProvider.Instance.ExecuteQuery(String.Format("select * from Patient where id = {0}", id));
             foreach (DataRow row in table.Rows) {
                 return new PatientDTO(row);

@@ -1,10 +1,13 @@
-﻿using QuanLyPhongKham.DAO;
+﻿using iTextSharp.text.pdf;
+using iTextSharp.text;
+using QuanLyPhongKham.DAO;
 using QuanLyPhongKham.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -55,6 +58,58 @@ namespace QuanLyPhongKham.GUI {
             else {
                 MessageBox.Show("Lỗi");
             }
+        }
+
+        private void btnPrintPrescription_Click( object sender, EventArgs e ) {
+            iTextSharp.text.Document document = new iTextSharp.text.Document();
+            TreamentRecordsDTO treamentRecord = this.Tag as TreamentRecordsDTO;
+            string nameFile = PatientDAO.Instance.getPatientByID(treamentRecord.PatientID).Name+"_"+ treamentRecord.ID + ".pdf";
+            PdfWriter.GetInstance(document, new FileStream(nameFile, FileMode.Create));
+
+            document.Open();
+            //sửa lại path arial.ttf, mang vào resource
+            BaseFont bf = BaseFont.CreateFont(@"C:\Windows\Fonts\arial.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
+            iTextSharp.text.Font fontHeader = new iTextSharp.text.Font(bf, 20, iTextSharp.text.Font.BOLD);
+            iTextSharp.text.Font fontPaticular = new iTextSharp.text.Font(bf, 11);
+            Paragraph header = new Paragraph("ĐƠN THUỐC", fontHeader);
+            header.Alignment = Element.ALIGN_CENTER;
+            document.Add(header);
+
+            PdfPTable table = new PdfPTable(3);
+            table.WidthPercentage = 100;
+            table.SpacingBefore = 10f;
+            table.SpacingAfter = 10f;
+            PdfPCell column1 = new PdfPCell(new Phrase("Mã thuốc", fontPaticular));
+            column1.HorizontalAlignment = Element.ALIGN_CENTER;
+            table.AddCell(column1);
+
+            PdfPCell column2 = new PdfPCell(new Phrase("Tên Thuốc", fontPaticular));
+            column2.HorizontalAlignment = Element.ALIGN_CENTER;
+            table.AddCell(column2);
+
+            PdfPCell column3 = new PdfPCell(new Phrase("Số Lượng", fontPaticular));
+            column3.HorizontalAlignment = Element.ALIGN_CENTER;
+            table.AddCell(column3);
+
+
+            foreach(ListViewItem item in lvwPrescription.Items) {
+                table.AddCell(item.SubItems[0].Text);
+                table.AddCell(item.SubItems[1].Text);
+                table.AddCell(item.SubItems[2].Text);
+            }   
+            document.Add(table);
+            Paragraph footer = new Paragraph("Bác Sĩ Kê:"+ DentistDAO.Instance.getDentistByID(treamentRecord.DentistID).Name, fontPaticular);
+            footer.Alignment = Element.ALIGN_RIGHT;
+            document.Add(footer);
+
+            Paragraph date = new Paragraph("Ngày Xuất Đơn:" + DateTime.Now.ToString("dd/MM/yyyy HH:mm"), fontPaticular);
+            date.Alignment = Element.ALIGN_RIGHT;
+            document.Add(date);
+
+            document.Close();
+
+            System.Diagnostics.Process.Start(nameFile);
+
         }
     }
 }

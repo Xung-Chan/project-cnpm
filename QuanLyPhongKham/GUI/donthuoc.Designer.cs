@@ -40,7 +40,6 @@ namespace QuanLyPhongKham.GUI
             this.btnAddMedicine = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnReset = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.nudQuantity = new System.Windows.Forms.NumericUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -48,6 +47,7 @@ namespace QuanLyPhongKham.GUI
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnPrintPrescription = new System.Windows.Forms.Button();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -145,16 +145,6 @@ namespace QuanLyPhongKham.GUI
             this.label2.TabIndex = 11;
             this.label2.Text = "SL";
             // 
-            // btnReset
-            // 
-            this.btnReset.BackColor = System.Drawing.Color.Crimson;
-            this.btnReset.Location = new System.Drawing.Point(1457, 377);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(120, 40);
-            this.btnReset.TabIndex = 13;
-            this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = false;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -218,12 +208,25 @@ namespace QuanLyPhongKham.GUI
             this.columnHeader6.Text = "Số lượng";
             this.columnHeader6.Width = 80;
             // 
+            // btnPrintPrescription
+            // 
+            this.btnPrintPrescription.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btnPrintPrescription.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnPrintPrescription.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnPrintPrescription.Location = new System.Drawing.Point(1367, 375);
+            this.btnPrintPrescription.Name = "btnPrintPrescription";
+            this.btnPrintPrescription.Size = new System.Drawing.Size(216, 40);
+            this.btnPrintPrescription.TabIndex = 16;
+            this.btnPrintPrescription.Text = "Xuất toa thuốc";
+            this.btnPrintPrescription.UseVisualStyleBackColor = false;
+            this.btnPrintPrescription.Click += new System.EventHandler(this.btnPrintPrescription_Click);
+            // 
             // DonThuoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnPrintPrescription);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.nudQuantity);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
@@ -252,7 +255,6 @@ namespace QuanLyPhongKham.GUI
         private System.Windows.Forms.Button btnAddMedicine;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
@@ -263,5 +265,6 @@ namespace QuanLyPhongKham.GUI
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
+        private Button btnPrintPrescription;
     }
 }
