@@ -69,5 +69,14 @@ namespace QuanLyPhongKham.DAO
             }
             return list;
         }
+        public List<EmployeeDTO> findEmployeeByName(string name ) {
+            List<EmployeeDTO> list = new List<EmployeeDTO>();
+            string query = String.Format("select * from Employee where name like N'%{0}%'", name);
+            DataTable table = DataProvider.Instance.ExecuteQuery(query);
+            foreach(DataRow row in table.Rows) {
+                list.Add(new EmployeeDTO(row));
+            }
+            return list;
+        }
     }
 }

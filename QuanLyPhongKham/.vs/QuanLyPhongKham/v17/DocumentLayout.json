@@ -3,19 +3,30 @@
   "WorkspaceRootPath": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\gui\\quanlynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:gui\\quanlynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|d:\\study\\\u0111\u1EA1i h\u1ECDc\\c\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\project\\project-cnpm-myself\\quanlyphongkham\\gui\\quanlynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:gui\\quanlynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|d:\\study\\\u0111\u1EA1i h\u1ECDc\\c\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\project\\project-cnpm-myself\\quanlyphongkham\\gui\\quanlynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:gui\\quanlynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|d:\\study\\\u0111\u1EA1i h\u1ECDc\\c\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\project\\project-cnpm-myself\\quanlyphongkham\\gui\\quanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:gui\\quanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|d:\\study\\\u0111\u1EA1i h\u1ECDc\\c\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\project\\project-cnpm-myself\\quanlyphongkham\\gui\\dangkynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|d:\\study\\\u0111\u1EA1i h\u1ECDc\\c\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\project\\project-cnpm-myself\\quanlyphongkham\\dao\\employeedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:dao\\employeedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\gui\\dangkynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:gui\\dangkynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|d:\\study\\\u0111\u1EA1i h\u1ECDc\\c\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\project\\project-cnpm-myself\\quanlyphongkham\\gui\\dulieudiemdanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__STUDY_\u0110\u1EA0I_H\u1ECCC_C\u00D4NG_NGH\u1EC6_PH\u1EA6N_M\u1EC0M_PROJECT_PROJECT_CNPM_MYSELF_QUANLYPHONGKHAM_DATABASE.MDF/True/SqlTable/dbo.Branch.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\gui\\dulieudiemdanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:gui\\dulieudiemdanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -26,7 +37,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,20 +61,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "EmployeeDAO.cs",
+              "DocumentMoniker": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\DAO\\EmployeeDAO.cs",
+              "RelativeDocumentMoniker": "DAO\\EmployeeDAO.cs",
+              "ToolTip": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\DAO\\EmployeeDAO.cs",
+              "RelativeToolTip": "DAO\\EmployeeDAO.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAswEcAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T11:20:56.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QuanLy.cs [Design]",
+              "DocumentMoniker": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\QuanLy.cs",
+              "RelativeDocumentMoniker": "GUI\\QuanLy.cs",
+              "ToolTip": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\QuanLy.cs [Design]",
+              "RelativeToolTip": "GUI\\QuanLy.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T11:08:57.446Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "dbo.Branch [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__STUDY_\u0110\u1EA0I_H\u1ECCC_C\u00D4NG_NGH\u1EC6_PH\u1EA6N_M\u1EC0M_PROJECT_PROJECT_CNPM_MYSELF_QUANLYPHONGKHAM_DATABASE.MDF/True/SqlTable/dbo.Branch.sql",
+              "ToolTip": "dbo.Branch [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-08T10:53:07.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "QuanLyNhanVien.cs",
               "DocumentMoniker": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\QuanLyNhanVien.cs",
               "RelativeDocumentMoniker": "GUI\\QuanLyNhanVien.cs",
               "ToolTip": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\QuanLyNhanVien.cs",
               "RelativeToolTip": "GUI\\QuanLyNhanVien.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAIwBUAAAA8AAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAMwCUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-07T20:11:23.083Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "QuanLyNhanVien.cs [Design]",
               "DocumentMoniker": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\QuanLyNhanVien.cs",
               "RelativeDocumentMoniker": "GUI\\QuanLyNhanVien.cs",
@@ -75,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "DangKyNhanVien.cs [Design]",
               "DocumentMoniker": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\DangKyNhanVien.cs",
               "RelativeDocumentMoniker": "GUI\\DangKyNhanVien.cs",
@@ -87,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "DuLieuDiemDanh.cs [Design]",
               "DocumentMoniker": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\DuLieuDiemDanh.cs",
               "RelativeDocumentMoniker": "GUI\\DuLieuDiemDanh.cs",

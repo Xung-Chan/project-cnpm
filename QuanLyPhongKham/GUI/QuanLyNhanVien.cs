@@ -37,6 +37,8 @@ namespace QuanLyPhongKham.GUI {
             this.Parent.Show();
         }
 
-
+        private void tbxSearch_TextChanged( object sender, EventArgs e ) {
+            loadEmployee(EmployeeDAO.Instance.findEmployeeByName(tbxSearch.Text));
+        }
     }
 }
