@@ -19,9 +19,11 @@ namespace QuanLyPhongKham.GUI {
 
 
 
-        #region Event
         private void Form1_Load( object sender, EventArgs e ) {
-
+            //test
+            tbxPhoneNumber.Text = "0123123123";
+            tbxPassword.Text = "1";
+            //test
         }
 
         private void cbkShowPassword_CheckedChanged( object sender, EventArgs e ) {
@@ -59,22 +61,20 @@ namespace QuanLyPhongKham.GUI {
                     this.Show();
                     break;
                 default:
-                    MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác","Đăng nhập không thành công", MessageBoxButtons.OK);
                     break;
             }
             tbxPassword.Text = "";
             tbxPhoneNumber.Text = "";
         }
         private void lblForgetPassword_LinkClicked( object sender, LinkLabelLinkClickedEventArgs e ) {
-            //BacSi bs = new BacSi();
-            //bs.Show();
+            QuenMatKhau quenMatKhau = new QuenMatKhau();
+            this.Hide();
+            quenMatKhau.ShowDialog();
+            this.Show();
         }
 
-        #endregion
 
 
-        #region method
-        #endregion
 
 
 

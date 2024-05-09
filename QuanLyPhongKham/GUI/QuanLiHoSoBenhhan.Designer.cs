@@ -82,8 +82,8 @@ namespace QuanLyPhongKham.GUI {
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabThongTinHanhChinh);
             this.tabControl1.Controls.Add(this.tabDanhSachBenhNhan);
+            this.tabControl1.Controls.Add(this.tabThongTinHanhChinh);
             this.tabControl1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(2, 0);
             this.tabControl1.Name = "tabControl1";

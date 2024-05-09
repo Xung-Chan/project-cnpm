@@ -35,5 +35,13 @@ namespace QuanLyPhongKham.GUI
                 MessageBox.Show("Lưu khoogn thành công");
             }
         }
+        public void loadTreamentRecord(TreamentRecordsDTO treamentRecords ) {
+            tbxStatus.Text = treamentRecords.Status;
+            tbxOtherDiseases.Text = treamentRecords.OtherDiseases;
+            tbxDrugAllergy.Text = treamentRecords.DrugAllergy;
+            tbxDiagnostic.Text = treamentRecords.Diagnostic;
+            tbxTreatmentDirection.Text = treamentRecords.TreamentDirection;
+            tbxNote.Text = treamentRecords.Note;
+        }
     }
 }

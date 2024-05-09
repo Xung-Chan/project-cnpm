@@ -44,6 +44,7 @@ namespace QuanLyPhongKham.GUI {
             string sex = rdbMale.Checked ? "Nam" : "Nữ";
             string result = EmployeeBLL.Instance.insertEmployee(new EmployeeDTO(nameIDPosition[cbbPosition.Text], addressIDBranch[cbbBranch.Text], tbxName.Text, dtpBirthday.Value, sex, tbxSdt.Text, tbxAddress.Text, tbxEmail.Text));
             MessageBox.Show(result);
+            this.Close();
         }
 
         private void dtpBirthday_ValueChanged( object sender, EventArgs e ) {

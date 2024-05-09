@@ -45,7 +45,7 @@ namespace QuanLyPhongKham.GUI {
             }
         }
         private void btnAddMedicine_Click( object sender, EventArgs e ) {
-            if(lvwStockMedicine.SelectedItems.Count == 0) {
+            if(lvwStockMedicine.SelectedItems.Count != 1) {
                 MessageBox.Show("Vui lòng chọn thuốc");
                 return;
             }
@@ -54,6 +54,7 @@ namespace QuanLyPhongKham.GUI {
             if(BillInforDAO.Instance.insertBillInfor(billID, serviceID, (int) nudQuantity.Value)) {
                 MessageBox.Show("Thêm thành công");
                 loadPrecrciption(BillInforDAO.Instance.getPrescriptionByBillID(BillDAO.Instance.getBillByTreamentRecord((this.Tag as TreamentRecordsDTO).ID).ID));
+                loadStockMedicine(MedicineDAO.Instance.getAllMedicine());
             }
             else {
                 MessageBox.Show("Lỗi");

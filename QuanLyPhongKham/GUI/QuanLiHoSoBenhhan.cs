@@ -87,6 +87,7 @@ namespace QuanLyPhongKham.GUI {
             ThemBenhNhan tbn = new ThemBenhNhan();
             this.Parent.Hide();
             tbn.ShowDialog();
+            loadListPatient(PatientDAO.Instance.getAllPatient());
             this.Parent.Show();
         }
 
@@ -104,8 +105,17 @@ namespace QuanLyPhongKham.GUI {
         }
 
         private void btnAddQueue_Click( object sender, EventArgs e ) {
+            if(lvwListPatient.SelectedItems.Count == 0) {
+                MessageBox.Show("Vui lòng chọn bệnh nhân trước");
+                return;
+            }
             if(LeTanBLL.Instance.checkQuanLiHoSoBenhNhan(clbListTreatmentNeeds.CheckedItems, cbbQueue.Text) == false) {
                 MessageBox.Show("Vui lòng chọn đầy đủ thông tin");
+                return;
+            }
+            DutyScheduleDTO dutySchedule = DutyScheduleDAO.Instance.getDutyScheduleByRoomNumber((int) cbbQueue.SelectedItem);
+            if(dutySchedule == null || dutySchedule.DentistID == 0) {
+                MessageBox.Show("Phòng khám không có lịch trực");
                 return;
             }
             //Đẩy bệnh nhân vào hàng đợi của phòng bác sĩ
@@ -115,20 +125,44 @@ namespace QuanLyPhongKham.GUI {
                 patient.Treatments.Add(treatment);
             }
             BacSiBLL.Instance.QueuePatient[(int)cbbQueue.SelectedItem].Enqueue(patient);
-            //Tạo TreamentRecord,Bill và BillInfor (mặc định tiền dịch vụ khám-hồ sơ
-            TreamentRecordsDAO.Instance.insertTreamentRecord(int.Parse(btnPatientID.Text), DutyScheduleDAO.Instance.getDutyScheduleByRoomNumber((int) cbbQueue.SelectedItem).DentistID);
+            //Tạo TreamentRecord,Bill và BillInfor (mặc định tiền dịch vụ khám-hồ sơ)
+            TreamentRecordsDAO.Instance.insertTreamentRecord(int.Parse(btnPatientID.Text), dutySchedule.DentistID);
             TreamentRecordsDTO treamentRecord = TreamentRecordsDAO.Instance.getLastestTreamentRecordOfPatient(int.Parse(btnPatientID.Text));
             BillDAO.Instance.insertBill(treamentRecord.ID);
             BillDTO bill = BillDAO.Instance.getBillByTreamentRecord(treamentRecord.ID);
             BillInforDAO.Instance.insertBillInfor(bill.ID, 1,1);//Mặc định thêm dịch vụ khám hồ sơ (parameter 2,3 = 1,1)
             MessageBox.Show("Thêm vào phòng chờ thành công");
+            //reset
+            resetPage();
+            //for (int i=0; i< clbListTreatmentNeeds.Items.Count; i++) {
+            //    clbListTreatmentNeeds.SetItemChecked(i, false);
+            //}
+            
+            //cbbQueue.SelectedIndex = -1;
         }
 
+        private void resetPage() {
+            btnPatientID.Text = "";
+            btnName.Text = "";
+            btnBirthYear.Text = "";
+            btnYearOld.Text = "";
+            btnAddress.Text = "";
+            btnPhoneNumber.Text = "";
+            btnCCCD.Text = "";
+            rdbMale.Checked = false;
+            rdbFemale.Checked = false;
+            cbxIsOldPatient.Checked = false;
+            for (int i = 0; i < clbListTreatmentNeeds.Items.Count; i++) {
+                clbListTreatmentNeeds.SetItemChecked(i, false);
+            }
+            cbbQueue.SelectedIndex = -1;
 
+        }
         private void lvwListPatient_SelectedIndexChanged( object sender, EventArgs e ) {
             if(lvwListPatient.SelectedItems.Count > 0) {
                 loadPatient(lvwListPatient.SelectedItems[0].Tag as PatientDTO);
             }
+            tabControl1.SelectedTab = tabThongTinHanhChinh;
         }
         private void clearThongTinBenhNhan() {
             btnPatientID.Text = "";

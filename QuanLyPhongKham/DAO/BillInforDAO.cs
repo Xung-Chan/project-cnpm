@@ -38,6 +38,10 @@ namespace QuanLyPhongKham.DAO {
             }
             query = "insert into BillInfor values( @bill , @service , @quantity )";
             check = DataProvider.Instance.ExecuteNonQuery( query , new object[] {billID, serviceID, quantity});
+            if(check <=0)
+                return false;
+            query = String.Format("update Medicine set stock = stock - {0} where ID = {1}", quantity, serviceID);
+            check = DataProvider.Instance.ExecuteNonQuery(query);
             return check > 0;
         }
         public List<BillInforDTO> getBillInforByBillID(int billID) {

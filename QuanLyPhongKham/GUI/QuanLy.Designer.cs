@@ -43,16 +43,15 @@
             this.dropbutton = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnDuLieuDiemDanh = new System.Windows.Forms.Button();
             this.btnQuanLyNhanVien = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.duLieuDiemDanh = new QuanLyPhongKham.GUI.DuLieuDiemDanh();
             this.quanLyNhanVien = new QuanLyPhongKham.GUI.QuanLyNhanVien();
-            this.baocaocv1 = new QuanLyPhongKham.GUI.BaoCaoCongViec();
             this.bcth1 = new QuanLyPhongKham.GUI.BaoCaoTongHop();
-            this.duLieuDiemDanh1 = new QuanLyPhongKham.GUI.DuLieuDiemDanh();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -98,7 +97,7 @@
             this.panel2.Controls.Add(this.PanelDrop);
             this.panel2.Controls.Add(this.btnLogout);
             this.panel2.Controls.Add(this.button10);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btnDuLieuDiemDanh);
             this.panel2.Controls.Add(this.btnQuanLyNhanVien);
             this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.button3);
@@ -234,17 +233,18 @@
             this.button10.Text = "Báo cáo doanh thu";
             this.button10.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnDuLieuDiemDanh
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkGray;
-            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.Location = new System.Drawing.Point(12, 384);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(244, 69);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Dữ liệu điểm danh";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnDuLieuDiemDanh.BackColor = System.Drawing.Color.DarkGray;
+            this.btnDuLieuDiemDanh.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnDuLieuDiemDanh.Location = new System.Drawing.Point(12, 384);
+            this.btnDuLieuDiemDanh.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDuLieuDiemDanh.Name = "btnDuLieuDiemDanh";
+            this.btnDuLieuDiemDanh.Size = new System.Drawing.Size(244, 69);
+            this.btnDuLieuDiemDanh.TabIndex = 2;
+            this.btnDuLieuDiemDanh.Text = "Dữ liệu điểm danh";
+            this.btnDuLieuDiemDanh.UseVisualStyleBackColor = false;
+            this.btnDuLieuDiemDanh.Click += new System.EventHandler(this.btnDuLieuDiemDanh_Click);
             // 
             // btnQuanLyNhanVien
             // 
@@ -293,21 +293,19 @@
             this.timer2.Interval = 15;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // duLieuDiemDanh
+            // 
+            this.duLieuDiemDanh.Location = new System.Drawing.Point(280, 57);
+            this.duLieuDiemDanh.Name = "duLieuDiemDanh";
+            this.duLieuDiemDanh.Size = new System.Drawing.Size(1539, 745);
+            this.duLieuDiemDanh.TabIndex = 5;
+            // 
             // quanLyNhanVien
             // 
             this.quanLyNhanVien.Location = new System.Drawing.Point(280, 57);
             this.quanLyNhanVien.Name = "quanLyNhanVien";
             this.quanLyNhanVien.Size = new System.Drawing.Size(1539, 745);
             this.quanLyNhanVien.TabIndex = 4;
-            this.quanLyNhanVien.Load += new System.EventHandler(this.quanLyNhanVien_Load);
-            // 
-            // baocaocv1
-            // 
-            this.baocaocv1.Location = new System.Drawing.Point(280, 57);
-            this.baocaocv1.Margin = new System.Windows.Forms.Padding(5);
-            this.baocaocv1.Name = "baocaocv1";
-            this.baocaocv1.Size = new System.Drawing.Size(1539, 745);
-            this.baocaocv1.TabIndex = 3;
             // 
             // bcth1
             // 
@@ -319,22 +317,14 @@
             this.bcth1.TabIndex = 2;
             this.bcth1.Load += new System.EventHandler(this.bcth1_Load);
             // 
-            // duLieuDiemDanh1
-            // 
-            this.duLieuDiemDanh1.Location = new System.Drawing.Point(280, 57);
-            this.duLieuDiemDanh1.Name = "duLieuDiemDanh1";
-            this.duLieuDiemDanh1.Size = new System.Drawing.Size(1539, 745);
-            this.duLieuDiemDanh1.TabIndex = 5;
-            // 
             // QuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1819, 816);
-            this.Controls.Add(this.duLieuDiemDanh1);
+            this.Controls.Add(this.duLieuDiemDanh);
             this.Controls.Add(this.quanLyNhanVien);
-            this.Controls.Add(this.baocaocv1);
             this.Controls.Add(this.bcth1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -357,7 +347,7 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDuLieuDiemDanh;
         private System.Windows.Forms.Button dropbutton;
         private System.Windows.Forms.Panel PanelDrop;
         private System.Windows.Forms.Timer timer1;
@@ -374,8 +364,7 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button btnLogout;
         private BaoCaoTongHop bcth1;
-        private BaoCaoCongViec baocaocv1;
         private QuanLyNhanVien quanLyNhanVien;
-        private DuLieuDiemDanh duLieuDiemDanh1;
+        private DuLieuDiemDanh duLieuDiemDanh;
     }
 }

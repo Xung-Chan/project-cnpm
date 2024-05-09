@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -10,13 +11,13 @@ using System.Windows.Forms;
 
 namespace QuanLyPhongKham.DAO {
     public class DataProvider {
-        //private string db = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\DBQuanLyPhongKham.mdf;Integrated Security=True";
+        //private string db = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Database.mdf;Integrated Security=True";
         private string db;
         private static DataProvider instance;
 
         private DataProvider() {
             try {
-                db = System.Configuration.ConfigurationManager.ConnectionStrings["myDatabase"].ConnectionString;
+                db = ConfigurationManager.ConnectionStrings["myDatabase"].ConnectionString;
 
             }
             catch (NullReferenceException ex) {

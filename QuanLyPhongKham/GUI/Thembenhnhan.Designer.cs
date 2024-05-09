@@ -144,7 +144,6 @@
             this.tbxCCCD.Name = "tbxCCCD";
             this.tbxCCCD.Size = new System.Drawing.Size(411, 50);
             this.tbxCCCD.TabIndex = 6;
-            this.tbxCCCD.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // tbxAddress
             // 
@@ -154,7 +153,6 @@
             this.tbxAddress.Name = "tbxAddress";
             this.tbxAddress.Size = new System.Drawing.Size(411, 50);
             this.tbxAddress.TabIndex = 5;
-            this.tbxAddress.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // tbxPhoneNumber
             // 
@@ -164,7 +162,6 @@
             this.tbxPhoneNumber.Name = "tbxPhoneNumber";
             this.tbxPhoneNumber.Size = new System.Drawing.Size(411, 50);
             this.tbxPhoneNumber.TabIndex = 4;
-            this.tbxPhoneNumber.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // tbxName
             // 
@@ -174,7 +171,6 @@
             this.tbxName.Name = "tbxName";
             this.tbxName.Size = new System.Drawing.Size(411, 50);
             this.tbxName.TabIndex = 1;
-            this.tbxName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label7
             // 
@@ -186,7 +182,6 @@
             this.label7.TabIndex = 3;
             this.label7.Text = "CCCD";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label7.Click += new System.EventHandler(this.label1_Click);
             // 
             // label5
             // 
@@ -198,7 +193,6 @@
             this.label5.TabIndex = 3;
             this.label5.Text = "Địa chỉ";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label5.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -210,7 +204,6 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Điện thoại";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label3.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -222,7 +215,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Giới tính";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Click += new System.EventHandler(this.label1_Click);
             // 
             // label1
             // 
@@ -234,7 +226,6 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Ngày sinh";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label4
             // 
@@ -338,7 +329,6 @@
             this.Name = "ThemBenhNhan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm Bệnh Nhân";
-            this.Load += new System.EventHandler(this.ThemBenhNhan_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

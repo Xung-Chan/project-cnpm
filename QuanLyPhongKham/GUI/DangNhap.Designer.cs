@@ -151,6 +151,8 @@ namespace QuanLyPhongKham.GUI
             // 
             // pnlContainer
             // 
+            this.pnlContainer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlContainer.BackColor = System.Drawing.Color.SteelBlue;
             this.pnlContainer.Controls.Add(this.label1);
             this.pnlContainer.Controls.Add(this.panel2);

@@ -97,6 +97,7 @@
     <Compile Include="BLL\BranchBLL.cs" />
     <Compile Include="BLL\EmployeeBLL.cs" />
     <Compile Include="BLL\LeTanBLL.cs" />
+    <Compile Include="BLL\PhanCongLichTucBLL.cs" />
     <Compile Include="BLL\PositionBLL.cs" />
     <Compile Include="DAO\AttendanceDAO.cs" />
     <Compile Include="DAO\BillDAO.cs" />
@@ -112,6 +113,7 @@
     <Compile Include="DAO\RoomDAO.cs" />
     <Compile Include="DAO\ScheduleDAO.cs" />
     <Compile Include="DAO\ServiceDAO.cs" />
+    <Compile Include="DAO\ShiftDAO.cs" />
     <Compile Include="DAO\TreamentRecordsDAO.cs" />
     <Compile Include="DAO\TreatmentNeedsDAO.cs" />
     <Compile Include="DatabaseDataSet.Designer.cs">
@@ -132,6 +134,7 @@
     <Compile Include="DTO\PositionDTO.cs" />
     <Compile Include="DTO\RoomDTO.cs" />
     <Compile Include="DTO\ServiceDTO.cs" />
+    <Compile Include="DTO\ShiftDTO.cs" />
     <Compile Include="DTO\TreamentRecordsDTO.cs" />
     <Compile Include="DTO\TreatmentNeedsDTO.cs" />
     <Compile Include="DTO\ScheduleDTO.cs" />
@@ -164,6 +167,12 @@
     </Compile>
     <Compile Include="GUI\DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DoiMatKhau.Designer.cs">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\DonThuoc.cs">
       <SubType>UserControl</SubType>
@@ -225,6 +234,12 @@
     <Compile Include="GUI\QuanLyNhanVien.Designer.cs">
       <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\QuenMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuenMatKhau.Designer.cs">
+      <DependentUpon>QuenMatKhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\ThanhToan.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -253,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DoiMatKhau.resx">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DonThuoc.resx">
       <DependentUpon>DonThuoc.cs</DependentUpon>
@@ -283,6 +301,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\QuanLyNhanVien.resx">
       <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuenMatKhau.resx">
+      <DependentUpon>QuenMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ThanhToan.resx">
       <DependentUpon>ThanhToan.cs</DependentUpon>

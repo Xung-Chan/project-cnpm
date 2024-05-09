@@ -33,5 +33,9 @@ namespace QuanLyPhongKham.GUI {
         private void btnPay_Click( object sender, EventArgs e ) {
             thanhToan.BringToFront();
         }
+
+        private void btnPhanCongLichTruc_Click( object sender, EventArgs e ) {
+            phanCongLichTruc.BringToFront();
+        }
     }
 }

@@ -33,14 +33,15 @@
             this.label13 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.btnPay = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
+            this.btnPhanCongLichTruc = new System.Windows.Forms.Button();
             this.btnQuanLyHoSoBenhNhan = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.quanLyHoSoBenhNhan = new QuanLyPhongKham.GUI.QuanLiHoSoBenhhan();
             this.thanhToan = new QuanLyPhongKham.GUI.ThanhToan();
+            this.quanLyHoSoBenhNhan = new QuanLyPhongKham.GUI.QuanLiHoSoBenhhan();
+            this.phanCongLichTruc = new QuanLyPhongKham.GUI.PhanCongLichTruc();
             this.panel9.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -71,7 +72,7 @@
             // 
             this.panel11.BackColor = System.Drawing.Color.Silver;
             this.panel11.Controls.Add(this.btnPay);
-            this.panel11.Controls.Add(this.button17);
+            this.panel11.Controls.Add(this.btnPhanCongLichTruc);
             this.panel11.Controls.Add(this.btnQuanLyHoSoBenhNhan);
             this.panel11.Location = new System.Drawing.Point(12, 66);
             this.panel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -92,17 +93,18 @@
             this.btnPay.UseVisualStyleBackColor = false;
             this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
             // 
-            // button17
+            // btnPhanCongLichTruc
             // 
-            this.button17.BackColor = System.Drawing.Color.Silver;
-            this.button17.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button17.Location = new System.Drawing.Point(3, 78);
-            this.button17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(419, 65);
-            this.button17.TabIndex = 15;
-            this.button17.Text = "Quản lí lịch làm việc bác sĩ";
-            this.button17.UseVisualStyleBackColor = false;
+            this.btnPhanCongLichTruc.BackColor = System.Drawing.Color.Silver;
+            this.btnPhanCongLichTruc.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnPhanCongLichTruc.Location = new System.Drawing.Point(3, 78);
+            this.btnPhanCongLichTruc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPhanCongLichTruc.Name = "btnPhanCongLichTruc";
+            this.btnPhanCongLichTruc.Size = new System.Drawing.Size(419, 65);
+            this.btnPhanCongLichTruc.TabIndex = 15;
+            this.btnPhanCongLichTruc.Text = "Quản lí lịch làm việc bác sĩ";
+            this.btnPhanCongLichTruc.UseVisualStyleBackColor = false;
+            this.btnPhanCongLichTruc.Click += new System.EventHandler(this.btnPhanCongLichTruc_Click);
             // 
             // btnQuanLyHoSoBenhNhan
             // 
@@ -151,6 +153,13 @@
             this.panel8.Size = new System.Drawing.Size(48, 47);
             this.panel8.TabIndex = 6;
             // 
+            // thanhToan
+            // 
+            this.thanhToan.Location = new System.Drawing.Point(448, 66);
+            this.thanhToan.Name = "thanhToan";
+            this.thanhToan.Size = new System.Drawing.Size(1313, 702);
+            this.thanhToan.TabIndex = 9;
+            // 
             // quanLyHoSoBenhNhan
             // 
             this.quanLyHoSoBenhNhan.Location = new System.Drawing.Point(448, 66);
@@ -160,12 +169,12 @@
             this.quanLyHoSoBenhNhan.TabIndex = 8;
             this.quanLyHoSoBenhNhan.Load += new System.EventHandler(this.quanLiHosobenhnhan_Load);
             // 
-            // thanhToan
+            // phanCongLichTruc
             // 
-            this.thanhToan.Location = new System.Drawing.Point(448, 66);
-            this.thanhToan.Name = "thanhToan";
-            this.thanhToan.Size = new System.Drawing.Size(1313, 702);
-            this.thanhToan.TabIndex = 9;
+            this.phanCongLichTruc.Location = new System.Drawing.Point(448, 66);
+            this.phanCongLichTruc.Name = "phanCongLichTruc";
+            this.phanCongLichTruc.Size = new System.Drawing.Size(1313, 702);
+            this.phanCongLichTruc.TabIndex = 10;
             // 
             // LeTan
             // 
@@ -173,6 +182,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(1763, 763);
+            this.Controls.Add(this.phanCongLichTruc);
             this.Controls.Add(this.thanhToan);
             this.Controls.Add(this.quanLyHoSoBenhNhan);
             this.Controls.Add(this.panel8);
@@ -200,9 +210,10 @@
         private System.Windows.Forms.Button btnPay;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button btnPhanCongLichTruc;
         private QuanLiHoSoBenhhan quanLyHoSoBenhNhan;
         private System.Windows.Forms.Timer timer1;
         private ThanhToan thanhToan;
+        private PhanCongLichTruc phanCongLichTruc;
     }
 }

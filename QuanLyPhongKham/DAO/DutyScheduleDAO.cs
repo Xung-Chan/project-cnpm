@@ -21,14 +21,11 @@ namespace QuanLyPhongKham.DAO {
         }
         public DutyScheduleDTO getDutyScheduleByDentistID(int dentist ) {
             string query ="select * from DutySchedule where dentistID = @dentistID and date= @date and shiftID = @shift";
-            int shiftID = 0;
+            int shiftID = 1;
             if(DateTime.Now.Hour >= 13 && DateTime.Now.Hour <= 18) {
                 shiftID = 2;
             }
-            else if(DateTime.Now.Hour >= 7 && DateTime.Now.Hour <= 11) {
-                shiftID = 1;
-            }
-            DataTable table = DataProvider.Instance.ExecuteQuery(query, new object[] { dentist, DateTime.Now, shiftID });
+            DataTable table = DataProvider.Instance.ExecuteQuery(query, new object[] { dentist, DateTime.Now.ToString("MM/dd/yyyy"), shiftID });
             foreach(DataRow row in table.Rows) {
                 return new DutyScheduleDTO(row);
             }
@@ -36,20 +33,58 @@ namespace QuanLyPhongKham.DAO {
 
         }
         public DutyScheduleDTO getDutyScheduleByRoomNumber(int roomNumber ) {
-            string query ="select * from DutySchedule where roomNumber= @room and date= @date and shiftID = @shift";
-            int shiftID = 0;
-            if(DateTime.Now.Hour >= 13 && DateTime.Now.Hour <= 18) {
+            //string query ="select * from DutySchedule where roomNumber= @room and date= @date and shiftID = @shift";
+            int shiftID = 1;
+            if(DateTime.Now.Hour >= 12 && DateTime.Now.Hour <= 18) {
                 shiftID = 2;
             }
-            else if(DateTime.Now.Hour >= 7 && DateTime.Now.Hour <= 11) {
-                shiftID = 1;
+            else if(DateTime.Now.Hour >= 19 && DateTime.Now.Hour <= 7) {
+                shiftID = 3;
             }
-            DataTable table = DataProvider.Instance.ExecuteQuery(query, new object[] { roomNumber, DateTime.Now, shiftID });
+            string query =String.Format("select * from DutySchedule where roomNumber= {0} and date= '{1}' and shiftID = {2}",roomNumber,DateTime.Now.ToString("MM/dd/yyyy"),shiftID);
+            //else if(DateTime.Now.Hour >= 7 && DateTime.Now.Hour <= 11) {
+            //    shiftID = 1;
+            //}
+            //DataTable table = DataProvider.Instance.ExecuteQuery(query, new object[] { roomNumber, DateTime.Now.ToString("dd/MM/yyyy"), shiftID });
+            DataTable table = DataProvider.Instance.ExecuteQuery(query);
             foreach(DataRow row in table.Rows) {
                 return new DutyScheduleDTO(row);
             }
             return null;
 
         }
+        public List<DutyScheduleDTO> getDutyScheduleByDate(DateTime day ) {
+            if (checkCreateDutySchedule(day) == 0) {
+                createDutySchedule(day);
+            }
+
+
+            List<DutyScheduleDTO> list = new List<DutyScheduleDTO>();
+            DataTable table = DataProvider.Instance.ExecuteQuery("select * from DutySchedule where date = @date", new object[] { day });
+            foreach(DataRow row in table.Rows) {
+                list.Add(new DutyScheduleDTO(row));
+            }
+            return list;
+        }
+        public int checkCreateDutySchedule(DateTime date ) {
+            string query = "select count(*) from DutySchedule where date = @date";
+            return (int)DataProvider.Instance.ExecuteScalar(query, new object[] { date });
+        }
+        public int createDutySchedule(DateTime date ) {
+            List<RoomDTO> rooms = RoomDAO.Instance.getAllRoom();
+            List<ShiftDTO> shifts = ShiftDAO.Instance.getAllShift();
+            string query = "insert into DutySchedule(date, roomNumber, shiftID) values ";
+            foreach(ShiftDTO shift in shifts) {
+                foreach(RoomDTO room in rooms) {
+                    query += String.Format("( '{0}', {1}, {2}),",date.ToString("yyyy/MM/dd"),room.RoomNumber,shift.ID);
+                }
+            }
+            return DataProvider.Instance.ExecuteNonQuery(query.Substring(0,query.Length -1));
+        }
+        public int updateDutySchedule(DutyScheduleDTO dutySchedule ) {
+            string query = "update DutySchedule set dentistID = @dentist , assistantID = @assistant where date = @date and roomNumber = @room and shiftID = @shift";
+            return DataProvider.Instance.ExecuteNonQuery(query, new object[] { dutySchedule.DentistID, dutySchedule.AssistantID, dutySchedule.Date, dutySchedule.RoomNumber, dutySchedule.ShiftID });
+        }
+
     }
 }

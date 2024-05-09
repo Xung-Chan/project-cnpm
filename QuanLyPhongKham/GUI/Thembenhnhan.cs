@@ -40,19 +40,6 @@ namespace QuanLyPhongKham.GUI
         }
 
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ThemBenhNhan_Load( object sender, EventArgs e ) {
-
-        }
         private void dtpBirthday_ValueChanged( object sender, EventArgs e ) {
             (sender as DateTimePicker).CustomFormat = "yyyy/MM/dd";
         }
@@ -79,6 +66,7 @@ namespace QuanLyPhongKham.GUI
                 patient.ID = (int)btnSavePatient.Tag;
             }
             LeTanBLL.Instance.savePatient(patient);
+            this.Close();
         }
 
         private void btnExit_Click( object sender, EventArgs e ) {

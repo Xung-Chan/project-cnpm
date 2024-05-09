@@ -27,5 +27,19 @@ namespace QuanLyPhongKham.DAO {
             }
             return null;
         }
+        public int getDentistIDByName(string name ) {
+            string query = String.Format("select d.ID from Dentist d, Employee e where e.name = N'{0}' and d.ID = e.ID", name);
+            return (int) DataProvider.Instance.ExecuteScalar(query);
+        }
+        public List<DentistDTO> getAllDentist() {
+            List<DentistDTO> list = new List<DentistDTO>();
+            string query = "select * from Dentist d, Employee e where d.ID = e.ID";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            foreach(DataRow row in data.Rows) {
+                DentistDTO dentist = new DentistDTO(row);
+                list.Add(dentist);
+            }
+            return list;
+        }
     }
 }

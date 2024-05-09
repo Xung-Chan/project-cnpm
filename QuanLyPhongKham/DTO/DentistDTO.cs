@@ -12,6 +12,7 @@ namespace QuanLyPhongKham.DTO {
         string name;
         public DentistDTO(DataRow row ) {
             this.ID = (int) row["ID"];
+            if (row["specialtyID"] != DBNull.Value)
             this.specicaltyID = (int) row["specialtyID"];
             this.name = row["name"].ToString();
         }

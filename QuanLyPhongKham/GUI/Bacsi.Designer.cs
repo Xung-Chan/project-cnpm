@@ -61,7 +61,7 @@
             this.btnKhamLamSang = new System.Windows.Forms.Button();
             this.btnLichSuKhamChuaBenh = new System.Windows.Forms.Button();
             this.btnDonThuoc = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.btnEnd = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -349,6 +349,7 @@
             this.lvwPatient.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
+            this.lvwPatient.Enabled = false;
             this.lvwPatient.FullRowSelect = true;
             this.lvwPatient.GridLines = true;
             this.lvwPatient.HideSelection = false;
@@ -358,7 +359,6 @@
             this.lvwPatient.TabIndex = 7;
             this.lvwPatient.UseCompatibleStateImageBehavior = false;
             this.lvwPatient.View = System.Windows.Forms.View.Details;
-            this.lvwPatient.SelectedIndexChanged += new System.EventHandler(this.lvwPatient_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -426,16 +426,17 @@
             this.btnDonThuoc.UseVisualStyleBackColor = true;
             this.btnDonThuoc.Click += new System.EventHandler(this.btnDonThuoc_Click);
             // 
-            // button10
+            // btnEnd
             // 
-            this.button10.BackColor = System.Drawing.Color.SkyBlue;
-            this.button10.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button10.Location = new System.Drawing.Point(1671, 2);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(250, 50);
-            this.button10.TabIndex = 3;
-            this.button10.Text = "Kết thúc khám";
-            this.button10.UseVisualStyleBackColor = false;
+            this.btnEnd.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnEnd.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnEnd.Location = new System.Drawing.Point(1671, 2);
+            this.btnEnd.Name = "btnEnd";
+            this.btnEnd.Size = new System.Drawing.Size(250, 50);
+            this.btnEnd.TabIndex = 3;
+            this.btnEnd.Text = "Kết thúc khám";
+            this.btnEnd.UseVisualStyleBackColor = false;
+            this.btnEnd.Click += new System.EventHandler(this.btnEnd_Click);
             // 
             // btnLogout
             // 
@@ -453,7 +454,7 @@
             // 
             this.groupBox3.BackColor = System.Drawing.Color.LightGray;
             this.groupBox3.Controls.Add(this.btnLogout);
-            this.groupBox3.Controls.Add(this.button10);
+            this.groupBox3.Controls.Add(this.btnEnd);
             this.groupBox3.Location = new System.Drawing.Point(0, 920);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(1924, 56);
@@ -548,7 +549,7 @@
         private System.Windows.Forms.Button btnLichSuKhamChuaBenh;
         private System.Windows.Forms.Button btnDonThuoc;
         private System.Windows.Forms.Button btnKhamLamSang;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btnEnd;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ListView lvwPatient;
