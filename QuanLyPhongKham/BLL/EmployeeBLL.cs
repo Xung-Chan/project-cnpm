@@ -22,7 +22,7 @@ namespace QuanLyPhongKham.BLL {
         }
 
         public string checkLoginBLL( string username, string password ) {
-            if(username =="" || password == "") {
+            if(username == "" || password == "") {
                 MessageBox.Show("Tài khoản hoặc mật khẩu không được để trống");
                 return null;
             }

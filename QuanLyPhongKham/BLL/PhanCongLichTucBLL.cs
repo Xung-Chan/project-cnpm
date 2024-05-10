@@ -29,6 +29,15 @@ namespace QuanLyPhongKham.BLL {
             int shiftID = ShiftDAO.Instance.getShiftIDByName(shift);
             int dentistID = EmployeeDAO.Instance.getEmployeeIDByName(dentist);
             int assistantID = EmployeeDAO.Instance.getEmployeeIDByName(assistant);
+            if(DutyScheduleDAO.Instance.existDutyScheduleDentist(shiftID, date, dentistID)) {
+                MessageBox.Show("Bác sĩ này hiện đã trực ở một ca khác", "Thông báo", MessageBoxButtons.OK);
+                return;
+            }
+            if(DutyScheduleDAO.Instance.existDutyScheduleAssistant(shiftID, date, assistantID)) {
+                MessageBox.Show("Phụ tá này hiện đã trực ở một ca khác", "Thông báo", MessageBoxButtons.OK);
+                return;
+            }
+
             int update = DutyScheduleDAO.Instance.updateDutySchedule(new DTO.DutyScheduleDTO(room, shiftID,date,dentistID,assistantID));
             if(update != 1) {
                 MessageBox.Show("Lưu thất bại", "Thông báo", MessageBoxButtons.OK);

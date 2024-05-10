@@ -68,7 +68,6 @@ namespace QuanLyPhongKham.GUI {
         }
         private void lblForgetPassword_LinkClicked( object sender, LinkLabelLinkClickedEventArgs e ) {
             QuenMatKhau quenMatKhau = new QuenMatKhau();
-            this.Hide();
             quenMatKhau.ShowDialog();
             this.Show();
         }

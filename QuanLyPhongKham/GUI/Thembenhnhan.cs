@@ -43,16 +43,6 @@ namespace QuanLyPhongKham.GUI
         private void dtpBirthday_ValueChanged( object sender, EventArgs e ) {
             (sender as DateTimePicker).CustomFormat = "yyyy/MM/dd";
         }
-        private void btnReset_Click( object sender, EventArgs e ) {
-            tbxName.Text = "";
-            dtpBirthday.CustomFormat = " ";
-            tbxPhoneNumber.Text = "";
-            tbxAddress.Text = "";
-            tbxCCCD.Text = "";
-            rdbFemale.Checked=false;
-            rdbMale.Checked=false;
-
-        }
 
         private void btnSavePatient_Click( object sender, EventArgs e ) {
             //int branchID = 1;       //mặc định chi nhánh hiện tại 
@@ -61,6 +51,14 @@ namespace QuanLyPhongKham.GUI
             string phoneNumber = tbxPhoneNumber.Text;
             string address = tbxAddress.Text;
             string cccd = tbxCCCD.Text;
+            if(phoneNumber.Length != 10) {
+                MessageBox.Show("Số điện thoại không hợp lệ", "Thông báo", MessageBoxButtons.OK);
+                return;
+            }
+            if(name == "" || phoneNumber == "" || address == "" || cccd == "") {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK);
+                return;
+            }
             PatientDTO patient = new PatientDTO(1, tbxName.Text, dtpBirthday.Value, rdbMale.Checked, tbxPhoneNumber.Text, tbxAddress.Text, tbxCCCD.Text);
             if (btnSavePatient.Tag != null) {
                 patient.ID = (int)btnSavePatient.Tag;
@@ -71,6 +69,10 @@ namespace QuanLyPhongKham.GUI
 
         private void btnExit_Click( object sender, EventArgs e ) {
             this.Close();
+        }
+
+        private void tbxName_TextChanged( object sender, EventArgs e ) {
+
         }
     }
 }

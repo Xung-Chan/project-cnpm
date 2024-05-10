@@ -33,6 +33,10 @@ namespace QuanLyPhongKham.GUI {
             }
         }
         private void btnSearch_Click( object sender, EventArgs e ) {
+            if(tbxSearch.Text.Trim().Equals("")) {
+                MessageBox.Show("Vui lòng nhập số điện thoại");
+                return;
+            }
             PatientDTO patient = PatientDAO.Instance.getPatientByPhoneNumber(tbxSearch.Text.Trim());
             if (patient == null) {
                 if (MessageBox.Show("Bệnh nhân không có thông tin trong hồ sơ phòng khám.\nBạn có muốn thêm tạo hồ sơ ?", "Không tìm thấy kết quả", MessageBoxButtons.YesNo) == DialogResult.Yes) {
@@ -71,6 +75,7 @@ namespace QuanLyPhongKham.GUI {
             foreach (PatientDTO patient in list) {
                 ListViewItem lvwItem = new ListViewItem(patient.ID.ToString());
                 lvwItem.SubItems.Add( patient.Name.ToString() );
+                lvwItem.SubItems.Add( patient.PhoneNumber.ToString() );
                 lvwItem.Tag= patient;
                 lvwListPatient.Items.Add( lvwItem );
             }
@@ -85,7 +90,6 @@ namespace QuanLyPhongKham.GUI {
 
         private void btnAddPatient_Click( object sender, EventArgs e ) {
             ThemBenhNhan tbn = new ThemBenhNhan();
-            this.Parent.Hide();
             tbn.ShowDialog();
             loadListPatient(PatientDAO.Instance.getAllPatient());
             this.Parent.Show();
@@ -182,5 +186,12 @@ namespace QuanLyPhongKham.GUI {
             clearThongTinBenhNhan();
         }
 
+        private void btnPatientID_Click( object sender, EventArgs e ) {
+
+        }
+
+        private void QuanLiHoSoBenhhan_Load( object sender, EventArgs e ) {
+
+        }
     }
 }

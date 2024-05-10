@@ -85,6 +85,13 @@ namespace QuanLyPhongKham.DAO {
             string query = "update DutySchedule set dentistID = @dentist , assistantID = @assistant where date = @date and roomNumber = @room and shiftID = @shift";
             return DataProvider.Instance.ExecuteNonQuery(query, new object[] { dutySchedule.DentistID, dutySchedule.AssistantID, dutySchedule.Date, dutySchedule.RoomNumber, dutySchedule.ShiftID });
         }
-
+        public bool existDutyScheduleDentist(int shiftID, DateTime date, int dentistID) {
+            string query = "select count(*) from DutySchedule where date = @date and shiftID = @shift and dentistID = @dentist";
+            return (int)DataProvider.Instance.ExecuteScalar(query, new object[] { date, shiftID , dentistID}) > 0;
+        }
+        public bool existDutyScheduleAssistant( int shiftID, DateTime date, int assistantID) {
+            string query = "select count(*) from DutySchedule where date = @date and shiftID = @shift and assistantID = @dentist";
+            return (int)DataProvider.Instance.ExecuteScalar(query, new object[] { date, shiftID , assistantID}) > 0;
+        }
     }
 }

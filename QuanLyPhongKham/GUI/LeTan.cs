@@ -16,6 +16,11 @@ namespace QuanLyPhongKham.GUI {
         private void Letan_Load( object sender, EventArgs e ) {
             quanLyHoSoBenhNhan.BringToFront();
         }
+        private void resetColorButton() {
+            btnQuanLyHoSoBenhNhan.BackColor = System.Drawing.Color.WhiteSmoke;
+            btnPhanCongLichTruc.BackColor = System.Drawing.Color.WhiteSmoke;
+            btnPay.BackColor = System.Drawing.Color.WhiteSmoke;
+        }
         private void btnLogout_Click( object sender, EventArgs e ) {
             this.Close();
         }
@@ -27,15 +32,24 @@ namespace QuanLyPhongKham.GUI {
 
         private void btnQuanLyHoSoBenhNhan_Click( object sender, EventArgs e ) {
             quanLyHoSoBenhNhan.BringToFront();
-
+            resetColorButton();
+            btnQuanLyHoSoBenhNhan.BackColor = System.Drawing.Color.Lime;
         }
 
         private void btnPay_Click( object sender, EventArgs e ) {
             thanhToan.BringToFront();
+            resetColorButton();
+            btnPay.BackColor = System.Drawing.Color.Lime;
         }
 
         private void btnPhanCongLichTruc_Click( object sender, EventArgs e ) {
             phanCongLichTruc.BringToFront();
+            resetColorButton();
+            btnPhanCongLichTruc.BackColor = System.Drawing.Color.Lime;
+        }
+
+        private void timer1_Tick( object sender, EventArgs e ) {
+
         }
     }
 }

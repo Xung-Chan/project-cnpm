@@ -35,6 +35,15 @@ namespace QuanLyPhongKham.GUI {
         }
 
         private void btnSearch_Click( object sender, EventArgs e ) {
+            if(tbxBillID.Text.Trim() == "") {
+                MessageBox.Show("Vui lòng nhập mã hóa đơn");
+                return;
+            }
+            int billID;
+            if(int.TryParse(tbxBillID.Text,out billID)== false) {
+                MessageBox.Show("Mã hóa đơn không chính xác");
+                return;
+            }
             btnTotalFee.Text = "0";
             List<BillInforDTO> list = BillInforDAO.Instance.getBillInforByBillID(int.Parse(tbxBillID.Text));
             if(list.Count <= 0) {
@@ -42,10 +51,22 @@ namespace QuanLyPhongKham.GUI {
                 return;
             }
             loadBillInfor(list);
+            if(BillDAO.Instance.getBillByID(int.Parse(tbxBillID.Text)).Status == true) {
+                btnTotalFee.Text = "0";
+                return;
+            }
             
         }
 
         private void btnPay_Click( object sender, EventArgs e ) {
+            if(tbxBillID.Text.Trim() == "") {
+                MessageBox.Show("Vui lòng nhập mã hóa đơn");
+                return;
+            }
+            if(btnTotalFee.Text == "0") {
+                MessageBox.Show("Hóa đơn đã được thanh toán");
+                return;
+            } 
             if (BillDAO.Instance.payBillByBillID(int.Parse(tbxBillID.Text))) {
                 MessageBox.Show("Thanh toán thành công");
             }
@@ -53,5 +74,6 @@ namespace QuanLyPhongKham.GUI {
                 MessageBox.Show("Thanh toán thất bại");
             }
         }
+
     }
 }

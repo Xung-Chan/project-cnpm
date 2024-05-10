@@ -1,4 +1,0 @@
--table điểm danh tự động:mã, ngày login, tgian logout.
-lễ tân(cho bệnh nhân chọn dịch vụ) -> khám chi tiết( chuyên khoa riêng) -> xuất hóa đơn -> thanh toán.
--bug//:
-	+nhập chữ tìm patient -> error; 

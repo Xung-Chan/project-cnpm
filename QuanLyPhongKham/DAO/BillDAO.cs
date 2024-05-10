@@ -32,6 +32,14 @@ namespace QuanLyPhongKham.DAO {
             }
             return null;
         }
+        public BillDTO getBillByID(int ID ) {
+            string query = String.Format("select * from Bill where ID = {0}", ID);
+            DataTable table = DataProvider.Instance.ExecuteQuery(query);
+            foreach (DataRow row in table.Rows) {
+                return new BillDTO(row);
+            }
+            return null;
+        }
         public bool payBillByBillID(int billID ) {
             string  query = "update Bill set dateCheckOut = @dateCheckOut , status = 1 where ID = @billID";
             int check = DataProvider.Instance.ExecuteNonQuery(query, new object[] { DateTime.Now, billID });

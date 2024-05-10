@@ -80,5 +80,9 @@ namespace QuanLyPhongKham.GUI {
             PhanCongLichTucBLL.Instance.checkSave(cbbRoom.Text, cbbShift.Text, cbbDentist.Text, cbbAssistant.Text, dtpDate.Value);
             loadDutySchedule(DutyScheduleDAO.Instance.getDutyScheduleByDate(dtpDate.Value));
         }
+
+        private void cbbDentist_SelectedIndexChanged( object sender, EventArgs e ) {
+
+        }
     }
 }
