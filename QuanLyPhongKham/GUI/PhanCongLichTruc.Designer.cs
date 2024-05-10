@@ -1,4 +1,6 @@
-﻿namespace QuanLyPhongKham.GUI {
+﻿using System;
+
+namespace QuanLyPhongKham.GUI {
     partial class PhanCongLichTruc {
         /// <summary> 
         /// Required designer variable.
@@ -80,12 +82,12 @@
             // columnHeader3
             // 
             this.columnHeader3.Text = "Bác sĩ";
-            this.columnHeader3.Width = 400;
+            this.columnHeader3.Width = 300;
             // 
             // columnHeader5
             // 
             this.columnHeader5.Text = "Phụ tá";
-            this.columnHeader5.Width = 350;
+            this.columnHeader5.Width = 300;
             // 
             // cbbRoom
             // 
@@ -173,7 +175,7 @@
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Size = new System.Drawing.Size(579, 38);
             this.dtpDate.TabIndex = 1;
-            this.dtpDate.Value = new System.DateTime(2024, 5, 9, 0, 0, 0, 0);
+            this.dtpDate.Value = new System.DateTime(2024, 5, 11, 2, 48, 38, 450);
             this.dtpDate.ValueChanged += new System.EventHandler(this.dtpDate_ValueChanged);
             // 
             // groupBox1

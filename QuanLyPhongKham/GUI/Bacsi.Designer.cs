@@ -395,40 +395,43 @@
             // 
             // btnKhamLamSang
             // 
+            this.btnKhamLamSang.BackColor = System.Drawing.Color.Lime;
             this.btnKhamLamSang.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnKhamLamSang.Location = new System.Drawing.Point(53, 21);
             this.btnKhamLamSang.Name = "btnKhamLamSang";
             this.btnKhamLamSang.Size = new System.Drawing.Size(192, 70);
             this.btnKhamLamSang.TabIndex = 3;
             this.btnKhamLamSang.Text = "Khám lâm sàng";
-            this.btnKhamLamSang.UseVisualStyleBackColor = true;
+            this.btnKhamLamSang.UseVisualStyleBackColor = false;
             this.btnKhamLamSang.Click += new System.EventHandler(this.btnKhamLamSang_Click);
             // 
             // btnLichSuKhamChuaBenh
             // 
+            this.btnLichSuKhamChuaBenh.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnLichSuKhamChuaBenh.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnLichSuKhamChuaBenh.Location = new System.Drawing.Point(53, 97);
             this.btnLichSuKhamChuaBenh.Name = "btnLichSuKhamChuaBenh";
             this.btnLichSuKhamChuaBenh.Size = new System.Drawing.Size(192, 70);
             this.btnLichSuKhamChuaBenh.TabIndex = 3;
             this.btnLichSuKhamChuaBenh.Text = "Lịch sử KCB";
-            this.btnLichSuKhamChuaBenh.UseVisualStyleBackColor = true;
+            this.btnLichSuKhamChuaBenh.UseVisualStyleBackColor = false;
             this.btnLichSuKhamChuaBenh.Click += new System.EventHandler(this.btnLichSuKhamChuaBenh_Click);
             // 
             // btnDonThuoc
             // 
+            this.btnDonThuoc.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnDonThuoc.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnDonThuoc.Location = new System.Drawing.Point(53, 173);
             this.btnDonThuoc.Name = "btnDonThuoc";
             this.btnDonThuoc.Size = new System.Drawing.Size(192, 70);
             this.btnDonThuoc.TabIndex = 3;
             this.btnDonThuoc.Text = "Đơn Thuốc";
-            this.btnDonThuoc.UseVisualStyleBackColor = true;
+            this.btnDonThuoc.UseVisualStyleBackColor = false;
             this.btnDonThuoc.Click += new System.EventHandler(this.btnDonThuoc_Click);
             // 
             // btnEnd
             // 
-            this.btnEnd.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnEnd.BackColor = System.Drawing.Color.Lime;
             this.btnEnd.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnEnd.Location = new System.Drawing.Point(1671, 2);
             this.btnEnd.Name = "btnEnd";

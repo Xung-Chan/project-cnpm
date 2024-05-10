@@ -18,29 +18,42 @@ using System.Xml.Linq;
 
 namespace QuanLyPhongKham.GUI {
     public partial class BacSi : Form {
+        private int DENTIST_ID;
+        private int ROOM_NUMBER = 0;
+
         public BacSi() {
             InitializeComponent();
-            khamLamSang.BringToFront();
         }
 
         private void Bacsi_Load( object sender, EventArgs e ) {
-            DutyScheduleDTO dutySchedule = DutyScheduleDAO.Instance.getDutyScheduleByDentistID((this.Tag as EmployeeDTO).ID);
-            if(dutySchedule == null) {
+            khamLamSang.BringToFront();
+            DENTIST_ID = (this.Tag as EmployeeDTO).ID;
+            DutyScheduleDTO dutySchedule = DutyScheduleDAO.Instance.getDutyScheduleByDentistID(DENTIST_ID);
+            if (dutySchedule == null) {
                 MessageBox.Show("Hiện tại bạn không có lịch làm việc", "Thông báo", MessageBoxButtons.OK);
-                return;
+
             }
-            int roomNumber = dutySchedule.RoomNumber;
-            Queue<PatientTreamentNeedsDTO> patientList = BacSiBLL.Instance.QueuePatient[roomNumber];
-            foreach (PatientTreamentNeedsDTO item in patientList) {
-                ListViewItem lvwItem = new ListViewItem(item.Patient.ID.ToString());
-                lvwItem.SubItems.Add(item.Patient.Name);
-                lvwItem.Tag = item;
-                lvwPatient.Items.Add(lvwItem);
+            else {
+                ROOM_NUMBER = dutySchedule.RoomNumber;
+                Queue<PatientTreamentNeedsDTO> patientList = BacSiBLL.Instance.QueuePatient[ROOM_NUMBER];
+                foreach (PatientTreamentNeedsDTO item in patientList) {
+                    ListViewItem lvwItem = new ListViewItem(item.Patient.ID.ToString());
+                    lvwItem.SubItems.Add(item.Patient.Name);
+                    lvwItem.Tag = item;
+                    lvwPatient.Items.Add(lvwItem);
+                }
             }
             loadInforPatient();
         }
         public void loadInforPatient() {
-            if(lvwPatient.Items.Count > 0) {
+            if(lvwPatient.Items.Count == 0) {
+                resetAllField();
+                khamLamSang.Enabled = false;
+                donThuoc.Enabled = false;
+                lichSuKhamChuaBenh.Enabled = false;
+                btnEnd.Enabled = false;
+                return;
+            }
                 PatientTreamentNeedsDTO patient = (lvwPatient.Items[0].Tag as PatientTreamentNeedsDTO);
                 //load information to textbox
                 tbxID.Text = patient.Patient.ID.ToString();
@@ -49,12 +62,8 @@ namespace QuanLyPhongKham.GUI {
                 tbxName.Text = patient.Patient.Name.ToString();
                 tbxPhoneNumber.Text = patient.Patient.PhoneNumber.ToString();
                 tbxSex.Text = patient.Patient.Sex? "Nam":"Nữ";
-                //loaf listview nhu cầu điều trị
-                lvwTreamentNeeds.Items.Clear();
-                foreach (TreatmentNeedsDTO treament in patient.Treatments) {
-                    ListViewItem item = new ListViewItem(treament.Name);
-                    lvwTreamentNeeds.Items.Add(item);
-                }
+                //load listview nhu cầu điều trị
+                loadTreamentNeeds(patient.Treatments);
                 //load lịch sử khám chữa bệnh
                 lichSuKhamChuaBenh.loadTreamentRecord(int.Parse(tbxID.Text));
                 //load đơn thuốc
@@ -66,14 +75,21 @@ namespace QuanLyPhongKham.GUI {
                 //load khám lâm sàng
                 if (khamLamSang.Tag != null)
                     khamLamSang.loadTreamentRecord(treamentRecord);
+        }
+        private void loadTreamentNeeds(List<TreatmentNeedsDTO> treamentNeeds ) {
+            lvwTreamentNeeds.Items.Clear();
+            foreach (TreatmentNeedsDTO treament in treamentNeeds) {
+                ListViewItem item = new ListViewItem(treament.Name);
+                lvwTreamentNeeds.Items.Add(item);
             }
         }
 
-
-        private void lvwPatient_SelectedIndexChanged( object sender, EventArgs e ) {
-
+        private void resetColorButton() {
+            btnDonThuoc.BackColor = System.Drawing.Color.WhiteSmoke;
+            btnKhamLamSang.BackColor = System.Drawing.Color.WhiteSmoke;
+            btnLichSuKhamChuaBenh.BackColor = System.Drawing.Color.WhiteSmoke;
         }
-
+            
 
         private void btnLogout_Click( object sender, EventArgs e ) {
             this.Close();
@@ -81,24 +97,35 @@ namespace QuanLyPhongKham.GUI {
 
         private void btnDonThuoc_Click( object sender, EventArgs e ) {
             donThuoc.BringToFront();
+            resetColorButton();
+            btnDonThuoc.BackColor = System.Drawing.Color.Lime;
         }
 
 
         private void btnKhamLamSang_Click( object sender, EventArgs e ) {
             khamLamSang.BringToFront();
+            resetColorButton();
+            btnKhamLamSang.BackColor = System.Drawing.Color.Lime;
         }
 
         private void btnLichSuKhamChuaBenh_Click( object sender, EventArgs e ) {
             lichSuKhamChuaBenh.BringToFront();
+            resetColorButton();
+            btnLichSuKhamChuaBenh.BackColor = System.Drawing.Color.Lime;
         }
-        private void clearPatient() {
-            
+        private void resetAllField() {
+            tbxID.Text = "";
+            tbxCCCD.Text = "";
+            tbxBirthday.Text = "";
+            tbxName.Text = "";
+            tbxPhoneNumber.Text = "";
+            tbxSex.Text = "";
+            loadTreamentNeeds(new List<TreatmentNeedsDTO>());
         }
         private void btnEnd_Click( object sender, EventArgs e ) {
             lvwPatient.Items.RemoveAt(0);
-            DutyScheduleDTO dutySchedule = DutyScheduleDAO.Instance.getDutyScheduleByDentistID((this.Tag as EmployeeDTO).ID);
-            BacSiBLL.Instance.QueuePatient[dutySchedule.RoomNumber].Dequeue();
-            loadInforPatient();
+            BacSiBLL.Instance.QueuePatient[ROOM_NUMBER].Dequeue();
+                loadInforPatient();
         }
     }
 }
