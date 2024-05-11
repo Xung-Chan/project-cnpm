@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using QuanLyPhongKham.GUI;
 
 namespace QuanLyPhongKham
 {
@@ -17,7 +16,8 @@ namespace QuanLyPhongKham
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DangNhap());
+            Application.Run(new GUI.DangNhap());
+            //Application.Run(new A());
         }
     }
 }

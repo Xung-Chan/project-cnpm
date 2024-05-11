@@ -68,6 +68,7 @@ namespace QuanLyPhongKham.GUI {
                 return;
             } 
             if (BillDAO.Instance.payBillByBillID(int.Parse(tbxBillID.Text))) {
+                btnTotalFee.Text = "0";
                 MessageBox.Show("Thanh toán thành công");
             }
             else {

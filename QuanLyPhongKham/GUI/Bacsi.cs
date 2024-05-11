@@ -26,6 +26,7 @@ namespace QuanLyPhongKham.GUI {
         }
 
         private void Bacsi_Load( object sender, EventArgs e ) {
+
             khamLamSang.BringToFront();
             DENTIST_ID = (this.Tag as EmployeeDTO).ID;
             DutyScheduleDTO dutySchedule = DutyScheduleDAO.Instance.getDutyScheduleByDentistID(DENTIST_ID);

@@ -46,14 +46,15 @@ namespace QuanLyPhongKham.GUI
             // 
             this.tbxPhoneNumber.BackColor = System.Drawing.Color.LightCyan;
             this.tbxPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbxPhoneNumber.Font = new System.Drawing.Font("Calibri Light", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.tbxPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxPhoneNumber.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.tbxPhoneNumber.Location = new System.Drawing.Point(820, 88);
             this.tbxPhoneNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxPhoneNumber.Multiline = true;
             this.tbxPhoneNumber.Name = "tbxPhoneNumber";
-            this.tbxPhoneNumber.Size = new System.Drawing.Size(397, 55);
+            this.tbxPhoneNumber.Size = new System.Drawing.Size(397, 39);
             this.tbxPhoneNumber.TabIndex = 10;
+            this.tbxPhoneNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxPhoneNumber_KeyPress);
             // 
             // tbxPassword
             // 
@@ -66,7 +67,7 @@ namespace QuanLyPhongKham.GUI
             this.tbxPassword.Name = "tbxPassword";
             this.tbxPassword.PasswordChar = '●';
             this.tbxPassword.ShortcutsEnabled = false;
-            this.tbxPassword.Size = new System.Drawing.Size(397, 53);
+            this.tbxPassword.Size = new System.Drawing.Size(397, 39);
             this.tbxPassword.TabIndex = 11;
             this.tbxPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxPassword_Enter);
             // 

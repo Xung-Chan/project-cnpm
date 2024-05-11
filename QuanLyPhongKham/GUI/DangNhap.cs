@@ -21,7 +21,7 @@ namespace QuanLyPhongKham.GUI {
 
         private void Form1_Load( object sender, EventArgs e ) {
             //test
-            tbxPhoneNumber.Text = "0456456456";
+            tbxPhoneNumber.Text = "0123123123";
             tbxPassword.Text = "1";
             //test
         }
@@ -72,11 +72,11 @@ namespace QuanLyPhongKham.GUI {
             this.Show();
         }
 
-
-
-
-
-
-
+        private void tbxPhoneNumber_KeyPress( object sender, KeyPressEventArgs e ) {
+            if (e.KeyChar == (char) Keys.Enter) {
+                e.Handled = true;
+                tbxPassword.Focus();
+            }
+        }
     }
 }

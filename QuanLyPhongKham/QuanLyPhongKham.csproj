@@ -93,6 +93,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A.Designer.cs">
+      <DependentUpon>A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B.cs" />
     <Compile Include="BLL\BacSiBLL.cs" />
     <Compile Include="BLL\BranchBLL.cs" />
     <Compile Include="BLL\EmployeeBLL.cs" />
@@ -254,6 +261,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="A.resx">
+      <DependentUpon>A.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\BacSi.resx">
       <DependentUpon>BacSi.cs</DependentUpon>
     </EmbeddedResource>
