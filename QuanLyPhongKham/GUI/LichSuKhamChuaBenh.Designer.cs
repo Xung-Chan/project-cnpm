@@ -43,6 +43,7 @@
             this.columnHeader2,
             this.columnHeader4,
             this.columnHeader3});
+            this.lvwTreamentRecords.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvwTreamentRecords.GridLines = true;
             this.lvwTreamentRecords.HideSelection = false;
             this.lvwTreamentRecords.Location = new System.Drawing.Point(4, 55);

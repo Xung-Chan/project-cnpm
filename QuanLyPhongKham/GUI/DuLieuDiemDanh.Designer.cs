@@ -41,7 +41,7 @@
             this.lvwAttendance.HideSelection = false;
             this.lvwAttendance.Location = new System.Drawing.Point(0, 63);
             this.lvwAttendance.Name = "lvwAttendance";
-            this.lvwAttendance.Size = new System.Drawing.Size(1536, 679);
+            this.lvwAttendance.Size = new System.Drawing.Size(1641, 850);
             this.lvwAttendance.TabIndex = 0;
             this.lvwAttendance.UseCompatibleStateImageBehavior = false;
             this.lvwAttendance.View = System.Windows.Forms.View.Details;
@@ -79,7 +79,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lvwAttendance);
             this.Name = "DuLieuDiemDanh";
-            this.Size = new System.Drawing.Size(1539, 745);
+            this.Size = new System.Drawing.Size(1644, 916);
             this.ResumeLayout(false);
             this.PerformLayout();
 

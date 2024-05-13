@@ -51,5 +51,9 @@ namespace QuanLyPhongKham.GUI {
         private void timer1_Tick( object sender, EventArgs e ) {
 
         }
+
+        private void label13_Click( object sender, EventArgs e ) {
+
+        }
     }
 }

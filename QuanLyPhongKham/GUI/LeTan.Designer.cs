@@ -62,9 +62,9 @@
             this.label13.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label13.Location = new System.Drawing.Point(9, 7);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(243, 24);
+            this.label13.Size = new System.Drawing.Size(276, 24);
             this.label13.TabIndex = 2;
-            this.label13.Text = "Phòng khám Siu cấp vip pro";
+            this.label13.Text = "PHÒNG KHÁM RĂNG-HÀM MẶT";
             this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel8

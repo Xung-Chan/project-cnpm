@@ -28,171 +28,123 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.btnentermedic = new System.Windows.Forms.Button();
-            this.btnXuatThuoc = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.lvwMedicine = new System.Windows.Forms.ListView();
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnEnterMedicine = new System.Windows.Forms.Button();
+            this.tbxSearch = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // listView1
+            // lvwMedicine
             // 
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(27, 136);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(773, 311);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.lvwMedicine.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader4,
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.lvwMedicine.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvwMedicine.GridLines = true;
+            this.lvwMedicine.HideSelection = false;
+            this.lvwMedicine.Location = new System.Drawing.Point(3, 65);
+            this.lvwMedicine.Name = "lvwMedicine";
+            this.lvwMedicine.Size = new System.Drawing.Size(1641, 848);
+            this.lvwMedicine.TabIndex = 0;
+            this.lvwMedicine.UseCompatibleStateImageBehavior = false;
+            this.lvwMedicine.View = System.Windows.Forms.View.Details;
             // 
-            // btnentermedic
+            // columnHeader4
             // 
-            this.btnentermedic.Location = new System.Drawing.Point(61, 118);
-            this.btnentermedic.Name = "btnentermedic";
-            this.btnentermedic.Size = new System.Drawing.Size(152, 60);
-            this.btnentermedic.TabIndex = 1;
-            this.btnentermedic.Text = "Nhập Thuốc";
-            this.btnentermedic.UseVisualStyleBackColor = true;
-            this.btnentermedic.Click += new System.EventHandler(this.btnentermedic_Click);
+            this.columnHeader4.Text = "Mã thuốc";
+            this.columnHeader4.Width = 150;
             // 
-            // btnXuatThuoc
+            // columnHeader1
             // 
-            this.btnXuatThuoc.Location = new System.Drawing.Point(61, 184);
-            this.btnXuatThuoc.Name = "btnXuatThuoc";
-            this.btnXuatThuoc.Size = new System.Drawing.Size(152, 60);
-            this.btnXuatThuoc.TabIndex = 1;
-            this.btnXuatThuoc.Text = "Xuất thuốc";
-            this.btnXuatThuoc.UseVisualStyleBackColor = true;
-            this.btnXuatThuoc.Click += new System.EventHandler(this.button2_Click);
+            this.columnHeader1.Text = "Tên thuốc";
+            this.columnHeader1.Width = 500;
             // 
-            // button3
+            // columnHeader2
             // 
-            this.button3.Location = new System.Drawing.Point(83, 303);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 33);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "button1";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button2_Click);
+            this.columnHeader2.Text = "Giá";
+            this.columnHeader2.Width = 200;
             // 
-            // button1
+            // columnHeader3
             // 
-            this.button1.Location = new System.Drawing.Point(41, 412);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(152, 60);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button2_Click);
+            this.columnHeader3.Text = "Tồn kho";
+            this.columnHeader3.Width = 200;
             // 
-            // label1
+            // btnEnterMedicine
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 274);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 16);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Tổng số lượng";
+            this.btnEnterMedicine.BackgroundImage = global::QuanLyPhongKham.Properties.Resources.plus;
+            this.btnEnterMedicine.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnEnterMedicine.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnterMedicine.Location = new System.Drawing.Point(1588, 4);
+            this.btnEnterMedicine.Name = "btnEnterMedicine";
+            this.btnEnterMedicine.Size = new System.Drawing.Size(50, 50);
+            this.btnEnterMedicine.TabIndex = 1;
+            this.btnEnterMedicine.UseVisualStyleBackColor = true;
+            this.btnEnterMedicine.Click += new System.EventHandler(this.btnEnterMedicine_Click);
             // 
-            // label2
+            // tbxSearch
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(38, 339);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "đã xuất ";
+            this.tbxSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxSearch.Location = new System.Drawing.Point(160, 4);
+            this.tbxSearch.Name = "tbxSearch";
+            this.tbxSearch.Size = new System.Drawing.Size(560, 38);
+            this.tbxSearch.TabIndex = 3;
+            this.tbxSearch.TextChanged += new System.EventHandler(this.tbxSearch_TextChanged);
             // 
-            // button2
+            // btnSearch
             // 
-            this.button2.Location = new System.Drawing.Point(83, 358);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 33);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button1";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(68, 60);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(560, 40);
-            this.textBox1.TabIndex = 3;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(667, 60);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(95, 39);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(3, 3);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(151, 39);
+            this.btnSearch.TabIndex = 4;
+            this.btnSearch.Text = "Tìm kiếm";
+            this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnentermedic);
-            this.panel1.Controls.Add(this.btnXuatThuoc);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(1034, 3);
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Controls.Add(this.tbxSearch);
+            this.panel1.Controls.Add(this.btnEnterMedicine);
+            this.panel1.Controls.Add(this.btnSearch);
+            this.panel1.Location = new System.Drawing.Point(0, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(264, 654);
+            this.panel1.Size = new System.Drawing.Size(1641, 56);
             this.panel1.TabIndex = 5;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.listView1);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(976, 654);
-            this.panel2.TabIndex = 6;
             // 
             // KhoThuoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel2);
+            this.BackColor = System.Drawing.Color.LightCyan;
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.lvwMedicine);
             this.Name = "KhoThuoc";
-            this.Size = new System.Drawing.Size(1301, 660);
+            this.Size = new System.Drawing.Size(1644, 916);
+            this.Load += new System.EventHandler(this.KhoThuoc_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Button btnentermedic;
-        private System.Windows.Forms.Button btnXuatThuoc;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ListView lvwMedicine;
+        private System.Windows.Forms.Button btnEnterMedicine;
+        private System.Windows.Forms.TextBox tbxSearch;
+        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }

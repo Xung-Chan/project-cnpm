@@ -82,6 +82,7 @@
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -132,6 +133,7 @@
     <Compile Include="DTO\PatientDTO.cs" />
     <Compile Include="DTO\PatientTreamentNeedsDTO.cs" />
     <Compile Include="DTO\PositionDTO.cs" />
+    <Compile Include="DTO\ReportDTO.cs" />
     <Compile Include="DTO\RoomDTO.cs" />
     <Compile Include="DTO\ServiceDTO.cs" />
     <Compile Include="DTO\ShiftDTO.cs" />
@@ -150,11 +152,11 @@
     <Compile Include="GUI\BacSi.Designer.cs">
       <DependentUpon>BacSi.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\BaoCaoTongHop.cs">
+    <Compile Include="GUI\BaoCaoDanhThu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\BaoCaoTongHop.Designer.cs">
-      <DependentUpon>BaoCaoTongHop.cs</DependentUpon>
+    <Compile Include="GUI\BaoCaoDanhThu.Designer.cs">
+      <DependentUpon>BaoCaoDanhThu.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\DangKyNhanVien.cs">
       <SubType>Form</SubType>
@@ -167,12 +169,6 @@
     </Compile>
     <Compile Include="GUI\DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\DoiMatKhau.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\DoiMatKhau.Designer.cs">
-      <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\DonThuoc.cs">
       <SubType>UserControl</SubType>
@@ -266,17 +262,14 @@
     <EmbeddedResource Include="GUI\BacSi.resx">
       <DependentUpon>BacSi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\BaoCaoTongHop.resx">
-      <DependentUpon>BaoCaoTongHop.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\BaoCaoDanhThu.resx">
+      <DependentUpon>BaoCaoDanhThu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DangKyNhanVien.resx">
       <DependentUpon>DangKyNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\DoiMatKhau.resx">
-      <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DonThuoc.resx">
       <DependentUpon>DonThuoc.cs</DependentUpon>

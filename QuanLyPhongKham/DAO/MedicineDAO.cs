@@ -37,5 +37,15 @@ namespace QuanLyPhongKham.DAO {
             }
             return list;
         }
+        public int insertMedicine( string name, string unit, int price, int stock, string note ) {
+            string query = String.Format("insert into Service(name, unit, price, note) values (N'{0}', N'{1}', {2}, N'{3}')", name, unit, price, note);
+            int check = DataProvider.Instance.ExecuteNonQuery(query);
+            if (check != 1) {
+                return -1;
+            }
+            int id = ServiceDAO.Instance.getLastestServiceID();
+            query = String.Format("insert into Medicine(ID, stock) values ({0}, {1})", id, stock);
+            return DataProvider.Instance.ExecuteNonQuery(query);
+        }
     }
 }

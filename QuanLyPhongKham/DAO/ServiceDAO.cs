@@ -28,23 +28,24 @@ namespace QuanLyPhongKham.DAO {
         }
         public List<ServiceDTO> getServiceAll() {
             List<ServiceDTO> List = new List<ServiceDTO>();
-            DataTable dt = DataProvider.Instance.ExecuteQuery("select * from Service");
+            DataTable dt = DataProvider.Instance.ExecuteQuery("select * from Service where ID not in (select ID from Medicine)");
             foreach (DataRow row in dt.Rows) {
                 ServiceDTO service = new ServiceDTO(row);
                 List.Add(service);
             }
             return List;
         }
+        public bool isExistService(string name ) {
+            return (int) DataProvider.Instance.ExecuteScalar(String.Format("select count(*) from Service where name = N'{0}'", name)) > 0;
+        }
         public int insertService( ServiceDTO service ) {
-            string query;
-            if (service.ID == -1) {
-                query = "insert into Service( name, unit, price , note) values( @name , @unit , @price , @note )";
-                return DataProvider.Instance.ExecuteNonQuery(query, new object[] { service.Name.ToString(), service.Unit.ToString(), service.Price, service.Note.ToString() });
-            }
-            query = "UPDATE Service SET ID = @id, name = @name, unit = @unit, price = @price, note = @note WHERE ID = @id";
+            string query = "insert into Service( name, unit, price , note) values( @name , @unit , @price , @note )";
             return DataProvider.Instance.ExecuteNonQuery(query, new object[] { service.Name.ToString(), service.Unit.ToString(), service.Price, service.Note.ToString() });
-            //tí làm update
 
+        }
+        public int updateService( ServiceDTO service ) {
+            string query = "update Service set name = @name, unit = @unit, price = @price, note = @note where ID = @ID";
+            return DataProvider.Instance.ExecuteNonQuery(query, new object[] { service.Name.ToString(), service.Unit.ToString(), service.Price, service.Note.ToString(), service.ID });
         }
         public List<ServiceDTO> findServiceByName( string name ) {
             DataTable table = DataProvider.Instance.ExecuteQuery(String.Format("select * from Service where name like '%{0}%'", name.Trim()));
@@ -61,15 +62,8 @@ namespace QuanLyPhongKham.DAO {
             }
             return null;
         }
-        public bool DeleteService( ServiceDTO service ) {
-            int checkeds = (int) DataProvider.Instance.ExecuteScalar(String.Format("Select count(*) from Medicine where ID = '{0}'", service.ID));
-            if (checkeds > 0) {
-                DataProvider.Instance.ExecuteNonQuery(String.Format("Delete from Medicine where ID = '{0}'", service.ID));
-
-            }
-            int check = DataProvider.Instance.ExecuteNonQuery(String.Format("Delete from Service where ID = '{0}'", service.ID));
-            return check > 0;
-
+        public int getLastestServiceID() {
+            return (int) DataProvider.Instance.ExecuteScalar("select top(1) ID from Service order by ID desc");
         }
     }
 }

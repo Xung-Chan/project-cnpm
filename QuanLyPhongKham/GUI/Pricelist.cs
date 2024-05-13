@@ -20,7 +20,9 @@ namespace QuanLyPhongKham.GUI {
         private void Pricelist_Load( object sender, EventArgs e ) {
             loadPriceList(ServiceDAO.Instance.getServiceAll());
         }
-
+        public void reload() {
+            loadPriceList(ServiceDAO.Instance.getServiceAll());
+        }
         private void btnAdd_Click( object sender, EventArgs e ) {
             AddService addService = new AddService();
             addService.ShowDialog();
@@ -40,17 +42,17 @@ namespace QuanLyPhongKham.GUI {
                 lvpricelist.Items.Add(lvwItem);
             }
         }
-        private void lvpricelist_SelectedIndexChanged( object sender, EventArgs e ) {
-            if (lvpricelist.SelectedItems.Count > 0) {
-                Service_Load(lvpricelist.SelectedItems[0].Tag as ServiceDTO);
-            }
-        }
-        private void Service_Load( ServiceDTO service ) {
-            AddService addService = new AddService();
-            addService.AddService_Load(service);
-            addService.ShowDialog();
+        //private void lvpricelist_SelectedIndexChanged( object sender, EventArgs e ) {
+        //    if (lvpricelist.SelectedItems.Count > 0) {
+        //        Service_Load(lvpricelist.SelectedItems[0].Tag as ServiceDTO);
+        //    }
+        //}
+        //private void Service_Load( ServiceDTO service ) {
+        //    AddService addService = new AddService();
+        //    addService.AddService_Load(service);
+        //    addService.ShowDialog();
 
-        }
+        //}
 
         private void tbxSearch_TextChatbxSearch( object sender, EventArgs e ) {
             List<ServiceDTO> list = ServiceDAO.Instance.findServiceByName(tbxSearch.Text.Trim());
@@ -84,10 +86,10 @@ namespace QuanLyPhongKham.GUI {
             //loadPriceList(ServiceDAO.Instance.getServiceAll());
         }
 
-        private void btnChange_Click( object sender, EventArgs e ) {
-            lvpricelist_SelectedIndexChanged(sender, e);
-            loadPriceList(ServiceDAO.Instance.getServiceAll());
-        }
+        //private void btnChange_Click( object sender, EventArgs e ) {
+        //    lvpricelist_SelectedIndexChanged(sender, e);
+        //    loadPriceList(ServiceDAO.Instance.getServiceAll());
+        //}
 
     }
 }

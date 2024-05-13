@@ -55,6 +55,10 @@ namespace QuanLyPhongKham.GUI
                 MessageBox.Show("Số điện thoại không hợp lệ", "Thông báo", MessageBoxButtons.OK);
                 return;
             }
+            if(tbxCCCD.Text.Length != 12) {
+                MessageBox.Show("CCCD không hợp lệ", "Thông báo", MessageBoxButtons.OK);
+                return;
+            }
             if(name == "" || phoneNumber == "" || address == "" || cccd == "") {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK);
                 return;

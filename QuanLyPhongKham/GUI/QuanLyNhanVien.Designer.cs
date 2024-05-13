@@ -40,7 +40,7 @@
             // 
             this.btnAddEmployee.BackColor = System.Drawing.Color.Lime;
             this.btnAddEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddEmployee.Location = new System.Drawing.Point(1267, 677);
+            this.btnAddEmployee.Location = new System.Drawing.Point(1395, 25);
             this.btnAddEmployee.Name = "btnAddEmployee";
             this.btnAddEmployee.Size = new System.Drawing.Size(246, 52);
             this.btnAddEmployee.TabIndex = 1;
@@ -63,7 +63,7 @@
             this.lvwEmployee.HideSelection = false;
             this.lvwEmployee.Location = new System.Drawing.Point(9, 83);
             this.lvwEmployee.Name = "lvwEmployee";
-            this.lvwEmployee.Size = new System.Drawing.Size(1525, 560);
+            this.lvwEmployee.Size = new System.Drawing.Size(1632, 830);
             this.lvwEmployee.TabIndex = 2;
             this.lvwEmployee.UseCompatibleStateImageBehavior = false;
             this.lvwEmployee.View = System.Windows.Forms.View.Details;
@@ -132,7 +132,7 @@
             this.Controls.Add(this.lvwEmployee);
             this.Controls.Add(this.btnAddEmployee);
             this.Name = "QuanLyNhanVien";
-            this.Size = new System.Drawing.Size(1537, 744);
+            this.Size = new System.Drawing.Size(1644, 916);
             this.ResumeLayout(false);
             this.PerformLayout();
 
