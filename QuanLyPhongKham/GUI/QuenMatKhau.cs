@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,18 +25,21 @@ namespace QuanLyPhongKham.GUI {
             if (lblError.Visible) {
                 return;
             }
-            string senderMail = "nhomchatkin@gmail.com";
-            string password = "nhomchatkin123";
             string receiverMail = tbxEmail.Text.Trim();
+            string senderMail = "nhomchatkin@gmail.com";
+            string password = "nodj pwul icvu clvr";
             MailMessage mail = new MailMessage(senderMail, receiverMail);
             mail.Subject = "OTP XÁC NHẬN ĐỔI MẬT KHẨU PHÒNG KHÁM";
-            mail.Body = "Mã OTP của bạn là:" + randomOTP() + "\nVui lòng không chia sẻ email này với người khác.";
-            SmtpClient send = new SmtpClient("smtp.gmail.com");
-            send.Port = 587;
-            send.UseDefaultCredentials=false;
-            send.Credentials = new System.Net.NetworkCredential(senderMail, password);
-            send.EnableSsl = true;
+            string OTP = randomOTP();
+            tbxOTP.Tag = OTP;
+            mail.Body = "Mã OTP của bạn là:" + OTP + "\nVui lòng không chia sẻ email này với người khác.";
             try {
+                SmtpClient send = new SmtpClient("smtp.gmail.com");
+                send.Port = 587;
+                send.UseDefaultCredentials = false;
+                send.Credentials = new System.Net.NetworkCredential(senderMail, password);
+                send.EnableSsl = true;
+
                 send.Send(mail);
                 MessageBox.Show("Mã OTP đã được gửi đến email của bạn");
 
@@ -81,6 +85,14 @@ namespace QuanLyPhongKham.GUI {
         }
 
         private void btnChangePass_Click( object sender, EventArgs e ) {
+            if(tbxID.Text == "" || tbxEmail.Text == "" || tbxNewPass.Text == "" || tbxConfirmPass.Text == "") {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin");
+                return;
+            }
+            if(tbxOTP.Text != tbxOTP.Tag.ToString()) {
+                MessageBox.Show("Mã OTP không chính xác");
+                return;
+            }
             if (EmployeeDAO.Instance.changePassword(int.Parse(tbxID.Text), tbxNewPass.Text) == 1) {
                 MessageBox.Show("Đổi mật khẩu thành công");
                 this.Close();
@@ -92,5 +104,6 @@ namespace QuanLyPhongKham.GUI {
         private void QuenMatKhau_Load( object sender, EventArgs e ) {
 
         }
+
     }
 }

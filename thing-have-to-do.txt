@@ -1,1 +1,1 @@
-bác sĩ: bệnh nhân trống vẫn thực hiện lưu đơn thuốc, kết thúc khám,
+bác sĩ: phải nhập một số trường bắt buộc trong khám lâm sàng, thêm thuốc mới xuất toa thuốc, xóa thuốc(done)

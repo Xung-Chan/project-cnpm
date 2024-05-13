@@ -17,7 +17,7 @@ namespace QuanLyPhongKham
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new GUI.DangNhap());
-            //Application.Run(new A());
+            //Application.Run(new GUI.QuenMatKhau());
         }
     }
 }

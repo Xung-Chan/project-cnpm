@@ -44,24 +44,12 @@ namespace QuanLyPhongKham.GUI {
                 lvwPrescription.Items.Add(item);
             }
         }
-        private void btnAddMedicine_Click( object sender, EventArgs e ) {
-            if(lvwStockMedicine.SelectedItems.Count != 1) {
-                MessageBox.Show("Vui lòng chọn thuốc");
+        
+        private void btnPrintPrescription_Click( object sender, EventArgs e ) {
+            if(lvwPrescription.Items.Count == 0) {
+                MessageBox.Show("Không có thuốc nào được kê");
                 return;
             }
-            int billID = BillDAO.Instance.getBillByTreamentRecord((this.Tag as TreamentRecordsDTO).ID).ID;
-            int serviceID = int.Parse(lvwStockMedicine.SelectedItems[0].SubItems[0].Text);
-            if(BillInforDAO.Instance.insertBillInfor(billID, serviceID, (int) nudQuantity.Value)) {
-                MessageBox.Show("Thêm thành công");
-                loadPrecrciption(BillInforDAO.Instance.getPrescriptionByBillID(BillDAO.Instance.getBillByTreamentRecord((this.Tag as TreamentRecordsDTO).ID).ID));
-                loadStockMedicine(MedicineDAO.Instance.getAllMedicine());
-            }
-            else {
-                MessageBox.Show("Lỗi");
-            }
-        }
-
-        private void btnPrintPrescription_Click( object sender, EventArgs e ) {
             iTextSharp.text.Document document = new iTextSharp.text.Document();
             TreamentRecordsDTO treamentRecord = this.Tag as TreamentRecordsDTO;
             string nameFile = PatientDAO.Instance.getPatientByID(treamentRecord.PatientID).Name+"_"+ treamentRecord.ID + ".pdf";
@@ -115,5 +103,43 @@ namespace QuanLyPhongKham.GUI {
             System.Diagnostics.Process.Start(nameFile);
 
         }
+
+        private void btnRemoveMedicine_Click( object sender, EventArgs e ) {
+            if (lvwPrescription.SelectedItems.Count != 1) {
+                MessageBox.Show("Vui lòng chọn 1 loại thuốc");
+                return;
+            }
+            int billID = BillDAO.Instance.getBillByTreamentRecord((this.Tag as TreamentRecordsDTO).ID).ID;
+            int serviceID = int.Parse(lvwPrescription.SelectedItems[0].SubItems[0].Text);
+            if (BillInforDAO.Instance.deleteBillInfor(billID, serviceID, int.Parse(lvwPrescription.SelectedItems[0].SubItems[2].Text))) {
+                loadPrecrciption(BillInforDAO.Instance.getPrescriptionByBillID(BillDAO.Instance.getBillByTreamentRecord((this.Tag as TreamentRecordsDTO).ID).ID));
+                loadStockMedicine(MedicineDAO.Instance.getAllMedicine());
+            }
+            else {
+                MessageBox.Show("Lỗi");
+            }
+        }
+        private void btnAddMedicine_Click( object sender, EventArgs e ) {
+            if (lvwStockMedicine.SelectedItems.Count != 1) {
+                MessageBox.Show("Vui lòng chọn 1 loại thuốc");
+                return;
+            }
+            if (nudQuantity.Value <= 0) {
+                MessageBox.Show("Số lượng thuốc không hợp lệ");
+                return;
+            }
+            int billID = BillDAO.Instance.getBillByTreamentRecord((this.Tag as TreamentRecordsDTO).ID).ID;
+            int serviceID = int.Parse(lvwStockMedicine.SelectedItems[0].SubItems[0].Text);
+            if (BillInforDAO.Instance.insertBillInfor(billID, serviceID, (int) nudQuantity.Value)) {
+                MessageBox.Show("Thêm thành công");
+                loadPrecrciption(BillInforDAO.Instance.getPrescriptionByBillID(BillDAO.Instance.getBillByTreamentRecord((this.Tag as TreamentRecordsDTO).ID).ID));
+                loadStockMedicine(MedicineDAO.Instance.getAllMedicine());
+                nudQuantity.Value = 1;
+            }
+            else {
+                MessageBox.Show("Lỗi");
+            }
+        }
+
     }
 }

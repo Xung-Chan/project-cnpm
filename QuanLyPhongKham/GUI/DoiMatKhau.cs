@@ -17,5 +17,9 @@ namespace QuanLyPhongKham.GUI {
         private void btnChangePass_Click( object sender, EventArgs e ) {
 
         }
+
+        private void DoiMatKhau_Load( object sender, EventArgs e ) {
+
+        }
     }
 }

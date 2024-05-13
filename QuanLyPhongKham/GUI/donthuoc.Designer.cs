@@ -37,7 +37,6 @@ namespace QuanLyPhongKham.GUI
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tbsSearch = new System.Windows.Forms.TextBox();
-            this.btnAddMedicine = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,6 +47,8 @@ namespace QuanLyPhongKham.GUI
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnPrintPrescription = new System.Windows.Forms.Button();
+            this.btnRemoveMedicine = new System.Windows.Forms.Button();
+            this.btnAddMedicine = new System.Windows.Forms.Button();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -79,13 +80,14 @@ namespace QuanLyPhongKham.GUI
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
+            this.lvwStockMedicine.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvwStockMedicine.FullRowSelect = true;
             this.lvwStockMedicine.GridLines = true;
             this.lvwStockMedicine.HideSelection = false;
-            this.lvwStockMedicine.Location = new System.Drawing.Point(19, 134);
+            this.lvwStockMedicine.Location = new System.Drawing.Point(19, 167);
             this.lvwStockMedicine.MultiSelect = false;
             this.lvwStockMedicine.Name = "lvwStockMedicine";
-            this.lvwStockMedicine.Size = new System.Drawing.Size(840, 235);
+            this.lvwStockMedicine.Size = new System.Drawing.Size(840, 202);
             this.lvwStockMedicine.TabIndex = 7;
             this.lvwStockMedicine.UseCompatibleStateImageBehavior = false;
             this.lvwStockMedicine.View = System.Windows.Forms.View.Details;
@@ -107,59 +109,49 @@ namespace QuanLyPhongKham.GUI
             // 
             // tbsSearch
             // 
-            this.tbsSearch.Location = new System.Drawing.Point(105, 62);
+            this.tbsSearch.Location = new System.Drawing.Point(123, 62);
             this.tbsSearch.Multiline = true;
             this.tbsSearch.Name = "tbsSearch";
-            this.tbsSearch.Size = new System.Drawing.Size(501, 39);
+            this.tbsSearch.Size = new System.Drawing.Size(485, 39);
             this.tbsSearch.TabIndex = 8;
             this.tbsSearch.TextChanged += new System.EventHandler(this.tbsSearch_TextChanged);
-            // 
-            // btnAddMedicine
-            // 
-            this.btnAddMedicine.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnAddMedicine.Location = new System.Drawing.Point(767, 65);
-            this.btnAddMedicine.Name = "btnAddMedicine";
-            this.btnAddMedicine.Size = new System.Drawing.Size(92, 39);
-            this.btnAddMedicine.TabIndex = 10;
-            this.btnAddMedicine.Text = "Thêm";
-            this.btnAddMedicine.UseVisualStyleBackColor = false;
-            this.btnAddMedicine.Click += new System.EventHandler(this.btnAddMedicine_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(15, 72);
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(7, 70);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 22);
+            this.label1.Size = new System.Drawing.Size(92, 24);
             this.label1.TabIndex = 11;
             this.label1.Text = "Tên thuốc";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(608, 72);
+            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.Location = new System.Drawing.Point(614, 72);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 22);
+            this.label2.Size = new System.Drawing.Size(27, 24);
             this.label2.TabIndex = 11;
             this.label2.Text = "SL";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.Location = new System.Drawing.Point(338, 104);
+            this.label3.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.Location = new System.Drawing.Point(307, 117);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 22);
+            this.label3.Size = new System.Drawing.Size(214, 35);
             this.label3.TabIndex = 11;
             this.label3.Text = "Danh sách thuốc ";
             // 
             // nudQuantity
             // 
-            this.nudQuantity.Location = new System.Drawing.Point(641, 74);
+            this.nudQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudQuantity.Location = new System.Drawing.Point(647, 71);
             this.nudQuantity.Name = "nudQuantity";
-            this.nudQuantity.Size = new System.Drawing.Size(120, 22);
+            this.nudQuantity.Size = new System.Drawing.Size(120, 30);
             this.nudQuantity.TabIndex = 14;
             this.nudQuantity.Value = new decimal(new int[] {
             1,
@@ -170,6 +162,7 @@ namespace QuanLyPhongKham.GUI
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.lvwPrescription);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(901, 57);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(682, 318);
@@ -184,11 +177,14 @@ namespace QuanLyPhongKham.GUI
             this.columnHeader4,
             this.columnHeader5,
             this.columnHeader6});
+            this.lvwPrescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvwPrescription.FullRowSelect = true;
             this.lvwPrescription.GridLines = true;
             this.lvwPrescription.HideSelection = false;
-            this.lvwPrescription.Location = new System.Drawing.Point(6, 20);
+            this.lvwPrescription.Location = new System.Drawing.Point(6, 37);
+            this.lvwPrescription.MultiSelect = false;
             this.lvwPrescription.Name = "lvwPrescription";
-            this.lvwPrescription.Size = new System.Drawing.Size(670, 292);
+            this.lvwPrescription.Size = new System.Drawing.Size(670, 275);
             this.lvwPrescription.TabIndex = 0;
             this.lvwPrescription.UseCompatibleStateImageBehavior = false;
             this.lvwPrescription.View = System.Windows.Forms.View.Details;
@@ -196,7 +192,7 @@ namespace QuanLyPhongKham.GUI
             // columnHeader4
             // 
             this.columnHeader4.Text = "Mã thuốc";
-            this.columnHeader4.Width = 90;
+            this.columnHeader4.Width = 100;
             // 
             // columnHeader5
             // 
@@ -206,7 +202,7 @@ namespace QuanLyPhongKham.GUI
             // columnHeader6
             // 
             this.columnHeader6.Text = "Số lượng";
-            this.columnHeader6.Width = 80;
+            this.columnHeader6.Width = 100;
             // 
             // btnPrintPrescription
             // 
@@ -221,10 +217,42 @@ namespace QuanLyPhongKham.GUI
             this.btnPrintPrescription.UseVisualStyleBackColor = false;
             this.btnPrintPrescription.Click += new System.EventHandler(this.btnPrintPrescription_Click);
             // 
+            // btnRemoveMedicine
+            // 
+            this.btnRemoveMedicine.BackColor = System.Drawing.Color.Transparent;
+            this.btnRemoveMedicine.BackgroundImage = global::QuanLyPhongKham.Properties.Resources.minus;
+            this.btnRemoveMedicine.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnRemoveMedicine.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRemoveMedicine.Location = new System.Drawing.Point(819, 68);
+            this.btnRemoveMedicine.Name = "btnRemoveMedicine";
+            this.btnRemoveMedicine.Size = new System.Drawing.Size(40, 40);
+            this.btnRemoveMedicine.TabIndex = 17;
+            this.btnRemoveMedicine.UseVisualStyleBackColor = false;
+            this.btnRemoveMedicine.Click += new System.EventHandler(this.btnRemoveMedicine_Click);
+            // 
+            // btnAddMedicine
+            // 
+            this.btnAddMedicine.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddMedicine.BackgroundImage = global::QuanLyPhongKham.Properties.Resources.plus;
+            this.btnAddMedicine.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAddMedicine.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnAddMedicine.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnAddMedicine.FlatAppearance.BorderSize = 0;
+            this.btnAddMedicine.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAddMedicine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnAddMedicine.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddMedicine.Location = new System.Drawing.Point(773, 68);
+            this.btnAddMedicine.Name = "btnAddMedicine";
+            this.btnAddMedicine.Size = new System.Drawing.Size(40, 40);
+            this.btnAddMedicine.TabIndex = 10;
+            this.btnAddMedicine.UseVisualStyleBackColor = false;
+            this.btnAddMedicine.Click += new System.EventHandler(this.btnAddMedicine_Click);
+            // 
             // DonThuoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnRemoveMedicine);
             this.Controls.Add(this.btnPrintPrescription);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.nudQuantity);
@@ -252,7 +280,6 @@ namespace QuanLyPhongKham.GUI
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ListView lvwStockMedicine;
         private System.Windows.Forms.TextBox tbsSearch;
-        private System.Windows.Forms.Button btnAddMedicine;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -266,5 +293,7 @@ namespace QuanLyPhongKham.GUI
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private Button btnPrintPrescription;
+        private Button btnAddMedicine;
+        private Button btnRemoveMedicine;
     }
 }

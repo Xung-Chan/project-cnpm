@@ -44,6 +44,15 @@ namespace QuanLyPhongKham.DAO {
             check = DataProvider.Instance.ExecuteNonQuery(query);
             return check > 0;
         }
+        public bool deleteBillInfor(int billID, int serviceID , int quantity) {
+            string query = String.Format("delete from BillInfor where billID = {0} and serviceID = {1}", billID, serviceID);
+            int check = DataProvider.Instance.ExecuteNonQuery(query);
+            if (check <= 0)
+                return false;
+            query = String.Format("update Medicine set stock = stock + {0} where ID = {1}", quantity, serviceID);
+            check = DataProvider.Instance.ExecuteNonQuery(query);
+            return check > 0;
+        }
         public List<BillInforDTO> getBillInforByBillID(int billID) {
             string query = String.Format("select * from BillInfor where billID ={0}", billID);
             DataTable table = DataProvider.Instance.ExecuteQuery(query);

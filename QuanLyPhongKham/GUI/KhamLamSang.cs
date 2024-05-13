@@ -20,6 +20,21 @@ namespace QuanLyPhongKham.GUI
         }
 
         private void btnSave_Click( object sender, EventArgs e ) {
+            if(tbxStatus.Text.Trim() == "") {
+                lblStatusErr.Visible = true;
+                return;
+            }
+            lblStatusErr.Visible = false;
+            if(tbxDiagnostic.Text.Trim() == "") {
+                lblDiagnosticErr.Visible = true;
+                return;
+            }
+            lblDiagnosticErr.Visible = false;
+            if(tbxTreatmentDirection.Text.Trim() == "") {
+                lblDirectErr.Visible = true;
+                return;
+            }
+            lblDirectErr.Visible = false;
             TreamentRecordsDTO treamentRecords = this.Tag as TreamentRecordsDTO;
             treamentRecords.Status = tbxStatus.Text;
             treamentRecords.OtherDiseases = tbxOtherDiseases.Text;

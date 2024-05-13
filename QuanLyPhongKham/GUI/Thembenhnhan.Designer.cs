@@ -157,6 +157,7 @@
             // 
             // tbxCCCD
             // 
+            this.tbxCCCD.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxCCCD.Location = new System.Drawing.Point(302, 322);
             this.tbxCCCD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxCCCD.Multiline = true;
@@ -264,7 +265,7 @@
             // 
             this.btnSavePatient.BackColor = System.Drawing.Color.Aqua;
             this.btnSavePatient.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnSavePatient.Location = new System.Drawing.Point(581, 588);
+            this.btnSavePatient.Location = new System.Drawing.Point(790, 586);
             this.btnSavePatient.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSavePatient.Name = "btnSavePatient";
             this.btnSavePatient.Size = new System.Drawing.Size(192, 37);
@@ -277,7 +278,7 @@
             // 
             this.btnExit.BackColor = System.Drawing.Color.Crimson;
             this.btnExit.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnExit.Location = new System.Drawing.Point(789, 588);
+            this.btnExit.Location = new System.Drawing.Point(592, 586);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(192, 37);

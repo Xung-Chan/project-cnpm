@@ -175,7 +175,7 @@ namespace QuanLyPhongKham.GUI {
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Size = new System.Drawing.Size(579, 38);
             this.dtpDate.TabIndex = 1;
-            this.dtpDate.Value = new System.DateTime(2024, 5, 11, 2, 48, 38, 450);
+            this.dtpDate.Value = DateTime.Now;
             this.dtpDate.ValueChanged += new System.EventHandler(this.dtpDate_ValueChanged);
             // 
             // groupBox1

@@ -466,9 +466,9 @@
             // 
             // panel12
             // 
+            this.panel12.Controls.Add(this.donThuoc);
             this.panel12.Controls.Add(this.khamLamSang);
             this.panel12.Controls.Add(this.lichSuKhamChuaBenh);
-            this.panel12.Controls.Add(this.donThuoc);
             this.panel12.Location = new System.Drawing.Point(319, 487);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(1605, 426);

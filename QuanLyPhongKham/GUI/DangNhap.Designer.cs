@@ -183,6 +183,7 @@ namespace QuanLyPhongKham.GUI
             this.Controls.Add(this.pnlContainer);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.Name = "DangNhap";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);

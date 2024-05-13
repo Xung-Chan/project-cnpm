@@ -22,7 +22,7 @@ namespace QuanLyPhongKham.DAO {
         public DutyScheduleDTO getDutyScheduleByDentistID(int dentist ) {
             string query ="select * from DutySchedule where dentistID = @dentistID and date= @date and shiftID = @shift";
             int shiftID = 1;
-            if(DateTime.Now.Hour >= 13 && DateTime.Now.Hour <= 18) {
+            if(DateTime.Now.Hour >= 12 && DateTime.Now.Hour <= 18) {
                 shiftID = 2;
             }
             DataTable table = DataProvider.Instance.ExecuteQuery(query, new object[] { dentist, DateTime.Now.ToString("MM/dd/yyyy"), shiftID });
