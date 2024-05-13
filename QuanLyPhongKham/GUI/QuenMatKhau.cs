@@ -12,8 +12,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace QuanLyPhongKham.GUI {
-    public partial class QuenMatKhau : Form {
-        public QuenMatKhau() {
+    public partial class quenMatKhau : Form {
+        public quenMatKhau() {
             InitializeComponent();
         }
         private string randomOTP() {
@@ -22,6 +22,7 @@ namespace QuanLyPhongKham.GUI {
         }
 
         private void btnSendOTP_Click( object sender, EventArgs e ) {
+            
             if (lblError.Visible) {
                 return;
             }
@@ -85,8 +86,12 @@ namespace QuanLyPhongKham.GUI {
         }
 
         private void btnChangePass_Click( object sender, EventArgs e ) {
-            if(tbxID.Text == "" || tbxEmail.Text == "" || tbxNewPass.Text == "" || tbxConfirmPass.Text == "") {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin");
+            //if(tbxID.Text == "" || tbxEmail.Text == "" || tbxNewPass.Text == "" || tbxConfirmPass.Text == "") {
+            //    MessageBox.Show("Vui lòng điền đầy đủ thông tin");
+            //    return;
+            //}
+            if(tbxOTP.Tag == null) {
+                MessageBox.Show("Vui lòng nhấn gửi mã OTP trước");
                 return;
             }
             if(tbxOTP.Text != tbxOTP.Tag.ToString()) {
@@ -105,5 +110,20 @@ namespace QuanLyPhongKham.GUI {
 
         }
 
+        private void btnShowNewPassword_Click( object sender, EventArgs e ) {
+            tbxNewPass.UseSystemPasswordChar = !tbxNewPass.UseSystemPasswordChar;
+        }
+
+        private void btnShowConfirmPassword_Click( object sender, EventArgs e ) {
+            tbxConfirmPass.UseSystemPasswordChar = !tbxConfirmPass.UseSystemPasswordChar;
+
+        }
+
+        private void lblError_VisibleChanged( object sender, EventArgs e ) {
+            if (tbxID.Text == "" || tbxEmail.Text == "" || tbxNewPass.Text == "" || tbxConfirmPass.Text == "") {
+                lblError.Text= "Vui lòng điền đầy đủ thông tin";
+                lblError.Visible = true;
+            }
+        }
     }
 }

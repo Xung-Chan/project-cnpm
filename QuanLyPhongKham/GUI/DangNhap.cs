@@ -20,10 +20,6 @@ namespace QuanLyPhongKham.GUI {
 
 
         private void Form1_Load( object sender, EventArgs e ) {
-            //test
-            tbxPhoneNumber.Text = "0123123123";
-            tbxPassword.Text = "1";
-            //test
         }
 
         private void cbkShowPassword_CheckedChanged( object sender, EventArgs e ) {
@@ -67,7 +63,7 @@ namespace QuanLyPhongKham.GUI {
             tbxPhoneNumber.Text = "";
         }
         private void lblForgetPassword_LinkClicked( object sender, LinkLabelLinkClickedEventArgs e ) {
-            QuenMatKhau quenMatKhau = new QuenMatKhau();
+            quenMatKhau quenMatKhau = new quenMatKhau();
             quenMatKhau.ShowDialog();
             this.Show();
         }

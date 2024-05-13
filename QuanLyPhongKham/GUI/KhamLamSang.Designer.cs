@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblDirectErr = new System.Windows.Forms.Label();
+            this.lblDiagnosticErr = new System.Windows.Forms.Label();
+            this.lblStatusErr = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.tbxNote = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -44,9 +47,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
-            this.lblStatusErr = new System.Windows.Forms.Label();
-            this.lblDiagnosticErr = new System.Windows.Forms.Label();
-            this.lblDirectErr = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.panel9.SuspendLayout();
             this.SuspendLayout();
@@ -77,6 +77,39 @@
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             // 
+            // lblDirectErr
+            // 
+            this.lblDirectErr.AutoSize = true;
+            this.lblDirectErr.ForeColor = System.Drawing.Color.Red;
+            this.lblDirectErr.Location = new System.Drawing.Point(1085, 230);
+            this.lblDirectErr.Name = "lblDirectErr";
+            this.lblDirectErr.Size = new System.Drawing.Size(170, 16);
+            this.lblDirectErr.TabIndex = 20;
+            this.lblDirectErr.Text = "Vui lòng nhập hướng điều trị";
+            this.lblDirectErr.Visible = false;
+            // 
+            // lblDiagnosticErr
+            // 
+            this.lblDiagnosticErr.AutoSize = true;
+            this.lblDiagnosticErr.ForeColor = System.Drawing.Color.Red;
+            this.lblDiagnosticErr.Location = new System.Drawing.Point(1085, 142);
+            this.lblDiagnosticErr.Name = "lblDiagnosticErr";
+            this.lblDiagnosticErr.Size = new System.Drawing.Size(161, 16);
+            this.lblDiagnosticErr.TabIndex = 19;
+            this.lblDiagnosticErr.Text = "Vui lòng nhập chuẩn đoán";
+            this.lblDiagnosticErr.Visible = false;
+            // 
+            // lblStatusErr
+            // 
+            this.lblStatusErr.AutoSize = true;
+            this.lblStatusErr.ForeColor = System.Drawing.Color.Red;
+            this.lblStatusErr.Location = new System.Drawing.Point(272, 142);
+            this.lblStatusErr.Name = "lblStatusErr";
+            this.lblStatusErr.Size = new System.Drawing.Size(144, 16);
+            this.lblStatusErr.TabIndex = 18;
+            this.lblStatusErr.Text = "Vui lòng nhập tình trạng";
+            this.lblStatusErr.Visible = false;
+            // 
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.DarkTurquoise;
@@ -85,7 +118,7 @@
             this.btnSave.Location = new System.Drawing.Point(1408, 374);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(130, 40);
-            this.btnSave.TabIndex = 17;
+            this.btnSave.TabIndex = 6;
             this.btnSave.Text = "Lưu";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -96,7 +129,7 @@
             this.tbxNote.Multiline = true;
             this.tbxNote.Name = "tbxNote";
             this.tbxNote.Size = new System.Drawing.Size(450, 39);
-            this.tbxNote.TabIndex = 8;
+            this.tbxNote.TabIndex = 5;
             // 
             // label1
             // 
@@ -115,7 +148,7 @@
             this.tbxDrugAllergy.Multiline = true;
             this.tbxDrugAllergy.Name = "tbxDrugAllergy";
             this.tbxDrugAllergy.Size = new System.Drawing.Size(450, 39);
-            this.tbxDrugAllergy.TabIndex = 5;
+            this.tbxDrugAllergy.TabIndex = 2;
             // 
             // tbxTreatmentDirection
             // 
@@ -123,7 +156,7 @@
             this.tbxTreatmentDirection.Multiline = true;
             this.tbxTreatmentDirection.Name = "tbxTreatmentDirection";
             this.tbxTreatmentDirection.Size = new System.Drawing.Size(450, 39);
-            this.tbxTreatmentDirection.TabIndex = 5;
+            this.tbxTreatmentDirection.TabIndex = 4;
             // 
             // tbxDiagnostic
             // 
@@ -131,7 +164,7 @@
             this.tbxDiagnostic.Multiline = true;
             this.tbxDiagnostic.Name = "tbxDiagnostic";
             this.tbxDiagnostic.Size = new System.Drawing.Size(450, 39);
-            this.tbxDiagnostic.TabIndex = 5;
+            this.tbxDiagnostic.TabIndex = 3;
             // 
             // tbxOtherDiseases
             // 
@@ -139,7 +172,7 @@
             this.tbxOtherDiseases.Multiline = true;
             this.tbxOtherDiseases.Name = "tbxOtherDiseases";
             this.tbxOtherDiseases.Size = new System.Drawing.Size(450, 39);
-            this.tbxOtherDiseases.TabIndex = 5;
+            this.tbxOtherDiseases.TabIndex = 1;
             // 
             // tbxStatus
             // 
@@ -147,7 +180,7 @@
             this.tbxStatus.Multiline = true;
             this.tbxStatus.Name = "tbxStatus";
             this.tbxStatus.Size = new System.Drawing.Size(450, 39);
-            this.tbxStatus.TabIndex = 5;
+            this.tbxStatus.TabIndex = 0;
             // 
             // label18
             // 
@@ -223,39 +256,6 @@
             this.label13.TabIndex = 2;
             this.label13.Text = "KHÁM LÂM SÀN";
             this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // lblStatusErr
-            // 
-            this.lblStatusErr.AutoSize = true;
-            this.lblStatusErr.ForeColor = System.Drawing.Color.Red;
-            this.lblStatusErr.Location = new System.Drawing.Point(272, 142);
-            this.lblStatusErr.Name = "lblStatusErr";
-            this.lblStatusErr.Size = new System.Drawing.Size(144, 16);
-            this.lblStatusErr.TabIndex = 18;
-            this.lblStatusErr.Text = "Vui lòng nhập tình trạng";
-            this.lblStatusErr.Visible = false;
-            // 
-            // lblDiagnosticErr
-            // 
-            this.lblDiagnosticErr.AutoSize = true;
-            this.lblDiagnosticErr.ForeColor = System.Drawing.Color.Red;
-            this.lblDiagnosticErr.Location = new System.Drawing.Point(1085, 142);
-            this.lblDiagnosticErr.Name = "lblDiagnosticErr";
-            this.lblDiagnosticErr.Size = new System.Drawing.Size(161, 16);
-            this.lblDiagnosticErr.TabIndex = 19;
-            this.lblDiagnosticErr.Text = "Vui lòng nhập chuẩn đoán";
-            this.lblDiagnosticErr.Visible = false;
-            // 
-            // lblDirectErr
-            // 
-            this.lblDirectErr.AutoSize = true;
-            this.lblDirectErr.ForeColor = System.Drawing.Color.Red;
-            this.lblDirectErr.Location = new System.Drawing.Point(1085, 230);
-            this.lblDirectErr.Name = "lblDirectErr";
-            this.lblDirectErr.Size = new System.Drawing.Size(170, 16);
-            this.lblDirectErr.TabIndex = 20;
-            this.lblDirectErr.Text = "Vui lòng nhập hướng điều trị";
-            this.lblDirectErr.Visible = false;
             // 
             // KhamLamSang
             // 

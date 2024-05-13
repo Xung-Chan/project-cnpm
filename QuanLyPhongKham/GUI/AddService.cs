@@ -18,12 +18,6 @@ namespace QuanLyPhongKham.GUI {
         }
 
 
-        public void AddService_Load( ServiceDTO service ) {
-            tbxName.Text = service.Name.ToString();
-            tbxPrice.Text = service.Price.ToString();
-            tbxUnit.Text = service.Unit.ToString();
-            tbxNote.Text = service.Note.ToString();
-        }
 
 
 
@@ -43,6 +37,11 @@ namespace QuanLyPhongKham.GUI {
             string note = tbxNote.Text;
             switch (cbbType.Text[0]) {
                 case '1':
+                    if(nudQuantity.Value<=0) {
+                        lblError.Text = "Vui lòng nhập số lượng";
+                        lblError.Visible = true;
+                        return;
+                    }
                     if (MedicineDAO.Instance.insertMedicine(name, unit, price, (int) nudQuantity.Value, note) != 1) {
                         MessageBox.Show("Thêm dịch vụ không thành công", "Successfully", MessageBoxButtons.OK);
                         return;

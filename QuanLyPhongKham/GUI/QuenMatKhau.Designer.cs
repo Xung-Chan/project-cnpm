@@ -1,5 +1,5 @@
 ﻿namespace QuanLyPhongKham.GUI {
-    partial class QuenMatKhau {
+    partial class quenMatKhau {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -36,6 +36,8 @@
             this.tbxOTP = new System.Windows.Forms.TextBox();
             this.lblError = new System.Windows.Forms.Label();
             this.btnSend = new System.Windows.Forms.Button();
+            this.btnShowNewPassword = new System.Windows.Forms.Button();
+            this.btnShowConfirmPassword = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,8 +94,9 @@
             this.tbxConfirmPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxConfirmPass.Location = new System.Drawing.Point(281, 135);
             this.tbxConfirmPass.Name = "tbxConfirmPass";
-            this.tbxConfirmPass.Size = new System.Drawing.Size(472, 38);
+            this.tbxConfirmPass.Size = new System.Drawing.Size(436, 38);
             this.tbxConfirmPass.TabIndex = 15;
+            this.tbxConfirmPass.UseSystemPasswordChar = true;
             this.tbxConfirmPass.TextChanged += new System.EventHandler(this.tbxConfirmPass_TextChanged);
             // 
             // label4
@@ -111,8 +114,9 @@
             this.tbxNewPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxNewPass.Location = new System.Drawing.Point(281, 91);
             this.tbxNewPass.Name = "tbxNewPass";
-            this.tbxNewPass.Size = new System.Drawing.Size(472, 38);
+            this.tbxNewPass.Size = new System.Drawing.Size(436, 38);
             this.tbxNewPass.TabIndex = 13;
+            this.tbxNewPass.UseSystemPasswordChar = true;
             // 
             // btnChangePass
             // 
@@ -130,6 +134,8 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.btnShowConfirmPassword);
+            this.panel1.Controls.Add(this.btnShowNewPassword);
             this.panel1.Controls.Add(this.tbxOTP);
             this.panel1.Controls.Add(this.lblError);
             this.panel1.Controls.Add(this.btnSend);
@@ -161,10 +167,10 @@
             this.lblError.ForeColor = System.Drawing.Color.Red;
             this.lblError.Location = new System.Drawing.Point(278, 220);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(50, 16);
+            this.lblError.Size = new System.Drawing.Size(180, 16);
             this.lblError.TabIndex = 21;
-            this.lblError.Text = "lblError";
-            this.lblError.Visible = false;
+            this.lblError.Text = "Vui lòng điền đầy đủ thông tin";
+            this.lblError.VisibleChanged += new System.EventHandler(this.lblError_VisibleChanged);
             // 
             // btnSend
             // 
@@ -180,14 +186,36 @@
             this.btnSend.UseVisualStyleBackColor = true;
             this.btnSend.Click += new System.EventHandler(this.btnSendOTP_Click);
             // 
-            // QuenMatKhau
+            // btnShowNewPassword
+            // 
+            this.btnShowNewPassword.BackgroundImage = global::QuanLyPhongKham.Properties.Resources.visible;
+            this.btnShowNewPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnShowNewPassword.Location = new System.Drawing.Point(715, 91);
+            this.btnShowNewPassword.Name = "btnShowNewPassword";
+            this.btnShowNewPassword.Size = new System.Drawing.Size(38, 38);
+            this.btnShowNewPassword.TabIndex = 23;
+            this.btnShowNewPassword.UseVisualStyleBackColor = true;
+            this.btnShowNewPassword.Click += new System.EventHandler(this.btnShowNewPassword_Click);
+            // 
+            // btnShowConfirmPassword
+            // 
+            this.btnShowConfirmPassword.BackgroundImage = global::QuanLyPhongKham.Properties.Resources.visible;
+            this.btnShowConfirmPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnShowConfirmPassword.Location = new System.Drawing.Point(715, 135);
+            this.btnShowConfirmPassword.Name = "btnShowConfirmPassword";
+            this.btnShowConfirmPassword.Size = new System.Drawing.Size(38, 38);
+            this.btnShowConfirmPassword.TabIndex = 24;
+            this.btnShowConfirmPassword.UseVisualStyleBackColor = true;
+            this.btnShowConfirmPassword.Click += new System.EventHandler(this.btnShowConfirmPassword_Click);
+            // 
+            // quenMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(899, 374);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
-            this.Name = "QuenMatKhau";
+            this.Name = "quenMatKhau";
             this.Text = "QuenMatKhau";
             this.Load += new System.EventHandler(this.QuenMatKhau_Load);
             this.panel1.ResumeLayout(false);
@@ -211,5 +239,7 @@
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.TextBox tbxOTP;
+        private System.Windows.Forms.Button btnShowNewPassword;
+        private System.Windows.Forms.Button btnShowConfirmPassword;
     }
 }

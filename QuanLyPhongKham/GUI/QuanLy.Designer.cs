@@ -67,9 +67,9 @@
             this.label13.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label13.Location = new System.Drawing.Point(3, 18);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(276, 24);
+            this.label13.Size = new System.Drawing.Size(51, 24);
             this.label13.TabIndex = 3;
-            this.label13.Text = "PHÒNG KHÁM RĂNG-HÀM MẶT";
+            this.label13.Text = "RHM";
             this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel8

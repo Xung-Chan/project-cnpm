@@ -45,5 +45,14 @@ namespace QuanLyPhongKham.DAO {
             int check = DataProvider.Instance.ExecuteNonQuery(query, new object[] { DateTime.Now, billID });
             return check > 0;
         }
+        public List<BillDTO> getBillByDate(DateTime date) {
+            string query = String.Format("select * from Bill where dateCheckOut = '{0}'", date.ToString("MM/dd/yyyy"));
+            DataTable table = DataProvider.Instance.ExecuteQuery(query);
+            List<BillDTO> list = new List<BillDTO>();
+            foreach (DataRow row in table.Rows) {
+                list.Add(new BillDTO(row));
+            }
+            return list;
+        }
     }
 }
