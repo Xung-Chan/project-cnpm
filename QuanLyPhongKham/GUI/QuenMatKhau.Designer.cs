@@ -33,8 +33,8 @@
             this.tbxNewPass = new System.Windows.Forms.TextBox();
             this.btnChangePass = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblError = new System.Windows.Forms.Label();
             this.tbxOTP = new System.Windows.Forms.TextBox();
+            this.lblError = new System.Windows.Forms.Label();
             this.btnSend = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -147,6 +147,14 @@
             this.panel1.Size = new System.Drawing.Size(756, 323);
             this.panel1.TabIndex = 19;
             // 
+            // tbxOTP
+            // 
+            this.tbxOTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxOTP.Location = new System.Drawing.Point(281, 179);
+            this.tbxOTP.Name = "tbxOTP";
+            this.tbxOTP.Size = new System.Drawing.Size(225, 38);
+            this.tbxOTP.TabIndex = 22;
+            // 
             // lblError
             // 
             this.lblError.AutoSize = true;
@@ -158,23 +166,17 @@
             this.lblError.Text = "lblError";
             this.lblError.Visible = false;
             // 
-            // tbxOTP
-            // 
-            this.tbxOTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxOTP.Location = new System.Drawing.Point(281, 179);
-            this.tbxOTP.Name = "tbxOTP";
-            this.tbxOTP.Size = new System.Drawing.Size(225, 38);
-            this.tbxOTP.TabIndex = 22;
-            // 
             // btnSend
             // 
+            this.btnSend.AutoSize = true;
             this.btnSend.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSend.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSend.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSend.ForeColor = System.Drawing.Color.Black;
-            this.btnSend.Location = new System.Drawing.Point(531, 179);
+            this.btnSend.Location = new System.Drawing.Point(512, 179);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(101, 57);
+            this.btnSend.Size = new System.Drawing.Size(105, 35);
             this.btnSend.TabIndex = 20;
+            this.btnSend.Text = "Send OTP";
             this.btnSend.UseVisualStyleBackColor = true;
             this.btnSend.Click += new System.EventHandler(this.btnSendOTP_Click);
             // 

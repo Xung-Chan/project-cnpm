@@ -38,12 +38,14 @@
             // 
             // btnAddEmployee
             // 
-            this.btnAddEmployee.Location = new System.Drawing.Point(1187, 658);
+            this.btnAddEmployee.BackColor = System.Drawing.Color.Lime;
+            this.btnAddEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddEmployee.Location = new System.Drawing.Point(1267, 677);
             this.btnAddEmployee.Name = "btnAddEmployee";
-            this.btnAddEmployee.Size = new System.Drawing.Size(225, 52);
+            this.btnAddEmployee.Size = new System.Drawing.Size(246, 52);
             this.btnAddEmployee.TabIndex = 1;
             this.btnAddEmployee.Text = "Thêm nhân viên";
-            this.btnAddEmployee.UseVisualStyleBackColor = true;
+            this.btnAddEmployee.UseVisualStyleBackColor = false;
             this.btnAddEmployee.Click += new System.EventHandler(this.btnAddEmployee_Click);
             // 
             // lvwEmployee
@@ -56,11 +58,12 @@
             this.columnHeader5,
             this.columnHeader6,
             this.columnHeader7});
+            this.lvwEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvwEmployee.GridLines = true;
             this.lvwEmployee.HideSelection = false;
-            this.lvwEmployee.Location = new System.Drawing.Point(93, 155);
+            this.lvwEmployee.Location = new System.Drawing.Point(9, 83);
             this.lvwEmployee.Name = "lvwEmployee";
-            this.lvwEmployee.Size = new System.Drawing.Size(1319, 482);
+            this.lvwEmployee.Size = new System.Drawing.Size(1525, 560);
             this.lvwEmployee.TabIndex = 2;
             this.lvwEmployee.UseCompatibleStateImageBehavior = false;
             this.lvwEmployee.View = System.Windows.Forms.View.Details;
@@ -68,17 +71,17 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "Mã nhân viên";
-            this.columnHeader1.Width = 107;
+            this.columnHeader1.Width = 200;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Tên nhân viên";
-            this.columnHeader2.Width = 248;
+            this.columnHeader2.Width = 250;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Số điện thoại";
-            this.columnHeader3.Width = 131;
+            this.columnHeader3.Width = 200;
             // 
             // columnHeader4
             // 
@@ -88,7 +91,7 @@
             // columnHeader5
             // 
             this.columnHeader5.Text = "Email";
-            this.columnHeader5.Width = 207;
+            this.columnHeader5.Width = 250;
             // 
             // columnHeader6
             // 
@@ -102,32 +105,34 @@
             // 
             // tbxSearch
             // 
-            this.tbxSearch.Location = new System.Drawing.Point(220, 110);
+            this.tbxSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxSearch.Location = new System.Drawing.Point(355, 10);
             this.tbxSearch.Name = "tbxSearch";
-            this.tbxSearch.Size = new System.Drawing.Size(398, 22);
+            this.tbxSearch.Size = new System.Drawing.Size(577, 38);
             this.tbxSearch.TabIndex = 3;
             this.tbxSearch.TextChanged += new System.EventHandler(this.tbxSearch_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(90, 103);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 29);
+            this.label1.Size = new System.Drawing.Size(306, 32);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Tìm kiếm";
+            this.label1.Text = "Tìm kiếm tên nhân viên";
             // 
             // QuanLyNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightCyan;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbxSearch);
             this.Controls.Add(this.lvwEmployee);
             this.Controls.Add(this.btnAddEmployee);
             this.Name = "QuanLyNhanVien";
-            this.Size = new System.Drawing.Size(1539, 745);
+            this.Size = new System.Drawing.Size(1537, 744);
             this.ResumeLayout(false);
             this.PerformLayout();
 

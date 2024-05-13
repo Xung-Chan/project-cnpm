@@ -1,52 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\gui\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:gui\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|d:\\study\\\u0111\u1EA1i h\u1ECDc\\c\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\project\\project-cnpm-myself\\quanlyphongkham\\gui\\bacsi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:gui\\bacsi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\gui\\dangkynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:gui\\dangkynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\gui\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:gui\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\gui\\donthuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:gui\\donthuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\dao\\branchdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:dao\\branchdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\gui\\dangkynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:gui\\dangkynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\gui\\bacsi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:gui\\bacsi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\gui\\lichkham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:gui\\lichkham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\gui\\baocaotonghop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:gui\\baocaotonghop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\gui\\baocaocongviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FC5B51A6-FCFE-448C-914F-0EBFDB38A30F}|QuanLyPhongKham.csproj|solutionrelative:gui\\baocaocongviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -54,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -75,142 +30,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BranchDAO.cs",
-              "DocumentMoniker": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\DAO\\BranchDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\BranchDAO.cs",
-              "ToolTip": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\DAO\\BranchDAO.cs",
-              "RelativeToolTip": "DAO\\BranchDAO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T14:21:10.041Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DangKyNhanVien.cs",
-              "DocumentMoniker": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\DangKyNhanVien.cs",
-              "RelativeDocumentMoniker": "GUI\\DangKyNhanVien.cs",
-              "ToolTip": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\DangKyNhanVien.cs",
-              "RelativeToolTip": "GUI\\DangKyNhanVien.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAewBcAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T14:21:01.304Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BacSi.cs",
-              "DocumentMoniker": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\BacSi.cs",
-              "RelativeDocumentMoniker": "GUI\\BacSi.cs",
-              "ToolTip": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\BacSi.cs",
-              "RelativeToolTip": "GUI\\BacSi.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAewBwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T14:17:38.074Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LichKham.cs [Design]",
-              "DocumentMoniker": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\LichKham.cs",
-              "RelativeDocumentMoniker": "GUI\\LichKham.cs",
-              "ToolTip": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\LichKham.cs [Design]",
-              "RelativeToolTip": "GUI\\LichKham.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T14:16:37.289Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DangKyNhanVien.cs [Design]",
-              "DocumentMoniker": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\DangKyNhanVien.cs",
-              "RelativeDocumentMoniker": "GUI\\DangKyNhanVien.cs",
-              "ToolTip": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\DangKyNhanVien.cs [Design]",
-              "RelativeToolTip": "GUI\\DangKyNhanVien.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T14:16:06.024Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DangNhap.cs [Design]",
-              "DocumentMoniker": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\DangNhap.cs",
-              "RelativeDocumentMoniker": "GUI\\DangNhap.cs",
-              "ToolTip": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\DangNhap.cs [Design]",
-              "RelativeToolTip": "GUI\\DangNhap.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T14:16:05.425Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BaoCaoTongHop.cs [Design]",
-              "DocumentMoniker": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\BaoCaoTongHop.cs",
-              "RelativeDocumentMoniker": "GUI\\BaoCaoTongHop.cs",
-              "ToolTip": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\BaoCaoTongHop.cs [Design]",
-              "RelativeToolTip": "GUI\\BaoCaoTongHop.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T14:16:04.378Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BacSi.cs [Design]",
-              "DocumentMoniker": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\BacSi.cs",
-              "RelativeDocumentMoniker": "GUI\\BacSi.cs",
-              "ToolTip": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\BacSi.cs [Design]",
-              "RelativeToolTip": "GUI\\BacSi.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T14:15:46.759Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DonThuoc.cs [Design]",
-              "DocumentMoniker": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\DonThuoc.cs",
-              "RelativeDocumentMoniker": "GUI\\DonThuoc.cs",
-              "ToolTip": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\DonThuoc.cs [Design]",
-              "RelativeToolTip": "GUI\\DonThuoc.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T14:21:14.777Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DangNhap.cs",
-              "DocumentMoniker": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\DangNhap.cs",
-              "RelativeDocumentMoniker": "GUI\\DangNhap.cs",
-              "ToolTip": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\DangNhap.cs",
-              "RelativeToolTip": "GUI\\DangNhap.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAArwCgAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T14:21:18.083Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BaoCaoCongViec.cs [Design]",
-              "DocumentMoniker": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\BaoCaoCongViec.cs",
-              "RelativeDocumentMoniker": "GUI\\BaoCaoCongViec.cs",
-              "ToolTip": "D:\\Study\\\u0110\u1EA1i h\u1ECDc\\C\u00F4ng ngh\u1EC7 ph\u1EA7n m\u1EC1m\\Project\\project-cnpm-myself\\QuanLyPhongKham\\GUI\\BaoCaoCongViec.cs [Design]",
-              "RelativeToolTip": "GUI\\BaoCaoCongViec.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T14:16:02.614Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

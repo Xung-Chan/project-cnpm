@@ -22,7 +22,6 @@ D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\Quan
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.AssemblyReference.cache
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.BacSi.resources
-D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.BaoCaoCongViec.resources
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.BaoCaoTongHop.resources
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.DangKyNhanVien.resources
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.DangNhap.resources
@@ -31,7 +30,6 @@ D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\Quan
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.DuLieuDiemDanh.resources
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.KhamLamSang.resources
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.LeTan.resources
-D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.LichKham.resources
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.LichSuKhamChuaBenh.resources
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.PhanCongLichTruc.resources
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.QuanLy.resources
@@ -46,3 +44,6 @@ D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\Quan
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPh.0DF01D54.Up2Date
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.exe
 D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.pdb
+D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.AddService.resources
+D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.KhoThuoc.resources
+D:\Study\Đại học\Công nghệ phần mềm\Project\project-cnpm-myself\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.Pricelist.resources

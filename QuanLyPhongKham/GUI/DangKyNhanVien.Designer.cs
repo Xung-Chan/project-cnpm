@@ -77,10 +77,10 @@ namespace QuanLyPhongKham.GUI
             this.pnlContainer.Controls.Add(this.tbxSdt);
             this.pnlContainer.Controls.Add(this.lblPosition);
             this.pnlContainer.Controls.Add(this.btnLogup);
-            this.pnlContainer.Location = new System.Drawing.Point(291, 71);
+            this.pnlContainer.Location = new System.Drawing.Point(197, 70);
             this.pnlContainer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(731, 538);
+            this.pnlContainer.Size = new System.Drawing.Size(858, 538);
             this.pnlContainer.TabIndex = 0;
             // 
             // tbxAddress
@@ -88,30 +88,32 @@ namespace QuanLyPhongKham.GUI
             this.tbxAddress.BackColor = System.Drawing.Color.PaleTurquoise;
             this.tbxAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbxAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxAddress.Location = new System.Drawing.Point(325, 271);
+            this.tbxAddress.Location = new System.Drawing.Point(325, 295);
             this.tbxAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxAddress.Multiline = true;
             this.tbxAddress.Name = "tbxAddress";
-            this.tbxAddress.Size = new System.Drawing.Size(329, 35);
+            this.tbxAddress.Size = new System.Drawing.Size(446, 39);
             this.tbxAddress.TabIndex = 6;
             // 
             // cbbBranch
             // 
             this.cbbBranch.BackColor = System.Drawing.Color.PaleTurquoise;
             this.cbbBranch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbbBranch.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbBranch.FormattingEnabled = true;
-            this.cbbBranch.Location = new System.Drawing.Point(325, 362);
+            this.cbbBranch.Location = new System.Drawing.Point(325, 384);
             this.cbbBranch.Name = "cbbBranch";
-            this.cbbBranch.Size = new System.Drawing.Size(200, 24);
+            this.cbbBranch.Size = new System.Drawing.Size(200, 39);
             this.cbbBranch.TabIndex = 8;
             // 
             // dtpBirthday
             // 
             this.dtpBirthday.CustomFormat = " ";
+            this.dtpBirthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpBirthday.Location = new System.Drawing.Point(325, 241);
+            this.dtpBirthday.Location = new System.Drawing.Point(325, 252);
             this.dtpBirthday.Name = "dtpBirthday";
-            this.dtpBirthday.Size = new System.Drawing.Size(200, 22);
+            this.dtpBirthday.Size = new System.Drawing.Size(446, 38);
             this.dtpBirthday.TabIndex = 5;
             this.dtpBirthday.ValueChanged += new System.EventHandler(this.dtpBirthday_ValueChanged);
             // 
@@ -120,11 +122,11 @@ namespace QuanLyPhongKham.GUI
             this.tbxEmail.BackColor = System.Drawing.Color.PaleTurquoise;
             this.tbxEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbxEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxEmail.Location = new System.Drawing.Point(325, 151);
+            this.tbxEmail.Location = new System.Drawing.Point(325, 157);
             this.tbxEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxEmail.Multiline = true;
             this.tbxEmail.Name = "tbxEmail";
-            this.tbxEmail.Size = new System.Drawing.Size(329, 35);
+            this.tbxEmail.Size = new System.Drawing.Size(446, 39);
             this.tbxEmail.TabIndex = 3;
             // 
             // pnlGender
@@ -132,17 +134,18 @@ namespace QuanLyPhongKham.GUI
             this.pnlGender.BackColor = System.Drawing.Color.Transparent;
             this.pnlGender.Controls.Add(this.rdbMale);
             this.pnlGender.Controls.Add(this.rdbFemale);
-            this.pnlGender.Location = new System.Drawing.Point(325, 191);
+            this.pnlGender.Location = new System.Drawing.Point(325, 201);
             this.pnlGender.Name = "pnlGender";
-            this.pnlGender.Size = new System.Drawing.Size(329, 35);
+            this.pnlGender.Size = new System.Drawing.Size(446, 45);
             this.pnlGender.TabIndex = 4;
             // 
             // rdbMale
             // 
             this.rdbMale.AutoSize = true;
+            this.rdbMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbMale.Location = new System.Drawing.Point(5, 7);
             this.rdbMale.Name = "rdbMale";
-            this.rdbMale.Size = new System.Drawing.Size(57, 20);
+            this.rdbMale.Size = new System.Drawing.Size(85, 33);
             this.rdbMale.TabIndex = 13;
             this.rdbMale.TabStop = true;
             this.rdbMale.Text = "Nam";
@@ -151,9 +154,10 @@ namespace QuanLyPhongKham.GUI
             // rdbFemale
             // 
             this.rdbFemale.AutoSize = true;
-            this.rdbFemale.Location = new System.Drawing.Point(105, 7);
+            this.rdbFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbFemale.Location = new System.Drawing.Point(122, 7);
             this.rdbFemale.Name = "rdbFemale";
-            this.rdbFemale.Size = new System.Drawing.Size(45, 20);
+            this.rdbFemale.Size = new System.Drawing.Size(65, 33);
             this.rdbFemale.TabIndex = 14;
             this.rdbFemale.TabStop = true;
             this.rdbFemale.Text = "Nữ";
@@ -164,11 +168,11 @@ namespace QuanLyPhongKham.GUI
             this.tbxName.BackColor = System.Drawing.Color.PaleTurquoise;
             this.tbxName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxName.Location = new System.Drawing.Point(325, 111);
+            this.tbxName.Location = new System.Drawing.Point(325, 114);
             this.tbxName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxName.Multiline = true;
             this.tbxName.Name = "tbxName";
-            this.tbxName.Size = new System.Drawing.Size(329, 35);
+            this.tbxName.Size = new System.Drawing.Size(446, 39);
             this.tbxName.TabIndex = 2;
             // 
             // label5
@@ -176,7 +180,7 @@ namespace QuanLyPhongKham.GUI
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(15, 350);
+            this.label5.Location = new System.Drawing.Point(26, 387);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(152, 36);
             this.label5.TabIndex = 11;
@@ -187,7 +191,7 @@ namespace QuanLyPhongKham.GUI
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(15, 230);
+            this.label2.Location = new System.Drawing.Point(26, 255);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(149, 36);
             this.label2.TabIndex = 8;
@@ -198,7 +202,7 @@ namespace QuanLyPhongKham.GUI
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(15, 270);
+            this.label6.Location = new System.Drawing.Point(26, 298);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(106, 36);
             this.label6.TabIndex = 9;
@@ -209,7 +213,7 @@ namespace QuanLyPhongKham.GUI
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(15, 150);
+            this.label3.Location = new System.Drawing.Point(26, 160);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 36);
             this.label3.TabIndex = 6;
@@ -220,7 +224,7 @@ namespace QuanLyPhongKham.GUI
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(15, 310);
+            this.label4.Location = new System.Drawing.Point(26, 342);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(125, 36);
             this.label4.TabIndex = 7;
@@ -231,7 +235,7 @@ namespace QuanLyPhongKham.GUI
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 110);
+            this.label1.Location = new System.Drawing.Point(26, 117);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(141, 36);
             this.label1.TabIndex = 5;
@@ -241,10 +245,11 @@ namespace QuanLyPhongKham.GUI
             // 
             this.cbbPosition.BackColor = System.Drawing.Color.PaleTurquoise;
             this.cbbPosition.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbbPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbPosition.FormattingEnabled = true;
-            this.cbbPosition.Location = new System.Drawing.Point(325, 322);
+            this.cbbPosition.Location = new System.Drawing.Point(325, 339);
             this.cbbPosition.Name = "cbbPosition";
-            this.cbbPosition.Size = new System.Drawing.Size(200, 24);
+            this.cbbPosition.Size = new System.Drawing.Size(200, 39);
             this.cbbPosition.TabIndex = 7;
             // 
             // lblHeader
@@ -263,7 +268,7 @@ namespace QuanLyPhongKham.GUI
             this.lblPhoneNumber.AutoSize = true;
             this.lblPhoneNumber.BackColor = System.Drawing.Color.Transparent;
             this.lblPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhoneNumber.Location = new System.Drawing.Point(15, 70);
+            this.lblPhoneNumber.Location = new System.Drawing.Point(26, 74);
             this.lblPhoneNumber.Name = "lblPhoneNumber";
             this.lblPhoneNumber.Size = new System.Drawing.Size(190, 36);
             this.lblPhoneNumber.TabIndex = 1;
@@ -278,7 +283,7 @@ namespace QuanLyPhongKham.GUI
             this.tbxSdt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxSdt.Multiline = true;
             this.tbxSdt.Name = "tbxSdt";
-            this.tbxSdt.Size = new System.Drawing.Size(329, 35);
+            this.tbxSdt.Size = new System.Drawing.Size(446, 39);
             this.tbxSdt.TabIndex = 1;
             // 
             // lblPosition
@@ -286,7 +291,7 @@ namespace QuanLyPhongKham.GUI
             this.lblPosition.AutoSize = true;
             this.lblPosition.BackColor = System.Drawing.Color.Transparent;
             this.lblPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPosition.Location = new System.Drawing.Point(15, 190);
+            this.lblPosition.Location = new System.Drawing.Point(26, 210);
             this.lblPosition.Name = "lblPosition";
             this.lblPosition.Size = new System.Drawing.Size(126, 36);
             this.lblPosition.TabIndex = 3;

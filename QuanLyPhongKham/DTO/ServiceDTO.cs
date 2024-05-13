@@ -19,6 +19,15 @@ namespace QuanLyPhongKham.DTO {
             this.unit = (string) row["unit"];
                 if (row["note"].ToString() != "")
             this.note = (string) row["note"];
+            if(this.note == null)
+                this.note = "";
+        }
+        public ServiceDTO( int iD, string name, string unit, int price, string note ) {
+            this.ID = iD;
+            this.Name = name;
+            this.Unit = unit;
+            this.Price = price;
+            this.Note = note;
         }
         public int ID { get => iD; set => iD = value; }
         public string Name { get => name; set => name = value; }

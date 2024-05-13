@@ -28,34 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.PanelDrop = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dropbutton = new System.Windows.Forms.Button();
-            this.btnLogout = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.btnDuLieuDiemDanh = new System.Windows.Forms.Button();
             this.btnQuanLyNhanVien = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.duLieuDiemDanh = new QuanLyPhongKham.GUI.DuLieuDiemDanh();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.btnBaoCaoDanhThu = new System.Windows.Forms.Button();
+            this.btnQuanLyBangGia = new System.Windows.Forms.Button();
+            this.btnKhoThuoc = new System.Windows.Forms.Button();
+            this.scheduleTableAdapter1 = new QuanLyPhongKham.DatabaseDataSetTableAdapters.ScheduleTableAdapter();
             this.quanLyNhanVien = new QuanLyPhongKham.GUI.QuanLyNhanVien();
-            this.bcth1 = new QuanLyPhongKham.GUI.BaoCaoTongHop();
+            this.quanLyBangGia = new QuanLyPhongKham.GUI.Pricelist();
+            this.duLieuDiemDanh = new QuanLyPhongKham.GUI.DuLieuDiemDanh();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.PanelDrop.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -93,119 +81,43 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.PanelDrop);
-            this.panel2.Controls.Add(this.btnLogout);
-            this.panel2.Controls.Add(this.button10);
             this.panel2.Controls.Add(this.btnDuLieuDiemDanh);
             this.panel2.Controls.Add(this.btnQuanLyNhanVien);
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.btnLogout);
+            this.panel2.Controls.Add(this.btnBaoCaoDanhThu);
+            this.panel2.Controls.Add(this.btnQuanLyBangGia);
+            this.panel2.Controls.Add(this.btnKhoThuoc);
             this.panel2.Location = new System.Drawing.Point(1, 76);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(271, 725);
             this.panel2.TabIndex = 1;
             // 
-            // panel3
+            // btnDuLieuDiemDanh
             // 
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Controls.Add(this.button8);
-            this.panel3.Controls.Add(this.button9);
-            this.panel3.Location = new System.Drawing.Point(12, 32);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel3.MaximumSize = new System.Drawing.Size(245, 207);
-            this.panel3.MinimumSize = new System.Drawing.Size(245, 69);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(245, 69);
-            this.panel3.TabIndex = 4;
+            this.btnDuLieuDiemDanh.BackColor = System.Drawing.Color.DarkGray;
+            this.btnDuLieuDiemDanh.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnDuLieuDiemDanh.Location = new System.Drawing.Point(13, 79);
+            this.btnDuLieuDiemDanh.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDuLieuDiemDanh.Name = "btnDuLieuDiemDanh";
+            this.btnDuLieuDiemDanh.Size = new System.Drawing.Size(244, 69);
+            this.btnDuLieuDiemDanh.TabIndex = 4;
+            this.btnDuLieuDiemDanh.Text = "Dữ liệu điểm danh";
+            this.btnDuLieuDiemDanh.UseVisualStyleBackColor = false;
+            this.btnDuLieuDiemDanh.Click += new System.EventHandler(this.btnDuLieuDiemDanh_Click);
             // 
-            // button4
+            // btnQuanLyNhanVien
             // 
-            this.button4.BackColor = System.Drawing.Color.DarkGray;
-            this.button4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button4.Location = new System.Drawing.Point(0, 0);
-            this.button4.Margin = new System.Windows.Forms.Padding(0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(245, 69);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Quản lý báo cáo";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.buttonql_Click);
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.DarkGray;
-            this.button8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button8.Location = new System.Drawing.Point(25, 134);
-            this.button8.Margin = new System.Windows.Forms.Padding(0);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(219, 69);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Báo cáo kho và Bán hàng";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.DarkGray;
-            this.button9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button9.Location = new System.Drawing.Point(25, 69);
-            this.button9.Margin = new System.Windows.Forms.Padding(0);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(220, 65);
-            this.button9.TabIndex = 2;
-            this.button9.Text = "Báo cáo điểm danh";
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // PanelDrop
-            // 
-            this.PanelDrop.Controls.Add(this.button5);
-            this.PanelDrop.Controls.Add(this.button2);
-            this.PanelDrop.Controls.Add(this.dropbutton);
-            this.PanelDrop.Location = new System.Drawing.Point(11, 244);
-            this.PanelDrop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.PanelDrop.MaximumSize = new System.Drawing.Size(245, 207);
-            this.PanelDrop.MinimumSize = new System.Drawing.Size(245, 69);
-            this.PanelDrop.Name = "PanelDrop";
-            this.PanelDrop.Size = new System.Drawing.Size(245, 69);
-            this.PanelDrop.TabIndex = 3;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.DarkGray;
-            this.button5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button5.Location = new System.Drawing.Point(25, 134);
-            this.button5.Margin = new System.Windows.Forms.Padding(0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(219, 69);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Quản lý nhập kho";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.DarkGray;
-            this.button2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.Location = new System.Drawing.Point(25, 69);
-            this.button2.Margin = new System.Windows.Forms.Padding(0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(220, 65);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Quản lý tồn kho";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // dropbutton
-            // 
-            this.dropbutton.BackColor = System.Drawing.Color.DarkGray;
-            this.dropbutton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.dropbutton.Location = new System.Drawing.Point(1, 0);
-            this.dropbutton.Margin = new System.Windows.Forms.Padding(0);
-            this.dropbutton.Name = "dropbutton";
-            this.dropbutton.Size = new System.Drawing.Size(244, 66);
-            this.dropbutton.TabIndex = 2;
-            this.dropbutton.Text = "Quản lý kho hàng";
-            this.dropbutton.UseVisualStyleBackColor = false;
-            this.dropbutton.Click += new System.EventHandler(this.dropbutton_Click);
+            this.btnQuanLyNhanVien.BackColor = System.Drawing.Color.DarkGray;
+            this.btnQuanLyNhanVien.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnQuanLyNhanVien.Location = new System.Drawing.Point(13, 10);
+            this.btnQuanLyNhanVien.Margin = new System.Windows.Forms.Padding(0);
+            this.btnQuanLyNhanVien.Name = "btnQuanLyNhanVien";
+            this.btnQuanLyNhanVien.Size = new System.Drawing.Size(244, 69);
+            this.btnQuanLyNhanVien.TabIndex = 3;
+            this.btnQuanLyNhanVien.Text = "Quản lý nhân viên";
+            this.btnQuanLyNhanVien.UseVisualStyleBackColor = false;
+            this.btnQuanLyNhanVien.Click += new System.EventHandler(this.btnQuanLyNhanVien_Click);
             // 
             // btnLogout
             // 
@@ -221,101 +133,70 @@
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // button10
+            // btnBaoCaoDanhThu
             // 
-            this.button10.BackColor = System.Drawing.Color.DarkGray;
-            this.button10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button10.Location = new System.Drawing.Point(13, 453);
-            this.button10.Margin = new System.Windows.Forms.Padding(0);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(244, 69);
-            this.button10.TabIndex = 2;
-            this.button10.Text = "Báo cáo doanh thu";
-            this.button10.UseVisualStyleBackColor = false;
+            this.btnBaoCaoDanhThu.BackColor = System.Drawing.Color.DarkGray;
+            this.btnBaoCaoDanhThu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnBaoCaoDanhThu.Location = new System.Drawing.Point(11, 148);
+            this.btnBaoCaoDanhThu.Margin = new System.Windows.Forms.Padding(0);
+            this.btnBaoCaoDanhThu.Name = "btnBaoCaoDanhThu";
+            this.btnBaoCaoDanhThu.Size = new System.Drawing.Size(244, 69);
+            this.btnBaoCaoDanhThu.TabIndex = 2;
+            this.btnBaoCaoDanhThu.Text = "Báo cáo doanh thu";
+            this.btnBaoCaoDanhThu.UseVisualStyleBackColor = false;
             // 
-            // btnDuLieuDiemDanh
+            // btnQuanLyBangGia
             // 
-            this.btnDuLieuDiemDanh.BackColor = System.Drawing.Color.DarkGray;
-            this.btnDuLieuDiemDanh.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnDuLieuDiemDanh.Location = new System.Drawing.Point(12, 384);
-            this.btnDuLieuDiemDanh.Margin = new System.Windows.Forms.Padding(0);
-            this.btnDuLieuDiemDanh.Name = "btnDuLieuDiemDanh";
-            this.btnDuLieuDiemDanh.Size = new System.Drawing.Size(244, 69);
-            this.btnDuLieuDiemDanh.TabIndex = 2;
-            this.btnDuLieuDiemDanh.Text = "Dữ liệu điểm danh";
-            this.btnDuLieuDiemDanh.UseVisualStyleBackColor = false;
-            this.btnDuLieuDiemDanh.Click += new System.EventHandler(this.btnDuLieuDiemDanh_Click);
+            this.btnQuanLyBangGia.BackColor = System.Drawing.Color.DarkGray;
+            this.btnQuanLyBangGia.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnQuanLyBangGia.Location = new System.Drawing.Point(13, 286);
+            this.btnQuanLyBangGia.Margin = new System.Windows.Forms.Padding(0);
+            this.btnQuanLyBangGia.Name = "btnQuanLyBangGia";
+            this.btnQuanLyBangGia.Size = new System.Drawing.Size(244, 69);
+            this.btnQuanLyBangGia.TabIndex = 2;
+            this.btnQuanLyBangGia.Text = "Quản lý bảng giá";
+            this.btnQuanLyBangGia.UseVisualStyleBackColor = false;
+            this.btnQuanLyBangGia.Click += new System.EventHandler(this.btnQuanLyBangGia_Click);
             // 
-            // btnQuanLyNhanVien
+            // btnKhoThuoc
             // 
-            this.btnQuanLyNhanVien.BackColor = System.Drawing.Color.DarkGray;
-            this.btnQuanLyNhanVien.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnQuanLyNhanVien.Location = new System.Drawing.Point(13, 315);
-            this.btnQuanLyNhanVien.Margin = new System.Windows.Forms.Padding(0);
-            this.btnQuanLyNhanVien.Name = "btnQuanLyNhanVien";
-            this.btnQuanLyNhanVien.Size = new System.Drawing.Size(244, 69);
-            this.btnQuanLyNhanVien.TabIndex = 2;
-            this.btnQuanLyNhanVien.Text = "Quản lý nhân viên";
-            this.btnQuanLyNhanVien.UseVisualStyleBackColor = false;
-            this.btnQuanLyNhanVien.Click += new System.EventHandler(this.btnQuanLyNhanVien_Click);
+            this.btnKhoThuoc.BackColor = System.Drawing.Color.DarkGray;
+            this.btnKhoThuoc.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnKhoThuoc.Location = new System.Drawing.Point(13, 217);
+            this.btnKhoThuoc.Margin = new System.Windows.Forms.Padding(0);
+            this.btnKhoThuoc.Name = "btnKhoThuoc";
+            this.btnKhoThuoc.Size = new System.Drawing.Size(244, 69);
+            this.btnKhoThuoc.TabIndex = 2;
+            this.btnKhoThuoc.Text = "Kho thuốc";
+            this.btnKhoThuoc.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // scheduleTableAdapter1
             // 
-            this.button6.BackColor = System.Drawing.Color.DarkGray;
-            this.button6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button6.Location = new System.Drawing.Point(11, 103);
-            this.button6.Margin = new System.Windows.Forms.Padding(0);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(244, 69);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "Quản lý bảng giá";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.DarkGray;
-            this.button3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button3.Location = new System.Drawing.Point(11, 172);
-            this.button3.Margin = new System.Windows.Forms.Padding(0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(244, 69);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Kho thuốc";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 15;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // timer2
-            // 
-            this.timer2.Interval = 15;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
-            // duLieuDiemDanh
-            // 
-            this.duLieuDiemDanh.Location = new System.Drawing.Point(280, 57);
-            this.duLieuDiemDanh.Name = "duLieuDiemDanh";
-            this.duLieuDiemDanh.Size = new System.Drawing.Size(1539, 745);
-            this.duLieuDiemDanh.TabIndex = 5;
+            this.scheduleTableAdapter1.ClearBeforeFill = true;
             // 
             // quanLyNhanVien
             // 
-            this.quanLyNhanVien.Location = new System.Drawing.Point(280, 57);
+            this.quanLyNhanVien.BackColor = System.Drawing.Color.LightCyan;
+            this.quanLyNhanVien.Location = new System.Drawing.Point(278, 63);
             this.quanLyNhanVien.Name = "quanLyNhanVien";
-            this.quanLyNhanVien.Size = new System.Drawing.Size(1539, 745);
-            this.quanLyNhanVien.TabIndex = 4;
+            this.quanLyNhanVien.Size = new System.Drawing.Size(1537, 744);
+            this.quanLyNhanVien.TabIndex = 2;
             // 
-            // bcth1
+            // quanLyBangGia
             // 
-            this.bcth1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bcth1.Location = new System.Drawing.Point(279, 57);
-            this.bcth1.Margin = new System.Windows.Forms.Padding(5);
-            this.bcth1.Name = "bcth1";
-            this.bcth1.Size = new System.Drawing.Size(1533, 745);
-            this.bcth1.TabIndex = 2;
-            this.bcth1.Load += new System.EventHandler(this.bcth1_Load);
+            this.quanLyBangGia.BackColor = System.Drawing.Color.LightCyan;
+            this.quanLyBangGia.Location = new System.Drawing.Point(278, 63);
+            this.quanLyBangGia.Name = "quanLyBangGia";
+            this.quanLyBangGia.Size = new System.Drawing.Size(1539, 745);
+            this.quanLyBangGia.TabIndex = 4;
+            // 
+            // duLieuDiemDanh
+            // 
+            this.duLieuDiemDanh.BackColor = System.Drawing.Color.LightCyan;
+            this.duLieuDiemDanh.Location = new System.Drawing.Point(278, 63);
+            this.duLieuDiemDanh.Name = "duLieuDiemDanh";
+            this.duLieuDiemDanh.Size = new System.Drawing.Size(1539, 745);
+            this.duLieuDiemDanh.TabIndex = 3;
             // 
             // QuanLy
             // 
@@ -323,11 +204,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1819, 816);
-            this.Controls.Add(this.duLieuDiemDanh);
-            this.Controls.Add(this.quanLyNhanVien);
-            this.Controls.Add(this.bcth1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.quanLyBangGia);
+            this.Controls.Add(this.duLieuDiemDanh);
+            this.Controls.Add(this.quanLyNhanVien);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "QuanLy";
             this.Text = "Quanli";
@@ -335,8 +216,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.PanelDrop.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -347,24 +226,17 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnDuLieuDiemDanh;
-        private System.Windows.Forms.Button dropbutton;
-        private System.Windows.Forms.Panel PanelDrop;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button btnQuanLyNhanVien;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Timer timer2;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btnKhoThuoc;
+        private System.Windows.Forms.Button btnQuanLyBangGia;
+        private System.Windows.Forms.Button btnBaoCaoDanhThu;
         private System.Windows.Forms.Button btnLogout;
-        private BaoCaoTongHop bcth1;
+        private System.Windows.Forms.Button btnDuLieuDiemDanh;
+        private System.Windows.Forms.Button btnQuanLyNhanVien;
         private QuanLyNhanVien quanLyNhanVien;
         private DuLieuDiemDanh duLieuDiemDanh;
+        private DatabaseDataSetTableAdapters.ScheduleTableAdapter scheduleTableAdapter1;
+        private Pricelist quanLyBangGia;
+        //private QuanLyNhanVien quanLyNhanVien;
+        //private DuLieuDiemDanh duLieuDiemDanh;
     }
 }

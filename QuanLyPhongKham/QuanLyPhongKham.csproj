@@ -138,17 +138,17 @@
     <Compile Include="DTO\TreamentRecordsDTO.cs" />
     <Compile Include="DTO\TreatmentNeedsDTO.cs" />
     <Compile Include="DTO\ScheduleDTO.cs" />
+    <Compile Include="GUI\AddService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AddService.Designer.cs">
+      <DependentUpon>AddService.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\BacSi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\BacSi.Designer.cs">
       <DependentUpon>BacSi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\BaoCaoCongViec.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\BaoCaoCongViec.Designer.cs">
-      <DependentUpon>BaoCaoCongViec.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\BaoCaoTongHop.cs">
       <SubType>UserControl</SubType>
@@ -192,17 +192,17 @@
     <Compile Include="GUI\KhamLamSang.Designer.cs">
       <DependentUpon>KhamLamSang.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\KhoThuoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\KhoThuoc.Designer.cs">
+      <DependentUpon>KhoThuoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\LeTan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\LeTan.Designer.cs">
       <DependentUpon>LeTan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\LichKham.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\LichKham.Designer.cs">
-      <DependentUpon>LichKham.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\LichSuKhamChuaBenh.cs">
       <SubType>UserControl</SubType>
@@ -215,6 +215,12 @@
     </Compile>
     <Compile Include="GUI\PhanCongLichTruc.Designer.cs">
       <DependentUpon>PhanCongLichTruc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Pricelist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Pricelist.Designer.cs">
+      <DependentUpon>Pricelist.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\QuanLy.cs">
       <SubType>Form</SubType>
@@ -254,11 +260,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\AddService.resx">
+      <DependentUpon>AddService.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\BacSi.resx">
       <DependentUpon>BacSi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\BaoCaoCongViec.resx">
-      <DependentUpon>BaoCaoCongViec.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\BaoCaoTongHop.resx">
       <DependentUpon>BaoCaoTongHop.cs</DependentUpon>
@@ -281,17 +287,20 @@
     <EmbeddedResource Include="GUI\KhamLamSang.resx">
       <DependentUpon>KhamLamSang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\KhoThuoc.resx">
+      <DependentUpon>KhoThuoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\LeTan.resx">
       <DependentUpon>LeTan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\LichKham.resx">
-      <DependentUpon>LichKham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\LichSuKhamChuaBenh.resx">
       <DependentUpon>LichSuKhamChuaBenh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\PhanCongLichTruc.resx">
       <DependentUpon>PhanCongLichTruc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Pricelist.resx">
+      <DependentUpon>Pricelist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\QuanLy.resx">
       <DependentUpon>QuanLy.cs</DependentUpon>
@@ -376,7 +385,6 @@
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
     <None Include="Resources\password.png" />
-    <None Include="Resources\otp512.png" />
     <None Include="Resources\otp.png" />
     <None Include="Resources\minus.png" />
     <None Include="Resources\plus.png" />
